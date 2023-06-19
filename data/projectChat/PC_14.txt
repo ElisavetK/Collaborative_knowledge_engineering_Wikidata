@@ -1,0 +1,6 @@
+2017
+6
+Indigenous_to
+The type constraint for indigenous to (P2341)  specifies that it should be applied to items  that are in subclasses of traditional culture (Q4384751), languoid (Q17376908), or dish (Q746549).  I'd like to add clothing (Q11460) to this list for the many clothing items that are (or originated as) traditional dress of various places.  Any objections? - PKM (talk) 18:14, 18 June 2017 (UTC)
+
+

@@ -1,0 +1,9 @@
+2016
+12
+Merge_please
+Help:Merge says that it's a proposal that's not been finalised, so I don't know whether I should follow its suggestions.
+Please merge Q19841468 and Q8078936.  One has the Dutch Wikipedia's article about a place in Iceland, together with a Commons-hosted picture of the place, while the other has the English and Icelandic Wikipedias' articles about the same place.  Aside from the shared name, the English and Dutch articles even use the same image.  Nyttend (talk) 01:09, 13 December 2016 (UTC)
+
+@Nyttend:, done. MechQuester (talk) 03:17, 13 December 2016 (UTC)
+oh and its in preferences. Go to preferences, gadgets, and its the 1st item. MechQuester (talk) 03:18, 13 December 2016 (UTC)
+

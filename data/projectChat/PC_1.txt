@@ -1,0 +1,59 @@
+2017
+7
+Wikidata_weekly_summary_#267
+
+
+Here's your quick overview of what has been happening around Wikidata over the last week.
+
+Discussions
+New request for comment: When multiple sources are cited for a fact, should IMDB be deleted as one of them when used
+Events/Press/Blogs
+Past: IRC office hour (read the full log here)
+Past: Online Wikidata workshop in French (Wikipédia:Soirées Wiki en ligne)
+Upcoming: Wikidata and SPARQL workshop and Celtic Knot Conference in Edinburgh
+Upcoming: Wikidata workshop during the Africa Open Data Conference, in Accra, Ghana, July 17-21
+A Wikidata workshop conducted in Bangalore
+Blog report about the second Wikidata workshop in the Czech Republic (in Czech)
+Other Noteworthy Stuff
+Join the Cycle 3 of the Wikimedia Movement Strategy discussions, and debate about the challenges identified by the research
+Sitelinks for the new Kabiye Wikipedia (kbpwiki) can be added
+We reached Q31000000
+a dataset of 48,000 English questions have been mapped to Wikidata
+New Mix’n’match catalog: Irish National Inventory of Architectural Heritage
+COH Challenge: in July, add pictures from the Connected Open Heritage in Wikidata
+We asked the followers of the Wikidata Twitter account if they know about SPARQL
+The constraint check script has been turned into a gadget, and other news
+Platypus has started to learn Spanish
+WikidataCon: We reached 100 registrations, the event is complete for now. More tickets will be released in September. You can still register on the waitlist.
+WikidataCon scholarships applications are open until July 16th
+MySociety is hiring a community manager to work on EveryPolitician with Wikidata and SPARQL
+Did you know?
+Newest properties: parliamentary group, metrically compatible typeface, BVMC place id, MuseScore ID, RePEc institute ID, Principal Galaxies Catalogue ID, Australian Standard Geographic Classification 2006 ID, Australian Statistical Geography 2016 ID, checksum, Irish Grid Reference, Biodiversity Repository ID, Global Terrorism Database ID
+Query examples:
+Place of birth of the authors on Wikimammenn, the breton Wikisource
+First names of current French members of Parliament (source)
+Timeline of the births of current members of the French National Assembly (source)
+Family tree of Harry Potter characters (source)
+Map of mountains located in the Basque Country (source)
+Items with higher number of child statements than number of children (source)
+Pictures of Pharaos (source)
+Map of departemental archives in France (source)
+Newest gadgets: Units converter converts from 20 currencies to a selected currency. Converts metric units (mass, dimensions, area, temperature, speed) to/from United States units. The currency amounts are inflation adjusted if data is available.
+Development
+Worked more on support for lexicographical data and Wiktionary. The focus was on creating a necessary new datatype to link to Lexemes as well as making Glosses and statements on Glosses editable.
+Getting ready to migrate the constraints definitions from templates on the property talk page to statements on the property.
+You can see all open tickets related to Wikidata here.
+
+Monthly Tasks
+Add labels, in your own language(s), for the new properties listed above.
+Comment on property proposals: all open proposals
+Suggested and open tasks!
+Contribute to a Showcase item.
+Help translate or proofread the interface and documentation pages, in your own language!
+Help merge identical items across Wikimedia projects.
+Help write the next summary!
+
+Read the full report · Unsubscribe · Lea Lacroix (WMDE) 10:26, 3 July 2017 (UTC)
+
+
+

@@ -1,0 +1,16 @@
+2013
+4
+Circumstances_of_phase_2_on_respective_Wikipedias
+Hello. Phase 2 (infoboxes!) has just been deployed on the English Wikipedia, and in my understanding, discussion about how to handle it on their site is still ongoing at w:en:Wikipedia:Requests for comment/Wikidata Phase 2. What I want to know here is the current circumstances in other language versions of Wikipedia including the first 11 Wikipedias, because phase 2 is going to be deployed on all remaining Wikipedias in a day or two (24 April). Are Wikipedians allowed to edit any pages including articles and templates on your language version of Wikipedia with the Wikidata inclusion syntax? (no limitation? under discussion?) Or do we already have a general guideline for this? At this moment there is no guideline on the Japanese Wikipedia. I would just like to exchange information with people from other language versions of Wikipedia. Thank you. --Penn Station (talk) 17:38, 23 April 2013 (UTC)
+
+It's up to each individual Wikipedia on what they want to do... if you want to have a RFC for the Japanese Wikipedia, now would be the time to start it. --Rschen7754 05:07, 24 April 2013 (UTC)
+I guess while it is up to each community, it would be good to see if we can collect a concise list of what communities have decided or are discussing.  Is there anything like that already?  Wikis new to the phase 2 might have something to learn from early adaptors. --whym (talk) 13:57, 24 April 2013 (UTC)
+Thanks for following, whym. Yes, it's up to each individual project - that's absolutely right. I thought if there already were known issues, discussions and/or solutions (maybe guideline?) in the precedent projects, they would be case studies as helpful inputs or hints for the other projects. It's not only for the Japanese Wikipedia, but also for any projects. --Penn Station (talk) 14:29, 24 April 2013 (UTC)
+I know that the Hebrew Wikipedia already had a discussion, but I don't know where the link is - perhaps Lydia knows? --Rschen7754 17:32, 24 April 2013 (UTC)
+The discussion I was involved in there was on http://he.wikipedia.org/wiki/%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94:%D7%9E%D7%96%D7%A0%D7%95%D7%9F and is now somewhere in the archive there (I have a really hard time finding it. Sorry.) I don't know if there were further discussions elsewhere. --Lydia Pintscher (WMDE) (talk) 19:20, 24 April 2013 (UTC)
+On it.wiki we started today the discussion. I have copied from en.wiki page --ValterVB (talk) 19:51, 24 April 2013 (UTC)
+Is the hebrew discussion at he:ויקיפדיה:מזנון/ארכיון_311#Deployment_of_Wikidata_on_the_Hebrew_Wikipedia ?
+Hi all, many thanks. For further information, updating Help:Phase 2 on Wikipedia would be very helpful. --Penn Station (talk) 14:37, 26 April 2013 (UTC)
+I have started an help page on this matter at Help:Phase 2 on Wikipedia.--Snaevar (talk) 19:57, 24 April 2013 (UTC)
+Thank you for prrepareing this page. If I got related info, I'll add it to the page. --Penn Station (talk) 15:17, 26 April 2013 (UTC)
+

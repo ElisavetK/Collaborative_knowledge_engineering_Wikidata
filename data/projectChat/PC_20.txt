@@ -1,0 +1,6 @@
+2016
+6
+Tutorial_Wikidata_Infoboxes
+I finally started working on https://phabricator.wikimedia.org/T76229 , the community wishlist task to create a very readable Wikidata infobox tutorial. I started with the page here (Wikidata:Infobox Tutorial) and would be grateful for any helpful comments or additions. If you have a lot of experience with this, I would also appreciate if you could report on the talk page what you think are best practices in Module and Infobox code layout. --Tobias1984 (talk) 08:51, 30 June 2016 (UTC)
+
+

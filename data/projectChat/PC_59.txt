@@ -1,0 +1,17 @@
+2017
+6
+Our_policy_of_items_about_living_people
+I'm planning to write a RFC for the adoption of Wikidata:Living_people. Does anybody here think that the policy needs changes before it goes into the RFC? ChristianKl (talk) 21:58, 29 May 2017 (UTC)
+
+Please refer to the comments on the previous RfC; and the question I put to you on the above page's talk page on 14 April 2017. Andy Mabbett (Pigsonthewing); Talk to Andy; Andy's edits 23:27, 29 May 2017 (UTC)
+Sorry, for not replying sooner, I answered you on the talk page. ChristianKl (talk) 08:31, 30 May 2017 (UTC)
+The previous policy proposal is not even two months ago rejected. This new proposal has none of the provisions in it that will make a dent in the scale of the things as we have it and consequently it is as problematic. It considers several aspects in isolation but it forgets how controversial nationality is while ethnicity is included.. No thank you, not at this time. Thanks GerardM (talk) 04:59, 30 May 2017 (UTC)
+The previous RFC was rejected in August 2016. That's 8 months ago and not two. ChristianKl (talk) 08:31, 30 May 2017 (UTC)
+That is only one of two arguments and imho the least relevant.. I oppose this proposal because it does not include a way whereby we concentrate on the issues that are likely problematic. This is too heavy handed. Thanks, GerardM (talk) 08:35, 30 May 2017 (UTC)
+i see the same adversive negative feedback. would you care to rework as a wikiproject and quality circle approach? do you have any history justifying "repeated or egregrious incidents by a user may lead to blocks"? if not, them you are bringing a solution where the facts are not indicated. Slowking4 (talk) 16:35, 30 May 2017 (UTC)
+Can you be more specific about what you mean with "rework as a wikiproject and quality circle approach?" ChristianKl (talk) 17:53, 30 May 2017 (UTC)
+w:Quality circle i.e. w:Wikipedia:WikiProject Women in Red and w:Wikipedia:Teahouse -- Slowking4 (talk) 18:05, 1 June 2017 (UTC)
+@Slowking4: The WMF resolution is quite clear that every project in the Wikimedia universe should have its own explicit policy and having an explicit policy is good for the relationship to the individual Wikipedias. If you feel like there are changes to the draft that would improve the policy and reduce the chances for harm I invite you to make your changes, but I think sooner or later we will have an adopted policy. ChristianKl (talk) 11:36, 3 June 2017 (UTC)
+@ChristianKl: When we are to do better re living people, fine. The big issue is that the way this proposal is put forward is like an edict with no indication on how this is to be implemented. When we are to improve our data, it is best done by concentrating on the known issues. These are not a subset of what is considered "problematic" but they are based on indicating the errors and having a path to improving the data.
+I feel extremely uncomfortable by imposed policies that are only words and have no plan behind them. When the plan is nuke everything that does not comply, I am dead against it because our data set is limited as it is. So by comparing what exists in Wikipedias and other sources, finding the differences and NOT accepting them but curating them you have a way out of this mess. Thanks, GerardM (talk) 12:25, 3 June 2017 (UTC)
+

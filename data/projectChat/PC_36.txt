@@ -1,0 +1,14 @@
+2018
+5
+Can_someone_press_the_button_to_create_an_approved_new_property?
+Hi
+I'm running an in person project in the next days which requires a new property Wikidata:Property_proposal/Directory_of_Open_Access_Journals_ID (I started it almost 2 months ago) which has been approved and is ready to be created. Could someone who has the magic powers please press the button for me so the property is created? I'm sorry to try and jump the queue but the project is stalled without it.
+Thanks very much
+--John Cummings (talk) 14:54, 2 May 2018 (UTC)
+
+ Done--Micru (talk) 21:32, 2 May 2018 (UTC)
+John Cummings, Micru, that is controversial, there was some strong opposition. Is it a repetition of ISSN? 77.179.61.171 20:43, 4 May 2018 (UTC)
+
+As I explained in the discussion, DOAJ uses ISSN numbers as identifiers but they are sometimes not an exact match, e.g where multiple different format versions of the publication exist. It also allows for DOAJ to begin having pages for other kinds of information that are not journals, e.g publishers. --John Cummings (talk) 21:26, 4 May 2018 (UTC)
+The decision appeared to be measured and with precedent, 77. What do you hope to achieve by rehashing it here? --Tagishsimon (talk) 21:33, 4 May 2018 (UTC)
+

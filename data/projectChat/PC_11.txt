@@ -1,0 +1,10 @@
+2017
+7
+Scores_in_ORES_will_be_more_accurate
+Hello,
+If you use ORES to watch vandalism, you may be interested by the next evolutions of the tool.
+Currently, when patrollers hit the ORES API to check if an edit is vandalism or not, they get a score between 0 and 1 (example). From July 25th, these scores will change for edits, will get more signal out of edit summaries, and will be more accurate. We will for example use existing lists of bad words to catch this kind of vandalism more easily. You can see the details on the task.
+If the patrollers set the threshold in their tools to highlight an edit if it was, for example, more than 90%, they need to revisit the number once the new changes got deployed. On this page you can find full statistical parts and find out what is the new threshold when it gets deployed.
+If you need any help to set up your tool, feel free to contact Ladsgroup. Thanks, Lea Lacroix (WMDE) (talk) 15:15, 20 July 2017 (UTC)
+
+

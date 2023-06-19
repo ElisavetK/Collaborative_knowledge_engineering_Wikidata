@@ -1,0 +1,18 @@
+2019
+8
+Alternative_ship_name:_qualifier?
+Hi, after editing the item about the vessel Dida, I got warning signs about the property 'Alternative name' that I had chosen to represent this information about the various names of the vessel:
+
+Amstel (1998)
+Fort Mingan (1995)
+Nordbec (1970)
+Oslo (1969)
+Dida (1962)
+The information blob says that 'Alternative name' should only be used as a qualifier, but I can't find the property to which this property belongs. Anyway such a qualifier would need a subqualifier for the year.
+I believe it would be best to create a property (re)name or christening with qualifiers for date, place, the organisation (shipping line, navy) that ordered the (re)christening, and possibly the ceremonial christener and more. Merchant vessels are sold frequently as illustrated above and subsequent shipping lines generally apply new names. 
+Maybe there is already a solution in place I am not aware of? Thanks! — bertux 12:50, 27 August 2019 (UTC)
+
+You should use official name (P1448) with start time (P580) and end time (P582) instead. Ayack (talk) 13:05, 27 August 2019 (UTC)
+Actually, since there are various properties used (short name (P1813), native label (P1705), etc.) you should ask your question to Wikidata:WikiProject Ships. Ayack (talk) 13:14, 27 August 2019 (UTC)
+See Wikidata talk:WikiProject Ships#Ship rechristening. Thanks! — bertux 19:17, 27 August 2019 (UTC)
+

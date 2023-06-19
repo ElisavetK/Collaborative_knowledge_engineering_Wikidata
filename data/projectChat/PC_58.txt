@@ -1,0 +1,19 @@
+2016
+7
+Floors_above_ground
+I think we have a problem with (good faith) edits like this; the definition of floors above ground (P1101) says "attic included"; the figure imported from the English Wikipedia infobox does not include attics. Also, do we mean all attics (the dusty ones used for storage), or just those which are in everyday use as living or working spaces? Andy Mabbett (Pigsonthewing); Talk to Andy; Andy's edits 20:45, 21 July 2016 (UTC)
+
+According English Wikipedia infobox floor_count = "Number of floors expressed as a numerical value", not mentioned if attic is included or excluded. --Jklamo (talk) 21:59, 21 July 2016 (UTC)
+The number of floors is culturally distinct. English cannot claim exclusivity. Thanks, GerardM (talk) 06:00, 22 July 2016 (UTC)
+How about using different units have have a unit that includes attics and one that excludes them? ChristianKl (talk) 09:58, 22 July 2016 (UTC)
+We have qualifiers like including (P1012), so no unit is required.
+It becomes more complicated if/when you describe the address of something. I am currently at the first floor of our house in English but on the second floor in my own language. - Innocent bystander (talk) 10:43, 22 July 2016 (UTC)
+In British English, the ground floor is numbered zero. In American English, it is numbered one. However, this is not about floor numbering, but which to include - no-one is suggesting that ground floors are not included. Andy Mabbett (Pigsonthewing); Talk to Andy; Andy's edits 15:59, 22 July 2016 (UTC)
+The issue at hand concerns the disparity between values used in the English Wikipedia and in Wikidata. Andy Mabbett (Pigsonthewing); Talk to Andy; Andy's edits 15:59, 22 July 2016 (UTC)
+The differences may also come from the number of the highest floor, which not have to be the same as the number of floors. -- Innocent bystander (talk) 16:05, 22 July 2016 (UTC)
+No; it comes from the inclusion, or not, of attics. Andy Mabbett (Pigsonthewing); Talk to Andy; Andy's edits 16:10, 22 July 2016 (UTC)
+You did not respond to my proposal of P1012? -- Innocent bystander (talk) 16:20, 22 July 2016 (UTC)
+It didn't seem to be addressed to me. I don't see how an automated edit would know what qualifier to use. Andy Mabbett (Pigsonthewing); Talk to Andy; Andy's edits 19:55, 22 July 2016 (UTC)
+The correct value to use would be the value as found in reliable sources. I've added a lot of "number of floors" to items by hand, and I would not recommend taking data from the Wikipedia infoboxes. It can be difficult to source this, even when using apparently reliable sources, let alone Wikipedia which is far less reliable. Danrok (talk) 17:54, 24 July 2016 (UTC)
+If a source says "the building has three floors", do they include the attic, or not? Andy Mabbett (Pigsonthewing); Talk to Andy; Andy's edits 19:41, 26 July 2016 (UTC)
+

@@ -1,0 +1,28 @@
+2019
+4
+Categories_move_on_the_projects_does_not_result_in_the_move_on_Wikidata?
+An example from yesterday: w:en:Category:Places of worship in El Salvador was moved yesterday to w:en:Category:Religious buildings and structures in El Salvador with a creation of a category redirect. However, our Q9505708 still lists the old name and apparently was not affected by the move. Anybody knows what is going on?--Ymblanter (talk) 12:29, 23 April 2019 (UTC)
+
+There is only a partial match between the category redirect pages created yesterday by Cydebot in enwiki,[8] and its wikidata contributions at the same time.[9] E.g.
+en:w:Category:Places of worship in Hesse Y also in Wikidata
+en:w:Category:Places of worship in Hawaii County Y also in Wikidata
+en:w:Category:Places of worship in Hawaii Y not changed in Wikidata
+en:w:Category:Places of worship in Havana Y not changed in Wikidata
+Fayenatic london (talk) 12:55, 23 April 2019 (UTC)
+Well, this is disappointing so far. I was hoping for
+a diagnosis leading to a fix to prevent Wikidata being skipped any more in future when pages are moved in Wikipedias, and
+ automated processes to identify the redirects in Wikipedias that have been left linked to Wikidata, and then update Wikidata to the target of the redirect.
+Over a thousand "places of worship" categories in enwiki were moved to "religious buildings and structures". Having reviewed them manually for other purposes (checking backlinks), not really looking at Wikidata links, I estimate that about a quarter of the redirects are still linked to Wikidata.
+Is there a bot that could at least report which categories listed at en:Wikipedia_talk:Categories_for_discussion/Log/2019_March_21#OPTION_B are linked to Wikidata?
+Of course we should also seek evidence as to whether other pages have been moved in Wikipedias without updating Wikidata, unless there is a reason to think it only happened with Cydebot's contribs on 22 April. Fayenatic london (talk) 20:37, 25 April 2019 (UTC)
+Could this be a bot approval issue? Cydebot is not an approved bot on Wikidata, so it would have the same edit-limit restrictions as any regular user, so if these changes were made too fast, some fraction of them would be disallowed by the API, I believe. ArthurPSmith (talk) 23:29, 25 April 2019 (UTC)
+Thank you, ArthurPSmith, that would make sense. I'll recommend Cyde to seek prompt approval for Cydebot on Wikidata, and recommend the same for other bots that might move or delete categories. At least that should reduce future omissions of this kind.
+I don't know the process for bot approval. Could the general process be tweaked to prompt the bot owner to also seek approval on Wikidata where relevant? Fayenatic london (talk) 11:19, 26 April 2019 (UTC)
+I don't think this problem is related to edit rate restrictions (IIRC we don't have any right now, and User:Cydebot's edit rate wasn't particularly high at that time of the failed sitelink moves anyway), and it is probably also not related to a (missing) botflag. No idea what's on here, but we should keep an eye on this problem. --MisterSynergy (talk) 14:35, 26 April 2019 (UTC)
+Anybody running multiple simultaneous Quickstatements batches quickly hits the edit rate limit, it's definitely there. ArthurPSmith (talk) 15:49, 26 April 2019 (UTC)
+It would be a credible cause of skipping these particular category page moves. This is because (i) I had listed a large number of categories for moving, and (ii) there were relatively few direct members of the categories for Cydebot to update in between moving one category page and the next, so that Cydebot was making category page moves at an unusually high rate – and those were the contribs that (should have) affected Wikidata.
+This is a pretty unusual combination, which also gives some reassurance that there should not have been many other such cases in the past. I have requested a report at Wikidata:Request a query#Wikidata items linked to soft redirect on enwiki. Fayenatic london (talk) 20:25, 27 April 2019 (UTC)
+And now Larske has written this PetScan query which lists Wikidata items linked to enwiki category pages using category redirects. There were 69 "Places of worship" categories, not too many to fix manually. Fayenatic london (talk) 23:06, 28 April 2019 (UTC)
+I've filed a request for bot flag at Wikidata:Requests_for_permissions/Bot.  --Cyde (talk) 14:25, 26 April 2019 (UTC)
+
+

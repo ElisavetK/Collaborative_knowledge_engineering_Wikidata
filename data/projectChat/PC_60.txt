@@ -1,0 +1,63 @@
+2015
+8
+Bot_upload_of_some_clean_parts_of_Freebase_content
+Freebase contains some facts tagged as "reviewed", i.e. curated by humans. I believe that their quality is high enough for a bot upload. We may start, as a test, with 35,074 place of birth (P19) that are currently not in Wikidata. I am ready to create a bot which would add the statement if, and only if, no place of birth (P19) statement is already in the item. If there is already a different place of birth, the bot would not change anything but report the conflict on a specific page.
+
+
+
+Sample of the data (Full dataset available here in the QuickStatement format)
+
+
+
+⟨ Florian Eichinger (Q1000006)    ⟩ place of birth (P19)  ⟨ Ludwigsburg (Q622)    ⟩
+⟨ Attila Ferenczfy-Kovács (Q1000506)    ⟩ place of birth (P19)  ⟨ Pécs (Q45779)    ⟩
+⟨ Holly Brooks (Q100066)    ⟩ place of birth (P19)  ⟨ Seattle (Q5083)    ⟩
+⟨ Liz Stephen (Q100075)    ⟩ place of birth (P19)  ⟨ Barre (Q808841)    ⟩
+⟨ Buddy Bregman (Q1001130)    ⟩ place of birth (P19)  ⟨ Chicago (Q1297)    ⟩
+⟨ Buddy Emmons (Q1001188)    ⟩ place of birth (P19)  ⟨ Mishawaka (Q990691)    ⟩
+⟨ Tamás Fodor (Q1002358)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Michael Chevalier (Q100258)    ⟩ place of birth (P19)  ⟨ Berlin (Q64)    ⟩
+⟨ József Fonyó (Q1002758)    ⟩ place of birth (P19)  ⟨ Dunakeszi (Q547479)    ⟩
+⟨ Tibor Fonyódi (Q1002759)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ András Forgách (Q1002882)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Ottó Forgács (Q1002914)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Frederik Ehmke (Q1003742)    ⟩ place of birth (P19)  ⟨ Malsch (Q545164)    ⟩
+⟨ Torma Gábor (Q1003820)    ⟩ place of birth (P19)  ⟨ Dunaújváros (Q187812)    ⟩
+⟨ Fruzsina Fridel (Q1003891)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Vincent Redetzki (Q100422)    ⟩ place of birth (P19)  ⟨ Charlottenburg (Q162049)    ⟩
+⟨ Sándor Fábry (Q1004528)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Eszter Földes (Q1005938)    ⟩ place of birth (P19)  ⟨ Szekszárd (Q189761)    ⟩
+⟨ József Fülöp (Q1006511)    ⟩ place of birth (P19)  ⟨ Tatabánya (Q187821)    ⟩
+⟨ G. C. Edmondson (Q1006918)    ⟩ place of birth (P19)  ⟨ Washington (Q1223)    ⟩
+⟨ Ingeborg Westphal (Q100700)    ⟩ place of birth (P19)  ⟨ Prenzlauer Berg (Q313186)    ⟩
+⟨ Zoltán Galabárdi (Q1007415)    ⟩ place of birth (P19)  ⟨ Nagykutas (Q635022)    ⟩
+⟨ Erich Dunskus (Q100757)    ⟩ place of birth (P19)  ⟨ East Prussia (Q103801)    ⟩
+⟨ Nikolett Gallusz (Q1007781)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Yoshino Takamori (Q1007984)    ⟩ place of birth (P19)  ⟨ Ichikawa (Q209785)    ⟩
+⟨ Ganxsta Zolee (Q1008047)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Gábor Garami (Q1008176)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Axel Meyer (Q100824)    ⟩ place of birth (P19)  ⟨ Mölln (Q498036)    ⟩
+⟨ Tibor Gazdag (Q1008628)    ⟩ place of birth (P19)  ⟨ Nyíregyháza (Q171223)    ⟩
+⟨ György Gazsó (Q1008684)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Ghazala Javed (Q1008702)    ⟩ place of birth (P19)  ⟨ Swat District (Q389161)    ⟩
+⟨ Rachel Carson (Q100948)    ⟩ place of birth (P19)  ⟨ Springdale (Q1180631)    ⟩
+⟨ Károly Gesztesi (Q1010061)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Péter Geszti (Q1010077)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Gillian Hills (Q1010504)    ⟩ place of birth (P19)  ⟨ Cairo (Q85)    ⟩
+⟨ Martin Goeres (Q101159)    ⟩ place of birth (P19)  ⟨ West Berlin (Q56036)    ⟩
+⟨ Ella Gombaszögi (Q1011730)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Frida Gombaszögi (Q1011734)    ⟩ place of birth (P19)  ⟨ Budapest (Q1781)    ⟩
+⟨ Gerd Anthoff (Q101177)    ⟩ place of birth (P19)  ⟨ Munich (Q1726)    ⟩
+
+
+
+What do you think about it? Should I start a bot approval request? Tpt (talk) 23:17, 3 August 2015 (UTC)
+
+ Support This seems to me like the obvious course of action. Popcorndude (talk) 01:32, 4 August 2015 (UTC)
+Tpt, can you link to an explanation at freebase what "reviewed" means (facts tagged as "reviewed")? FAQ doesn't mention this? Who reviewed? What are the sources/references for the "reviewed fact"? How many years old is the review? Did the review just "copy the truth from Wikipedia"? --Atlasowa (talk) 05:36, 4 August 2015 (UTC)
+
+Hi @Atlasowa:. There is no external description of what it means to be "reviewed". Basically it means that these triples have gotten more scrutiny than the others and had human curation. The curation can be quite old (although I don't think it makes a difference for the place of birth), and it will often be the case that it was checked against the Web - and thus Wikipedia - by the reviewer.
+No one wants to quickly force these statements into Wikidata. It is up to the community as a whole to decide whether we want these statements to be uploaded automatically, or add an additional layer of human curation through the primary sources tool. Both is fine. I think it might make sense to upload the data that was identified to have a particularly high quality directly (which you can check in the random sample and in the whole data), and focus the human curation on the data where this is not the case, but it really is up to us to decide what we are comfortable with. I understand that some of us are more impatient (Hi Gerard!) and others are more cautious, and it is good to have both (and other) voices in a respectful conversation. --Denny (talk) 17:56, 4 August 2015 (UTC)
+As far as I am concerned this is sheer procrastination. :( GerardM (talk) 06:13, 4 August 2015 (UTC)
+I have just opened a bot request for this dataset and created a new page to allow people to suggest new dataset to import. Tpt (talk) 21:07, 6 August 2015 (UTC)
+

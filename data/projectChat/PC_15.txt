@@ -1,0 +1,7 @@
+2018
+6
+Language_agnostic_templates_for_politicians
+Hoi, I need help for the creation of a template to be used in multiple Wikipedias in African languages. There are lists of many national politicians, the languages where the same lists exist are en sw ts yo and zu Wikipedia.
+As you can see on the example lists, do not expect there to be much (technical) local support; things like columns are often not supported. My objective is to show that once support exists for showing basic information and links do exists showing basis related information it becomes easier to convince high schools to flesh out the lists and templates and make them into more complete articles. Thanks, GerardM (talk) 07:02, 17 June 2018 (UTC)
+
+

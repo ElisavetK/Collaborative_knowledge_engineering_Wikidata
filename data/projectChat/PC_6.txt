@@ -1,0 +1,37 @@
+2013
+7
+A_quick_quip_about_what_data_could_be_stored_here_to_make_this_site_a_more_valuable_resource
+Let's say I had a 15,000 word JSON database of equivalent  English and French terms.
+Or a 12,000 word JSON database of a phonetic transcription of all single syllable English words.
+If Wikidata could also specialize in simple useable relational databases,  then after I upload my English-French database some one could then add Italian, and Spanish. And pretty soon we could have community access to valuable databases that could be used openly by the community to create lots of cool products and services.
+I would really like to see this site become a site that had databases that people could add to and fill-in.
+If you search golfball in the English wiki:
+http://en.wikipedia.org/wiki/Golfball
+You can see that there is not a Chinese entry.
+If the relational databases could be set up then a lot of empty non-english wiki entries could be filled using automation.
+For example Golf ball only has 14 entries and is minimally world language entry complete
+But whale shark has more than 50 and is probably pretty world-language-complete for its entry
+http://en.wikipedia.org/wiki/Whale_shark
+And those 
+Right now I search 'English' and I get this:
+English Heritage [edit] executive non-departmental public body of the British Government
+This is a contextless abstracted datum that then links to the uses of this term in the other wikis. This approach seems limited and more like what the meta-wiki site should be doing as a way to build an interactive backend for the main wiki sites. The only relevant information that is available would be to see how the wiki is itself being used.
+This site would be great as a home to user made and edited databases.
+The site could even be used to generate databases using bad code like this:
+var originalWord = $(".input").val()
+var theNativeLanguage = 'zh';
+$('.answerbox p').load("http://"+theNativeLanguage+".wikipedia.org/wiki/"+originalWord+" #mw-content-text ul")	
+var translatedWord = (derived from method)
+var myTargetTranslationLanguage = 'en'
+load("http://"+myTargetTranslationLanguage+".wikipedia.org/wiki/"+translatedWord+" .interwiki-en", function() 
+People could load and translate:
+JSON
+XML
+Core data
+SQL
+as well as algorithms for data manipulation. 
+Currently this site seems like this site just tries to be 'wiki's data lite' and not the  'ultimate wiki of data and databases' (which would make this site awesome and more valuable.)
+Would this be an impossible expansion in the entirely wrong direction?  – The preceding unsigned comment was added by Mgmoscatello (talk • contribs).
+
+I think they are planning to link wikidata with wikitionary after wikivoyage, maybe then we could use the raw data of wikitionary to do the translation that you are talking about  --Napoleon.tan (talk) 02:16, 15 July 2013 (UTC)
+

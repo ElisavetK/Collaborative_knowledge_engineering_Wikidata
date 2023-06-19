@@ -1,0 +1,17 @@
+2013
+5
+"en-us"_locale_or_"en-us"_=_"en"?
+Is there an en-us version? 
+I noticed some users are moving aliases from "en" to "en-gb" and thus effectively making "en" an "en-us" version. 
+I don't think "en" should be limited to "en-us". Whether there is a need for an "en-us" version is another question. --  Docu  at 09:36, 25 April 2013 (UTC)
+
+It's happening the same in Portuguese, with European Portuguese "pt" and Brazilian Portuguese "pt-br". I use European Portuguese, but I don't think that the code is OK, principally because many of the Brazilian Portuguese users are editing in "pt" with the "pt-br" variant. The only solution I see (because I think that languages versions are useful to avoid editing war) is rename "pt" to "pt-pt" or "pt-eu" and "en" to "en-us" and others be divided if needed, like in Spanish or French. - Sarilho1 (talk) 15:06, 25 April 2013 (UTC)
+Projects have a need for multiple versions of a language. Where multiple versions exist, a "hierarchy" would be useful. This would allow the author of an article about a British subject to use Wikidata in the infobox, select en-gb as the language and have en-gb used if it is available, but default to en if en-gb isn't available. We wouldn't be able to support this if we made "en" US English. Of course someone will no doubt tell me that (a) this feature is already available or (b) it would never work! QuiteUnusual (talk) 15:31, 25 April 2013 (UTC)
+en = en-us. en-ca and en-gb are considered variants, even though en-gb was the original English. Ajraddatz (Talk) 02:10, 27 April 2013 (UTC)
+I'm guessing it's cause WMF's servers are in the US. FallingGravity (talk) 05:32, 27 April 2013 (UTC)
+The real question is, if "en" ≠ "en-us", than what is "en"? I don't think that we can represent all English variants with a single "en" version. The Anonymouse (talk | contribs) 00:02, 2 May 2013 (UTC)
+en is en-us. This has probably historical reasons, because Jimbo co-founded Wikipedia in the US, so that the first contributors where American. Regards, Vogone talk 00:32, 2 May 2013 (UTC)
+
+en is only en"-us" in the interface. en.wp for example allows both British English, American English, and a handful of other recognized dialects to be used for an article. Which I think we should respect. Users who are moving things around nonsensically should be asked to stop, and, quite frankly, editors shouldn't be able to change the other languages. But maybe in this case Wikidata is better than the other wikis in this regard, because we can have the languages separate? I'm not sure. (See below with the de-formal considerations.)
+Anonymouse, I don't think we should care (if and until we need to integrate Wiktionary, which has other issues on top of that). --Izno (talk) 02:09, 2 May 2013 (UTC)
+

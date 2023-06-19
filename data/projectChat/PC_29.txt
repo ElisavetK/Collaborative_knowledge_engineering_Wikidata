@@ -1,0 +1,10 @@
+2013
+3
+I_need_to_stop_the_embedded_fonts
+Tracked in BugzillaBug 45507
+Hi, I couldn't find a way to stop the embedded fonts to be used on WikiData.   On Wiktionary, it was used for Arabic script, but I could stop it from the preferences, but where to stop it here? I couldn't find the option to stop it here. Arabic text is rendered with a very bad font against my will and I hate it. My default fonts just render Arabic perfectly, why force us to see in that embedded ugly illegible font without any way to stop it? Thanks. (An example) Even after making a custom CSS, User:Mahmudmasri/vector.css, I wasn't able to stop the Amiri embedded font :( --Mahmudmasri (talk) 10:47, 27 February 2013 (UTC)
+
+Click the language icon at the very top of the page, and click "display settings" at the bottom. Then turn off the "download font when needed" box. This, that and the other (talk) 11:06, 27 February 2013 (UTC)
+Thanks. It needs to be off by default. Arabic displays perfectly with ordinary fonts. If it's not broken, it shouldn't be fixed. Additionally that font displays Arabic characters folded on each other. --Mahmudmasri (talk) 12:51, 27 February 2013 (UTC)
+See https://bugzilla.wikimedia.org/show_bug.cgi?id=45507 and my followup questions what is requested. Thanks! --AKlapper (WMF) (talk) 21:19, 1 March 2013 (UTC)
+

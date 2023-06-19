@@ -1,0 +1,21 @@
+2020
+7
+Help_with_translation_to_EN
+Hi guys,
+I'm running the WLE, and I'm facing translation issues, and as we do not have a Babylon, or at least I did not find, I'm here.
+We have some names of conservative units that I do not know the sequence that sounds more native to you.
+The list of issues:
+
+Municipal Natural Park or Natural Municipal Park (pt: Parque Natural Municipal)
+Private Reserve of Natural Heritage or Natural Heritage Private Reserve (pt: Reserva Particular do Patrimônio Natural)
+Area of Relevant Ecological Interest or Relevant Ecological Interest Area (pt:Área de Relevante Interesse Ecológico)
+I faced all this names, sometimes I even faced both names in the same article, so I am kind lost here. All the last options are for me more natural, but I am not native speaker... Municipal seems not even a common word.
+Any light here? Thank you. Rodrigo Tetsuo Argenton (talk) 08:09, 31 July 2020 (UTC)
+
+Well firstly, "Relevante" should be translated as "significant" not "relevant." The translation has to be "Area of Significant Ecological Interest." Secondly, Parque Natural Municipal definitely has to be "Municipal Natural Park" (or "Municipal Nature Park" would be even better I think), the other word order is wrong. And I find from the web that "Reserva Particular do Patrimônio Natural" should be "Private Natural Heritage Conservation Area," that's standard. — Levana Taylor (talk) 14:11, 31 July 2020 (UTC)
+As a native English speaker (with roughly a typical Spanish-speaker's understanding of written Portuguese), I agree with all of Levana's wordings. - Jmabel (talk) 14:27, 31 July 2020 (UTC)
+Grammar note: why does one of these use a word order with "of" and the others not? It's because of how the pieces of the phrase relate to each other in each case.
+[Private [Natural Heritage [Conservation [Area]]]]: There is one noun that is modified by a bunch of other adjectives and noun phrases. The adjective, which is more optional than the other modifiers, has to go on the outside. Think saying "what is that? it is a Natural Heritage Conservation Area, a private one, a public one, a potential one, etc."
+[Municipal [Nature/Natural [Park]]] -- exactly the same.
+In [Significant [Ecological [Interest]]] "significant" modifies "interest" not "area". That is, the phrase contains two nouns that are modified by other nouns or adjectives, and therefore I have to be careful to make it clear what is modifying what. If I wrote "Significant Ecological Interest Area" it wouldn't be entirely clear whether the structure was [[Significant [Ecological [Interest]]] Area] (right) or [Significant [Ecological Interest [Area]]] (wrong). But in "Area of Significant Ecological Interest" there is only one way it is possible to interpret it -- [Area of [Significant [Ecological [Interest]]]] -- so we prefer to say it that way. But wherever there isn't this chance of confusion, the standard basic English pattern is to string the modifiers together one after another in front of the noun; I chose that standard basic pattern for the first two examples. Mind you, "natural heritage" is also a phrase like "significant ecological interest" so you may be wondering why I didn't separate that out with an "of", to make sure no one could wrongly think it was "a heritage conservation area that is natural", [Natural [Heritage [Coservation Area]]]? The reason is that "natural heritage" is such a short and tightly-linked phrase that no one will ever make a mistake about it. You can, and should, treat short phrases like this as if they are a single adjective. Whew, complicated!!! [User:Levana Taylor|— Levana Taylor]] (talk) 14:11, 31 July 2020 (UTC)
+

@@ -1,0 +1,6 @@
+2018
+6
+Field_of_work_for_awards
+I notice some items like film award (Q4220917) and C.L. de Carvalho-Heineken Prize for Cognitive Science (Q278240) use field of work (P101) and have a constraint violation because field of work (P101) is only applicable to people and organizations. Is there a correct way to express that relationship? Ghouston (talk) 01:36, 3 June 2018 (UTC)
+
+

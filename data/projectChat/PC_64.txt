@@ -1,0 +1,13 @@
+2021
+6
+atomic_mess
+Looking at a few elements such as hydrogen (Q556) and lithium (Q568) I notice that the property mass (P2067) is being misused for atomic weight, a.k.a. relative atomic mass. What should be used is a property analog of the item relative atomic mass (Q41377). But I am unable to find an existing appropriate property. Jc3s5h (talk) 12:09, 9 June 2021 (UTC)
+
+You ignored the preceding talk. -DePiep (talk) 19:04, 9 June 2021 (UTC)
+@Jc3s5h: These are merely missing the unit, which should be dalton (Q483261). See aluminium (Q663) for where this is done properly. They should also have determination method (P459) qualifiers to specify the conditions under which these (average) masses are determined. Presumably the issues are mainly because the chemical element properties were added very early in Wikidata's history and aren't up to the usual standards in some cases. ArthurPSmith (talk) 13:37, 9 June 2021 (UTC)
+Why is "relative atomic mass" a 'misuse'? You mean to say that is not a mass? @ArthurPSmith:: no the unit is not "missing", the relative atomic mass is defined to be dimensionless (i.e., no unit). This is how the source defines it. (If old trem "atomic weight"is confusing, then forget that one. 'Relative atomic mass' is fine) -DePiep (talk) 19:00, 9 June 2021 (UTC)
+Is this based on the question of whether a chemical element corresponds to an individual atom or some collection of them? I mean, the dalton mass unit is defined as "1/12 of the mass of an unbound neutral atom of carbon-12 ..." (see en:Dalton (unit)) so that seems the perfect unit for this purpose otherwise. ArthurPSmith (talk) 19:12, 9 June 2021 (UTC)
+As indicated in the citation given the lithium item, https://www.degruyter.com/document/doi/10.1515/pac-2015-0305/html the atomic weight is based on the relative abundance of isotopes in natural terrestrial materials. The atomic weights are expressed in daltons. By stating the "mass" rather than the "relative atomic mass" or "atomic weight" we are being fuzzy about whether we are referring to the average atom on the surface of Earth, the most common isotope, or whatever. Jc3s5h (talk) 00:56, 10 June 2021 (UTC)
+I don't think so. I think it is agreed that an element item represents the typical mixture of isotopes. For specific atoms create a separate item. --SCIdude (talk) 06:38, 10 June 2021 (UTC)
+@Jc3s5h: determination method (P459) relative atomic mass (Q41377) might be suitable then as a qualifier. We generally don't add special properties for every version of how one might measure something. There is a Chemistry WikiProject that might be a better place to discuss this in more detail. ArthurPSmith (talk) 12:08, 10 June 2021 (UTC)
+

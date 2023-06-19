@@ -1,0 +1,16 @@
+2013
+12
+Bot_for_new_pages,_Done!
+Hello all, I just finished a script for connecting new pages of Wikipedia sites to Wikidata, What this bot is doing It checks new pages (pages less than one month and more than ten days old) and checks if it isn't marked for any kind of deletion, tries to add it to Wikidata. the algorithm of adding is a little complicated but you can see the results of running the bot on English Wikipedia [11] (these are just results of making new items and they are not included connecting via adding site link to an existing item) just these optional l10n can help us connect Wikipedia and Wikidata even more:
+
+basic templates of deletions (e.g. for English Wikipedia it's "'Db-meta','Article for deletion','Proposed deletion'" these names are enough even as a part of the template title)
+is it okay to create a new item if no interwiki was found? I set it True for the first twenty wiki (by size) and False otherwise
+ways to add very basic information:
+being a disambiguation: No l10n needed
+being a biography: for example finding these regex is enough for English Wikipedia article "\[\[[Cc]ategory\:\d{1,4} births"  but about other languages we can obtain this from interwiki links of years like Category:1912 births (Q9710085)
+Besides all of the functions the bot reports if It couldn't find any interwiki but it found hard URL to another wiki (e.g. User:Ladsgroup/en for English Wikipedia)
+Any comments are welcome @Multichill: yours specially :) Amir (talk) 17:38, 19 December 2013 (UTC)
+
+Please do not create non-notable items, such as items to user page, talk page, softredirect.--GZWDer (talk) 05:05, 20 December 2013 (UTC)
+Of course! I'm just working on articles and in future I'll work on categories namespace, no more. redirects will be excluded at first Amir (talk) 12:18, 20 December 2013 (UTC)
+

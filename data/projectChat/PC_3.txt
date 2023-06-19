@@ -1,0 +1,15 @@
+2017
+12
+What_would_the_ideal_data_import_process_look_like?
+
+
+
+
+
+We are running an RFC on creating a better and easier data import process, we are mapping the current including tools and documentation, what is available and what is still needed. Please take a look here.
+Many thanks
+John Cummings (talk) 14:53, 23 December 2017 (UTC)
+
+
+
+

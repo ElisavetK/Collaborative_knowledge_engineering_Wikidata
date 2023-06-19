@@ -1,0 +1,23 @@
+2019
+7
+Inverse_of_P138
+Hello. Do we have the inverse of named after (P138)? For example if a street take the name of a politician, we can have "Street item -> named after (P138) -> Politician item". Do we have a property to show "Politician -> his/her name given to -> Street item"? Something like that. Xaris333 (talk) 14:37, 29 July 2019 (UTC)
+
+I don't think such property ever existed. Nomen ad hoc (talk) 14:55, 29 July 2019 (UTC).
+Just an useless inverse property with will lead to heavy items which will become impossible to download (some persons have dozen or even hundred streets/places with their name). The only reason of the multiplication of this kind of inverse properties seems that people don't want to use lua templates with proper extraction function. Or is there any other reason ? Snipre (talk) 15:43, 29 July 2019 (UTC)
+Can you link such a LUA template or is it just something you made up now? --- Jura 15:48, 29 July 2019 (UTC)
+@Jura1: Why do we have to develop lua template if people are not interested to use them ? Most WP contributor want to use wiki template and add some extraction commands in that code. Snipre (talk) 19:10, 29 July 2019 (UTC)
+But if you are really interested, you can have a look at Module:Wikidata_list, the data extraction function exists, there is some work to handle the output in template code. Snipre (talk) 19:30, 29 July 2019 (UTC)
+I don't think this template does what Xaris was looking for. "people don't want to use lua templates with proper extraction function" might suggest that such a template actually exist.  --- Jura 19:37, 29 July 2019 (UTC)
+Looks like you edited your comment while I was replying to it [35], replacing LUA with with Listeria ;) --- Jura 21:22, 29 July 2019 (UTC)
+I don't think Listeria involves any LUA whatsoever. What did you lead you to believe that? --- Jura 21:27, 29 July 2019 (UTC)
+I understood that Xaris333 wanted to perform a query and as I suppose he knows about Wikidata Query Service, the only reason to ask how doing a query is to find the way to present the results of it in table or infobox. The template I proposed indicates how to perform a query from WP and to generate a table with the results. But this template was banned from some WPs. Snipre (talk) 20:51, 29 July 2019 (UTC)
+Use this query (streets named after Wilson Churchill):
+SELECT ?street ?streetLabel WHERE {
+  ?street wdt:P31 wd:Q79007 ;
+          wdt:P138 wd:Q8016.
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+Try it!
+Snipre (talk) 20:44, 29 July 2019 (UTC)
+

@@ -1,0 +1,64 @@
+2019
+1
+Wikidata_weekly_summary_#346
+
+
+Here's your quick overview of what has been happening around Wikidata over the last week.
+
+Discussions
+Closed request for comments: Referencing websites: how do we store the website title?
+Events
+Past: 35th Chaos Communication Congress in Leipzig, December 27-30. Several talks about Wikidata can be watched in replay:
+Introduction to Wikidata and the Query Service by Lucas Werkmeister and Amir Sarabadani
+AI in Wikipedia by Amir Sarabadani
+How to become a Mediawiki hacker by Andre Klapper
+Live-coding: building a Wikidata tool by Lucas Werkmeister
+Upcoming: Wikidata IRC office hour, at 18:00 (UTC+1, Berlin time) on the channel #wikimedia-office
+Upcoming: Wikidata meetup in WikiBär, Berlin, January 15th (in German)
+Upcoming: Academic workshop on data quality management in Wikidata, Berlin, January 18th (registration needed)
+Press, articles, blog posts
+Citation.js: a format-independent, modular bibliography tool for the browser and command line, by  Lars G. Willighagen (preprint)
+Toward an abstract Wikipedia, by Denny Vrandečić
+Wikidata and the sum of all video games, by Jean-Fred
+Building a Wikidata Tool – Behind the Scenes by Lucas Werkmeister (follow-up from the "Building a Wikidata tool" live-coding session, see above)
+Other Noteworthy Stuff
+>1000 sitelinks to the new Shan Wikipedia (shnwiki) have been added since November
+Swiss foundation MY-D has published a call for projects for Wikidata showcase applications
+Reminder: you can give your input on issues when requesting a new language for Wikidata
+Did you know?
+Newest properties:
+General datatypes: title of broader work, colorist, data interval
+External identifiers: Critique d'art ID, DVR Number, Goodreads character ID, Politika topic, SHARE-VDE author ID, England Football Online manager profile, England Football Online player profile, Panorama de l'art ID, Agence photo RMN package ID, MDWS place ID, JKT48 member ID, PCGamingWiki ID
+New property proposals to review:
+General datatypes: IFPNI species ID, corporate purpose, Lace bugs database ID, Катэгорыя членаў, The White-files species ID, at distance, representative image, Wikia Article URL 2
+External identifiers: Dictionnaire des Wallons ID, Hymnary text ID, Doctrine ID, Genius artist numeric ID, Archives of Maryland Biographical Series ID, OSGS-Number, OLAC video game genre vocabulary, De Agostini ID, Baltisches Biographisches Lexikon Digital ID (new scheme), MNAM ID, IHOI ID, Conférence du stage secretary ID, Genius album numeric ID, Musée Picasso ID, Genius song numeric ID, Crew united Titel, Crew united Name
+Query examples:
+Articles about obituaries (source)
+Map of Slovenian cultural monuments coloured by type (source)
+French settlements with more than one word in the name (source)
+People after which a state is named (source)
+"official name" statements including a slash punctuation mark (source)
+Streets in the Netherlands named after a woman described in Els Kloek's book (source)
+Map of parts of the wall of Philip II Augustus in Paris (source)
+Development
+Working on getting final pieces in place to regularly run constraint check jobs so all constraint violations get fed into the query service (phabricator:T204031)
+Fixed alignment issues with Glosses on Lexeme pages (phabricator:T207401)
+Working on getting the layout right for the termbox in the mobile view so that in the future you can also see labels, descriptions and aliases in different languages on mobile (phabricator:T207150)
+Getting ready to start working on basic Shape Expression support
+You can see all open tickets related to Wikidata here. If you want to help, you can also have a look at the tasks needing a volunteer.
+
+Monthly Tasks
+Add labels, in your own language(s), for the new properties listed above.
+Comment on property proposals: all open proposals
+Suggested and open tasks!
+Contribute to a Showcase item.
+Help translate or proofread the interface and documentation pages, in your own language!
+Help merge identical items across Wikimedia projects.
+Help write the next summary!
+
+
+
+Read the full report · Unsubscribe · Lea Lacroix (WMDE) 15:29, 7 January 2019 (UTC)
+
+
+

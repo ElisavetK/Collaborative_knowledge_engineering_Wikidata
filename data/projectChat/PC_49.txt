@@ -1,0 +1,22 @@
+2018
+6
+Members_of_expeditions
+How should we reflect that someone was a member/participant of a specific expedition? There seem to be three possible approaches, all of which make some sense -
+
+John Franklin (Q2655) has participant in (P1344):Franklin's lost expedition (Q2305) (how very depressing)
+Ernest Shackleton (Q957543) has significant event (P793):Imperial Trans-Antarctic Expedition (Q1162294) (and participant in (P1344):Imperial Trans-Antarctic Expedition (Q1162294))
+Sir Martin Lindsay, 1st Baronet (Q7528299) has member of (P463):British Arctic Air Route Expedition (Q4969460)
+In some cases we could potentially use crew member(s) (P1029) but there don't seem to be any of these at the moment. For the others -
+
+participant in (P1344) - 366 examples
+significant event (P793) - 10 examples
+member of (P463) - 135 examples (a lot of these seem to be ISS spaceflights and mostly duplicate astronaut mission (P450) entries)
+So it looks like broadly speaking P1344 is what's been used so far, but there's not so many that we couldn't switch them all if need be. Do we have any thoughts on what the most sensible approach would be? I am leaning towards standardising on P1344 (or P450 for spaceflight) but happy to be challenged. Andrew Gray (talk) 11:23, 24 June 2018 (UTC)
+
+P1344 sounds good. It seems more specialized than P793. As P463 is for organizations/clubs, I don't think it would be the focus of items used as values. Not sure if counts matter, but you seem to count participants not expeditions. If you add sea voyages, Titanic would probably tip the counts towards P793. --- Jura 11:45, 24 June 2018 (UTC)
+Aha, like on Margaret Brown (Q229631)? I think it's not coming in here because these are only counting cases where the voyage itself is a subclass of "expedition" - so the Titanic isn't showing up but first voyage of Christopher Columbus (Q3771259) is. I think you could argue for either P1344 or P793 for things like shipwrecks, but that's another problem :-). Andrew Gray (talk) 12:57, 24 June 2018 (UTC)
+The same question has been asked a few months ago on the French Bistro. participant in (P1344) is the one to use as research expedition (Q366301) is a subclass of occurrence (Q1190554) and member of (P463) is not for these but for organization (Q43229). Thierry Caro (talk) 14:05, 24 June 2018 (UTC)
+
+Good to know it's been discussed already - I'll get to work tidying these up. Andrew Gray (talk) 21:40, 24 June 2018 (UTC)
+Okay, all now tidied up - every use of P793 or P463 with an expedition as a value has been shifted to P1344. Andrew Gray (talk) 22:02, 25 June 2018 (UTC)
+

@@ -1,0 +1,9 @@
+2018
+5
+Multi-lingual_project_chat_links_broken
+The links in the panel at the top of this page, to project chat in other languages, are not clickable. Can someone fix this, please? Andy Mabbett (Pigsonthewing); Talk to Andy; Andy's edits 15:47, 12 May 2018 (UTC)
+
+ Done There is an issue with the use of <bdi> in link text that causes said bdi tag to be rendered outside the link (the link is still there on the page, but there is no text inside said <a> element).
+@Pigsonthewing: Mahir256 (talk) 16:21, 12 May 2018 (UTC)
+This section was archived on a request by: Andy Mabbett (Pigsonthewing); Talk to Andy; Andy's edits 20:55, 12 May 2018 (UTC)
+

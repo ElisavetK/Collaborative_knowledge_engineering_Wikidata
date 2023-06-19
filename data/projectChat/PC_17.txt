@@ -1,0 +1,60 @@
+2015
+11
+Wikidata_weekly_summary_#182
+
+
+Here's your quick overview of what has been happening around Wikidata over the last week.
+
+Discussions
+How to add dates with undefined calendar (Julian or Gregorian)? is discussed on Project chat.
+Events/Blogs/Press
+Wikidata turned 3! The party doubled as the award ceremony for the Land der Ideen price.  I love Wikidata because
+Page with state of the project editorial, message from the development team and greetings
+Images from the party
+Denny and Erik look back at the beginning of the project - the other recordings are still being cut but you can already see the uncut stream here
+Presents:
+Three presents for Wikidata's third birthday from Amir including artificial intelligence to find vandalism!
+Improved query.wikidata.org by the dev team
+Preview of the Article Placeholder by Lucie (bachelor student of the dev team)
+Special:Nearby by the dev team
+Donation of CC World University & School (WUaS) to CC Wikidata to celebrate its 3rd birthday! by Scott_WUaS
+Your name in Wikidata Morse code from TMg
+Help organize the Wikidata related sessions at Wikimania 2016
+Past: Open Access Week
+Past: DINI Jahrestagung (slides)
+Past: Tehran SFD (video)
+Upcoming: ODI Summit
+Upcoming: SWAT4LS
+Modeling the social network of movie actors of the 1920s and 1930s with Wikidata
+Looking for…science fiction movies on the Linked Data Cloud
+Other Noteworthy Stuff
+Italian Wikipedia matched up nearly all of their articles to items on Wikidata. Congrats!
+Bene updated the Tours. Please help translate them here.
+The Distributed Game now has a Kian module suggesting statements to add
+Andrew made maps of missing images on Wikidata: South Africa, India, Australia, world
+Nikki imported dates of birth and death for more than 40,000 persons from Japanese Wikipedia.
+Example query: French people with an article on English Wikipedia but not French Wikipedia
+Example query: paintings without dimension (add some?)
+Example query: people or things born or created on the same day of the year as Wikidata
+We passed 15M items.
+Happy 10th anniversary to Semantic MediaWiki! We wouldn't be where we are today without you.
+All 8,860 fellows of the Royal Society have been matched to Wikidata items
+Did you know?
+Newest properties: Wikidata property sample, Emporis building complex ID, Orsay Museum artist ID, Politifact Personality Identifier, Fashion Model Directory ID, mix'n'match catalogue ID, ISOCAT id, draft, beam, ionization energy, ITU-T network identifier, mobile country code, frequency of event
+Newest External tools: Top missing P31 by number of sitelinks list the items with most sitelinks lacking instance of or subclass of
+Development
+Worked on birthday presents (Special:Nearby, article placeholder demo system and improvements to query.wikidata.org)
+Wes, Stas, Dan and James from the WMF came over to talk through current work around Wikidata and plans for the future
+Further poked at editing references at the same time as rest of the statement
+Investigated where we can push next to improve performance
+Monthly Tasks
+Hack on one of these.
+Help develop the next summary here!
+Contribute to a Showcase item
+Help translate or proofread pages in your own language!
+Add labels, in your own language(s), for the new properties listed above.
+
+Read the full report · Unsubscribe · Lydia Pintscher (WMDE) 15:55, 2 November 2015 (UTC)
+
+
+

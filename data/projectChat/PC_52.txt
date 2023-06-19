@@ -1,0 +1,32 @@
+2017
+2
+Items_without_articles_in_wikipedias
+There are Wikidata items about Russian mathematicians without articles in Wikipedias:
+
+Viktor Aleksandrovich Gorbunov (Q18558636)
+Aleksandr Petrovich Domoryad (Q21989855)
+Dmitri E. Kvasov (Q21694206)
+Boris I. Kvasov (Q21694278)
+Is it normal, or these entries should be deleted? -- Andrew Krizhanovsky (talk) 20:17, 5 February 2017 (UTC)
+
+It is normal. See Wikidata:Notability.--ԱշոտՏՆՂ (talk) 21:08, 5 February 2017 (UTC)
+yes, it is normal, the work is not finished. here is translation tool mw:Content translation. Slowking4 (talk) 12:34, 6 February 2017 (UTC)
+But in the case of the latter three, how is Notability established? They do not fulfill a structural need and have no sitelinks. I am not sure about the serious and publicly available references. And it is about Living People, and their data is unsourced. I would question whether these should really stay. --Denny (talk) 22:53, 8 February 2017 (UTC)
+
+They each have multiple recognizably important external identifiers: which means that other data sources find this notable. I would call that structurally important: after all Wikidata is serving not only our projects, but connecting other kinds of projects. Sadads (talk) 23:10, 8 February 2017 (UTC)
+OK, agreed on the second and fourth - they have good external identifiers, like library of congress. But the third one does not. Both of his external identifiers are going to crowdsourced sites. I am unsure here, and would suggest to consider the case. --Denny (talk) 05:02, 9 February 2017 (UTC)
+The Mathematics Genealogy Project is a serious source. It describes the person. ChristianKl (talk) 11:05, 9 February 2017 (UTC)
+It is crowdsourced and the data is not being checked beyond crowdsourcing. Whereas I obviously appreciate crowdsourced material, I would refrain from using it blindly as a source. Having it additionally to at least one good source would be fine with me, but we are lacking that for the third person above still. --Denny (talk) 17:56, 10 February 2017 (UTC)
+I'm not sure whether calling the Mathematics Genealogy Project crowdsourced is right. They take submitted datasets and integrate them. I see no sign that they don't do sanity checks on the submitted data. Additionally zbmath seems to have peer-review for their entries. ChristianKl (talk) 09:20, 11 February 2017 (UTC)
+I just took one example - starting at number 3 above, I continued clicking on the first advisor to the end and came to this last link: https://www.genealogy.math.ndsu.nodak.edu/id.php?id=201288 - Checking the articles on the advisor and the student, and trying to find any evidence for it for a few minutes, I came up with nothing. Don't misunderstand me, I really like the MGP, but I don't trust the data as a primary source. Regarding zbMath, I tried an edit there, and it seems indeed that edits go through a peer review first, so that seems better. --Denny (talk) 21:03, 11 February 2017 (UTC)
+I had no problem with finding https://link.springer.com/article/10.1007/s10288-007-0065-1 by searching for author and advisor. To the extent we can trust the scientific publisher springer the person wrote a thesis with this advisor. ChristianKl (talk) 10:12, 12 February 2017 (UTC)
+I am agree with Denny that only "Mathematics Genealogy Project" is not enough for person's notability. If we will decide that MGP shows a notability of a person, then we can create Wikidata item for every person who wrote math Dissertation. But it is nonsense. -- Andrew Krizhanovsky (talk) 06:24, 12 February 2017 (UTC)
+
+Why is it nonsense? It's information for which there are trustworthy sources. Having the data allows queries to be made that for example compare the average amount of dissertations that a professor oversees per country. Wikidata is structured data. Having data sets linked together in a way that it's possible to query them with computers is valuable. ChristianKl (talk) 10:12, 12 February 2017 (UTC)
+But we're talking here about unsourced personal data of every single math PhD in the world - their birth day, place of birth, etc. This should be at least be required to be sourced, and not be added through a game. --Denny (talk) 18:35, 12 February 2017 (UTC)
+the source is MGP. i do not think you have a consensus to exclude "game" information. are you gaming wikidata to conform to your wikipedia bias? Slowking4 (talk) 05:51, 15 February 2017 (UTC)
+@Denny: There's no birth day filled for Dmitri E. Kvasov (Q21694206). The one that's filled for Viktor Aleksandrovich Gorbunov (Q18558636) comes from http://www-gap.dcs.st-and.ac.uk/~history/Biographies/Gorbunov.html which seems to be a nice academic source.
+When looking at the history of the people in question I don't see that this data was added through a Wikidata game. What do you mean with the term game in this context? ChristianKl (talk) 14:31, 15 February 2017 (UTC)
+Sorry, no, this was not meant in particular for this. I am just worried that by having the notability criteria so low as to say "yes, everyone with a PhD" - between 1 and 2% of the population of some countries - and then have at the same time have games going through items with missing data where people make decisions in a snap second about living people who are undersourced might lead to problems. --Denny (talk) 19:26, 16 February 2017 (UTC)
+I don't think the problem of games adding data to living people in a snap decision has much to do with the quantity of data we have. We might simply avoid building games that fill in information without references about "place of birth" and "date of birth". ChristianKl (talk) 20:08, 16 February 2017 (UTC)
+

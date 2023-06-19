@@ -1,0 +1,68 @@
+2019
+4
+Wikidata_weekly_summary_#358
+
+
+Here's your quick overview of what has been happening around Wikidata over the last week.
+
+Events
+Past: Wikidata meetup during the Wikimedia Summit, March 29th in Berlin (collaborative notes)
+Upcoming: Wikidata workshop for archives in Saint-Etienne, France, on April 3rd and 5th
+Upcoming: Wikidata meetup in Berlin in Wikibär on April 14th
+Upcoming: Where iNaturalist meets Wiki April 16th, in Meise (Belgium)
+Other Noteworthy Stuff
+WikidataCon 2019 application, program submission and scholarship processes are now open until April 29th
+Structured Data on Commons: You can now test creating depicts statements
+While editing OpenStreetMap from the iD editor, it will now be possible to match map data with Wikidata by typing in names and getting an autocompleted label.
+OpenStreetMap is participating in this year's Google Summer of Code, and quite a few of the project ideas involve Wikidata integration.
+Discussion going on in W3C SPARQL 1.2 Community Group about the improvements in SPARQL language
+Did you know?
+Newest properties:
+General datatypes: capacity factor, position in Forsyth-Edwards Notation
+External identifiers: Libreflix ID, Kicker.de player ID, Library of Parliament of Canada person ID, RoMEO publisher ID, Federal-State Cooperative System ID, XING company ID, L'Express person ID, Le Figaro tag ID, Le Parisien tag ID, Gamepedia article ID, FSkate.ru skater ID, Salvador Dali Museum ID, Index to American Botanical Literature ID, FaroeSoccer player ID, FaroeSoccer coach ID, Artcurial lot ID, SNISB ID, Tainacan MHN ID, 100 bombardirov person ID, Cini Foundation ID, LinkedIn personal profile ID, ACA author ID, CDEC ID, AWARE ID, JRC Names id, Zomato ID, TV Spielfilm series ID, Fandango theater ID, Stedelijk Museum Amsterdam ID, JMdictDB ID, Zagat ID
+New property proposals to review:
+General datatypes: First attestation, match interval, réédité par, calligrapher, Ordained by, code produit, Wikidata property example for media
+External identifiers: Baden-Württemberg Schutzgebiete-ID, K10plus editions, Utpictura18 ID, Le Vif tag ID, Common Sense Media review ID, Pro-Linux.de DBApp ID, Libregamewiki ID, Democracy Club Election ID, MARGS ID, Kobo author ID, WoRMS source ID, Kobo narrator ID, NGMDb Prod ID, Memórias da Ditadura ID, Placar UOL Eleições ID, AntWiki, MESH Concept ID, MESH Term ID, Desaparecidos Políticos ID
+Query examples:
+Siblings who have won the Israel Prize (source)
+British female engineers, 1919-2019 (source)
+Female scientific illustrators (source)
+French archivists with a picture (source)
+Archive institutions in Switzerland and how much they hold (source)
+Graph of open source research software by field (source)
+Groups of characters in the Marvel universe (source)
+In what type of places are ancient Greek potteries stored? (source)
+Development
+Work on a dashboard for external identifiers (phab:T204440)
+Add baserevid to WikibaseLexeme API modules (phab:T217243)
+Add tests for embed.html (phab:T212649)
+Improve features for wikibase vandalism detection model (phab:T194737)
+Improve Property Info cache performance (phab:T218115, phab:T218197)
+Adding nofollow to external identifiers links (phab:T175230)
+Hide query helper by default in Query Service (phab:T217886)
+More work on wb_terms normalization (Phab board)
+Enable trimming whitespace around Label/Description/Aliases and Schema text (phab:T215761)
+Prevent moving Schemas between namespaces (and generally) (phab:T219313)
+Limit the length of Schema labels, descriptions, aliases, and schema text in the frontend (phab:T218867)
+Add tracking for clicks on the “check entities against this Schema” link (phab:T218899)
+Disallow importing of Schemas from another wiki or XML files to avoid ID conflicts (phab:T218181)
+Make sure RTL text is being handled correctly in the Schema labels, descriptions and aliases table (phab:T219136)
+Add a publish button on mobile termbox: (phab:T218573)
+Building the wbeditentity request to be fired on save request: (phab:T218577)
+You can see all open tickets related to Wikidata here. If you want to help, you can also have a look at the tasks needing a volunteer.
+
+Monthly Tasks
+Add labels, in your own language(s), for the new properties listed above.
+Comment on property proposals: all open proposals
+Suggested and open tasks!
+Contribute to a Showcase item.
+Help translate or proofread the interface and documentation pages, in your own language!
+Help merge identical items across Wikimedia projects.
+Help write the next summary!
+
+
+
+Read the full report · Unsubscribe · Lea Lacroix (WMDE) 14:42, 1 April 2019 (UTC)
+
+
+

@@ -1,0 +1,9 @@
+2019
+12
+Biblical_categories_changeup_at_Commons
+Commons has recently renamed all categories pertaining to persons named in the Bible. The category moves should be reflected in the interwiki links, however all of the links from Commons category (P373) will need to be updated. Example: Adam (Q70899) has Commons category (P373) linked to the old Category:Adam, but the interwiki now points to the new commons:Category:Adam (Biblical figure).
+Note: many of these categories still bear discussion labels, so it's possible the category renames will be challenged and the whole process begin again, but the linked discussion seems to have ended in October, and the moves have just been undertaken this week. --EncycloPetey (talk) 21:45, 28 December 2019 (UTC)
+
+Pi bot will probably do it. Ghouston (talk) 23:14, 28 December 2019 (UTC)
+This is a nice example of why we should stop storing duplicate Commons category values - moving the categories auto-updates the links, so if we didn't store duplicates in Commons category (P373), this would already be sorted out. They are also showing up in the enwp commons category tracking categories (another set of duplicates), so if Pi bot doesn't automatically catch them then I'll probably go through and remove the bad Commons category (P373) values at some point (after which a bot can auto-add them back if so desired). Thanks. Mike Peel (talk) 06:49, 29 December 2019 (UTC)
+

@@ -1,0 +1,36 @@
+2020
+11
+How_does_one_convert_a_big_list_of_articles_on_a_specific_wiki_to_Wikidata_IDs_and_vice_versa?
+? WikiJunkie (talk) 17:07, 18 November 2020 (UTC)
+
+This sort of thing?
+# Sitelink name (i.e. EN article name on EN Wikipedia) to article URL and QId
+SELECT DISTINCT ?item ?itemLabel ?article ?sitelink
+WHERE 
+{
+  VALUES ?sitelink {"London"@en "New York"@en}
+  ?article schema:about ?item ; 
+          schema:isPartOf <https://en.wikipedia.org/> ;
+          schema:name ?sitelink .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+Try it!
+# QId to article URL & sitelink for EN wikipedia
+SELECT DISTINCT ?item ?itemLabel ?article ?sitelink
+WHERE 
+{
+  VALUES ?item {wd:Q84  wd:Q22654} # this could be a query yielding QIds
+  ?article schema:about ?item ; 
+          schema:isPartOf <https://en.wikipedia.org/> ;
+          schema:name ?sitelink .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+Try it!  --Tagishsimon (talk) 17:15, 18 November 2020 (UTC)
+https://www.wikidata.org/wiki/Wikidata:Tools/OpenRefine might be a good idea too, if you are speaking about a list of articles pasted from a wiki page. Bouzinac 💬●✒️●💛 17:55, 18 November 2020 (UTC)
+Here's how to do it using the Mediawiki API: https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageprops&meta=&continue=&titles=Berlin|New%20York|Paris|London&ppcontinue=&ppprop=wikibase_item
+You can get IDs for up to 50 pages with a single request by adding their titles, separated by the pipe symbol ("|"). As far as I can tell it's far faster than the query service which, in my impression, is a bad match for such queries anyway.
+Here's the link to the API Sandbox for that request where you can play around with it and see what else it can do: Sandbox --Matthias Winkelmann (talk) 19:12, 18 November 2020 (UTC)
+I used to be able to do this a couple of years ago with Petscan if i'm not mistaking, but this tool was slightly modified through the last years and now I can't seem to figure out how to do this. What I want it to do, is to fetch the Wikidata Page IDs of thousands of articles using Pagepiles. Does such a simple feature not exist anymore? Should I try to discuss this with the Petscan developers? if so, where can I address questions to them? WikiJunkie (talk) 01:23, 19 November 2020 (UTC)
+@WikiJunkie: You can actually do articles -> QIDs directly within PagePile, by checking the "Translate result to Wikidata items immediately" checkbox down at the bottom of the new pile form. In PetScan, you need to put your articles in the "manual list" box of "Other sources" (and fill in the wiki box right below), then go to the Wikidata tab and select "Add items, where available" (or similar) at the top. Items to articles is trickier; I don't know of any graphical tools that do that, so the query Tagishsimon put up above is probably your best bet. Vahurzpu (talk) 05:00, 19 November 2020 (UTC)
+You can do QIDs -> articles in Petscan as well. "Other sources", paste a list of QIDs into manual list, set to wikidatawiki, and then lower down that same page "use wiki > enwiki" (or wherever). Example. Andrew Gray (talk) 09:58, 19 November 2020 (UTC)
+

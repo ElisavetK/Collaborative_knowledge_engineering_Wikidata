@@ -1,0 +1,8 @@
+2017
+11
+The_Community_Wishlist_Survey_2017
+Hey everyone,
+The Community Wishlist Survey is the process when the Wikimedia communities decide what the Wikimedia Foundation Community Tech should work on over the next year.
+The Community Tech team is focused on tools for experienced Wikimedia editors. You can post technical proposals from now until November 20. The communities will vote on the proposals between November 28 and December 12. You can read more on the 2017 wishlist survey page. /Johan (WMF) (talk) 20:16, 6 November 2017 (UTC)
+
+

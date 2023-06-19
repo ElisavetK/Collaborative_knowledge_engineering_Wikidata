@@ -1,0 +1,7 @@
+2020
+9
+Those_who_do_not_login_cannot_see_the_data_and_interface_in_their_own_language.
+As it says in the topic title, if the visitor is not a member, he or she sees the interface and all content in English. A warning called dialect appears on tes.wikidata.org and the visitor can click here to view the data in his own language (interface again in English). Will a solution be found for this? Thank you. --Sezgin İbiş (talk) 00:13, 12 September 2020 (UTC)
+
+This seems to have been already requested (a couple of years ago) at phab:T196536. Ghouston (talk) 00:47, 12 September 2020 (UTC)
+

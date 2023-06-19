@@ -1,0 +1,8 @@
+2016
+8
+UBERON_ID_(P1554)_should_be_datatype_external_id
+There's a formatter url for UBERON ID (P1554) but currently the datatype is string, so it doesn't get automatically used. I think it would be benefitial to change the datatype to external id. ChristianKl (talk) 18:54, 23 August 2016 (UTC)
+
+I don't think it will work with multiple formatter IDs. --Izno (talk) 19:07, 23 August 2016 (UTC)
+@Izno: That hasn't stopped such properties like P:P2182 from being converted. -- Innocent bystander (talk) 05:23, 24 August 2016 (UTC)
+

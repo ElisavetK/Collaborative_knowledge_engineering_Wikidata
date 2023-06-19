@@ -1,0 +1,62 @@
+2018
+10
+Wikidata_weekly_summary_#333
+
+
+Here's your quick overview of what has been happening around Wikidata over the last week.
+
+Discussions
+Open request for adminship: Fuzheado, باسم
+Events
+5-7 October, St.Gallen (Switzerland): WikiCon 2018 of the German-speaking Wikimedia community, with keynote Wikidata as a Semantic Web game changer
+5-7 October, Grenoble (France): WikiConvention francophone 2018, with keynote:
+Quarry et Query : introduction à SQL et SPARQL
+GLAM & Wikimedia : bilan des projets en cours en Suisse et perspectives avec Wikidata
+Quoi de neuf sur Wikidata ?
+Éditer une œuvre d'art sur Wikidata, et plus si affinités
+16 October, online: Using Wikibase as a platform for library linked data management and discovery
+29 October, São Paulo: Wikidata Lab XI: Structuring wikiprojects
+Press, articles, blog posts
+Wikidata: «Das spannendste Projekt, das ich je gesehen habe» (German) in the Swiss newspaper Tagblatt
+SPNHC & TDWG Conference 2018 — blog post on a talk (slides, speaker notes) about using Wikimedia projects and materials from the Biodiversity Heritage Library and other sources to collect information regarding New Zealand's biodiversity
+Wikidata Map October 2018 by Addshore
+Our man in Havana (or, Q56761118) by Andrew Gray
+Other Noteworthy Stuff
+wikidata-cli new features:
+wd data --format ttl: dump entities in rdf/ttl
+wd convert: convert batches of external ids to Wikidata ids and vice versa
+Structured Data on Commons: a search prototype is available for testing. There is a page on Commons with information about testing and leaving feedback.
+Profiling Wikidata — a Class-Facet-Attribute Completeness Profiling System for Wikidata
+Did you know?
+Newest properties:
+General datatypes: limiting oxygen index, plot continued in, Vicat softening point, Unicode range
+External identifiers: Lyrically artist ID, Moviepilot.de series ID, Spectral Database for Organic Compounds ID, Ultimate Guitar artist ID, Ġabra lexeme ID, Open Food Facts ingredient ID, bazakolejowa.pl railway line ID, IGN series ID, tweet ID, Short Title Catalogue Flanders (STCV), Flanders Arts Institute production ID, old-computers.com ID, Oudnederlands Woordenboek GTB ID, Vroegmiddelnederlands Woordenboek GTB ID, Middelnederlandsch Woordenboek GTB ID, Film Indonesia person ID, Protected objects Ostbelgien ID, North America PlayStation Store ID, VicFlora ID, SUCA code, CMI person ID, São Paulo: os estrangeiros e a construção da cidade ID, ComiXology creator ID, Annuaire de la magistrature ID, NT Flora ID
+New property proposals to review:
+General datatypes: animacy, distributary, human position in artwork, does not have quality, (de)evolution method, happened to, depicted part, adjective, hyponym, nation-state tradition, requires form, Norwegian Nationaltheatret actor ID, location of sense usage, Medierådet rating, broad synonym, measured to, Type properties, shrinkage, Public presentation, carbon footprint
+External identifiers: Inventory of the Archaeological and Paleontological Heritage of Catalonia, MIAR ID, V.League ID, Japan Professional Basketball League ID, Women's Japan Basketball League, SAGE journal ID, Elsevier journal ID, N° CPPAP, Deezer show ID, LUBW Schutzgebiets-Nr, Disney A to Z ID, RBF athlete ID, Europe PlayStation Store ID, Japan PlayStation Store ID, Encyclopedia Virginia ID, Armiarma ID
+Query examples:
+Characters from the Mario franchise by games in which they appear (source)
+Nobel Prize winners who also has been TED speakers (source)
+Development
+Fix bugs on editing statements on new Forms using the API (phab:T194732)
+Check constraint violations on statements on Forms and Senses when saving a statement (phab:T195829)
+Fix an issue with Wikibase and deployments (phab:T206161)
+Improve the gloss language error message (phab:T205528)
+Make the ArticlePlaceholder use our API instead of wb_terms (phab:T195752)
+Improve sorting of forms, senses and glosses (phab:T176405, phab:T203002, phab:T203459)
+Work on making Sense statement group Ids unique  (phab:T204936)
+You can see all open tickets related to Wikidata here. If you want to help, you can also have a look at the tasks needing a volunteer.
+
+Monthly Tasks
+Add labels, in your own language(s), for the new properties listed above.
+Comment on property proposals: all open proposals
+Suggested and open tasks!
+Contribute to a Showcase item.
+Help translate or proofread the interface and documentation pages, in your own language!
+Help merge identical items across Wikimedia projects.
+Help write the next summary!
+
+Read the full report · Unsubscribe · Lea Lacroix (WMDE) 11:48, 9 October 2018 (UTC)
+
+
+

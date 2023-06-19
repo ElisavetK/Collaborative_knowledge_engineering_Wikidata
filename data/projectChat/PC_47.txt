@@ -1,0 +1,17 @@
+2018
+7
+Parks_to_which_buildings_have_been_moved
+Do we have a particular subclass of park (Q22698) for the sort of park to which a number of historic buildings have been moved? Or do we have a particular pattern for describing them? They are pretty common in medium-sized U.S. towns. An example is Bothell Landing Park (Q49475372). - Jmabel (talk) 19:19, 22 July 2018 (UTC)
+
+Do you mean open-air museum (Q756102)? --Fralambert (talk)
+It's not unlike that, but it's something more informal. I don't think much anyone things of Bothell Landing as a "museum". There is one building there that is a museum as such. - Jmabel (talk) 21:09, 22 July 2018 (UTC)
+Heritage Square Museum (Q1610034) in Los Angeles is tagged as historic house museum (Q2087181), but I think it's more like a historic park that contains a number of historic house museums.  There's also historic district (Q15243209) if people live in the houses. - PKM (talk) 23:55, 22 July 2018 (UTC)
+In this case, no one lives there. Definitely a park, not a district of the town. One building was an old one-room schoolhouse; another is a house that now functions as the parks dep't HQ; another house is now a museum, but not really a house museum, they just re-used the building; etc. - Jmabel (talk) 03:37, 23 July 2018 (UTC)
+I've created heritage park (Q55720514). The practice of moving old buildings, which in Europe would probably be seen as an heresy most of the times, is actually pretty common in the United States, where there are a lot of such sites where they are gathered – there is one, for instance, very next the Oconaluftee Visitor Center (Q36000768). This is why it may sound confusing to some users here or why there was no item so far. Thierry Caro (talk) 11:12, 23 July 2018 (UTC)
+parc=>park in English; maybe "heritage park" rather than "historic park", though? Not sure. - Jmabel (talk) 15:58, 23 July 2018 (UTC)
+I would agree, in English anyway, heritage park is better than historic park JerryL2017 (talk) 16:17, 23 July 2018 (UTC)
++1 I'll need to add this to some locations in California. - PKM (talk) 21:01, 23 July 2018 (UTC)
+For the Swedish Open-air museum Skansen (Q725108) we have open-air museum (Q756102) and working life museum (Q10416961) (and zoo (Q43501), which may be a bit less generally relevant).
+en:Open-air museum does appear to be discussing exactly the concept you're talking about.  Jheald (talk) 21:12, 23 July 2018 (UTC)
+I tend to think of an open-air museum as something more like Commons:Category:Pioneer Park, Ferndale, Washington (which lacks a Wikidata item). But Bothell Landing is more a place you go to look at the birds on the water, or to access a bike trail, or even to watch a musical performance than to look at the buildings (most of whose interiors are seldom or never open to the public). - Jmabel (talk) 22:21, 23 July 2018 (UTC)
+

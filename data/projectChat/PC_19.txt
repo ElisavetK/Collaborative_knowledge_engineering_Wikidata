@@ -1,0 +1,9 @@
+2016
+5
+African_World_Heritage_Day
+Hi all
+Today is African World Heritage Day and I have created a small project to help improve knowledge of African World Heritage Sites on Wikipedia in all languages. I'm using Wikidata as the central index for the project using Listeria, its a really amazing tool. Please get involved and also share the link (especially in languages other than English) to encourage more people to take part, there is a social media sharing section at the bottom of the page.
+Many thanks
+John Cummings (talk) 11:06, 5 May 2016 (UTC)
+
+

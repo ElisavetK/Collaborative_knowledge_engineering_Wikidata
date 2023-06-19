@@ -1,0 +1,93 @@
+2020
+1
+Dams
+Hello. I want to discuss the structure of items of dam (Q12323).
+1) Do all items must have instance of (P31)->dam (Q12323)?
+2) How to show the type of the dam according to its structure? Please read w:el:Dam#Types of dams. It's not so clear, but it says the types of the dams. We have:
+a) arch dam (Q890545)
+b) gravity dam (Q3497167)
+c) arch-gravity dam (Q357679)
+d) barrage (Q350495)
+e) embankment dam (Q1244922)
+f) rock-fill dam (Q11350418) (and concrete-face rock-fill dam (Q20180822))
+g) earth-fill dam (Q11285593)
+It's confusing because some items are about the shape and some about the materials. In wikidata we have that rock-fill dam (Q11350418) and earth-fill dam (Q11285593) are subclass of (P279) of embankment dam (Q1244922). But Wikipedia article don't. There is also dome dam (Q56631985).
+Xaris333 (talk) 10:17, 18 January 2020 (UTC)
+
+IMO:
+yes
+I think that rock-fill dam (Q11350418) and earth-fill dam (Q11285593) will be always poor stubs. Only one stub, in Japanese, exists among these two topics ! Such articles should be merged inside embankment dam (Q1244922). Best solution, for me : put every thing as a subclass of (P279) of dam (Q12323). More eover, shape and material are always closely linked.
+Please also notice beaver dam (Q4878217) and all topic related with it... Borvan53 (talk) 12:32, 18 January 2020 (UTC)
+But how we are going to add the information about the shape and material? Xaris333 (talk) 14:18, 18 January 2020 (UTC)
+
+ Also a dam
+Don't forget that things like Oosterscheldekering (Q1893089) are dams too (and Dam Square (Q839050) used to be one). They whole waterworks ontology here seems to be a bit messy. A dam is a divider with water on both sides. So Longitudinal control dam (Q1816121) is a dam to ("strekdam" in Dutch) and breakwater (Q215635) often too. The current description of dam (Q12323) doesn't seem to cover this.  Multichill (talk) 17:44, 18 January 2020 (UTC)
+Another dead end in Wikidata. The mess will continue. Xaris333 (talk) 11:05, 19 January 2020 (UTC)
+This is type of dam in ja-wiki. Classification by Japan Dam Foundation.
+
+
+
+Category
+
+Subcategory
+
+Abbreviation
+
+
+concrete dam (Q11302949) (concrete dam)
+
+gravity dam (Q3497167) (gravity dam)
+
+G
+
+
+hollow gravity dam (Q11366848) (hollow gravity dam)
+
+HG
+
+
+arch dam (Q890545) (arch dam)
+
+A
+
+
+arch-gravity dam (Q357679) (arch-gravity dam)
+
+GA
+
+
+multiple-arch dam (Q11341352) (multiple-arch dam)
+
+MA
+
+
+buttress dam (Q1355334) (buttress dam)
+
+B
+
+
+embankment dam (Q1244922) (fill dam)
+
+earth-fill dam (Q11285593) (earth-fill dam)
+
+E
+
+
+rock-fill dam (Q11350418) (rock-fill dam)
+
+R
+
+
+combined dam (Q11303142) (combine dam)
+
+GF
+
+
+trapezoid-shaped CSG dam (Q11411941) (trapezoid-shaped CSG dam)
+
+CSG
+
+--Afaz (talk) 13:32, 19 January 2020 (UTC)
+
+concrete dam (Q11302949) should have a statement with made from material (P186) = concrete (Q22657) otherwise it can't be queried. --- Jura 08:31, 20 January 2020 (UTC)
+

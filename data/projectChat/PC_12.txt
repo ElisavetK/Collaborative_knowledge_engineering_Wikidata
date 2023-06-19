@@ -1,0 +1,6 @@
+2013
+5
+Deciding_how_to_store_edition_data
+I have expanded the RFC about references/sources to decide how to store edition data.--Micru (talk) 13:25, 16 May 2013 (UTC)
+
+

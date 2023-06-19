@@ -1,0 +1,22 @@
+2020
+7
+Ability_to_soft_inherit_property_OF_THE_PARENT_rather_than_replicate_to_all_subparts
+Is there, or can there be, the ability to have an item "soft inherit" a parent's property/qualifier rather than having to hard replicate to a daughter item?   So here I am talking about a work that has an item, and then the chapters of the work have their items, some the same as the parent, some different.  Numbers of the items of the daughter items should inherit the parent's field, or I would like to designate it to be so.
+Living examples
+
+Highways and Byways in Sussex (Q19037973)
+Midhurst (Q97704786)
+Littlehampton (Q97705344)
+Alfriston (Q97704754)
+Thom's Irish Who's Who (Q67202875)
+Cavan, Earl of (Q72159359)
+Connell, John (DNB00) (Q19052699)
+At this time, where there is no difference between parent<->daughter version of the property/qualifier, I leave the daughter items bare.  — billinghurst sDrewth 06:16, 27 July 2020 (UTC)
+
+@billinghurst: Thank you for bringing this up! As I understand it, a number of property values assigned to an item are assumed to apply also to its daughter items, unless another explicit statement replaces that value. For example, if a physical object such as a major building has a geographic location (country, coordinates, nearest public transit stop and so on), there is little reason to believe those property values to be different for every single section, office, or other part of the sane building (the library, the restaurant, the parking garage etc).
+However, you cannot automatically retrieve all those "inherited" (or "inheritable") property values with a single query, and I don't think it would be easy to implement, because the inheritability (isn't that a word?) of any single property can be disputed, and we are approaching 10,000 different Wikidata properties...
+Two weeks ago I began working on a Lua module to experiment with dynamic property inheritance algorithms on my own, in the hope that some of it could be useful to Wikidata usage in general. I'm new to Lua and using this as a learning exercise, so please have patience with any poor coding style you may encounter, but any comments or suggestions are welcome. Also, don't expect the code to be usable out of the box, as it's far from ready, and I think various caching mechanisms and optimizations will be required to avoid overburdening the Wikidata servers with dozens of non-localized queries for each property value.
+But it's not just about the code. It's also about defining the inheritance characteristics of nearly 10,000 Wikidata properties, and how they relate to the transitive (and possibly other) property paths they are inherited via; subclass of (P279), part of (P361) and so on. Should the inheritance be exclusionary (closer values replacing more distant ones), additive (values accumulating on top of each other), or conditional (dependent on various qualifiers and other characteristics)?
+And it all depends very much on the quality of those inheritance paths. Every single Wikidata item is of course either an instance of (P31) or a subclass of (P279) some class item leading back to the entity (Q35120) class root... not! So maybe this won't be ready for launch tomorrow. Or next week. Or... never mind. But I'd like to look further into this. --SM5POR (talk) 19:19, 27 July 2020 (UTC)
+Wikidata:Item classification seems slightly out of date, but gives a reasonable overview of how the concept of inheritance applies (or doesn't) within Wikidata. --Oravrattas (talk) 20:23, 27 July 2020 (UTC)
+

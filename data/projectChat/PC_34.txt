@@ -1,0 +1,9 @@
+2021
+4
+Who_owns_Wikipedia_(Q328#P127)
+Q328#P127 has Wikimedia Foundation (Q180). There are similar claims on other items for language versions. 
+operator (P137) is also used with the same value. It seems to describe it better.  --- Jura 13:22, 4 April 2021 (UTC)
+
+owned by (P127)Wikimedia Foundation (Q180) seems fine to me. For a website ownership seems to come down to who owns the domain and the servers and such. BrokenSegue (talk) 16:45, 4 April 2021 (UTC)
+Wikipedia is primarily seen as a content website ("encyclopedia") and people sometimes mistakenly assume that this is owned by WMF, where it clearly isn't. Currently, the claim has only an "imported from ruwiki" to support itself. I wonder how WMF present that. operator (P137) should cover the server part, I think. --- Jura 19:37, 4 April 2021 (UTC)
+

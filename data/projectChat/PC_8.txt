@@ -1,0 +1,9 @@
+2020
+8
+home_venue
+Hello. Recently was added in home venue (P115) that property scope constraint (Q53869507) -> property scope (P5314) -> as main value (Q54828448). I disagree. home venue (P115) can be used as as qualifier (Q54828449). For example, when you want to add the information what was the home venue of each participated team in a league or a cup. Moreover, sometimes a team uses different home venue in a cup competition because their home venue can not be used for such games (a team for lower divisions, but the original home venue can be uses for league games of that division).
+
+2018–19 Cypriot First Division (Q52151351) -> participating team (P1923) -> APOEL F.C. (Q131378) -> home venue (P115) -> GSP Stadium (Q592491)
+What are your opinions? Data Gamer play 10:36, 16 August 2020 (UTC)
+
+

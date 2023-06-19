@@ -1,0 +1,18 @@
+2019
+9
+Consider_math_symbols_lexemes
+ Opensofias  Tobias1984  Arthur Rubin  Cuvwb  TomT0m  Physikerwelt  Lymantria  Bigbossfarin  Infovarius  Helder  PhilMINT  Malore  Nomen ad hoc  Lore.mazza51  Wikisaurus  The Anome  The-erinaceous-one  Daniel Mietchen  Haansn08  Xenmorpha  John Samuel  Jeremy Dover  Notified  participants of WikiProject Mathematics
+Math is a language, and math symbols (science symbols in general) behaves a lot like lexemes:
+
+the same symbol can mean a lot of different things, each one would be considered a different sense;
+some properties used to describe mathematical symbols would be more appropriate as properties for lexemes (for example, Unicode character (P487) and TeX string (P1993)).
+Furthermore, it could help to add semantics to mathematical formulas. I don't know if it viable but I think to something like the formulas in excel: selecting the right symbol senses from a dropdown menu in prefix notation.
+For example, to write the equation "a=b+c" one types "=" and it is presented with all the senses of the "=" symbol; he select the most appropriate one, then Wikidata presents the syntax of the "=" operator, i.e. two operands; the user inserts "a" and it selects the sense "variable", then it inserts "+" and selects the sense "addition"; Wikidata shows the syntax of addition: two addends; the user writes "b" and selects variable and it does the same with "c".
+I hope I was clear.--Lore.mazza51 (talk) 04:23, 14 September 2019 (UTC)
+
+To annotate formulae with their semantics in Wikipedia articles, consider using the AnnoMathTeX system:
+http://annomathtex.wmflabs.org/. The semantically annotated formulae will be stored the system's database and subsequently seeded into Wikidata. See also: [13].--PhilMINT (talk) 10:10, 14 September 2019 (UTC)
+@PhilMINT: Thank you for the suggestion, but annomathtex seems to work only with Wikipedia articles, not Wikidata.--Lore.mazza51 (talk) 06:29, 19 September 2019 (UTC)
+@Lore.mazza51: Yes, it can be used to employ Wikipedia articles to get semantically annotated formulae for Wikidata. In the future, it will be possible to assign Wikidata QIDs to formula entities.--PhilMINT (talk) 11:42, 20 September 2019 (UTC)
+@Lore.mazza51: I'm trying to get the Tex-datatype in Wikidata fixed (see Contact_the_development_team). Once done, annotations like on Q862169 with defining formula (P2534), in defining formula (P7235) and calculated from (P4934) should be easier to query. --- Jura 09:52, 20 September 2019 (UTC)
+

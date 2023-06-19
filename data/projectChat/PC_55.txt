@@ -1,0 +1,15 @@
+2017
+2
+Citing_Oxford_DNB
+I'm struggling with sourcing statements to Oxford DNB online.  If the person has an Oxford DNB number as an authority, I assume individual statements still need sources.  What's the best practice here? Should those be "reference URL"  to the online site, or "stated in" Oxford DNB, or what?  I have a bunch I did wrong so I want to fix them correctly.  Thanks! - PKM (talk) 22:18, 18 February 2017 (UTC)
+
+I believe the preference is to give both.  (Though I'm happy to be corrected).  Jheald (talk) 23:04, 18 February 2017 (UTC)
+Help:Sources describes different source models, of which Database and Web Page are relevant here. One would typically choose the Database approach if there is a database (as in this case), but there is no obligation to do so. Mixed sources which fit both models are also possible, but somewhat expensive to add. —MisterSynergy (talk) 23:08, 18 February 2017 (UTC)
+Thanks.  I read that and looked at some examples.  It seems that "stated in" Oxford Biography Index should work.  - PKM (talk) 03:58, 19 February 2017 (UTC)
+Please also add all the other information to each individual reference, as Help:Sources suggests. There are some gadgets available which help you to work in this field a little more efficiently (DuplicateReferences, CurrentDate, …) —MisterSynergy (talk) 06:17, 19 February 2017 (UTC)
+I'm sorry, I don't see how to add qualifiers to a reference.  Can you point me to an example of a reference to a database that is done in the manner recommended? - PKM (talk) 07:25, 19 February 2017 (UTC)
+Q24005810#P569. There are three different referenced values for the date of birth of this person. Two are referenced by three different databases (which therefore usse the database source model), and another one has a reference with the web page model. The order of the claims within each reference does not matter, it is just important that all important information is there within each reference individually.
+If you were to retrieve data including a reference from Wikidata, e.g. in a Wikipedia module or template, you’d need to rely on the fact that all the important source information as defined by some standard (here: Help:Sources) is found in each reference. It was very difficult for Wikipedia to build a useful source if Wikidata just said “stated in: some database”, without giving a database ID, a retrieval date, and an external database entry title (the latter is relevant since there is not necessarily a 1:1 mapping between Wikidata items and external database entries). A simple “reference URL: some URL” would be not as bad, but still clearly below Wikipedia standard. —MisterSynergy (talk) 07:47, 19 February 2017 (UTC)
+┌────────────────────────────────────────────────────────────────────────────────────────────────────┘ @MisterSynergy: Thank you, that is just what I needed.  Now I know how to proceed! - PKM (talk) 20:13, 19 February 2017 (UTC)
+
+

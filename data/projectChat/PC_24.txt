@@ -1,0 +1,7 @@
+2020
+5
+Why_can't_I_add_link?
+I was trying add b:en:HyperText Markup Language/Lists into Q81957734, but it said just "Error occured" when saving. Could you tell me why it won't let me add? --Semi-Brace (talk) 11:26, 26 May 2020 (UTC)
+
+That page was added into another property, kindless error message was made me confused. :p --Semi-Brace (talk) 11:28, 26 May 2020 (UTC)
+

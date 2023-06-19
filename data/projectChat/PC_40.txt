@@ -1,0 +1,16 @@
+2018
+8
+two_data_tables
+Hi
+I have two data tables which need linking
+Only one column (text) is common to both tables, however is not an exact match. There is just one or two words that make a link.
+I need an easier method where I can link the two tables on a monthly basis
+Table 1 has product specific data from suppliers, with cost of each product 
+Table 2 has product specific data from customers, with sale price of each product and QTY sold
+If you can help in any way, ie a software or website that converts the data
+Help is much appreciated,  – The preceding unsigned comment was added by Akhan1984 (talk • contribs) at 9. 8. 2018, 00:37‎ (UTC).
+
+Replied on the user's talk page. --Tagishsimon (talk) 00:44, 9 August 2018 (UTC)
+That was kind of you Tagishsimon. --99of9 (talk) 11:33, 9 August 2018 (UTC)
+This section was archived on a request by: Matěj Suchánek (talk) 09:26, 9 August 2018 (UTC)
+

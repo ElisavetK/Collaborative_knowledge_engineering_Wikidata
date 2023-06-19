@@ -1,0 +1,8 @@
+2014
+5
+Preview_gadget
+1) The preview gadget is broken since jquery got upgraded to version 1.9.  (.after is no longer supported, the way it was used in the gadget).  I propose a fix for this MediaWiki talk:Gadget-Preview.js#Proposed fix for broken gadget.
+2) I have been using a modified version of the gadget for a while, that by default shows a default preview (guessed, based on my user language, shows preview from the associated wikipedia).  Would folks like that as part of the official gadget? MediaWiki_talk:Gadget-Preview.js#Default_display
+Aude (talk) 20:08, 23 May 2014 (UTC)
+
+

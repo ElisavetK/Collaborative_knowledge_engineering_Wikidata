@@ -1,0 +1,7 @@
+2013
+4
+Dates_of_birth/death
+How come they are not among available properties? That would be the first thing that comes into my mind to add to people's items. Was this discussed and rejected? Renata3 (talk) 04:31, 16 April 2013 (UTC)
+
+They were discussed and approved. They're waiting for the TimeValue datatype to become available. 86.45.216.32 04:41, 16 April 2013 (UTC)
+

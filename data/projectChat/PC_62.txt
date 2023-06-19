@@ -1,0 +1,31 @@
+2015
+6
+former_XYZ_in_instance_of_(P31)_statements
+@GerardM, Neo-Jay, Infovarius: One could disallow any "former XYZ" as part of an "instance of" claim, when it means, that something used to be a XYZ for some time. But then, one need to have a qualifier indicating the end. If "end time" has limitations, there might be some reason to have "former XYZ" on an item. Eldizzino (talk) 13:15, 24 June 2015 (UTC)
+
+So? It is ridiculous to have "former XYZ". Thanks, GerardM (talk) 13:24, 24 June 2015 (UTC)
+@GerardM: A place might be an agglomeration of ruins, and formerly a city. Is the item then "agglomeration of ruins" or  "city"? Or two items, a city with ruins and current population=0 and another one that is an agglomeration of ruins? Eldizzino (talk) 15:09, 24 June 2015 (UTC)
+This is why we have start time (P580) and end time (P582) qualifiers. --Yair rand (talk) 15:20, 24 June 2015 (UTC)
+@Yair rand: If end time is in the past, but not any further specified? Eldizzino (talk) 02:15, 25 June 2015 (UTC)
+Not even specified to the nearest year, century, millenium, or further? Then use end time (P582): unknown value. --Yair rand (talk) 02:32, 25 June 2015 (UTC)
+I believe instance of (P31) should have only values that can't be changed over time. For example Berlin (Q64) is always human settlement (Q486972), it will never be human (Q5). But would one say Berlin (Q64) IS federal capital (Q257391), he need to make an assumption about time (current time, past, future?).
+shall be allowed: ⟨ Berlin (Q64)    ⟩ instance of (P31)  ⟨ human settlement (Q486972)    ⟩
+shall not be allowed: ⟨ Berlin (Q64)    ⟩ instance of (P31)  ⟨ federal capital (Q257391)    ⟩
+shall not be allowed: ⟨ Berlin (Q64)    ⟩ instance of (P31)  ⟨ big city (Q1549591)    ⟩
+my idea is that class of object is something that never change. Everything else shall be placed in distinct properties. Same with "former XYZ". Since it's not an immutable property of object, it shall not be placed into instance of (P31). -- Vlsergey (talk) 13:45, 24 June 2015 (UTC)
+A city changes size and becomes a town, becomes a settlement (in the case of abandonment). Your idea clearly isn't useful. --Izno (talk) 14:35, 24 June 2015 (UTC)
+Whatever size it has, it's always human settlement (Q486972). The idea is to prevent changes in P31 once object described. Currently P31 is very polluted field. It even has values like big city (Q1549591) that shall never appear in element at all. So, there are two directions. First is to say "everything is okay, go on". Then feel free to add whatever value you want to be, including "former XYZ". Second way is to try cleanup this field, introduce some criteria. And remove 80% of today-only values. -- Vlsergey (talk) 14:47, 24 June 2015 (UTC)
+False dichomoties rarely work as arguments. --Izno (talk) 14:52, 24 June 2015 (UTC)
+neither text untranslatable by google translate ;)  -- Vlsergey (talk) 15:16, 24 June 2015 (UTC) 
+Try "dichotomies" instead. >_> --Izno (talk) 16:50, 24 June 2015 (UTC)
+@Vlsergey, Izno: If a settlement got the status of a town, it should be said under which system it is a town or city. So, New York (City) is a human settlement. How could one store the information that it became a town/city - as officially decreed by some government? Maybe one can go on and let the field get filled up with anything people want, but the preferred P31 should be something that ~never changes. Eldizzino (talk) 15:09, 24 June 2015 (UTC)
+@Eldizzino: the best thing here will be to create "official status" property (main snak is status itself, when received, given by). -- Vlsergey (talk) 15:15, 24 June 2015 (UTC)
+@Vlsergey: Thank you. Would you allow only one single "instance of" claim? An example of having multiple such claims is Baja California (Q58731) - and all but one are wrong, this entity never was a province of Spain. Eldizzino (talk) 15:55, 24 June 2015 (UTC)
+@Eldizzino: from my point of view it should be territory (Q183366). Well, it's not like "single value rule", I just can't remember a case when single object can't be described by single "read only" class. If some object have two "read only" values in P31 they probably can be merged into single class. -- Vlsergey (talk) 16:30, 24 June 2015 (UTC)
+Merging classes along orthogonal distinctions is bad. It's why Wikipedias have such a hard problem with categories. --Izno (talk) 16:50, 24 June 2015 (UTC)
+@Izno: Not really, it's because it's hard to get the parent categories in Wikipedia and because there is no distinction beetween classes and instances. In Wikidata, by convention, all instances of a subclass is an instance of the superclass and WDQ has a construction to this. So its much less of a problem if Wikidatan uses constructions like CLAIM[31:(TREE[5][][279279])] in queries. TomT0m (talk)  20:51, 24 June 2015 (UTC)
+We already have this in the form of the "preferred" ranking. If there are actually wrong statements, those should be removed (or sourced and qualified). All statements in general should have a source and qualification and this is no less true simply because we're dealing with P31. As for your assertion that it was never a province of Spain, I'm skeptical. The entire country of Mexico (and a good chunk of the US!) was to some extent. --Izno (talk) 16:50, 24 June 2015 (UTC)
+Having classes for "former something" as an alias to "instance of something qualified as an end date" could be useful as well. TomT0m (talk)  20:51, 24 June 2015 (UTC)
+@Izno: The United Mexican States is a federation. That federation never was a province of Spain. The State of Baja California was established from the Baja California Norte Territory which was a result of a split of Baja California Territory, which in turn never was a province. But the territory they cover once was covered by one or more provinces of Spain. But there are extra items for theses. If succeeding entities are all provinces of the Spanish Empire, then the list of provinces of the Spanish Empire is growing everyday a new such entity is established. Eldizzino (talk) 02:07, 25 June 2015 (UTC)
+
+

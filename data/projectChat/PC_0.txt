@@ -1,0 +1,9 @@
+2021
+2
+Invasive_to,_Endemic_to_exist_-_but_what_about_native_to
+In terms of tracking data on species geographic distribution, there is a 'Invasive to' property (P5588), in its page it demonstrates there is an Endemic to property (P183). Which in turn lists a taxon map property P181 (which is fine but not really something that can be queried) and an Ecoregion property (P1425). But I can't find anything to allow entering the fact that a taxa is natively found in a geopolitical division.
+Am I missing it in my searches, or does such a property exist. It seems pretty fundamental, but I'm just not finding it.
+Ideally there should be some way of being able to track and then in turn query what taxa are found in what nations etc. I seem to remember, but can't find a property that on a geographic item allows you to state a taxa is found there, but that's not practical for nations etc where in biologically diverse areas you could have tens of thousands of native taxa. Surely better to put on the taxa item itself where the list is much more number limited.
+Thanks  CanadianCodhead (talk) 18:17, 19 February 2021 (UTC)
+
+

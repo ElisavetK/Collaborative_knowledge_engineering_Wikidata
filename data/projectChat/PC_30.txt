@@ -1,0 +1,12 @@
+2017
+10
+VIAF_duplicates
+Is there anyway to separate out the two types of VIAF conflicts we have into two different reports? At Wikidata:Database reports/Constraint violations/P214 we have:
+
+Ones we can correct where we have two entities assigned the same VIAF number, one is usually an import error, or if both are correct they need to be evaluated for merger. It is a great way to look for duplicate entries like the doppleganger tool that looked for people that were born and died on the same day.
+Ones only the VIAF people can correct, there are two or more VIAF numbers assigned to the same entity and the VIAF people need to merge them. We need to let them know that these need to be double checked to see if a merger on their part is appropriate. --Richard Arthur Norton (1958- ) (talk) 04:53, 24 October 2017 (UTC)
+? they are in 2 separate sections of the page - you can point the VIAF people at the relevant portion via the direct link - here - or you could pull out that part of the page into a document to send to them I guess?  ArthurPSmith (talk) 13:36, 24 October 2017 (UTC)
+I agree there should be a way to flag the cases that we cannot fix on the items themselves, so that we could generate a clean list of ids we believe should be merged in the source… Otherwise, the full list might contain items which have other issues that we can fix ourselves. Of course if we can solve all these problems then the constraint violation report will contain a clean list. But in general the list is too long for a human editor to do all this by themselves, and we don't want many editors to stumble upon the same cases that are waiting for a fix upstream…
+I'm not sure how they should be flagged though (ranks? qualifiers?) − Pintoch (talk) 15:19, 24 October 2017 (UTC)
+In the first case (2 items with same VIAF id) there is also the cases (that only VIAF people can correct) of mixed up viaf clusters, where info about 2 different people were mixed up. Those are very problematic, and lead to repeated imports of wrong other ids that need to be cleaned up. I notified a bunch of those to Viaf directly 2 weeks ago, going down an error report by Magnus Manske, but a better solution to notify them of flagrant cluster errors found would be a good thing. --Hsarrazin (talk) 10:14, 30 October 2017 (UTC)
+
