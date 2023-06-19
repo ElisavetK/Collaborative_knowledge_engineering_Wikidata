@@ -1,0 +1,18 @@
+==Description==
+[[:en:Botanical name|A botanical name is a formal scientific name conforming to the International Code of Nomenclature for algae, fungi, and plants (ICN) and, if it concerns a plant cultigen, the additional cultivar and/or Group epithets must conform to the International Code of Nomenclature for Cultivated Plants (ICNCP). The code of nomenclature covers "all organisms traditionally treated as algae, fungi, or plants, whether fossil or non-fossil, including blue-green algae (Cyanobacteria), chytrids, oomycetes, slime moulds and photosynthetic protists with their taxonomically related non-photosynthetic groups (but excluding Microsporidia)]] --[[User:Fractaler|Fractaler]] ([[User talk:Fractaler|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:55, 26 December 2016 (UTC)
+::Yes, enwiki is often very sloppy. Your point being? - [[User:Brya|Brya]] ([[User talk:Brya|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:03, 26 December 2016 (UTC)
+:::1) What is [https://www.wikidata.org/w/index.php?title=Special:Search&search=ICNafp&fulltext=1&searchToken=1rt4680emn5keu6vbuj0yrhjy ICNafp]? 2) WP has links ([https://en.wikipedia.org/wiki/Botanical_name#cite_note-1 for example 1]). Here - no one --[[User:Fractaler|Fractaler]] ([[User talk:Fractaler|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:15, 26 December 2016 (UTC)
+:ICNafp = [[Q693148]]. - [[User:Brya|Brya]] ([[User talk:Brya|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:41, 26 December 2016 (UTC)
+::Thanks --[[User:Fractaler|Fractaler]] ([[User talk:Fractaler|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:01, 27 December 2016 (UTC)
+
+== [[:en:Botanical_name#Forms of plant names|Forms of plant names]] ==
+"Depending on rank, botanical names may be in one part (genus and above), two parts (various situations below the rank of genus) or three parts (below the rank of species)" --[[User:Fractaler|Fractaler]] ([[User talk:Fractaler|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:00, 26 December 2016 (UTC)
+::I did indeed write that. What of it? - [[User:Brya|Brya]] ([[User talk:Brya|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:03, 26 December 2016 (UTC)
+:::Ok, then where {{Q|Q631147}}? --[[User:Fractaler|Fractaler]] ([[User talk:Fractaler|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:08, 26 December 2016 (UTC)
+:I don't understand the question. Infraspecific names are indeed a form of botanical name. - [[User:Brya|Brya]] ([[User talk:Brya|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:16, 26 December 2016 (UTC)
+::I mean: set Q281801 (botanical names), subsets: 1) one part (genus and above) 2) two parts 3) three parts. Where are this subsets here? --[[User:Fractaler|Fractaler]] ([[User talk:Fractaler|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:20, 26 December 2016 (UTC)
+::::* botanical names in "one part (genus and above)" are <s>four</s> five sets
+::::* botanical names in two parts are two sets
+::::[[User:Brya|Brya]] ([[User talk:Brya|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:44, 26 December 2016 (UTC)
+:Is {{Q|Q631147}} subset? --[[User:Fractaler|Fractaler]] ([[User talk:Fractaler|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:11, 27 December 2016 (UTC)
+:::Could be. Depends on the perspective taken. - [[User:Brya|Brya]] ([[User talk:Brya|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:29, 27 December 2016 (UTC)

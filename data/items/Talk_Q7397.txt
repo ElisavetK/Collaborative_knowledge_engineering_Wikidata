@@ -1,0 +1,25 @@
+{{item documentation}}
+== Class inheritance conflict ==
+{{Interwiki conflict
+ |items=Q7397/Q40056/Q188860
+ |status=resolved
+ |discussion=In English/English Wikipedia, {{Q|40056}} is effectively a subclass of {{Q|7397}} ("A collection of computer programs and related data is referred to as the software.").  {{Q|188860}} is another subclass of 7397, in my opinion.  However, currently Q7397 and Q188860 are subclasses of Q40056, which seems backwards.  It may be that some languages don't make the distinction (in which case it should probably be linked to Q7397), some of them are linked to the wrong item, or they take a different approach. [[User:Superm401|Superm401]] - [[User_talk:Superm401|Talk]] 21:08, 3 June 2013 (UTC)
+}}
+: {{Resolved}} - As of today, both {{Q|40056}} and {{Q|188860}} are subclasses of {{Q|7397}}, which is now a subclass of {{Q|133250}} and {{Q|925783}}. -- '' [[User:Laddo|LaddΩ]]''  [[User_talk:Laddo|''<small>chat </small>'';)]] 23:38, 5 January 2014 (UTC)
+
+== {{Q|47461344}} ==
+
+Reading this discussion 
+* https://www.wikidata.org/wiki/Wikidata:Project_chat/Archive/2018/11#Is_logiciel_(Q7397)_a_subclass_of_%C5%93uvre_%C3%A9crite_({{Q|47461344}})?
+
+it appears to me that some degree of restructuration would be desirable. Yet for now, software is at least as much - in general - a {{Q|47461344}} as a {{Q|2424752}} and much much more, IMHO, than an {{Q|8148}}. This is why I took the liberty to add this qualifier, thus following the majority in the above discussion.
+
+== software alternatives: ==
+
+alternatives could point to other software instances, or it could point to a website which lists alternatives, such as AlternativeTo.net 
+
+for example, wikidata is a piece of software (website), and here's a list of alternatives to it https://alternativeto.net/software/wikidata/
+--[[User:Mapmaker345|Mapmaker345]] ([[User talk:Mapmaker345|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:00, 18 January 2019 (UTC)
+
+== economic branch ?==
+{{Ping|Infovarius}} What’s the logic behind the addition of « instance of economic branch » ? is not {{Q|880371}} actually the economic branch ? (what’s an economic branch anyway ?) <span style="border: 1px #C9C9C9;"><span style="background-color:#E8E8E8;padding:3px;">author&nbsp;</span><span style="background-color:#FFFFFF;">&nbsp;[[User:TomT0m|TomT0m]] / </span>talk [[User talk:TomT0m|page]]</span> 19:01, 5 August 2019 (UTC)

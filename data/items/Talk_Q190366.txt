@@ -1,0 +1,15 @@
+== Marcel Lubbermans ==
+
+Apparently, the dutch translation calls him “Marcel Lubbermans” (hence this [https://www.wikidata.org/w/index.php?title=Q190366&diff=182825589&oldid=164973458 edit] by [[User:Jura1]], which quite confused me until I googled “Harry Potter Marcel”); how do we record that on the item? —[[User:DSGalaktos|DSGalaktos]] ([[User talk:DSGalaktos|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:31, 30 January 2015 (UTC)
+: The character has different names in different languages. It is possible to add all names as properties and add qualifiers for the language to the properties. --[[User:Fomafix|Fomafix]] ([[User talk:Fomafix|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:48, 30 January 2015 (UTC)
+
+:: 1. Which qualifier, precisely? {{P|518}} {{Q|7411}}?
+:: 2. Since {{P|735}} and {{P|734}} are separate properties, how is it recorded that no translation calls him “Marcel Longbottom”, for example (i. e., mixing given and surnames that belong to different languages)?
+:: —[[User:DSGalaktos|DSGalaktos]] ([[User talk:DSGalaktos|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:13, 30 January 2015 (UTC)
+:::How about adding {{P|735}} : {{Q|4927589}} with qualifier {{P|407}} : {{Q|7411}}.
+:::This in addition to "Neville" --- [[User talk:Jura1|Jura]] 16:58, 30 January 2015 (UTC)
+::::Sounds good, yeah. —[[User:DSGalaktos|DSGalaktos]] ([[User talk:DSGalaktos|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:26, 30 January 2015 (UTC)
+
+== P735: {{Q|295556}} ==
+
+I removed that as {{Q|295556}} has in P31: {{Q|4167410}}. Items used with P735 should have "given name". --- [[User talk:Jura1|Jura]] 06:05, 1 February 2015 (UTC)

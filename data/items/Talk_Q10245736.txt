@@ -1,0 +1,6 @@
+==Move==
+You should move it to an already existing label:
+: [[Q8480880]] "Category:Gardens in China"
+-- [[User:PHansen|PHansen]] ([[User talk:PHansen|talk]]) 07:36, 23 April 2013 (UTC)
+
+: {{done}} --[[User:YMS|YMS]] ([[User talk:YMS|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:30, 2 October 2014 (UTC)

@@ -1,0 +1,12 @@
+== P217: deleted? ==
+
+{{ping|Nikantmark}} change [https://www.wikidata.org/w/index.php?title=Q10665137&type=revision&diff=861104005&oldid=861051689 861104005] any reason why deleting {{P|217}}?
+* see list of Skansen objects [[sv:Anv%C3%A4ndare:Salgo60/Listeria/Skansen/WD_objekt]]
+** the idea is to have all houses and occupations and map them to Open Street map plus also try to map them to kulturnav. In kulturnav you also have the inventory number used inside Skansen which I feel is the best way to identify objects as the rest feels not stable
+*** {{Q|10665137}}  → [http://kulturnav.org/d4de7a9c-fb33-4613-a20b-33b1d47ef6b8 kulturnav.org/d4de7a9c-fb33-4613-a20b-33b1d47ef6b8] 
+**** that has on '''tab Administrative''' Skansen Primus Identifikationsnummer: '''SKABYG.00802''' = {{P|217}}
+- [[User:Salgo60|Salgo60]] ([[User talk:Salgo60|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:49, 23 April 2019 (UTC)
+
+== Can you find P2671 for Q56573825 ==
+{{ping|Nikantmark}}
+'''Question''': were do I find {{P|2671}}? I have tracked how Google use the Wikidata change feed see [https://twitter.com/salgo60/status/1039846313888833536 tweet] and it would be of interest to see how {{Q|56573825}} is represented in the knowledge graph today. Thanks - [[User:Salgo60|Salgo60]] ([[User talk:Salgo60|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:56, 23 April 2019 (UTC)

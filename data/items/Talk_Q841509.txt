@@ -1,0 +1,36 @@
+{{item documentation}}
+
+* I don't know how to perform it (or even if it is possible) , but I suggest merging this item with [[Q1374278]] [[Special:Contributions/92.255.152.30|92.255.152.30]] 20:52, 25 July 2013 (UTC)
+
+
+:''See also:'' [[Talk:Q11493441]]
+
+Please note that [[:zh:重要他人]] is not equivalent to [[:en:Significant other]], which is a term for "Lover", known as "[[:zh:愛人]]" in Chinese.
+
+[[Q841509]] (As those are all about lover/couple)
+:[[:da:Kæreste]]
+:[[:de:Lebensgemeinschaft]]
+:[[:en:Significant other]]
+:[[:ja:恋人]]
+:[[:ko:중요타인]]
+:[[:ms:Pasangan_rapat]]
+:[[:nl:Partner (relatie)]]
+:[[:nn:Kjærast]]
+:[[:no:Kjæreste]]
+:[[:sh:Partner (bliski odnosi)]]
+:[[:zh-yue:打令]]
+:[[:zh:愛人]]
+
+[[Q11493441]] (NOT about lover/couple)
+:[[:pl:Znaczący inny]]
+:[[:ru:Значимый другой]]
+:[[:zh:重要他人]]
+
+In addition, there is no entries related to [[:ja:愛人]] so far. [[:ja:愛人]] (external marriage affair, especially involved sexual relationship) is not related to [[:zh:愛人]] (lover), so please do not link [[:ja:愛人]] with [[:zh:愛人]]. --[[User:TX55|TX55]] ([[User talk:TX55|{{int:Talkpagelinktext}}]]) 22:13, 28 February 2014 (UTC)
+
+: But what is [[:zh:重要他人]] about? Because [[:ru:Значимый другой]] is for sure about couple/lover and literally means Significant other. [[User:Infovarius|Infovarius]] ([[User talk:Infovarius|{{int:Talkpagelinktext}}]]) 21:10, 1 March 2014 (UTC)
+
+[[:zh:重要他人]] is about one who is important to another in the latter's life. "重要他人" can be a family member, friends, seniors, or other role in addition to lover. I also use translator to check the [[:pl:Znaczący inny]], the meaning a close to the zh version. While [[:ru:Значимый другой]] is mainly deal with the same contents, yet in the second paragraph, it contain the other meaning of Significant other, that is "lover".  (Unless the Google translator went wrong) --[[User:TX55|TX55]] ([[User talk:TX55|{{int:Talkpagelinktext}}]]) 01:25, 2 March 2014 (UTC)
+: Hm, ru:Значимый другой contains information about any family member in 1st paragraph, and about genderless lover in second paragraph. [[User:Infovarius|Infovarius]] ([[User talk:Infovarius|{{int:Talkpagelinktext}}]]) 12:44, 2 March 2014 (UTC)
+
+::Yes, that's why it should go with [[Q11493441]]. --[[User:TX55|TX55]] ([[User talk:TX55|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:40, 19 January 2016 (UTC)

@@ -1,0 +1,48 @@
+__NOINDEX__
+==Use of real name==
+I have started to remove the mention of the real name and I undid my revisions when I saw that a wheel war was already going on.
+
+In this case, the information is not really relevant (never highlighted in centered secondary sources) and, much more importantly, have been used in a really harmful way as part of an ongoing harassement campaign. That clearly seems at odd with [[Wikidata:Living people]].
+
+[[User:Alexander Doria|Alexander Doria]] ([[User talk:Alexander Doria|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:59, 13 October 2018 (UTC)
+: Been there done that. Please read [[Wikidata:Living people]] again : we do have several sources. That's it. --[[User:AntonierCH|AntonierCH]] <sup>([[User Talk:AntonierCH|d]])</sup> 10:12, 13 October 2018 (UTC)
+::No that's not it. The issue is not limited to sources (although it should be noted they are all "primary sources" where the real name appears as an incidental information). [[Wikidata:Living people]] clearly states that there shouldn't be an overwhelming harm to a person's privacy: "provide only information in whose veracity we have a high confidence '''and''' which doesn't violate a person's reasonable expectations of privacy". I'm really not sure the consensus is the same today as two years ago (especially given the recent change in privacy law that Wikidata has to comply with). [[User:Alexander Doria|Alexander Doria]] ([[User talk:Alexander Doria|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:21, 13 October 2018 (UTC)
+:::Idem AntonierCH. Je rajouterai que troller et insulter les contributeurs de Wikipédia sur Twitter n'est pas le meilleur moyen de faire aboutir sa requête. --[[User:Shev123|Shev123]] ([[User talk:Shev123|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:21, 13 October 2018 (UTC)
+:::: Regarding the "privacy law" part I assume you're talking about GDPR. IF there is a GDPR issue, it will be handled by the WFM. As volunteers, we do not have to deal with this.
+:::: Regarding [[Wikidata:Living people]], the information has been largely spreaded on the news (paper only as far as I know) and internet on many occasions and since several years: in this context there's can't be a reasonable expectations of privacy. See also an equivalent case [[Wikidata:Administrators%27_noticeboard/Archive/2018/08#demande_de_masquage|here]]. Ohter sources includes [https://www.lesinrocks.com/2016/02/02/actualite/quatre-auteures-de-bd-refusent-detre-promues-chevalieres-des-arts-et-des-lettres-11802794/ this one for example, which is not primary]. --[[User:AntonierCH|AntonierCH]] <sup>([[User Talk:AntonierCH|d]])</sup> 10:34, 13 October 2018 (UTC)
+:::::I fully agree with [[User:Alexander Doria|Alexander Doria]]. In spite of [[User:AntonierCH|AntonierCH]]'s words, Tanxxx's notoriety is not large enough so that her name is widely spread. The potential problem she may face IRL are disproportionate with your requirement of exhaustiveness. Let's not take the risk for peanuts [[User:JohnNewton8|JohnNewton8]]
+:::::: She is Chevalier of the [[:w:Ordre des Arts et des Lettres]], she is definitely known enough now ! --[[User:AntonierCH|AntonierCH]] <sup>([[User Talk:AntonierCH|d]])</sup> 11:19, 13 October 2018 (UTC)
+::::::: Faux. Tanxxx n'est pas chevalier, elle a été nommée, mais elle a refusé la décoration, donc elle n'est pas chevalier des Arts et des Lettres. --[[User:Droit de retrait 03|Droit de retrait 03]] ([[User talk:Droit de retrait 03|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:01, 13 October 2018 (UTC)
+:::::::: The refusal was not actually communicated, except on Twitter... whatever her nomination and even her refusal makes her wellknown in France. --[[User:AntonierCH|AntonierCH]] <sup>([[User Talk:AntonierCH|d]])</sup> 12:07, 13 October 2018 (UTC)
+::::::: [[User:AntonierCH|AntonierCH]] Le refus de la décoration est le sujet de l'article que vous avez cité plus haut https://www.lesinrocks.com/2016/02/02/actualite/quatre-auteures-de-bd-refusent-detre-promues-chevalieres-des-arts-et-des-lettres-11802794/
+::::::: Encore une fois, [[User:AntonierCH|AntonierCH]] tord la réalité pour pouvoir continuer son cyber-harcèlement par publication d'informations privées, comme il l'a fait précédemment pour Alain Keler.
+::::::: Il serait nécessaire que la fondation fasse en sorte que ses propres règles soient respectées sur les projets, et ne soient pas uniquement des arguments promotionnels employés pour convaincre le public que les projets wikimpédia respectent la vie privée (et la directive sur la protection des données personnelles). --[[User:Droit de retrait 03|Droit de retrait 03]] ([[User talk:Droit de retrait 03|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:41, 13 October 2018 (UTC)
+:[[User:AntonierCH|AntonierCH]] "IF there is a GDPR issue, it will be handled by the WFM. As volunteers, we do not have to deal with this": your advice is somewhat contradictory. Tanxxx had just did what you recommended and submitted a request to mask this information. And you have just [https://twitter.com/TANXXX_/status/1051085009526972416 answered] her that the Wikimedia Foundation cannot be held responsible whatsoever and that all the issues have to be dealt by the community. Actually, taking charge of this request while being one of the parties involved in the discussion seems really inappropriate.
+:Regardless of this case, I disagree with your opinion. The WMF has never been dimensioned to rule all the terribly complicated copyright case. Most of this work is now done preventively by volunteers.
+:On Wikidata, privacy is bound to be as much a concern as copyright. We have currently millions of item on living persons in a structured format that served as a major source for databases all around the world and that makes it extremely easy to retrieve personal information on a massive scale. A preventive stance by this matter could include not publishing the real name of a person if it is not customarily associated (not just by incident sources, all revolving around a single event).
+:[[User:Alexander Doria|Alexander Doria]] ([[User talk:Alexander Doria|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:25, 13 October 2018 (UTC)
+::+1 with Alexander Doria. -[[User:Ash Crow|Ash Crow]] ([[User talk:Ash Crow|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:27, 13 October 2018 (UTC)
+
+== alerte : refus de prise en compte de la demande de Tanxxx sur privacy@wikidata.org  ==
+
+Tanxxx ne connait pas le fonctionnement de Wikipédia. Tanxxx est une artiste qui subit des violences par la fachosphère.
+Tanxxx ne veut pas que son nom réel et sa date de naissance soient publiées sur wikipédia. Elle n'a pas compris que des informations publiées sur sa page wikipédia proviennent de wikidata.
+Elle n'est pas la seule à ne pas comprendre ; ainsi, j'avais expliqué sur twitter à Rémi Mathis que le changement de photo sur les pages à son sujet sur toutes les versions de wikipédia provenait des modifications de wikidata (dans le cadre du cyberharcèment de Nomen ad hoc).
+Tanxxx a essayé de supprimer ou de faire supprimer son identité réelle sur sa page wikipédia. Elle n'a pas réussi.
+Tanxxx demande donc la suppression de sa page à privacy@wikidata.org ; elle aurait dû demander la suppression des informations privées, en respect avec la directive européenne sur la protection des données personnelles, et en respect avec la loi française.
+La demande de Tanxxx est refusée par un volontaire privacy@wikidata.org 
+Le volontaire n'explique pas à Tanxxx qu'elle peut exiger la suppression des informations privées.
+Et devinez qui est le volontaire qui répond à Tanxxx que sa page ne peut pas être supprimée ?
+'''[[User:AntonierCH|AntonierCH]]''' le contributeur qui s'acharne à publier les informations privées sur Tanxx sur  Wikidata https://www.wikidata.org/w/index.php?title=Q3515361&action=history et sur wikipédia https://fr.wikipedia.org/w/index.php?title=Tanxxx&action=history
+
+Très gros problème.
+
+https://pbs.twimg.com/media/DpY0K9JXUAACiJ0.jpg:large
+
+--[[User:Droit de retrait 03|Droit de retrait 03]] ([[User talk:Droit de retrait 03|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:57, 13 October 2018 (UTC)
+
+== Temporary removal of personal information ==
+{{see also|w:fr:Wikipédia:Legifer/octobre 2018#La demande par une personne de la suppression de sa véritable identité dans l'article la concernant est-elle légitime lorsque cette personne est notoire sous un pseudo, si elle invoque le « droit à l'effacement »}}
+Following the discussion on the French Wikipedia page, it seemed [https://fr.wikipedia.org/wiki/Discussion:Tanxxx#Protection more appropriate] to block the page on the version without any personal information, while reaching for a consensus. If there is an agreement to keep this information again, it will be reestablished.
+
+[[User:Alexander Doria|Alexander Doria]] ([[User talk:Alexander Doria|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:00, 13 October 2018 (UTC)

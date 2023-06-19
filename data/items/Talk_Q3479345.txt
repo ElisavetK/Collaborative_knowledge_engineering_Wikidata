@@ -1,0 +1,12 @@
+J'ai corrigé les erreurs et mentionné le statut et l'employeur de Gruzinski : directeur de recherche au CNRS. L'EHESS n'est pas l'employeur principal, Gruzinski étant "directeur d'études cumulant".
+--[[User:Droit de retrait 03|Droit de retrait 03]] ([[User talk:Droit de retrait 03|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:39, 29 November 2017 (UTC)
+
+== suppression de "directeur de recherche" sur fr:wp ==
+
+https://fr.wikipedia.org/w/index.php?title=Serge_Gruzinski&diff=next&oldid=143052942
+
+Nomen ad hoc vient de rendre invisible la mention "directeur de recherche" sur la page de fr:wp Gruzinski‎ en bidouillant l'infobox ; Nomen ad hoc fait cette manipulation systématiquement pour les directeurs de recherche au CNRS, et pour les professeurs d'université. Cette invisibilisation n'a jamais été débattue sur fr:wp.
+
+En quoi supprimer dans l'infobox le fait que Gruzinski‎ a fait toute sa carrière au CNRS est-elle une amélioration ?
+
+--[[User:Droit de retrait 03|Droit de retrait 03]] ([[User talk:Droit de retrait 03|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:01, 30 November 2017 (UTC)

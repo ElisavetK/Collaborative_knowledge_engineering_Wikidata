@@ -1,0 +1,28 @@
+Hi {{u|Ash Crow}}! What's wrong with my edit? [[User:Pro patria semper|Pro patria semper]] ([[User talk:Pro patria semper|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:09, 23 June 2016 (UTC)
+: OK, I just read your message on my talk page. [[User:Pro patria semper|Pro patria semper]] ([[User talk:Pro patria semper|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:15, 23 June 2016 (UTC)
+
+== Remove personal information ==
+
+I removed 2 items : 
+* Facebook ID, which is explicitely marqued as personal and not public on Facebook
+* Youtube channel, which is without any reference, under pseudonymous and not a public information (and without any interest about the subject)
+
+-- AC
+: That's OK. [[User:Pro patria semper|Pro patria semper]] ([[User talk:Pro patria semper|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:49, 7 August 2016 (UTC)
+
+== Généalogie ==
+Je signale que [[User:Pro patria semper]] a publié des informations sur de pseudo-ancêtres d'AC (plusieurs fiches wikidata, sur fr:wikipedia), basées sur une extrapolation d'une source unique (et pas vraiment de qualité). Il faudrait faire le ménage. --[[User:Droit de retrait 03|Droit de retrait 03]] ([[User talk:Droit de retrait 03|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:28, 7 August 2016 (UTC)
+: Fait (ici https://www.wikidata.org/w/index.php?title=Q3568360&type=revision&diff=362501708&oldid=323843104) par [[User:Pro patria semper]] le 7 août 2016 à 23:51. Soit quelques minutes après mon précédent post. Ce qui prouve : 1) que [[User:Pro patria semper]] suit ce que j'écris ; 2) qu'il savait parfaitement qu'il avait publié une information douteuse (le 20 avril 2016 à 15:43).
+: [[User:Pro patria semper]] a publié des informations douteuses, inexactes, violant la vie privée sur de nombreuses fiches de Wikidata, et sur de nombreux articles de fr:wikipedia.
+: De mon point de vue, les manquements répétés au respect de la vie privée sont un grave problème. Ce contributeur ne semble pas comprendre ce qui pose problème avec ses contributions. --[[User:Droit de retrait 03|Droit de retrait 03]] ([[User talk:Droit de retrait 03|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:54, 8 August 2016 (UTC)
+:: Manière de faire identique ici [https://www.wikidata.org/w/index.php?title=Q3263777&type=revision&diff=362501756&oldid=327076695] (publiée le 29 avril 2016 à 21:10, supprimée le 7 août 2016 à 23:56 ). 
+:: Contributeur dangereux. Je ne comprends pas pourquoi il n'est pas viré définitivement de tous les projets de la Wikimedia fondation (tous, parce qu'il sévit partout) alors que des membres importants de Wikimédia France (qui sont par ailleurs administrateurs sur les projets) savent parfaitement que ce contributeur est malsain.--[[User:Droit de retrait 03|Droit de retrait 03]] ([[User talk:Droit de retrait 03|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:03, 8 August 2016 (UTC)
+
+== Soutien ==
+AC, comme plusieurs autres femmes, est prise comme cible par un utilisateur qui publie sur leurs articles fr:wikipédia et sur leurs fiches wikidata des informations personnelles sans aucun intérêt – informations douteuses car basées au mieux sur des sources primaires ou des réseaux sociaux, voire même sur des sources inventées, ou sur… aucune source. 
+Cet utilisateur utilise aussi les "résumés de modifications" pour publier des informations personnelles sur des IP ou des contributeurs (fr:wikipédia).
+J'ai été victime de ce violeur en série sur wikiquote, wikipédia et wikidata.
+Dans le milieu de la recherche et de l'enseignement supérieur, plusieurs femmes victimes n'ont pas apprécié ces violations systématiques de leur vie privée (certaines l'ont déjà fait savoir officiellement). 
+Il serait bienvenu que '''La quadrature du net''', fort soutien des projets Wikimedia, publie ses réflexions concernant "vie privée et banque de données wikidata" et "vie privée et wikipédia".
+Solidarité féministe
+--[[User:Droit de retrait 03|Droit de retrait 03]] ([[User talk:Droit de retrait 03|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:28, 7 August 2016 (UTC) PS. Et solidarité aux membres de l'association Wikimédia France, autre cible privilégiée de cet utilisateur.

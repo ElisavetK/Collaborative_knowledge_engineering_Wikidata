@@ -1,0 +1,10 @@
+
+== Locations and sites not quite right ==
+
+So the locations listed seem to have been imported from Italian wikipedia or something and the locations are not quite right.  The problem is the LIGO is a spatially distributed observatory and has two simultaneous locations.  There are two sets of location tags, one a direct location (under LIGO, Q255371 ) and another that is a subset of the two sites (Q1284526 and Q2177827): they place the Louisiana detector in the township of Livingston and the Hanford at the real location and also at some location within the wider Hanford government side. The Q2177827 is actually the data for the town of Livingston and Q1284526 is for the wider government site at Hanford which isn't quite right.
+
+We might need to rationalise this to two dedicated data structures for each LIGO specific site.  This might be a better way to do things as more detail can be added to each specific site to make the data richer.  It could link into data todo with ground noise, geology, infrastructure etc that is pertinent to operations.  --[[User:Fincle|Fincle]] ([[User talk:Fincle|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:18, 9 April 2016 (UTC)
+
+== Interferometer dimensions ==
+
+I noticed that this lists a Diameter of 4000+-1 metre, which is incorrect.  Each LIGO detector is L-shaped, with two straight arms meeting at a right angle.  I added a Length property set to 4000 metre (the length of each arm) but I do not know how to deprecate the Diameter property. -- [[User:PeterShawhan|PeterShawhan]] ([[User talk:PeterShawhan|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:54, 25 May 2016 (UTC)

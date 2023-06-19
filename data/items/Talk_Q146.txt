@@ -1,0 +1,8 @@
+{{item documentation}}
+
+== Replacing Taxon with "Instance of common name of" ==
+
+As per Dog, I suggest we should have this item as "Instance of common name of https://www.wikidata.org/wiki/Q20980826", see https://www.wikidata.org/w/index.php?title=Wikidata_talk:WikiProject_Taxonomy/Archive/2017/03#Cats
+: Then we should also create another item, and remove P171/P225 from here. --[[User:Infovarius|Infovarius]] ([[User talk:Infovarius|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:36, 23 June 2017 (UTC)
+:: Why does a "common name" have heart rate? -[[User:Theklan|Theklan]] ([[User talk:Theklan|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:54, 8 April 2020 (UTC)
+::: Do you consider "taxon" other than some class of "names"? --[[User:Infovarius|Infovarius]] ([[User talk:Infovarius|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:49, 10 April 2020 (UTC)

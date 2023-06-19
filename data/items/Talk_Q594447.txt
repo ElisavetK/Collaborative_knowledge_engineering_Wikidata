@@ -1,0 +1,16 @@
+== 37 38 ==
+
+{{ping|Pixeldomain}} they are listed at website too or it was on purpose? [[User:D1gggg|d1g]] ([[User talk:D1gggg|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:09, 26 September 2017 (UTC)
+
+{{ping|D1gggg}} Versions 37 and 38 were not yet released when I added all the individual versions of the file format as new items. New file format items should be added now that versions 37 and 38 of the file format have been released. [[User:Pixeldomain|Pixeldomain]] ([[User talk:Pixeldomain|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:06, 27 September 2017 (UTC)
+
+=== 19 or 38? ===
+
+* [http://www.adobe.com/devnet/swf.html SWF File Format Specification (version 19)]
+* but at [http://www.adobe.com/devnet/articles/flashplayer-air-feature-list.html AIR page] they claim "SWF version: 38"
+
+Any insight why? [[User:D1gggg|d1g]] ([[User talk:D1gggg|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:27, 26 September 2017 (UTC)
+
+{{ping|D1gggg}} My guess is that the specification of the file format was only created well after the first version of the file format was released. So whilst the file format version is 38, the specification version may only be 19 as the two version numbers don't necessarily track each other. [[User:Pixeldomain|Pixeldomain]] ([[User talk:Pixeldomain|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:06, 27 September 2017 (UTC)
+: {{ping|Pixeldomain}} thanks, I wounder how they relate at least in latest versions: should we read both or just one? Cannot claim anything. [[User:D1gggg|d1g]] ([[User talk:D1gggg|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:23, 27 September 2017 (UTC)
+: {{ping|D1gggg}} One {{Q|Q10859422}} is for {{Q|20819677}} and the other {{Q|Q10859422}} is for {{Q|235557}}. [[User:Pixeldomain|Pixeldomain]] ([[User talk:Pixeldomain|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:14, 28 September 2017 (UTC)

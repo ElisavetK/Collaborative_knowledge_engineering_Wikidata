@@ -1,0 +1,45 @@
+== GND ==
+
+{{ping|Kolja21}} the firstnames of the fathers differ, otherwise looks like they are the same.
+
+http://d-nb.info/gnd/116499273 - 116... typical DtBio or Kalliope ID and at https://www.deutsche-biographie.de/pnd116499273.html it says born Vaduz, Schriftstellerin
+ Person	Rheinberger, Hermine
+ Geschlecht	weiblich
+ Zeit	Wirkungsdaten: 1891
+ Land	Deutschland (XA-DE)
+ Weitere Angaben	Tochter von David Rheinberger
+
+http://d-nb.info/gnd/1196628823
+ Person	Rheinberger, Hermine
+ Geschlecht	weiblich
+ Quelle	Wikipedia (Stand: 08.10.2019): https://de.wikipedia.org/w/index.php?title=Hermine_Rheinberger&oldid=182865574
+ Zeit	Lebensdaten: 1864-1932
+ Land	Liechtenstein (XA-LI)
+ Geografischer Bezug	Geburtsort: Vaduz
+ Sterbeort: Mils
+ Beruf(e)	Schriftstellerin
+ Weitere Angaben	Tochter von Peter Rheinberger
+[[User:MrProperLawAndOrder|MrProperLawAndOrder]] ([[User talk:MrProperLawAndOrder|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:38, 9 June 2020 (UTC)
+
+: {{ok}} We checked this already, see [[:de:Wikipedia:GND/Fehlermeldung/September 2018]]. The result was: Two different persons. --[[User:Kolja21|Kolja21]] ([[User talk:Kolja21|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:21, 10 June 2020 (UTC)
+:: {{ping|MrProperLawAndOrder}} I see: DNB has created a new GND for the writer - since they think the two women are different persons - while DtBio has linked the data sheet of the writer (sfzR3427-4) to the older GND [http://d-nb.info/gnd/116499273 116499273] that already existed. That shouldn't happen ;( --[[User:Kolja21|Kolja21]] ([[User talk:Kolja21|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:35, 10 June 2020 (UTC)
+::: Who created 119? Maybe the creator wasn't aware of the other item, there are hundreds of cases where duplicates were created in GND. Kalliope 116 has:
+ https://kalliope-verbund.info/de/query?q=ead.creator.gnd%3D%3D%22116499273%22 
+ Brief von Hermine Rheinberger an Joseph Rheinberger
+ Rheinberger, Hermine [Verfasser], Rheinberger, Joseph (1839-1901) [Adressat]
+ Vaduz, 17.03.1891 [17.03.1891]. - 1 Br.
+:::[[Q365555]] composer born and buried in Vaduz. If it wouldn't be David/Peter then there would be no contradiction. Where is the proof for these fathernames?
+:::https://historisches-lexikon.li/Rheinberger,_Hermine also links to 116 at the bottom of the page.
+:::David, Peter, Josef are brothers. Peter as father in histlex LI. [[Talk:Q96187795#Genealogy]] 
+:::Current status of research: David in 116 is wrong, but 119 is a duplicate.
+:::[[User:MrProperLawAndOrder|MrProperLawAndOrder]] ([[User talk:MrProperLawAndOrder|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:28, 10 June 2020 (UTC)
+===1196628823===
+Currently at http://viaf.org/viaf/15331580/#Rheinberger,_Hermine , added after WKP and pushing out 116
+ WKP|Q19285503	add	2019-05-29T17:29:46.219872+00:00
+ DNB|1196628823	add	2019-10-13T12:33:44.010083+00:00
+ DNB|116499273	delete	2019-10-13T13:29:37.379869+00:00
+http://viaf.org/processed/DNB%7C1196628823
+ 035			‎‡a  (DE-101)1196628823‏
+ 035			‎‡a  (DE-588)1196628823
+ 042			‎‡a  gnd3
+https://sigel.staatsbibliothek-berlin.de/suche/?isil=DE-588 maybe it was created by WKP (dewiki) and later edited by 588. [[User:MrProperLawAndOrder|MrProperLawAndOrder]] ([[User talk:MrProperLawAndOrder|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:20, 10 June 2020 (UTC)

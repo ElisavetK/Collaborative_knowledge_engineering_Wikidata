@@ -1,0 +1,32 @@
+== P132 ==
+
+Hello [[User:Miguillen|Miguillen]], can you explain why you removed the statement {{St||132|123705}}, please? The constraint '''{{P|772}}: Item {{P|132}}''' is broken without it. <span style="font-family:Segoe Script">[[User:Petr Matas|Petr Matas]]</span> 14:08, 17 November 2014 (UTC)
+
+:Because you can not put any information which is false.
+:It is a place which is not a type of administrative division.
+:It's not a neighborhood.
+:The INE appears as singular population entity that does not refer to an administrative division. It means it's a core of differentiated population. Have INE code does not mean it is an administrative division and if it is not you can not invent anything.
+
+:Giving value to the property makes P132 on  Wikipedia in Spanish  appears in the Infovox wrong  the subtitle.--[[User:Miguillen|Miguillen]] ([[User talk:Miguillen|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:38, 17 November 2014 (UTC)
+
+::Shouldn't we remove {{P|772}}? If it's not a municipality, it doesn't have a municipality code. --- [[User talk:Jura1|Jura]] 21:24, 17 November 2014 (UTC)
+
+::The INE code of municipaly have a five digits (2 digits of province code + 3 digits municipality code). In the "nomenclátor" appears the population of the towns and other entities that are part of the municipality. There are nine digit code (2 digits of province code + 3 digits municipality code + 2 digits of collective entity code + 2 digits singular entity code + 2 digits of population nucleus or disseminated) (if not part of any of them the value is 00 in the previous digits and if the total population of a collective or singular entity value is 00 in subsequent digits). 
+::Determine if a municipality or is not easy considering the number of digits of the code.
+::It is planned to transfer by a bot in all cases in order to easily update the code INE población.porque is less confusing than the name may be altered.
+:If you can interpret correctly the INE code can give a lot of relevant information and also can easily find information on the entity through an API. see [[es:Plantilla:Nomenclátor INE]].--[[User:Miguillen|Miguillen]] ([[User talk:Miguillen|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:46, 18 November 2014 (UTC)
+
+::The codes have their uses. The question is now if we should change the label of P132 to match this or to create new properties for non-municipality codes. --- [[User talk:Jura1|Jura]] 10:14, 18 November 2014 (UTC)
+
+
+A population unit is not always an administrative division. In Spain the basic administrative division is the municipality but there is lower-level divisions that are different depending on the autonomous community (concejo in Navarre, parroquia in Asturias, pedanía in various communities, EATIM in various communities, ELA in Andalusia, entidad local menor in Catalonia etc). But there are many locations that do not form an administrative division and therefore do not have a term that they can link other than the nucleus housing.
+I do not understand what the problem may be that if a locality can be attributed not an administrative division is not set and the INE code appears to facilitate actulización its population once the data is entered. The property P31 and makes clear that it is a town.
+From Wikipedia in Spanish we are already addressing how to organize all this population including municipalities and population units, for now we have introduced the population of municipalities and a second phase will introduce those of population units while creating articles missing. It only remains to decide how to solve some technical problems as cases of municipalities with more than one population unit whose capital is the same article that the municipality and would create unusual for the town and one for capital.--[[User:Miguillen|Miguillen]] ([[User talk:Miguillen|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:56, 18 November 2014 (UTC)
+
+:If you say that I intend to do, maybe I can see the problem and can find a solution that does not involve putting anything wrong that would cause problems.--[[User:Miguillen|Miguillen]] ([[User talk:Miguillen|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:11, 18 November 2014 (UTC)
+
+::I just noticed a difference between the labels for P772 in English ("INE municipality code (P772)") and Spanish ("código INE"). 
+::This probably explains why we don't understand each other ;)
+::Shall we align the English labels with the meaning of the Spanish label? --- [[User talk:Jura1|Jura]] 11:25, 18 November 2014 (UTC)
+
+:::{{ping|Jura1}} Yes, please. :) strakhov ([[User talk:Strakhov|talk]]) 11:41, 5 August 2018 (UTC)

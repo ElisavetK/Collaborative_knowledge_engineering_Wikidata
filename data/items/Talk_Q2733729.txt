@@ -1,0 +1,3 @@
+== GND identifier ==
+
+GND 7659361-7 stands for all known ''versions'' of the painting, namely "Antwerpen, Koninkl. Mus., El Escorial, London, National Gallery". Therefore http://d-nb.info/gnd/7659361-7 demands that it always has to be used in conjunction with the GND term for the respective collection. Wikidata qualifiers work the other way round, thus eventuelly there will be a report on [[Wikidata:Database_reports/Constraint_violations/P227#Unique_value]]. -- [[User:Gymel|Gymel]] ([[User talk:Gymel|{{int:Talkpagelinktext}}]]) 16:51, 28 January 2014 (UTC)

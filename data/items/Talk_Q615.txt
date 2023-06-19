@@ -1,0 +1,12 @@
+==Discussion==
+Hi, I just created the equivalent article of Lionel Messi in Tagalog Wikipedia (see [[:tl:Lionel Messi|Lionel Messi]]), but similar to the page I created for Cristiano Ronaldo, I'm getting an error in adding it under Languages. Please help me on this one. Thanks in advance! [[User:Geoffbits|Geoffbits]] ([[User talk:Geoffbits|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:05, 13 January 2015 (UTC)
+
+: I added it without any problems. Not sure why there was an error. --[[User:YMS|YMS]] ([[User talk:YMS|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:15, 13 January 2015 (UTC)
+
+== Fraudster ==
+Maybe he is a fraudster, but being fraudster is not his occupation. He works as a football player, not as a fraudster. For this reason I think that maybe we can found another property to put this statement. What do you think about that, {{ping|Ogoorcs}}?.--[[User:CarlesMartin|CarlesMartin]] ([[User talk:CarlesMartin|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:13, 19 October 2017 (UTC)
+: I will repost to you part of a previous message of mine, about this same argument, happened on another element in which in the end the statement was considered legit:
+:: The {{Property|P1629}} for {{Property|P106}} is {{Q|Q12737077}}, defined as ''"any {{Q|Q1914636}} of a person (hobby, work, pastime, professional sport...)"'' that is {{Property|P1552}} {{Q|Q1136816}}. It is also stated that {{Q|Q1914636}} is {{Property|P1889}} {{Q|Q28640}}, so {{Property|P106}} is not limited to {{Q|Q28640}}.
+:: So if a gossip newspaper reports that {{Q|Q169814}} has once read a book about gardening and from 2007 to 2009 every sunday he dedicated its time to its roof garden, it is correct to add an {{Property|P106}}: {{Q|Q758780}} statement on his element.
+:: Since tax frauding is a type of crime, an ''activity'', that takes time to happen and to prepare, even in giving orders to a lawyer for it to happen (one has to be involved into it, otherwise how could one be convicted?) it is correct to say that ''he is fraudster'', that is, for convention here on wikidata, that ''his occupation is being a fraudster, in the period the fraud happened. 
+: I know that occupation is synonimous with profession in many language, but the scope of the occupation property is broader than that. [[User:Ogoorcs|Ogoorcs]] ([[User talk:Ogoorcs|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:54, 20 October 2017 (UTC)

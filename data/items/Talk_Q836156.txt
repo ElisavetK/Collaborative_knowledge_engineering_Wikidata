@@ -1,0 +1,3 @@
+== This item should not be a subclass of periodical ==
+
+Currently this item has {{St|Q836156|P279|Q1002697}}. Given this is an actual periodical and not a subclass of periodical this relation is wrong according to [[Help:Basic_membership_properties]] AFAICT. I will remove it. Please raise any objections here. [[User:Iwan.Aucamp|Iwan.Aucamp]] ([[User talk:Iwan.Aucamp|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:48, 15 March 2020 (UTC)

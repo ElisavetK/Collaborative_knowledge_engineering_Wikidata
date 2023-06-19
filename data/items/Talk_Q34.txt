@@ -1,0 +1,37 @@
+== gränsar till ==
+
+Om Kanada gränsar till Grönland, så borde väl Sverige gränsa till Danmark åtminstone? -- [[User:Lavallen|Lavallen]] ([[Special:Block/Lavallen|block]]) 19:48, 23 March 2013 (UTC)
+: De baltiska länderna då? Ryssland, Polen och Tyskland? [[User:Hockew|Hockew]] ([[User talk:Hockew|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:42, 17 September 2014 (UTC)
+::De baltiska länderna har ingen gemensam gräns med Sverige. De separeras av internationellt vatten. /[[User:Esquilo|ℇsquilo]] 06:37, 18 September 2014 (UTC)
+
+== Statsminister Carlsson ==
+
+{{ping|Esquilo}} Jag tror Carlsson behöver delas upp på (åtminstone) två perioder. Den före och den efter Bildt. Sedan har svwp "Regeringen Carlsson I" och "Regeringen Carlsson II" med anledning av regeringskrisen och statsministern begärde avsked. Det väl en smaksak hur man gör där...   -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:01, 14 June 2016 (UTC)
+:Ja, det var därför jag stannade med Carlsson och inte gick vidare med tidigare regeringar. Men {{Q|4907240}} borde väl funka för perioden 7 oktober 1994 till 22 mars 1996? /[[User:Esquilo|ℇsquilo]] 11:06, 14 June 2016 (UTC)
+
+== Compulsory education ==
+
+{{ping|Jura1}} I checked {{Q|10560804}} (a kind of law for schools valid today) and the compulsory minimum age is still 7 today. It is compulsory for the municipalities to ''offer'' school from year 6, but that is not compulsory for the students. And it the students perspective I have understood this new property is designed for. -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:37, 8 October 2016 (UTC)
+:Thanks, I added that to the statement. I had used the data from [[w:Compulsory_education#Per-country_variations_in_the_age_range_of_compulsory_education|enwiki]]. <br/>--- [[User talk:Jura1|Jura]] 11:44, 8 October 2016 (UTC)
+: two issues with this 1. it might change soon. 2. there is no curriculum for 6-year old. [[User:Emj|Emj]] ([[User talk:Emj|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:10, 22 December 2016 (UTC)
+
+== Official language ==
+
+Sweden does not have a official language, so the data is wrong here, but reading the discussion on [[Property:P37]] doesn't help to make any more sense. [[User:Emj|Emj]] ([[User talk:Emj|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:06, 22 December 2016 (UTC)
+:It is true that the exact wording "official language" does not apply to Swedish in Sweden. But Swedish is according to law the "main language", which means that all official documents have to be available in Swedish, and you are supposed to find somebody who can speak Swedish when you contact the local or central government. (Not always as easy as it sounds.) To me, that is probably as close to "official" you can reach.
+:If you are supposed to use the literal meaning of every property here, you also have to remove many other things, especially the {{P|85}}. The question about the "anthem" has been up to the parliament several times, but has this far been ruled down every time. Sometimes we humorously refer to "Du gamla, du fria" as the hockey-song, since we mainly see it in sports. -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:20, 22 December 2016 (UTC)
+
+== 🇸🇪 as English alias (an "emoji flag sequence", see [[w:Regional Indicator Symbol]]) == 
+Is there a reason why we shouldn't add them as alias? <br/>--- [[User talk:Jura1|Jura]] 17:15, 25 February 2017 (UTC)
+:Then why add it as an ''english'' alias? It is not english! If it should be added at all it should be as a separate property. /[[User:Esquilo|ℇsquilo]] 10:58, 27 February 2017 (UTC)
+::Using it as an alias makes it searchable for English language users. "SE" and "Sverige" aren't English either. Obviously, they can also be added in a structured way. What's the disadvantage of having it?  <br/>--- [[User talk:Jura1|Jura]] 18:37, 28 February 2017 (UTC)
+:::Well, "SE" and "Sverige" should not be english aliases either. Regarding 🇸🇪 it is totally unreadable unless the browser platform have support for "emoji flag sequences". In that case it is still not readable, but interpretable. /[[User:Esquilo|ℇsquilo]] 18:22, 1 March 2017 (UTC)
+::::I normally do not bother very much about the use of aliases in languages which isn't "my own". Aliases are mainly useful for our search engines. If "SE" is useful for searches, then it could probably be used as an alias. It does not look like our search engines look (very deep) into the labels and aliases in languages that isn't in the fallback-chain. I guess at least "Konungariket Sverige" as the official name in the original language is useful to have as an English alias, even if it isn't English. And "Sverige" is then probably redundant to "Konungariket Sverige", since this item would pop up as an alternative even without that alias hardcoded into the item. -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:49, 1 March 2017 (UTC)
+:::::Search doesn't look at all into property values and "SE" is a most useful shorthand to find Q34. I don't think it matters if someone's specific browser can display it or not. Many labels are probably unreadable to most of us. We just need to make sure that aliases (and labels) are applied to the correct item. For "🇸🇪", this seems to be the case. <br/>--- [[User talk:Jura1|Jura]] 06:39, 2 March 2017 (UTC)
+
+== Link to a page ==
+
+Please, could someone link this page in Lao that is missing in Wikidata and is not linked to the other wikipages corresponding to Sweden? (Already tried to do that myself, but, looks like the page is protected) 
+
+Link: https://lo.wikipedia.org/wiki/%E0%BA%9B%E0%BA%B0%E0%BB%80%E0%BA%97%E0%BA%94%E0%BA%AA%E0%BA%B0%E0%BA%A7%E0%BA%B5%E0%BB%80%E0%BA%94%E0%BA%99 [[User:TheWikipedian1250|TheWikipedian1250]] ([[User talk:TheWikipedian1250|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:58, 23 February 2020 (UTC)
+: There is already a link [[:lo:ປະເທດຊູແອດ]]. You should choose one. --[[User:Infovarius|Infovarius]] ([[User talk:Infovarius|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:40, 23 March 2020 (UTC)

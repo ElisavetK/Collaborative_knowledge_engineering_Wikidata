@@ -1,0 +1,2 @@
+== Population as of 2010 ==
+The reference here was Swedish Wikipedia. And the reference at Swedish Wikipedia was Wikidata. I have removed it, since such numbers cannot be found in Statistics Sweden. -- [[User:Hårig banan|Hårig banan]] ([[User talk:Hårig banan|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:32, 20 September 2018 (UTC)

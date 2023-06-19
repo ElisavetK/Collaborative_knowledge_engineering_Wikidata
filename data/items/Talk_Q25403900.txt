@@ -1,0 +1,54 @@
+==Specialty Uses of Chemicals==
+I have marked as deprecated the statement that said this item is a subclass of {{Q|50413986}}. It's not clear to me what exactly {{Q|50413986}} is meant to represent, but if you look at its class tree it seems to be an action/occurrence. An ingredient is a physical object, not an action/occurrence. This inconsistency in the class tree meant that all ingredients, e.g. {{Q|28165}}, were marked as occurrences. My edit fixed this error. [[Special:Contributions/146.48.87.75|146.48.87.75]] 14:14, 6 November 2018 (UTC)
+: Something is evidently wrong with label/description of {{Q|50413986}} because it is not the only substance as subclass of it: https://tools.wmflabs.org/reasonator/?q=Q50413986. I've restored it. Some changes in above hierarchy is needed. --[[User:Infovarius|Infovarius]] ([[User talk:Infovarius|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:06, 8 November 2018 (UTC)
+
+==InstanceOf (P31) or subClassOf (P279)==
+it seems that there is some confusion about wether a food ingredient should be stated as such with a {{P|31}} statement or {{P|279}}. Statistically it seems that the bots have produced more of P31. Also, P31 is used intuitively by users on a case by case basis.
+Most of the time, it is a class (a group/category of food products) that gets the instanceOf, making all its subclasses inherit this property, which is very good this way. There is no need indeed to add the property instanceOf on each food Item. Meat, Dairy Product, Vegetable, Fruit, and so on already have it.
+BUT: it seems that querying on that model will be difficult.
+I saw some contributors modifying the P31 into P279, and that might solve he problem and make the queries much simpler, with something like: 
+wdt:P31/wdt:P279* wd:Q25403900
+
+Because of the current confusion, only this query retrieves all the ingredients: wdt:P279*/wdt:P31/wdt:P279* wd:Q25403900.
+: ''Statistically it seems that the bots have produced more of P31'' – that is not a reason to do the same; automatic and semi-automatic tools are responsible for many incorrect additions that have to be curated manually. ''[[User:Wostr|Wostr]]'' <small>([[User talk:Wostr|talk]])</small> 00:48, 6 January 2019 (UTC)
+: i agree with you ''[[User:Wostr|Wostr]]'' . I think it would be better to have everything with P279, because for now I get Snow, Snow in Brazil, and Snowflake as ingredients, because of the use of the more complex query. I have no problem cooking with snowflakes from Brazil, but I am not sure this will happen soon. I am proposing to convert the few remaining P31 on classes/categories/groups, to be P279 instead, so that inheritance will be simple to fetch with just a wdt:P31/wdt:P279* wd:Q25403900
+
+Also, while we are at it:  I am focusing on food ingredients since yesterday (no i am not hungry). And i found 2 major issues. First, the discrepancy about P31/P279. see above. Second, a bigger problem that i am trying to address now: when searching for all food ingredients, i got a big result including all DNA/RNA Items, plus a lot of very dangerous chemicals. I  found out that a user called Dhx1 has made a lot of subClassOf changes this year related to food and chemicals, and the statements are wrong (they are reversed), making more generic items subclasses of more specific ones, and therefor we end up with all kind of generic classes on chemicals being food ingredients. 
+i reverted some of the changes, but i thing someone could help by running a script and findout what other subClassOf this user has done recently. It seems this user did not understand how ot use this property. They are all reverse 
+https://www.wikidata.org/wiki/User:Dhx1
+: As for the first problem (P31/P279): this is an issue that is not resolved yet. E.g. it's uncertain whether chemical compounds (in Wikidata) are instances or classes, whether drugs are instances or classes etc. There is also P2868 (hasRole), which could be used in some cases. Also, there's still many items having incorrect statements that are results of an automatic import of data (bots, tools).
+: For the last part regarding DNA/RNA/chemicals: could you provide any examples? This user has over 60k edits on Wikidata. Don't know if it's possible to retrieve all the edits involving the addition of subclassOf.
+: ''[[User:Wostr|Wostr]]'' <small>([[User talk:Wostr|talk]])</small> 01:46, 6 January 2019 (UTC)
+
+Today I did this change: https://www.wikidata.org/w/index.php?title=Q11158&oldid=828386188
+In order to remove "acidity regulator" subclass property on "acid". Acid is NOT a subclass of acidity regulator. (maybe the user intended to specify the opposite, which is more acceptable: an acidity regulator is a subtype of acid.) I ended up not entering the opposite statement on acidity regulator, after checking his source. There is no proof that an acidity regulator is an acid. So first, the user misunderstood the subClassOf property (it was reverse). Then the whole idea of this property (one way or another) was wrong. I understood the problem when i tried to see why all RNA/DNA (that are some subclass of acid) where included in a search for all food ingredients. The reason was here. All acids were included in the result (you can imagine the stomach problems that this could cause). I found more occurances of this problem related to food, this user, reverse subClassOf,   and this source: https://www.wikidata.org/wiki/Q47123809 . The user apparently read this document a bit superficially, and entered a bunch of wrong subClassOf relations. You can check all my edits and you will understand (i have much less edits than him, since i started only yesterday to be interested in wikidata). use my IP to find them, i have a static IP.
+
+Another example of this user misunderstanding: he/she had put the the property subClassOf on surfactant, with a value of emulsifier. This makes the surfactant a subclass of emulsifier. But the opposite is true. An emulsifier is a type of surfactant. And there are other types of surfactant (like detergents). making a surfactant a subclass of emulsifier, and because emulsifier is understood as food ingredient in wikidata (there are no food grade emulsifiers in the db. i added it now: food emulsifier), then it is a direct subclass of food ingredient. And then it brings all surfactants to be food ingredients too. Anyway, i removed the subclassOf emulsifier in surfactant.
+
+Another example: https://www.wikidata.org/w/index.php?title=Q11193&oldid=632930295
+He make all Bases (chemical pH >= 7) be acidity regulators!
+What a non sense.
+Apparently, all his/her mistakes are related to to Codex Alimentarus
+Q47123809 it uses this item as reference.
+Can you help me find all the items that have a subClassOf with a reference to Q47123809 ?
+
+All those edits are around 18 february 2018.
+
+And for me, I am done. I think i get a good list of ingredients now. 5824 items with wdt:P31*/wdt:P279* wd:Q25403900
+It is quite complete. First are all the brands of food products (starting with capital letter) then all the generic names. I like it.
+I hope nobody will come and delete my edits.
+I am new to wikidata (and wiki in general) and I dont understand why people just undo your work without understanding nor an explanation... I have seen already few people coming behind me and just rollbacking my edits... that's not very nice. I am trying to do it well.
+
+Finally, to bring my 2 cents to the hot discussion about the P31/P279 dilemma, I read this https://www.wikidata.org/wiki/Wikidata:Item_classification and I understand it and I agree with it, and it solves the question here. Experience also confirm this opinion:
+When a class has a "instanceOf"P31 property pointing to another class xxx (saying, i am a class, and i am also an instance of xxx), then this property is not transferred to the subclasses of this class. Fine. This is why we can use sometimes P31 on a class, instead of P279.
+In our case: food ingredients. We had 2 different implementations: some people would use P31, others P279. What is right and when, and why?
+From what I understand, if I put a P31 "food ingredient" on a "final" object (not a class) by example on Goat milk, that's fine, because this property "P31 food ingredient" is not going to have to be passed down to some subclasses of Goat milk (why? because goat milk is a leaf in graph. it does not have subclasses). I could also use P279 here, it would also work. The problem is for the Items that are classes (not leaf, not final objects). By example in our case: Vegetable oil, Table salt, Poultry meat, Fruit, and so on. Those are classes. They have instances and/or subclasses. In order to transfer the association with "food ingredient" to those instances/subclasses, we have to make it as a P279. This way, all subclasses or instances will inherit it.
+
+Then we just need to query "any instance of any subclass of Food ingredient" ( wdt:P31*/wdt:P279* wd:Q25403900 ) and it works!
+
+A good additional example is Water. we want water in the list of food ingredients, but water has subclasses and we DONT want those subclasses from inheriting the relationship to Food ingredients (otherwise we will get snowflake, Snow in Brazil and so on, as Food ingredient). So in this case, we put a P31 on water, not a P279, and it behaves as a leaf/final item in our tree. The property P31 is not passed down to the subclasses, and this is what we want.
+
+So i think you have wonderful model here. and you can use it according to needs. The rule being: if you want to pass down the property, make it a P279. if you dont want, make it P31.
+
+in reply to ''[[User:Wostr|Wostr]]''
+* The problem of the Codex Alimentarius may be that (I think, I didn't have time to check it) it contains narrow definitions, referring only to one field. It is common in Wikipedia that there's one article that contains general definition and many more specific definitions for different fields — but this is not the case for Wikidata, because here every definition should be described in different item, and those items should be properly linked using properties. However, there are and will be users who add statements about more specific definitions to items about general concepts (for various reasons, e.g. they come from different Wikipedias and Wikipedia's articles are not 1:1 equivalents, so they add statements that are true for article in one language version of Wikipedia, not necessarily true for Wikidata item etc.).<br />I'll try to check relevant edit history from ca. Feb 2018, but I don't have much free time, so it may take a while. ''[[User:Wostr|Wostr]]'' <small>([[User talk:Wostr|talk]])</small> 17:37, 6 January 2019 (UTC)

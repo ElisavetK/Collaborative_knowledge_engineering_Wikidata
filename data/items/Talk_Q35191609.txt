@@ -1,0 +1,9 @@
+== Description ==
+
+(since is a sample [[Wikidata:Property proposal/end time of first publication|here]]) {{Q|Q35191609}} is a episode/chapter/series of {{Q|Q593049}}? First, one of the intermediate, last? --[[User:Fractaler|Fractaler]] ([[User talk:Fractaler|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:55, 29 November 2017 (UTC)
+:There is not a single Wikipedia (or any other project) article about this, why bother? It's just a database orphan, don't waste any time on it. [[User:Sänger|Sänger]] ([[User talk:Sänger|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:07, 29 November 2017 (UTC)
+::Do you work for Wikipedia? Or for Wikidata? --[[User:Fractaler|Fractaler]] ([[User talk:Fractaler|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:03, 29 November 2017 (UTC)
+:::Wikidata works for Wikipedia as a database. [[User:Sänger|Sänger]] ([[User talk:Sänger|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:41, 29 November 2017 (UTC)
+::::Wikidata is {{Q|Q8513}}? Not {{Q|Q593744}}? [[User:Fractaler|Fractaler]] ([[User talk:Fractaler|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:48, 29 November 2017 (UTC)
+::::{{Ping|Sänger}} You seem to be somewhat misinformed about the scope of Wikidata. Please see [[WD:N]]. Entities do not need linked articles in order to be notable or useful. Wikidata functions as a general knowledge base, not just as a source of data for Wikimedia projects. --[[User:Yair rand|Yair rand]] ([[User talk:Yair rand|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:59, 4 December 2017 (UTC)
+:::::Yes, and  therefore Wikidata are the next (after Wikipedia) stage of the evolution of the digital model of the world. [[User:Fractaler|Fractaler]] ([[User talk:Fractaler|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:47, 4 December 2017 (UTC)

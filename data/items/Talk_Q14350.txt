@@ -1,0 +1,9 @@
+{{Item documentation}}
+
+== Broadcasting, broadcasters and radio stations ==
+
+Due to the difference between Wikidata phase 1 (interwiki links) and phase 2 (unambiguous terms) this item mixed broadcasting, broadcasters and radio stations. I've started to separate the terms. --[[User:Kolja21|Kolja21]] ([[User talk:Kolja21|{{int:Talkpagelinktext}}]]) 01:37, 2 December 2013 (UTC)
+
+=== List of terminology ===
+
+* Moved to [[Wikidata:WikiProject Broadcasting]]. --[[User:Kolja21|Kolja21]] ([[User talk:Kolja21|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:11, 8 January 2016 (UTC)

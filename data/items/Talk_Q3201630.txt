@@ -1,0 +1,24 @@
+== DOS ==
+
+{{ping|Maxxisti}} Would you have a source for this game to be published on DOS? It’s not unlikely but somehow I could not find definitive sources confirming it :-/.
+
+[[User:Jean-Frédéric|Jean-Fred]] ([[User talk:Jean-Frédéric|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:36, 27 October 2018 (UTC)
+
+you could try this? [https://www.myabandonware.com/game/golden-eagle-15w] looks like you can play it in the browser there via dosbox.
+
+[[User:Maxxisti|Maxxisti]] ([[User talk:Maxxisti|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:36, 27 October 2018 (UTC)
+:Thanks for the answer :) On that site however it is {{Q|Q29907051}} − annoyingly, the English title of the pseudo-sequel is the direct translation of the original game >_>
+:[[User:Jean-Frédéric|Jean-Fred]] ([[User talk:Jean-Frédéric|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:29, 27 October 2018 (UTC)
+
+Yeah, sorry I think you are right. It's ''Aigle D'Or: Le Retour, L'''. It might have only been available on Oric1, MO5 & CPC? Seems likely it wasn't even translated to English or any other languages until the sorta-sequel. There was definitely a CPC port of the original game in French [http://www.cpc-power.com/index.php?page=detail&num=88], but yeah DOS seems unlikely. I'll update the entry.
+
+[[User:Maxxisti|Maxxisti]] ([[User talk:Maxxisti|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:35, 28 October 2018 (UTC) [[User:Maxxisti|Maxxisti]] ([[User talk:Maxxisti|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:36, 28 October 2018 (UTC)
+
+== Developer ==
+
+Hi {{ping|Toto256}},
+
+Was there a particular reason for [[Special:Diff/1017822625|removing]] {{Q|Q3259558}} as {{Property|P178}}? What should then be the correct value? 
+
+Thanks, [[User:Jean-Frédéric|Jean-Fred]] ([[User talk:Jean-Frédéric|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:51, 22 September 2019 (UTC)
+::Hi {{ping|Jean-Frédéric}}, the original developper of the game has changed the page in [[fr:L'Aigle d'or|french wikipedia]]. The developper of the original game is Louis-Marie Rocques, while Vincent Grenet and Monique Wender were the developers of the adaptations on Amstrad CPC. Loriciel is only the editor of the game. Hope this explain my deletion. [[User:Toto256|Toto256]] ([[User talk:Toto256|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:58, 22 September 2019 (UTC)

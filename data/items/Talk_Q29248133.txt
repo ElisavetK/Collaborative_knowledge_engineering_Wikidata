@@ -1,0 +1,12 @@
+== Date de destruction ==
+
+{{Ping|VIGNERON}} Je ne trouve pas la date exacte de la rectification du cours de la Vilaine sur la plaine de Baud, qui a entraîné la destruction du moulin et de l’écluse. Une idée ? --[[User:EdouardHue|EdouardHue]] ([[User talk:EdouardHue|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:33, 22 April 2017 (UTC)
+:Bonne question mais je n'en sais trop rien... À demander aux Archives pendant le prochain atelier ? (ou directement sur leur PDD {{u-|Violaine T archivesderennes}} ou {{u-|Violaine P archivesderennes}} {{clin}}). Étonnamment rien dans le {{Q|29551022}} (ceci dit, au passage, j'y ai trouvé une sourcé pour {{P|571}} que j'ai mis en valeur privilégiée du coup)
+:Cet élément commence à être très bon (à mettre en showcase dans le Weekly Summary ?). Il manque une altitude et éventuellement un point kilométrique mais sinon l'essentiel y est. Juste une question pour {{P|571}}, la source ne dit pas '1726' mais '1725 et 1726'  et je ne suis pas sûr de la meilleure façon d'entrer cela.
+:Cdlt, [[User:VIGNERON|VIGNERON]] ([[User talk:VIGNERON|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:15, 23 April 2017 (UTC)
+::Tss, je m’étais dit qu’il n’y aurait rien à ce sujet dans le dictionnaire du patrimoine… J'ai simplifié l'assertion sur la date de création, mon choix de 1725 était arbitrairement basé sur l’ordre des propositions dans ''au pays de Rennes''.
+::Page 112 du dictionnaire, il est dit que les travaux de la plaine de Baud ont eu lieu de 1977 à 1980, mais c’est vague. Je suis sur les photos aériennes historiques de l’IGN, les vues de 1966 sont intéressantes ^^.
+::De fait, il y a des choses intéressantes aux archives (cotes 31W62, 1173W10, 1173W19, 1210W44, 1210W45) sur la démolition du moulin, et peut-être de l’écluse, même si elle semble avoir été comblée dès 1966, alors que les bâtiments du moulin sont restés plus longtemps.
+::Géoportail ne mentionne pas de repère de nivellement pour l’altitude. Je n’ai pas non plus d’idée de source pour le PK.
+::Je te suggère plutôt {{Q|Q29445780}} ou {{Q|Q29459208}} pour le showcase, ou une écluse aval comme {{Q|Q27743130}} !
+::--[[User:EdouardHue|EdouardHue]] ([[User talk:EdouardHue|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:18, 23 April 2017 (UTC)

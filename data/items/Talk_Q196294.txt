@@ -1,0 +1,10 @@
+{{Item documentation}}
+
+== Instance of vs. subclass of ==
+{{Ping|PAC2}} Il y avait déja une déclaration avec {{subclass of}}, pourquoi en avoir rajouté une avec {{instance of}} ? Clairement il y a plusieurs licences libres, la GPL en est un exemple. Si la GPL est une licence, les licences libres sont une classe de licence. <span class="mw-code" style="text-align:right; display: inline-block; padding: 0.1em;">[[User:TomT0m|TomT0m]] <sup>([[User talk:TomT0m|talk]])</sup> </span> 20:03, 19 May 2015 (UTC)
+: {{Ping|TomTom}}, je pensais que tous les éléments devaient avoir une propriété P31. --[[User:PAC2|PAC2]] ([[User talk:PAC2|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:39, 21 May 2015 (UTC)
+:: {{Ping|PAC2}} <small>il y a un 0 dans mon pseudo :)</small> Certes c'est sans doute une bonne idées, mais pas n'importe comment :) [[Help:Classification]] tente d'éclairer un peu les choses si tu lis un peu l'anglais. <span class="mw-code" style="text-align:right; display: inline-block; padding: 0.1em;">[[User:TomT0m|TomT0m]] <sup>([[User talk:TomT0m|talk]])</sup> </span> 17:06, 21 May 2015 (UTC)
+
+== Free as in freedom vs free as in free beer ==
+
+Just to clarify: is this item only about free licenses as in freedom, or also about free as in free beer, like {{Q|Q178285}}? I think the former, but this should be explicitly mentioned in the English description. —[[User:Tacsipacsi|Tacsipacsi]] ([[User talk:Tacsipacsi|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:52, 18 June 2020 (UTC)

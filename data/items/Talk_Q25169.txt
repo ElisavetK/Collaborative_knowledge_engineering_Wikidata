@@ -1,0 +1,15 @@
+Hello,
+
+It seems there is a mess in the Wikipedia links : This item is about the series of five novels, but what I can see (with the help of the categories and Google Translate for the languages I don't speak) is :
+
+* de, hr, hu, ko, sk → OK, they are about the series of novels.
+* bg, en, he, es, id, it, nl, pt, ru, sv → media franchise (radio series + theatre plays + novels + movies...)
+* fr → fictional universe
+* cs, sl, sq, uk, zh → {{Q|3107329}} (the first novel only.)
+
+To make things more complicated, uk: and zh: are already listed in  {{Q|3107329}} but it looks like the articles there are about the media franchise...
+
+If you are a speaker of the languages above, can you please confirm my interpretation of the contents of the articles is right before I move everything around? -[[User:Ash Crow|Ash Crow]] ([[User talk:Ash Crow|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:01, 27 August 2014 (UTC)
+:Fixed zh. —[[User:Wylve|Wylve]] ([[User talk:Wylve|<span class="signature-talk">talk</span>]]) 15:33, 29 August 2014 (UTC)
+::{{ping|Wylve}} Thank you! -[[User:Ash Crow|Ash Crow]] ([[User talk:Ash Crow|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:09, 29 August 2014 (UTC)
+:{{ping|Ash Crow}}, actually Ukrainian article is about the series of novels but briefly mentions media franchise. However, I had to swap uk: between {{Q|25169}} and {{Q|3107329}}, so now it is correct: series here and first novel at {{Q|3107329}} — [[User:NickK|NickK]] ([[User talk:NickK|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:06, 11 January 2015 (UTC)

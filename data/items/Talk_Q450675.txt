@@ -1,0 +1,35 @@
+Why is [[Property:P39|office held]] now [[Q40483|List of popes]], when it should be (IMO) [[Q19546|Pope]]? –[[User:Stryn|Stryn]] ([[User talk:Stryn|talk]]) 21:47, 13 March 2013 (UTC)
+:Changed. --[[User:Edgars2007|Edgars2007]] ([[User talk:Edgars2007|talk]]) 22:05, 13 March 2013 (UTC)
+
+== Please add ==
+
+csb  –  Francëszk (papiéż)<br />
+szl  –  Franćiszek (papjyż)<br />
+
+see: [[:csb:Francëszk (papiéż)]], [[:szl:Franćiszek (papjyż)]] --[[User:JaS|JaS]] ([[User talk:JaS|talk]]) 22:43, 13 March 2013 (UTC)
+
+: {{done}} — [[User:Hawk-Eye|Hawk-Eye]] ([[User talk:Hawk-Eye|talk]]) 06:03, 14 March 2013 (UTC)
+
+== Please change ==
+
+eu - Frantzisko I.a (aita santua) --> Frantzisko (aita santua)
+
+--[[Special:Contributions/89.224.174.28|89.224.174.28]] 07:59, 14 March 2013 (UTC)
+:{{Done}}. --[[User:Stryn|Stryn]] ([[User talk:Stryn|talk]]) 08:12, 14 March 2013 (UTC)
+
+== [[P:P27]], country of citizenship ==
+
+I removed "Italy", I do not see any indication that he has Italian citizenship. I am not sure about "Vaticanese citizen", does such a thing existe ? any source for that ? --[[User:Zolo|Zolo]] ([[User talk:Zolo|talk]]) 08:17, 14 March 2013 (UTC)
+
+:Vatican citizenship exists, as for (any?) country. - [[User:Laurentius|Laurentius]] ([[User talk:Laurentius|talk]]) 17:05, 16 March 2013 (UTC)
+
+==Please change==
+zh-方濟各 -> 方濟各 (教宗)
+[[User:Jeffreyjhang|Jeffreyjhang]] ([[User talk:Jeffreyjhang|talk]]) 08:54, 14 March 2013 (UTC)
+:{{done}}, thanks for the hint. --[[User:Zolo|Zolo]] ([[User talk:Zolo|talk]]) 09:02, 14 March 2013 (UTC)
+
+== Continuation from my talk page ==
+
+Hello, I have recently change in the page the english language from "Pope Francis" to Francis. I want to explain this because I am not agree to womeone : in fact to indicate Pope Francis is like to put President Barack Obama, on wikidata we can use a same title of label for two label, we have just to change the description to compare the twice, so no text in the title to do some disambiguation. To just put : Francis, allow a utilisation of the label for other label, for example, on the page of Benoît WVI we can indicate his fonction: pope and put the successor : Francis, so if you put in english language Pope Francis you have a repetition of pope. {{unsigned|Olivier LPB}}
+
+:There is now also some discussion on [[Wikidata:Project_chat#Are_there_rules_for_the_main_label]]. --- [[User talk:Jura1|Jura]] 09:09, 20 June 2015 (UTC)

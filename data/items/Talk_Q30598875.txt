@@ -1,0 +1,16 @@
+
+== VIAF ==
+
+VIAF 3932149108456968780003 confounds:
+
+* Révolution ! [= {{Q|3458343}} ("[[:fr:Révolution !|une organisation française d'extrême gauche)"]]]
+* Revolution (Musical group) [= {{Q|30598875}}]
+* Prince and the Revolution (Musikgruppe) [= {{Q|519725}}]
+
+--[[User:Nstrc|Nstrc]] ([[User talk:Nstrc|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:02, 14 May 2020 (UTC)
+
+== LCAuth / WorldCat-Persönlichkeitenkennung ==
+
+LCAuth n88612190 and WorldCat-Persönlichkeitenkennung lccn-n88612190 referr only to "Revolution (Musical group)".
+
+--[[User:Nstrc|Nstrc]] ([[User talk:Nstrc|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:02, 14 May 2020 (UTC)

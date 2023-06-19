@@ -1,0 +1,6 @@
+{{Item documentation}}
+
+== "Partially tangible"? ==
+
+{{Ping|Bovlb}} Could you explain why you added the alias "partially tangible object"? It's unclear what that means, or how that's the same thing as a "concrete object" as described. --[[User:Yair rand|Yair rand]] ([[User talk:Yair rand|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:53, 5 January 2020 (UTC)
+: {{ping|Yair rand}} Sorry to be slow to respond.  "partially tangible object" is a concept taken from the [[:en:Cyc|Cyc]] project.  "Tangible" here means much the same as "concrete" or "physical".  The philosophical idea behind "partially" is that what is referred to here as "concrete object" may include things that have non-tangible aspects.  For example, the concept "George Washington" has social aspects that go beyond his physical incorporation.  While it is theoretically possible to separate out concrete objects that have no non-tangible component, it is generally not as useful, and I do not believe we are doing so here.  Cheers, [[User:Bovlb|Bovlb]] ([[User talk:Bovlb|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:14, 13 January 2020 (UTC)

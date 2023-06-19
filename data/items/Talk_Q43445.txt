@@ -1,0 +1,11 @@
+{{item documentation}}
+
+== Excludes humans? ==
+
+This item used to include all female organisms, but now it excludes humans. This doesn't make much sense, because {{Q|6581072}} is a subclass. Either it shouldn't be a subclass, or this item should include humans. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:59, 26 August 2018 (UTC)
+: I'll change {{Q|6581072}} so that it's not a subclass (and likewise for the male equivalent), but consider the other option. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:05, 26 August 2018 (UTC)
+:: I suppose we could make another item that would include all females, human and non-human, although the human/non-human distinction seems pretty silly to me. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:10, 26 August 2018 (UTC)
+{{ping|Tagishsimon}}, you made a major change in the definition of this item. Apart from the issue above, note that [[:en:Female]] is sitelinked here. That now makes no sense since [[:en:Female]] includes humans. I suggest putting this item back how it was, and creating a new item for non-human female organisms if it's needed. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:22, 28 August 2018 (UTC)
+
+:Bah. I'd like to say "I did not make a major change", and indeed have done so in two prior & now deleted posts. But I'm forced to agree with you. The issue was to remove the wikidata specific instructions from the description, since these screw up any use of the description outside wikidata. The question now is how best to achieve this. The same issue attends to male. --[[User:Tagishsimon|Tagishsimon]] ([[User talk:Tagishsimon|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:20, 28 August 2018 (UTC)
+:: Thanks. I suppose one solution would be to run a bot occasionally that moves all the human items to {{Q|6581072}}. There are other similar cases, like instances of {{Q|15978631}}. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:16, 29 August 2018 (UTC)

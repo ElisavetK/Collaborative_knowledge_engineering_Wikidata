@@ -1,0 +1,40 @@
+
+==Parsing this subject==
+What is the subject of this article?
+
+As a start, is it not reasonable to expect that the article about Tokyo ( 東京 ''Tōkyō'', "Eastern Capital") covers everything from 1457 through the present?
+
+The relationship between the historic versions of Tokyo is not easy to simplify, but a few related articles have developed which are helpful.  For example,
+The history of Tokyo includes
+* 1457-present: [[:simple:Tokyo]]
+** compare [[:en:Tokyo]]; [[:de:Tokio]]
+* 1457-1869: [[:simple:Edo]] (江戸 ''Edō'')
+** compare [[:en:Edo]]; [[:de:Edo]]
+[[File:Tokyo Prefectural Office and Tokyo City Hall.JPG|right|thumb|120px|Tokyo Prefectural Office and Tokyo City Hall, [[:en:Taishō period]] (1912-1926).]]
+* 1869-1943: [[:simple:Tokyo Prefecture]] (東京府 ''Tokyo-fu''), also known as ''Tōkei-fu''
+** compare [[:en:Tokyo-fu]]; [[:de:Präfektur Tokio]]
+* 1889-1943: [[:simple:Tokyo, Tokyo]] (東京市 ''Tokyo-shi''), also known as "Tokyo City"
+** compare [[:en:Tokyo City]]; [[:de:Tokio (Stadt)]]
+* 1943-present: [[:simple:Tokyo Metropolis]] (東京都 ''Tokyo-to'')
+** compare [[:en:Tokyo Metropolis]] 
+
+* Traditional Tokyo or the [[:simple:Special wards of Tokyo]] are 23 cities occupying the place that was formerly the city of Tokyo
+** compare [[:en:Special wards of Tokyo]]; [[:de:Bezirke Tokios]]
+
+This nested structure of related articles is not mirrored in all wikis.  
+
+Is there a better way to [[wikt:parse|parse]] this? Compare [[:en:Talk:Tokyo#Alternative Languages]].--[[User:Ansei|Ansei]] ([[User talk:Ansei|talk]]) 14:59, 14 April 2013 (UTC)
+
+:As context, see also [[:en:Greater Tokyo Area]] + [[:de:Metropolregion Tokio]]? --[[User:Ansei|Ansei]] ([[User talk:Ansei|talk]]) 16:01, 14 April 2013 (UTC)
+::In essence: Yes, I think there is a better way. Forget about the metropolitan area which is not at issue and a derived entity (derived, by the way, from the city. No city, no metropolitan area; [[:en:Metropolitan area]] speaks of a "densely populated urban core", you would hardly call [[:en:Okutama, Tokyo]] densely populated.). That leaves only "two Tokyos":
+:#[[Q7473516]]: Tokyo in a narrow sense, a city (though not always in an administrative sense, always in the sense of a major urban settlement) formerly known as Edo and administrated directly by the Tokugawa, effectively the seat of Japan's government since 1603, renamed Tokyo in the Meiji restoration when the Emperor moved in, incorporated as ''shi'' (city as a modern administrative unit) in 1889, dissolved as administrative unit in 1943, but still a city in the sense of a [[:en:city|"a relatively large and permanent settlement"]].
+:#[[Q1490]]: Tokyo, one of Japan's prefectures, like all prefectures created in the Meiji restoration. In 1868 for a few weeks Edo-fu, then renamed Tōkyō-fu, initially covering only parts of the city, but by the 1890s stretching from the Okutama mountains to remote islands, and renamed Tōkyō-to in 1943 when it absorbed the administration of Tokyo city and assumed municipal authority in Tokyo city (which does not turn the prefecture into a city – the other cities, towns and villages in the prefecture continue to exist, to them it is still the prefectural government in the modern Japanese three-tier system central/prefectural/municipal government whether it be named "Prefectural" or "Metropolitan"). Yes, there were some changes that also affected the other municipalities in Tokyo, but then many measures taken by the wartime government to "simplify local government" affected the whole country. (The wartime restructuring of local governments under the Tōjō cabinet is, by the way, insufficiently covered in all language versions, in my view.)
+::All other articles cover specific historical periods in the history of either of the "two Tokyos":
+:#[[:en:Edo]] covers the city history up to the Meiji restoration, [[:en:Special wards of Tokyo]] covers the administrative structure since 1947. ''(Edit: I forgot [[:en:Tokyo City]] which covers the administrative structure between 1889 and 1943. --[[User:Asakura Akira|Asakura Akira]] ([[User talk:Asakura Akira|talk]]) 18:06, 14 April 2013 (UTC))''
+:#[[:en:Tokyo-fu]] covers the prefecture between 1868 and 1943.
+::Actually not the issue here, but as you introduced the picture of the prefectural and city office: the joint municipal and prefectural administration only illustrates one of the peculiarities of municipal autonomy in the Empire. Unlike many places, especially Europe, where municipal self-government has been historically first developed and therefore most pronounced in major cities, in the Empire the shisei-tokurei essentially denied self-government to the three largest cities by making the governors of Tokyo, Osaka and Kyoto prefectures automatically mayor of the respective cities until 1898. The issue of more autonomy for these cities (later joined by the rapidly growing cities of Yokohama, Nagoya and Kōbe) to gain more power from the prefectural governments and the Home ministry (neither prefectural governors nor the central government were elected, mayors were with restrictions) remained a political issue for decades. --[[User:Asakura Akira|Asakura Akira]] ([[User talk:Asakura Akira|talk]]) 17:42, 14 April 2013 (UTC)
+::What I forgot to mention, but hopefully it is somewhat obvious from the structure of my post: The only inter-language links that have issues are covered by the first "two Tokyos" – as far as I know the en: articles "Tokyo City", "Special wards of Tokyo", "Edo", and "Tokyo-fu" and their corresponding articles in other languages have never had any trouble. (Special wards may become an issue when the Osaka Metropolis plan is realized. The Japanese Wikipedia already has a dual structure [[:ja:特別区]] about the legal status of a special ward and [[:ja:東京都区部]] about Tokyo's wards) --[[User:Asakura Akira|Asakura Akira]] ([[User talk:Asakura Akira|talk]]) 18:49, 14 April 2013 (UTC)
+
+== English articles ==
+
+I have moved [[:en:Tokyo]] to [[Q1490]] and [[:en:Special wards of Tokyo]] as this is actually what they are about. "Special wards of Tokyo" is not just about the status of the wards, but about the area of the 23 wards in general, so it should not be in [[Q308891]]. --[[User:Zolo|Zolo]] ([[User talk:Zolo|talk]]) 15:53, 23 April 2013 (UTC)

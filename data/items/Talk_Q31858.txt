@@ -1,0 +1,23 @@
+== Property:P279 ==
+<small>Transferred from [[User talk:NBS]]. [[User:NBS|NBS]] ([[User talk:NBS|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:09, 5 February 2017 (UTC)</small>
+
+Hey NBS, I saw your revert in {{Q|Q31858}} [https://www.wikidata.org/w/index.php?title=Q31858&oldid=prev&diff=441364599]. I have just a very basic comprehension of the Russian language, thus I need some help with the topic.
+
+There are a couple of rowing items available here:
+* {{Q|Q21368803}} — the type of locomotion
+* {{Q|Q159354}} — the sport of rowing
+* {{Q|Q15842183}} — particularly about the competitive part of the sport of rowing
+
+How does {{Q|Q31858}} relate to these items? I assume some kind of connection, but I can’t figure out which one is correct. Please advise… Thanks! —[[User:MisterSynergy|MisterSynergy]] ([[User talk:MisterSynergy|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:34, 3 February 2017 (UTC)
+: Let me answer. I suppose that {{Q|Q31858}} is a common term for {{Q|Q159354}} + {{Q|213934}} (+ may be something else similar kind of sport, I don't know). --[[User:Infovarius|Infovarius]] ([[User talk:Infovarius|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:50, 3 February 2017 (UTC)
+
+::Thanks for your answer, {{Ping|Infovarius|p=}}. Does {{Q|Q31858}} refer more to the ''type of locomotion'' (muscle-propelled boats) or to the (modern) ''types of sports''? I’ll think of potential improvements to integrate and/or merge this item into the knowledge tree. It seems surprising to me that there are a couple of cyrillic articles, but no equivalents in western languages. Regards, —[[User:MisterSynergy|MisterSynergy]] ([[User talk:MisterSynergy|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:03, 3 February 2017 (UTC)
+::: Apparently, in most languages there is no generalized term. [[User:NBS|NBS]] ([[User talk:NBS|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:22, 3 February 2017 (UTC)
+::: I removed from the [[Property:P279]] [[Q21368803]] and [[Q1546758]] - they not only sport. [[User:NBS|NBS]] ([[User talk:NBS|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:22, 3 February 2017 (UTC)
+::: It's about sports. [[User:Infovarius|Infovarius]] ([[User talk:Infovarius|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:44, 4 February 2017 (UTC)
+::The azwiki and kkwiki articles in {{Q|Q31858}} seem to belong to one of the other items, would you agree? Both are already occupied in {{Q|159354}}, so maybe we need to shift these links as well or put it to somewhere else? —[[User:MisterSynergy|MisterSynergy]] ([[User talk:MisterSynergy|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:13, 3 February 2017 (UTC)
+::: Why do you think so? I can not see any evidence for that. --[[User:Infovarius|Infovarius]] ([[User talk:Infovarius|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:44, 4 February 2017 (UTC)
+
+::::As far as I can see from Google Translate there is only Rowing described in the connected kkwiki and azwiki articles, but Canoeing and Kayaking is not mentioned at all. Or does Google provide a misleading translation here? ruwiki and ukwiki do indeed describe both parts. As NBS indicated it is uncommon to group them together in most languages. Regards, —[[User:MisterSynergy|MisterSynergy]] ([[User talk:MisterSynergy|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:10, 4 February 2017 (UTC)
+::::: To what language you Google-translated? English? But as we see English does not have common word for this notions. --[[User:Infovarius|Infovarius]] ([[User talk:Infovarius|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:28, 5 February 2017 (UTC)
+::::::Yes, English. Maybe Google Translate is not the best tool for such problems. From my point of view we should close this issue now, without any further rearrangements. If anyone of you has more understanding of the contents, feel free to work on this item. Regards, [[User:MisterSynergy|MisterSynergy]] ([[User talk:MisterSynergy|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:08, 5 February 2017 (UTC)

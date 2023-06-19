@@ -1,0 +1,21 @@
+{{Interwiki conflict
+| items = Q4113741/Q315/Q34770
+| status = not resolved
+| topic = language/langue
+| discussion = [[Wikidata:Interwiki  conflicts#Language]]. 
+}}
+{{item documentation}}
+
+== Mauvais lien à corriger ==
+
+L’article https://eo.wikipedia.org/wiki/Lingvo doit être lié à https://fr.wikipedia.org/wiki/Langue<br/>
+Lingvo = Langue<br/>
+Lingvaĵo = Langage<br/>
+Voir http://www.reta-vortaro.de/cgi-bin/sercxu.pl?sercxata=lingvo&kadroj=1<br/>
+Merci,<br/>
+[[User:Golfestro|Golfestro]] ([[User talk:Golfestro|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:42, 19 February 2018 (UTC)
+
+== P910 ==
+
+{{ping|Infovarius}} and {{ping|Superchilum}} Can you explain the difference from {{Q|4960490}} and {{Q|9916484}}? Why is necessary have this 2 category in {{P|910}}? --[[User:ValterVB|ValterVB]] ([[User talk:ValterVB|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:56, 1 July 2018 (UTC)
+:Hi {{ping|ValterVB}} I don't think it is necessary to have both categories since the value should be "unique" and "single". The second item is about a particular sorting of the topic, not the general topic itself, which should be primary. Maybe {{Q|9916484}} could be better coupled with {{Q|495728}}. What do you think, {{ping|Infovarius}}? --'''[[User:Superchilum|<span style="color:#209090;">Superchilum</span>]]'''<sup>([[User talk:Superchilum|talk to me!]])</sup> 10:04, 8 July 2018 (UTC)

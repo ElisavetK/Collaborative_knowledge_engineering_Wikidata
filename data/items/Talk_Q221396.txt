@@ -1,0 +1,20 @@
+
+== Isolated articles in different languages ==
+For your information Agata = Agatha, no matter what language. If you want to have different groups of same things accessible for only a part of countries then continue this policy. Otherwise think about it.
+
+For example Agatha has no link to its French or German contemporary. They have their own isolated group. Is it as it should be? [[User:DavidSB|DavidSB]] ([[User talk:DavidSB|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:28, 12 July 2015 (UTC)
+
+:Initially, I think people tried to do that, but eventually we realized that languages can have several articles about similar first names:  [[:de:Agota]] and [[:de:Agathe]] or [[:fr:Agathe]] and [[:fr:Agata]]. 
+:So we came to the conclusion to split the items by spelling. [[Wikidata:WikiProject Names|WikiProject Names]] explains how. 
+:If you use Reasonator, you can easily navigate between the items ({{P|460}} lists all variations). --- [[User talk:Jura1|Jura]] 17:35, 12 July 2015 (UTC)
+
+::In my opinion it is a poor idea. When possible I would connect all of them to en.wiki (the most extensive) so it would be logical. [[User:DavidSB|DavidSB]] ([[User talk:DavidSB|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:59, 12 July 2015 (UTC)
+::And I guess there is only one spelling of a name in particular language. Then, what is the point of several articles in one language? [[User:DavidSB|DavidSB]] ([[User talk:DavidSB|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:04, 12 July 2015 (UTC)
+::: {{ping|DavidSB}}Is necessary to split the name. ex. Wich is the {{P|735}} of {{Q|236106}}? and witch the {{P|735}} of {{Q|35064}}? --[[User:ValterVB|ValterVB]] ([[User talk:ValterVB|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:19, 12 July 2015 (UTC)
+
+::::If you look at [[:en:David]] you will see it's well done there. He is the same King. For another example: [[:pl:Komputer]] = [[:en:Computer]], it's essentially the same thing. If you have got several articles about similar first names, I think all could be connected but one which is native for given language (that would be universal article for all of them). I mean, link all "Agata" which are not native for wiki's origin country. Like here: [[:fr:Agata]] <=> [[:en:Agata]]. Best regards. [[User:DavidSB|DavidSB]] ([[User talk:DavidSB|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:26, 13 July 2015 (UTC)
+:::::[[:en:David]] is about a person, not a name. The name is at [[:en:David (name)]]. 
+:::::Besides, there are languages that are spoken in more than one country and countries where not everybody is to select a first name from a calendar in the national language.  --- [[User talk:Jura1|Jura]] 05:14, 13 July 2015 (UTC)
+
+::::::I understand you point of view, however I am not sure it is the best solution. It is just quite confusing. [[User:DavidSB|DavidSB]] ([[User talk:DavidSB|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:07, 13 July 2015 (UTC)
+:::::::The best solution is to keep things separated and use {{P|460}} to link them. This allows for researching all variants at once if needed (through a TREE in Wikidata Query) and to enter the good one when only one is pertinent. "I guess there is only one spelling of a name in particular language" → oh no, far from it. For example, "Stéphane" and "Étienne" are both French variants with a common origin (the greek Stephanos), and sometimes variants have really nothing in common except their origin, like "Fañch" and "Soizig" which are Breton male and female variants of the same French given name ("François/Françoise") Naming is a complex matter and the way we are doing it right now is the best we can do given the way Wikidata is built. -[[User:Ash Crow|Ash Crow]] ([[User talk:Ash Crow|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:02, 16 July 2015 (UTC)

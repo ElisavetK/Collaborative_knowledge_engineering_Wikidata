@@ -1,0 +1,10 @@
+== Ownership == 
+{{ping|Jklamo}} The ownership information is wrong accoring to [https://datacvr.virk.dk/data/visenhed?enhedstype=virksomhed&id=27761291] &mdash; [[User:Fnielsen|Finn Årup Nielsen (fnielsen)]] ([[User talk:Fnielsen|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:50, 28 November 2016 (UTC)
+: {{ping|Jklamo}} Sorry I was wrong there. &mdash; [[User:Fnielsen|Finn Årup Nielsen (fnielsen)]] ([[User talk:Fnielsen|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:52, 28 November 2016 (UTC)
+
+== Geo ==
+
+Why can't we have {{p|625}} when the company is located on a single location? &mdash; [[User:Fnielsen|Finn Årup Nielsen (fnielsen)]] ([[User talk:Fnielsen|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:53, 9 December 2016 (UTC)
+: This was in reference to [https://www.wikidata.org/w/index.php?title=Q27920050&diff=415165048&oldid=415146890 this edit]. &mdash; [[User:Fnielsen|Finn Årup Nielsen (fnielsen)]] ([[User talk:Fnielsen|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:53, 9 December 2016 (UTC)
+:: Because these are {{p|625}} of HQ, so they belong to the {{p|159}}. Having them straight is not a good idea, as it is very vague, if it that are coordinates of hq, main factory, main shop etc.--[[User:Jklamo|Jklamo]] ([[User talk:Jklamo|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:37, 9 December 2016 (UTC)
+Some companies, such as this one, has demonstrably one single location. It is not vague. There is a only one single address. It is clearly stated in the company registry. In this case {{P|2814}} is added, not as a qualifier, becauses there is one address only. &mdash; [[User:Fnielsen|Finn Årup Nielsen (fnielsen)]] ([[User talk:Fnielsen|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:22, 16 February 2017 (UTC)
