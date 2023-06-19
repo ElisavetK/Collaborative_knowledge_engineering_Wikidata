@@ -1,0 +1,239 @@
+{{Property documentation
+|description       = {{TranslateThis
+  | da = BNF-identifikator (Bibliothèque nationale de France)
+  | en = subject's BNF (Bibliothèque nationale de France) authority control number
+  | fr = identifiant de la notice d’autorité de la BnF (Bibliothèque nationale de France)
+}}
+|infobox parameter = [[:en:Template:Authority control]]: "BNF" - {{Q|3907614}}
+|domain            = {{TranslateThis
+  | da = personer, steder, begreber
+  | en = people (authors/writers/musicians), places, concepts...
+  | fr = personnes (auteurs, écrivains, musiciens, etc.), lieux, concepts…
+}}
+}}
+
+<!-- {{Constraint:Format|pattern=<nowiki>(\d{8}[0-9bcdfghjkmnpqrstvwxz]|)</nowiki>|mandatory=true}} -->
+<!-- {{Constraint:Conflicts with|list={{P|31}}: {{Q|4167410}}|mandatory=true}} -->
+<!-- {{Constraint:Unique value}} -->
+<!-- {{Constraint:Single value|exceptions= {{Q|519357}}, {{Q|3386311}}, {{Q|13526947}}, {{Q|13527513}}, {{Q|3152321}}, {{Q|15041263}}, {{Q|3295822}}, {{Q|2980557}}, {{Q|3166765}}, {{Q|234403}}, {{Q|1982054}}, {{Q|3386031}}, {{Q|5734761}} }} -->
+
+{{Autofix|pattern=<nowiki>cb(\d{8}[0-9bcdfghjkmnpqrstvwxz])</nowiki>|replacement=\1}} <!-- remove "cb" at the beggining -->
+{{Autofix|pattern=<nowiki>12148/cb(\d{8}[0-9bcdfghjkmnpqrstvwxz])</nowiki>|replacement=\1}} <!-- remove the beggining -->
+
+{{ExternalUse|
+* [[:fr:Module:Autorité]]
+* [[:it:Template:Controllo di autorità]]
+* [[:s:fr:Modèle:Autorité]]
+* [[:s:ru:Шаблон:Внешние ссылки]]
+* [[:ar:قالب:ضبط استنادي]]
+* [[:be-x-old:Шаблён:Бібліяінфармацыя]]
+* [[:eo:Ŝablono:Bibliotekoj]]
+* [[:d:Template:Authority control/wrapper]]
+* [[:es:Plantilla:Ficha de medicamento]]
+}}
+
+{{Authority control properties}}
+
+
+
+== parameter value normalization ==
+
+re: [[MediaWiki talk:Gadget-AuthorityControl.js#Authority_Control_values_and_hacks_-_parameter_representation_-_url_generation|MediaWiki talk:Gadget-AuthorityControl.js]] Do you know how the trailing character for the BnF identifier is calculated? The parameter values in the wikipedias and in wikidata may differ. Many links are broken. [[User:Magnus Manske/authority control.js|Magnus Manske's authority control.js tool]] detects only the identifiers.<br />
+'''note''': scanning the viaf.org source code page for lines using "new Node" helps identifying the national identifiers<br />
+see: [[viaf:39382430]] for [[Q1401]] Petrarch 11919436b without final "b"
+: new Node("BNF|'''11919436'''", "BNF", "Bibliothèque nationale de France");
+'''First one should know the algorithm''' then a migration would be necessary to "''normalize''" the parameter values used in the templates and in the wikipedias. The link generation should not mather of which version is present. Thanks for any help!<br />
+[[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 13:14, 9 October 2013 (UTC)
+: Please post any information abouth the checksum algorithm here. Thanks! [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 17:48, 10 October 2013 (UTC)
+::Hello, what do you need exactly? I work at the BnF and can ask the guys in charge of it to be in touch with you. Best, [[User:Remi Mathis|Remi Mathis]] ([[User talk:Remi Mathis|{{int:Talkpagelinktext}}]]) 21:16, 10 October 2013 (UTC)
+=== re: what do we need exactly ===
+At the top of this page you will see the link 
+: List of this constraint violations: '''[[Wikidata:Database reports/Constraint violations/P268#Single_value|Database reports/Constraint violations/P268#Single value]]'''
+Here are some (only an extract) commented examples from that section (which is updated with bots)
+* Violations count: 27
+** John Paul II ([[Q989]]): 12079078, 12079078'''0''' - see an extra '''0''' - related to [[viaf:35605]]
+** Astrid Varnay ([[Q254518]]): 14414944'''p''', 14414944 - see an extra '''p'''
+** Fernand Khnopff ([[Q559559]]): 11939256'''t''', 11939256 - see an extra '''t'''
+** Dominique Noguez ([[Q1236969]]): 11917804'''b''', 11917804 - see an extra '''b'''
+** Albert Crahay ([[Q2758805]]): 14975754'''s''', 14975754 - see an extra '''s'''
+In the viaf.org records only the shorter value is present. See the history section of the '''History of VIAF ID:35605 (81)''' section at [[viaf:35605]].<br />
+It shows only '''BNF|12079078''' lines folowed by add or delete and a timestamp. This is the shorter form. In order to generate an url to BNF one needs that the value '''0''' needs to be added to the more general algorythm described below.<br />
+However in order to create a proper url to BnF one needs
+# to add a '''cb''' predix
+# add the identifier fetched from VIAF records
+# append the "''checksum / validation''" digit or character
+Example links for: for John Paul II ([[Q989]]): 12079078, 12079078'''0''' - see an extra '''0'''
+# http://catalogue.bnf.fr/ark:/12148/cb12079078/PUBLIC '''fails'''
+# http://catalogue.bnf.fr/ark:/12148/cb120790780/PUBLIC is '''OK'''
+I hope I could ilustrate the problem. Please do not hesitate to ask for a better description from other users. Best regards [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 23:09, 10 October 2013 (UTC)
+----
+re: [[Q15060040]] Avraham Novershtern<br />
+A time consuming method to get the requested 13483406'''t''' from a known '''13483406''' is to look at http://viaf.org/processed/BNF|13483406 where http://catalogue.bnf.fr/ark:/12148/cb13483406t is displayed. [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 23:37, 11 October 2013 (UTC)
+
+:hi, the French cataloguers and librarians use the complete value after the ARK and before /PUBLIC : generally it begins with cb and finishes with a letter, but not always… it would certainly be better to get the "whole" code, since they are sometimes subject to variations, that cannot be easily anticipated… The BNF does not give explanations on "how" the code is constructed. Perhaps, you could ask [[Q673718|Rémi Mathis]] ([[user:Remi Mathis|Remi Mathis]] who is, at the same time, librarian at the BNF and President of Wikimedia France ;) --[[User:Hsarrazin|Hsarrazin]] ([[User talk:Hsarrazin|{{int:Talkpagelinktext}}]]) 14:04, 12 October 2013 (UTC)
+:: Thanks for this idea! [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 15:14, 12 October 2013 (UTC)
+
+==== what's next? ====
+:{{ping|לערי ריינהארט|Hsarrazin|Remi Mathis}}: Apparently the identifier does not start with cb when the resource is a book edition. For instance {{Q|15266688}} ->[http://catalogue.bnf.fr/ark:/12148/bpt6k83707p bpt6k83707p]. So I think we should use the long-form identifiier, even though, annoyingly, it is not the most prominent in VIAF. Then we should change the link in [[MediaWiki:Gadget-AuthorityControl.js]] from 'http://catalogue.bnf.fr/ark:/12148/cb$1/PUBLIC' to 'http://catalogue.bnf.fr/ark:/12148/$1' (the /PUBLIC suffix does not appear necessary and it does not work with non-cb entries)
+:{{ping|GautierPoupeau}}: if we change the format, could your bot update (and ideally also maintain) {{p|268}} values ? --[[User:Zolo|Zolo]] ([[User talk:Zolo|{{int:Talkpagelinktext}}]]) 07:20, 15 February 2014 (UTC)
+: Personally I hing that we should '''not change the values''' now until all participating web sites as the Wikipedias could automatically switch the link generation via a piece of common software.
+: [[User:Magnus_Manske/missing_props.js]] is able to perform context sensitive actions. My opinion is that [[MediaWiki:Gadget-AuthorityControl.js]] should do the same and generate appropriate links for books / works. [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 07:47, 15 February 2014 (UTC)
+::the prefix bpt6k doesn't aim to identify the book edition, but the digitized book. All identifier in BnF Catalog use the prefix cb. I agree it would be better if we can indicate all ark identifier (with prefix) but it will be a big job to change all existing identifier and like [[User:לערי ריינהארט|לערי ריינהארט]] I'm not sure it's a good idea for the moment. If you make this choice, I can make (and maintains) the modifications but I have some works to do it. Last information : the last character in ARK identifier is a control character and BnF don't want to tell how it is computed... [[User:GautierPoupeau|GautierPoupeau]] ([[User talk:GautierPoupeau|{{int:Talkpagelinktext}}]]) 09:23, 15 February 2014 (UTC)
+:::BNF seems to use the arc URI scheme like others use the urn scheme for general administration of persistent addresses. This Property {{P|268}} is about authority records (metadata as placeholders for persons and other objects of the real world), a ''subset'' of the items listed in the BNF ''catalogue'' and the "items in its catalogue" (als metadata as placeholders for items in stock or their slight generalisation to "editions") are again a subset of the "interesting things BNF puts into the Web" (data or digitized things which can be ''acessed'' under that address). We cannot extend P268 to such an extent without loosing most of the semantic differences between this property and any other (kind of "if it can be given an URI we don't need a specialized property at all"). -- [[User:Gymel|Gymel]] ([[User talk:Gymel|{{int:Talkpagelinktext}}]]) 09:48, 15 February 2014 (UTC)
+::::{{reply to|GautierPoupeau}} thanks for the info. actually the bpt6k means only the electronic file, not the book, no ? That's the only way I can make sense of "format:application/pdf" in the notice. I think linking to individual books is already one we do for {{P|675}}. That is convenient, though not really exact. Are there entries for individual volumes. In http://gallica.bnf.fr/ark:/12148/bpt6k83707p I see a link to the entry for the 5 volume set but nothing about the individual volume (but I think we need a Wikidata item per volume, as the publication date, and, it seems, authors change from one volume to the next). 
+::::{{reply to|Gymel}} ark identify objects, not webpages. I do not see how that matters whether the object is electronic or real-world as long as it is the same as the one we aim to describe in Wikidata. This property is about providing BNF identifier for objects and apart from practical limitations, I do not see any reason why it should be restricted to those in the cb namespace. --[[User:Zolo|Zolo]] ([[User talk:Zolo|{{int:Talkpagelinktext}}]]) 10:09, 15 February 2014 (UTC)
+:::::<nowiki>http://catalogue.bnf.fr/ark:/12148/bpt6k83707p</nowiki> shows a digital object in the Gallica collection, thus probably ark:/12148/bpt6k83707p "is" this digital object. In a sense this is the same as <nowiki>http://catalogue.bnf.fr/ark:/12148/cb12283644f</nowiki> showing a catalogue record for the person Adolphe Robert, thus probably ark:/12148/cb12283644f "is" this person (a real world object), which is known here as {{Q|2824900}}. However {{Q|15266688}} "is" '''not''' the digital object ark:/12148/bpt6k83707p ! There exists <nowiki>http://catalogue.bnf.fr/ark:/12148/cb31224546x</nowiki> i.e. ark:/12148/cb31224546x which stands for for the 5-volume ''edition'' (more a "concept" than an "object" - it's like genotype vs. phenotype), of which  {{Q|15266688}} would be a "part" and lists 29 "items", our electronic object bpt6k83707p for (the digitization or electronic edition derived from the print) volume 1 being one of it.
+:::::Unfortunately there is also the issue of "5 volumes as one edition" in the BNF catalogue vs. "one volume" as a Wikidata item, but even if we disregard this obstacle (which might have been the motiviation for supplying a categorically wrong but with respect to part/whole more appropriate identifier) we have to admit that there are two kinds of ark-identifiers: those with cb... (cote bibliographique?) for the ''description'' of the (abstract) edition in the catalogue and bp.... for ''access'' to digital objects in their digital collections (the "Gallica" identifier if you like to put it like this). Both of these identifiers signify something, and of course there is a close relation between them ("digital object derived in a purely reproductive manner from a certain physical exemplar belonging to this edition"), but they can only be equated in contexts with much coarser distinctions than wikidata already has developed. [[User:Gymel|Gymel]] ([[User talk:Gymel|{{int:Talkpagelinktext}}]]) 15:09, 15 February 2014 (UTC)
+
+==== [[Q673718]] Rémi Mathis ====
+[[Q673718]] Rémi Mathis is referenced at [[User talk:Remi Mathis]]. There you can see
+# commons: is '''unchanged''' <nowiki>{{</nowiki>Authority control|BNF='''cb'''166030520|VIAF=250789527|SUDOC=096153520<nowiki>}}</nowiki> · Please note the "'''cb'''" prefix!
+At some point in time one needs to use the same / similar formats in all WMF projects. Regards [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 15:14, 12 October 2013 (UTC)
+
+== BnF identifier - constraint violation format - broken links ==
+
+Hi! '''Format "[0-9]{8,9}[a-z]?''' handles two kind of identifier values / versions:
+# length 8 values (digits only) <br />they generate broken links because today the gadget [[MediaWiki:Gadget-AuthorityControl.js]] is not able to calculate the trailing validation character (a digit or a..z character unless documentation will be available)
+# length 8 values of one of the two formats
+## 9 digits
+## 8 digits followed by a character (a..z)
+Because the values for the BnF identifier is transcrluded at various projects - either by projects using Module:Authority control ([[Q11640331]]) at ( 'da', 'en', 'fr', 'ilo', 'ja', 'pl', 'vi', 'zh' ) and soon at ( 'eo', 'ro', 'ru', 'yi' ) [[:da:module:Autoritetsdata|da:Autoritetsdata]] [[:fr:module:Autorité|fr:Autorité]] [[:pl:module:Kontrola autorytatywna|pl:Kontrola autorytatywna]] · [[:eo:template:Bibliotekoj|eo:Bibliotekoj]] [[:ro:template:Informații bibliotecare|ro:Informații bibliotecare]] [[:ru:template:Библиоинформация|ru:Библиоинформация]] [[:yi:template:ביכער|yi:ביכער]] - or copied by users or bots it makes no sense to use values generating broken links.<br />
+Please change the regex expression so that only the second variant is regarded as valid and everything else as invalid. I never managed regex but a OR between the following regex might help:
+:<nowiki>{{Constraint:Format|pattern=&lt;nowiki&lt;\d{9}&lt;/nowiki&gt;}}</nowiki>
+: <nowiki>{{Constraint:Format|pattern=&lt;nowiki&lt;\d{8}[a-z]&lt;/nowiki&gt;}}</nowiki>
+Thanks! [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 09:24, 12 October 2013 (UTC)
+
+: {{done}} Thanks to [[User:Ivan A. Krestinin]] [[User talk:Ivan A. Krestinin|talk]] for the fix! [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 11:17, 12 October 2013 (UTC)
+
+=== Constraint violations report does not update properly ===
+Hi! [[Wikidata:Database reports/Constraint violations/P268]] shows "''Data time stamp: '''15 October 2013''' — Items processed: 16659''"<br />
+It lists also: '''{{Q|9161}} <!-- Josip Broz Tito --->''' with the values ''Q9161: '''cb'''120753467''<br />
+At the corresponding '''[{{FULLURL:Q9161|action=history}} revision history]''' you can see:
+: ''10:37, '''12 October 2013'''‎ לערי ריינהארט (talk | contribs)‎ . . (23,299 bytes) (-3)‎ . . (‎Changed claim: Property:P268: '''120753467''')''<br />it was changed some days ago
+Please verify also other listed pages listed with values starting with '''cb'''. Thanks in advance for fixing this. Regards [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 07:00, 16 October 2013 (UTC)
+: Hi, looks like [[Wikidata:Contact the development team#Missed incremental dumps|this problem]]. — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 18:20, 16 October 2013 (UTC)
+
+== proper link value at onmouseover data in source code ==
+
+Starting at '''{{Q|535}} <!-- Victor Hugo --> using '''[[viaf:9847974]]''' you may find in the source code of the VIAF record the following:
+<pre><a title="Authority/Source Record" alt="Authority/Source Record" onmousedown="doMouseDown(event, 'BNF|12325135')" onmouseup="doMouseUp(event)" onmouseout="unselectNode('BNF|12325135')" onmouseover="selectNode('BNF|12325135')" id="BNF|12325135" href="http://catalogue.bnf.fr/ark:/12148/cb12325135h"> ...</pre>
+Plese note ''cb'''12325135h''''' with the final '''h''' character. Regards [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 03:25, 22 October 2013 (UTC)
+
+== Prefix and check character ==
+
+cf. http://en.wikisource.org/wiki/User:Inductiveload/BnF_ARK_format
+
+Since "cb" (in theory) has to be prepended before application of the (proper) checksum algorithm modulo 29, and VIAF does not list the checksum character, and the "notice n°" in http://catalogue.bnf.fr/ is without "cb" and the check character (however with a prefix "FRBNF"), I propose to store only the 8-digit raw identifier in Wikidata. -- [[User:Gymel|Gymel]] ([[User talk:Gymel|{{int:Talkpagelinktext}}]]) 20:31, 7 November 2013 (UTC)
+
+: from [[user talk:Magnus Manske#temporary_normalisation_for_BnF_identifier|user_talk:Magnus Manske#temporary normalisation for BnF identifier]]
+: ''The BnF checksum is a problem I ran into before when writing an VIAF data importer for Wikisource. I worked it out eventually after reading the ARK and NOID specs, and I detailed the checksum generation at [http://en.wikisource.org/wiki/User:Inductiveload/BnF_ARK_format Wikisource] along with a JS snippet that can convert an 8-digit string (such as from VIAF) into a cb-prefixed, checksum-suffixed form. [[User:Inductiveload|Inductiveload]] ([[User talk:Inductiveload|{{int:Talkpagelinktext}}]]) 14:38, 6 November 2013 (UTC)''
+:: fixing in progress [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]])
+::: {{done}} by [[User:Magnus Manske|Magnus Manske]]: [https://www.wikidata.org/w/index.php?title=User%3AMagnus_Manske%2Fauthority_control.js&diff=91195692&oldid=85701031] — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 09:16, 3 December 2013 (UTC)
+
+== Notices en doublon ==
+
+Listes des notices [[Wikidata:Database reports/Constraint violations/P268#"Single value" violations|identifiées comme doublon]] et concernant une même personne sous un même nom. L'objectif est de les signaler à la BnF ({{no spam|coordination-bibliographique|bnf.fr}}) afin qu'elles soient fusionnées.
+
+* {{Q|57074}}: [http://catalogue.bnf.fr/ark:/12148/cb14812158c/PUBLIC 14812158c], [http://catalogue.bnf.fr/ark:/12148/cb12030994q/PUBLIC 12030994q] <small>signalée à la BnF le 27-11-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|61347}}: [http://catalogue.bnf.fr/ark:/12148/cb13326577x/PUBLIC 13326577x], [http://catalogue.bnf.fr/ark:/12148/cb14080804z/PUBLIC 14080804z] <small>signalée à la BnF le 27-11-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|438024}}: [http://catalogue.bnf.fr/ark:/12148/cb140383003/PUBLIC 140383003], [http://catalogue.bnf.fr/ark:/12148/cb12135095z/PUBLIC 12135095z] <small>signalée à la BnF le 03-12-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|900146}}: [http://catalogue.bnf.fr/ark:/12148/cb10277415s/PUBLIC 10277415s], [http://catalogue.bnf.fr/ark:/12148/cb13517722k/PUBLIC 13517722k] <small>signalée à la BnF le 27-11-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|1383662}}: [http://catalogue.bnf.fr/ark:/12148/cb11921186b/PUBLIC 11921186b], [http://catalogue.bnf.fr/ark:/12148/cb140669911/PUBLIC 140669911] <small>signalée à la BnF le 30-11-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|1717934}}: [http://catalogue.bnf.fr/ark:/12148/cb14048752n/PUBLIC 14048752n], [http://catalogue.bnf.fr/ark:/12148/cb14829379s/PUBLIC 14829379s] <small>signalée à la BnF le 03-12-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|2339677}}: [http://catalogue.bnf.fr/ark:/12148/cb14011363w/PUBLIC 14011363w], [http://catalogue.bnf.fr/ark:/12148/cb13891675m/PUBLIC 13891675m] <small>signalée à la BnF le 27-11-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|2741643}}: [http://catalogue.bnf.fr/ark:/12148/cb13543570/PUBLIC 13543570], [http://catalogue.bnf.fr/ark:/12148/cb11904044f/PUBLIC 11904044f] <small>signalée à la BnF le 27-11-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|2871030}}: [http://catalogue.bnf.fr/ark:/12148/cb14968332w/PUBLIC 14968332w], [http://catalogue.bnf.fr/ark:/12148/cb12551971k/PUBLIC 12551971k] <small>signalée à la BnF le 27-11-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|2886863}}: [http://catalogue.bnf.fr/ark:/12148/cb13008457k/PUBLIC 13008457k], [http://catalogue.bnf.fr/ark:/12148/cb14031327f/PUBLIC 14031327f] <small>signalée à la BnF le 27-11-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|2958850}}: [http://catalogue.bnf.fr/ark:/12148/cb15365648g/PUBLIC 15365648g], [http://catalogue.bnf.fr/ark:/12148/cb149773812/PUBLIC 149773812] <small>signalée à la BnF le 03-12-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|3018706}}: [http://catalogue.bnf.fr/ark:/12148/cb12096232x/PUBLIC 12096232x], [http://catalogue.bnf.fr/ark:/12148/cb148644085/PUBLIC 148644085] <small>signalée à la BnF le 03-12-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|3022898}}: [http://catalogue.bnf.fr/ark:/12148/cb152989819/PUBLIC 152989819], [http://catalogue.bnf.fr/ark:/12148/cb122619927/PUBLIC 122619927] <small>signalée à la BnF le 03-12-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|3237600}}: [http://catalogue.bnf.fr/ark:/12148/cb14849016g/PUBLIC 14849016g], [http://catalogue.bnf.fr/ark:/12148/cb14653258c/PUBLIC 14653258c] <small>signalée à la BnF le 27-11-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|12881872}}: [http://catalogue.bnf.fr/ark:/12148/cb14426861p/PUBLIC 14426861p], [http://catalogue.bnf.fr/ark:/12148/cb12023232r/PUBLIC 12023232r] <small>signalée à la BnF le 27-11-2013 — [[User:Ayack|Ayack]] ([[User talk:Ayack|talk]]) 10:30, 3 December 2013 (UTC)</small>
+* {{Q|Q3479257}}: [http://catalogue.bnf.fr/ark:/12148/cb11898467v/PUBLIC 11898467v], [http://catalogue.bnf.fr/ark:/12148/cb14036396g/PUBLIC 14036396g] <small>fixed, the correct one is [http://catalogue.bnf.fr/ark:/12148/cb14036396g/PUBLIC 14036396g] — [[User:TintoMeches|<span style="font-family:Georgia; color:black">TintoMeches</span>]], 10:55, 16 April 2014 (UTC)</small>
+* {{Q|239760}}: [http://catalogue.bnf.fr/ark:/12148/cb13007266r/PUBLIC 13007266r], [http://catalogue.bnf.fr/ark:/12148/cb153033258/PUBLIC 153033258] <small>fixed, the correct one is [http://catalogue.bnf.fr/ark:/12148/cb13007266r/PUBLIC 13007266r] — [[User:TintoMeches|<span style="font-family:Georgia; color:black">TintoMeches</span>]], 10:55, 16 April 2014 (UTC)</small>
+* {{Q|3383413}}: [http://catalogue.bnf.fr/ark:/12148/cb14020333x/PUBLIC 14020333x], [http://catalogue.bnf.fr/ark:/12148/cb119050707/PUBLIC 119050707] <small>fixed, the correct one is [http://catalogue.bnf.fr/ark:/12148/cb119050707/PUBLIC 119050707] — [[User:TintoMeches|<span style="font-family:Georgia; color:black">TintoMeches</span>]], 10:55, 16 April 2014 (UTC)</small>
+* {{Q|4003342}}: [http://catalogue.bnf.fr/ark:/12148/cb12687528k/PUBLIC 12687528k], [http://catalogue.bnf.fr/ark:/12148/cb14048836p/PUBLIC 14048836p]
+* {{Q|723141}}: [http://catalogue.bnf.fr/ark:/12148/cb12784112j/PUBLIC 12784112j], [http://catalogue.bnf.fr/ark:/12148/cb12051657b/PUBLIC 12051657b]
+
+== Conflicts with instance of(P31) ==
+
+This is plainly wrong. An identifier for a book id imply that this is a property of an instance of a book or a subclass. It can make a conflict but the existence of P31 for some instance is not enough. [[User:Jeblad|Jeblad]] ([[User talk:Jeblad|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:23, 25 February 2015 (UTC)
+
+== Troubleshooting Pattern ==
+
+Hello everyone,
+
+[[User:KasparBot|my bot]] detected more than 1,300 articles on multiple wikis ([https://tools.wmflabs.org/kasparbot/ac.php?select-project-bewiki=1&select-project-cawiki=1&select-project-cswiki=1&select-project-dawiki=1&select-project-dewiki=1&select-project-elwiki=1&select-project-enwiki=1&select-project-fawiki=1&select-project-frwiki=1&select-project-huwiki=1&select-project-jawiki=1&select-project-kowiki=1&select-project-mkwiki=1&select-project-svwiki=1&name=&select-typ-malformed_value=1&remark=BNF# list]) with malformed {{P|P268}} values. This is a huge amount. Is there a simple rule which can be used to generate a working {{P|P268}} identifier out of the malformed identifiers (mostly <code>\d{8}</code>) which are listed at the tool? Has anybody a good solution for that problem? 
+
+Thanks, -- [[User:T.seppelt|T.seppelt]] ([[User talk:T.seppelt|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:00, 17 July 2015 (UTC)
+:please see [[Wikidata talk:WikiProject Authority control]] -- [[User:T.seppelt|T.seppelt]] ([[User talk:T.seppelt|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:28, 2 October 2015 (UTC)
+From my bot`s code:
+<source lang="cpp">
+std::string BNF8ToBNF9(const std::string& bnf8)
+{
+	std::string id = "cb" + bnf8;
+
+	const static std::string xdigits = "0123456789bcdfghjkmnpqrstvwxz";
+
+	unsigned int check_digit = 0;
+	for (size_t i = 0; i < id.size(); i++)
+	{
+		size_t pos = xdigits.find(id[i]);
+		if (pos == std::string::npos)
+			throw CException("Invalid BNF8 format: " + id);
+		check_digit += pos * (i + 1);
+	}
+
+	std::string bnf9 = bnf8 + " ";
+	bnf9[8] = xdigits[check_digit % xdigits.size()];
+	return bnf9;
+}
+</source>
+— [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 20:11, 2 October 2015 (UTC)
+
+Thank you. For those who are interested in the Java implementation:
+<source lang="java">
+public static String convertBnF8toBnF9(String value) {
+	if(value.matches("\\d{8}[0-9bcdfghjkmnpqrstvwxz]"))
+		return value;
+	value = value.replaceAll("^cb", "");
+	value = "cb" + value.replaceAll("[^\\d]" , "" ) ;
+	String bnf_xdigits = "0123456789bcdfghjkmnpqrstvwxz";
+	int bnf_check_digit = 0;
+	for (int i=0; i < value.length(); i++){
+        bnf_check_digit += bnf_xdigits.indexOf(value.charAt(i)) * (i+1);
+	}
+	value = value.substring(2)+bnf_xdigits.charAt(bnf_check_digit % bnf_xdigits.length());
+	return value;
+}
+</source>
+– [[User:T.seppelt|T.seppelt]] ([[User talk:T.seppelt|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:53, 4 October 2015 (UTC)
+
+== How to add Bnf ID? ==
+
+Hello. Can anyone teach me how to add BNF ID in Wikidata entry? I add all the identifiers with the help of VIAF. But the BNF ID recorded at VIAF never work. Please ping me while replying. --[[User:Gazal world|Gazal world]] ([[User talk:Gazal world|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:39, 12 January 2021 (UTC)
+
+: {{ping|Gazal world}} I can tell you how.  There are numerous ways.  The simplest way is to add a script that then adds all of the other IDs from individual libraries in VIAF.  See https://www.wikidata.org/wiki/Wikidata:WikiProject_Linked_Data_for_Production/Practical_Wikidata_for_Librarians#User_Scripts and add two scripts via https://www.wikidata.org/wiki/Special:MyPage/common.js, which will redirect you to your own common.js page to add scripts.  These are the scripts you should add: 
+    importScript( 'User:Bargioni/moreIdentifiers defaultconf.js' );
+    importScript( 'User:Bargioni/moreIdentifiers.js' );
+
+You should also add this script: importScript('User:1Veertje/identifierInput.js');  The script lets you paste in a full URL value for an identifier property and automatically strips the URL down to the identifier.
+
+If you want to just do it manually, you can get the BnF ID from the URL found in the BnF icon in VIAF.  For example, if you are on this page in VIAF: http://viaf.org/viaf/96432156, if you right click on the French flag and copy the URL there, you get http://catalogue.bnf.fr/ark:/12148/cb122668507.  The ID is the last part without "cb": 122668507.  If you just click on the French flag it takes you to https://catalogue.bnf.fr/ark:/12148/cb122668507 and you can copy from the browser address bar and past it into Wikidata.
+
+Hope this helps. [[User:UWashPrincipalCataloger|UWashPrincipalCataloger]] ([[User talk:UWashPrincipalCataloger|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:59, 12 January 2021 (UTC)
+:Hi {{u-|Gazal world}} and {{u-|UWashPrincipalCataloger}},
+:To complete yourself, you can also check on ISNI, it's always the right link.
+:If Viaf have only the FRBNF id like FRBNF17005663X :
+:# Remove FRBNF and the last character to get 17005663
+:# Go to data.bnf.fr: https://data.bnf.fr/fr/17005663
+:# Look at the link on ''Notice correspondante dans Catalogue général'', or on the ''Permalien''
+: Otherwise [[User:Bargioni/moreIdentifiers]] always does the job well.
+: — [[User:Eru|eru]] <sup>&#91;[[User_talk:Eru|Talk]]&#93; &#91;[[:fr:Utilisateur:Eru|french wiki]]&#93;</sup> 21:15, 12 January 2021 (UTC)
+::All the information by UWashPrincipalCataloger are correct and useful, however they all relate on VIAF, which not always reports the id requested by Wikidata, which has the last control-digit. In cases in which VIAF doesn't have the control-digit, you can use the very good method indicated above by Eru or look for the name of the person in https://catalogue.bnf.fr/recherche-auteurs.do?pageRech=rau and find through it the complete id, containing the final control-digit; otherwise, you can add the "wrong" ID (= without control-digit) and probably a bot will pass soon adding the control digit. Ask if I'm not fully clear. Good evening, --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 21:18, 12 January 2021 (UTC)
+
+* Hello {{u|UWashPrincipalCataloger}} and all. That is perfect. I understood now. I add all identifiers manually. I don't use script and don't have common.js page. Thank you very much for answering. ---[[User:Gazal world|Gazal world]] ([[User talk:Gazal world|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:45, 12 January 2021 (UTC)
+
+* I highly recommend creating your common.js page. It will make adding the IDs much much quicker and easier.  Just copy the URL, paste it in, and the script will change it to the correct identifier. Saves a lot of time and creating your common.js page is very simple.  Just go to https://www.wikidata.org/wiki/Special:MyPage/common.js and create your page from there and then paste in the scripts I mentioned.  Much better than manually entering just the ID.  [[User:UWashPrincipalCataloger|UWashPrincipalCataloger]] ([[User talk:UWashPrincipalCataloger|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:54, 12 January 2021 (UTC)
+::{{u|UWashPrincipalCataloger}} Hmm. Created. Working fine. Thank you. I will ask you if I get stuck anywhere. --[[User:Gazal world|Gazal world]] ([[User talk:Gazal world|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:18, 12 January 2021 (UTC)
+::: Happy to help if you get stuck. The script ''importScript('User:1Veertje/identifierInput.js');'' will also work with many other URLs to shorten them to just the identifier. [[User:UWashPrincipalCataloger|UWashPrincipalCataloger]] ([[User talk:UWashPrincipalCataloger|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:49, 12 January 2021 (UTC)

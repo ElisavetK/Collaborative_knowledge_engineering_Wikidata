@@ -1,0 +1,31 @@
+{{Property documentation
+}}
+
+{{ExternalUse|
+* [[:ca:Plantilla:Infotaula economia país/presenta]]
+}}
+<!-- {{Constraint:Qualifiers|list={{P|585}},{{P|2835}} |required=true}} -->
+<!-- {{Constraint:Units|list={{Q|11229}} }} -->
+
+== Swedish municipal income tax ==
+
+{{ping|Mcnabber091|Filceolaire|Lymantria}} et al.
+
+I have had some thoughts about proposing a tax-property. But since I had no good idea for how it should look like, I have hesitated. I think this system works fine for the Swedish national income tax. 
+
+But the constraints set here, does not fit the Swedish municipal income tax. And that is the main tax here. Only those with a high income pay national income tax, but almost everybody pay municipal income tax. There is of course income thresholds in our municipal tax system. But there is more than two thresholds. It makes it impossible to compare a Swedish municipal income tax with the tax in another nation, only based on the tax rates. But it is possible to compare the taxes in two municipalities. 
+
+Another problem is that the tax has several parts. You normally pay tax to two municipalities and one parish. I pay both to Kramfors Municipality and Västernorrland County Council. Those who are members of a church, may also pay a parish-tax. If you are member of the traditional Swedish Lutheran church, the tax rate is different in different parts of the nation. If you are not member of the Swedish Lutheran church, you pay a "funeral-tax", which is lower. (There are some exceptions to that rule.) If you are a member of another church who tax their members, for example the Catholic church, you have to pay tax to them too. 
+
+You can see the tax-rates [http://www.skatteverket.se/download/18.3810a01c150939e893fb50b/1449565824941/komsk16.txt here]. An explanation of the list can be found (in Swedish) [http://www.skatteverket.se/omoss/omskatteverket/psidata/beskattning/kommunalaskattesatser2016.4.3810a01c150939e893fb4e4.html?q=kommunalskatt here]. 
+
+To me, it looks like I have to propose a new property for our municipal tax. A property that does not demand "percentage" as unit and does not demands "thresholds" as qualifier. -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:54, 17 May 2016 (UTC)
+:This property is meant for income based taxes. If municipal taxes are not income-related, indeed another property is needed. If there are more than two thresholds, that should not be a problem. See the example used in {{Q|55}}. [[User:Lymantria|Lymantria]] ([[User talk:Lymantria|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:23, 17 May 2016 (UTC)
+::It is definitely income-related, but the relation is very complex. One problem is that the thresholds are not fixed, it depends on different circumstances. In my family the thresholds are 34,300 SEK, 13,100 SEK and 58,700 SEK for different persons within the same house. A forth person has no threshold at all since she pays tax only for a real estate she owns and not for any income. I pay about 34 % tax, not on my brutto reduced with the threshold, but on a reduced number, depending on what ''type'' of income I have and reduced with some expenses. The number can also be increased if I have non-monetary benefits like free/semi-free car. (Working income therefor often has less tax than pension and sick-/paternal care-/unemployment-money.) All these thresholds and reductions are the same within the nation, but the specific tax-rates are different in different municipalities. We therefor not use the word "percentage" when we tell what tax we pay in our municipality. We use "crowns" or let the number be unit-free.  -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:45, 17 May 2016 (UTC)
+:::Seems like perhaps you have to describe some tax-classes and use a qualifier (that is not yet there) to point out what has to be paid for what tax-class. Of course constraints have to be adjusted as well then. Sounds like quite complicated taxes in Sweden! [[User:Lymantria|Lymantria]] ([[User talk:Lymantria|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:46, 17 May 2016 (UTC)
+::::Complicated, yes, it became worse when the computers came. It made it ''possible'' to make the taxes more complicated. 
+::::"tax-classes"? -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:53, 17 May 2016 (UTC)
+:::::Yes, descriptions of conditions for a certain tax. I imagine that to be an item. [[User:Lymantria|Lymantria]] ([[User talk:Lymantria|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:40, 18 May 2016 (UTC)
+::::::I have added this property to {{Q|34}} now. 
+::::::Ok, I see. But that makes it very difficult to find any numbers to add to our items! 
+::::::I am starting to thinking that it would be easier to propose a new property for a "non-plain/non-progressive tax-rate"? -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:59, 18 May 2016 (UTC)

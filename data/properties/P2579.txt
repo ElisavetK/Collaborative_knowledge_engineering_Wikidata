@@ -1,0 +1,12 @@
+{{Property documentation
+|domain			= {{Q|2465832}}, broader
+|allowed values		= pretty much anything
+}}
+
+{{ExternalUse|
+* [[:ca:Plantilla:Infotaula d'element geològic]], [[:ca:Plantilla:Infotaula de llengua]]
+}}
+{{Education properties}}
+== Subclass of « field of study » ? ==
+{{Ping|D1gggg}} : In reference to this edit https://www.wikidata.org/w/index.php?title=Property:P2579&diff=558887217&oldid=558886768 Why not an instance of academic discipline ? <span style="border: 1px #C9C9C9;"><span style="background-color:#E8E8E8;padding:3px;">author&nbsp;</span><span style="background-color:#FFFFFF;">&nbsp;[[User:TomT0m|TomT0m]] / </span>talk [[User talk:TomT0m|page]]</span> 13:17, 21 March 2018 (UTC)
+:{{Reply to|TomT0m}} I also think that "instance of" is acceptable, and I [https://www.wikidata.org/w/index.php?title=Property:P2579&diff=718192390&oldid=694034029 changed] "subclass of" ([[Q21514624]]) to "instance or subclass of" ([[Q30208840]]). --[[User:Neo-Jay|Neo-Jay]] ([[User talk:Neo-Jay|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:03, 30 July 2018 (UTC)

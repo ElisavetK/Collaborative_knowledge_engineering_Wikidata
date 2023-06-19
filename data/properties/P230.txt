@@ -1,0 +1,43 @@
+{{Property documentation
+|description=[[Q125761|ICAO]] three letter code for identifying airlines - {{Q|741701}}.  For airports, rather use {{P|239}}.
+|infobox parameter="ICAO" in [[:en:Template:Infobox Airline]]
+|domain=instances of {{Q|46970}}
+|allowed values=3 uppercase characters
+|source={{Q|741701}}
+}}
+
+<!-- {{Constraint:Type|class=Q46970|relation=instance}} -->
+<!-- {{Constraint:Single value}} -->
+<!-- {{Constraint:Unique value}} -->
+<!-- {{Constraint:Format|pattern=<nowiki>[A-Z]{3}</nowiki>}} -->
+<!-- {{Constraint:Qualifiers|list={{P|580}}, {{P|582}}|mandatory=true}} -->
+
+{{ExternalUse|
+* [[:it:Template:Infobox compagnia aerea]], [[:it:Template:Azienda]]
+* [[:ru:Шаблон:Карточка авиакомпании]], [[:ru:Шаблон:Авиакомпания]]
+* [[:hu:Sablon:Légikód]], [[:hu:Sablon:Légitársaság infobox]], [[:hu:Sablon:Wikiteszt]]
+* [[:uk:Шаблон:Авіакомпанія]]
+* [[:ca:Plantilla:Aerolínia]]
+* [[:zh-yue:Template:航空公司明細]]
+* [[:hy:Կաղապար:Տեղեկաքարտ Ավիաընկերություն]]
+* [[:be-x-old:Шаблён:Авіякампанія]]
+* [[:pt:Predefinição:Info/Companhia aérea/Wikidata]]
+* [[:he:תבנית:חברה מסחרית]], [[:he:תבנית:חברה מסחרית/טבלת מזהי תעופה]]
+* [[:az:Şablon:Aviaşirkət]]
+* [[:eu:Txantiloi:Erakunde infotaula]]
+}}
+
+== Wrong restriction to 2 letters ==
+
+Until 1982, the ICAO airline code was generally restricted to '''2 (two)''' letters only. A transition to a 3 letter system was not completed until November 1987. 
+
+The restriction "[A-Z]{3}" is incorrect and has to be changed to include two letters as well to avoid faulty nuisance error messages. --[[User:Uli Elch|Uli Elch]] ([[User talk:Uli Elch|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:51, 24 August 2018 (UTC)
+
+== Proposal - Change [[Help:Data_type|Data type]] of {{P|230}} from {{Datatype|string}} to {{Datatype|external-id}} ==
+
+I think {{Datatype|string}} is the wrong type for {{P|230}}. Can we please change it to be {{Datatype|external-id}}.
+
+As per [[Help:Data_type#Changing_datatype]] please indicate support/opposition below. [[User:Iwan.Aucamp|Iwan.Aucamp]] ([[User talk:Iwan.Aucamp|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:52, 15 October 2019 (UTC)
+
+===={{int:Talk}}====
+* {{o}} These appear to be reused as well - see [https://w.wiki/AAK this query result]. [[User:ArthurPSmith|ArthurPSmith]] ([[User talk:ArthurPSmith|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:17, 15 October 2019 (UTC)

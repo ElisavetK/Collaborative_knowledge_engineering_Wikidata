@@ -1,0 +1,19 @@
+{{Property documentation
+|domain			= objects, dishes, architectural elements, artworks, crops and other things
+|example		= {{Q|Q37681}} → {{Q|Q864650}}, {{Q|Q13270}} → {{Q|Q720398}}, {{Q|Q3535485}} → {{Q|Q133036}}, etc.
+}}
+
+{{ExternalUse|
+* [[:be:Шаблон:Твор мастацтва]]
+* [[:es:Plantilla:Ficha de obra de arte]]
+* [[:ca:Plantilla:Infotaula d'obra artística]], [[:ca:Plantilla:Infotaula d'organització]], [[:ca:Plantilla:Infotaula beguda]], [[:ca:Plantilla:Infotaula menjar]]
+* [[:hy:Կաղապար:Տեղեկաքարտ Մետաղադրամ]]
+* [[:uk:Шаблон:Витвір мистецтва]], [[:uk:Шаблон:Газове родовище]], [[:uk:Шаблон:Родовище]]
+* [[:id:Templat:Infobox food/wikidata]]
+* [[:ban:Mal:Infobox food/wikidata]]
+}}
+
+== Constraint ==
+
+Does anyone object to changing the value type constraint from <instance of> process to <instance or subclass of> process?  I'm getting constraint violations using various weaves as values. - [[User:PKM|PKM]] ([[User talk:PKM|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:17, 1 June 2018 (UTC)
+:Since there were no objections, I have changed the constraint. - [[User:PKM|PKM]] ([[User talk:PKM|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:06, 9 June 2018 (UTC)

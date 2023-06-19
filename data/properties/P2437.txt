@@ -1,0 +1,50 @@
+{{Property documentation
+|infobox parameter	= <code>num_seasons</code> in [[:en:template:infobox television]]<br />
+<code>stagioni</code> in [[:it:template:FictionTV]]<br />
+<code>сезонов</code> or <code>num_seasons</code> or <code>число</code> in [[:ru:Шаблон:Телесериал]]
+}}
+{{Complex constraint
+|label=Check value
+|description=
+|sparql=SELECT ?item ?nbSaison ?a ?order {
+  ?item wdt:P2437 ?nbSaison.
+  ?a p:P179 ?statement.
+     ?statement ps:P179 ?item.
+     ?statement pq:P1545 ?order.
+  FILTER (?order < ?nbSaison)
+}
+}}
+{{ExternalUse|
+* [[:ru:Шаблон:Телесериал]]
+* [[:cs:Šablona:Infobox - televizní pořad]]
+* [[:hu:Sablon:Televíziós műsor infobox]]
+* [[:q:it:Template:FictionTV]]
+* [[:tt:Калып:Калып:Таксономия]], [[:tt:Калып:Телесериал]]
+* [[:eu:Txantiloi:Telesail infotaula automatikoa]], [[:eu:Txantiloi:Lan infotaula automatikoa]], [[:eu:Txantiloi:Lan infotaula]]
+* [[:ca:Plantilla:Infotaula sèrie de televisió]], [[:ca:Plantilla:Programa de televisió]], [[:ca:Plantilla:Infotaula de programa audiovisual]], [[:ca:Plantilla:Infotaula personatge]]
+* [[:it:Template:Stagioni televisive]], [[:it:Template:FictionTV]]
+* [[:es:Plantilla:Ficha de programa de televisión]], [[:es:Plantilla:Ficha de programa de televisión/zona de pruebas]]
+* [[:tg:Шаблон:Телесериал]]
+* [[:eo:Ŝablono:Informkesto televida serio]]
+* [[:av:Шаблон:Телесериал]]
+* [[:da:Skabelon:Infoboks tv]]
+* [[:sl:Predloga:Infopolje TV-serija]]
+* [[:hy:Կաղապար:Տեղեկաքարտ Մուլտսերիալ]], [[:hy:Կաղապար:Տեղեկաքարտ Հեռուստասերիալ]]
+* [[:ro:Format:Infocaseta Televiziune]]
+* [[:ast:Plantía:Programa de televisión]]
+* [[:kab:Talɣa:Infobox television]], [[:kab:Talɣa:Infobox intellectual work]]
+* [[:ha:Template:Infobox intellectual work]]
+* [[:uk:Шаблон:Картка:Телебачення]]
+* [[:roa-rup:Format:Infocaseta Televiziune]]
+}}
+
+= {{Capitalize | {{Int discussion}} }} =
+== Extend to radio? ==
+
+I'd like to use this property for radio programmes (such as {{Q|5599518}}), and suggest extending the scope of the property to cover that. [[User:Frankieroberto|Frankieroberto]] ([[User talk:Frankieroberto|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:30, 4 May 2017 (UTC)
+
+== Usage instructions ==
+
+Hello everyone. I created the help page for this property ("Explanations" section above) trying to reflect one of the most common current usage in wikidata and comparable policies about television infoboxes in local editions of Wikipedia. So, for shows still in production, I thought the best "common policy" for Wikidata is to wait until the season premiere before updating the value, or at least the release of the new season is imminent (up to a week before, a limit conventionally used on it.wikipedia). If you don't agree or have suggestions to improve the help page please leave a message here. I would have used a template to mark it as a draft but I'm not sure if it exists on wikidata. Anyway, it's important we have a common policy if we're going to heavily use the property in wikipedia. I'm going to notify about this discussion local projects that use the property and some of the main editions of wikipedia. --[[User:Supernino|Supernino]] ([[User talk:Supernino|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:43, 9 September 2017 (UTC)
+:At Wikidata, we generally don't "update" values. New ones just get added. Normally, the "point in time" qualifier should show when it was current. <br/>--- [[User talk:Jura1|Jura]] 07:51, 9 September 2017 (UTC)
+::I revised it to make it more readable and detail the "criterion used" part. Once a series entirely produced, I think only the final total should have preferred rank (and is probably the only one worth including). <br/>--- [[User talk:Jura1|Jura]] 11:13, 20 April 2018 (UTC)

@@ -1,0 +1,52 @@
+{{Property documentation
+ |description       = rocket or other vehicle for launching subject payload into space
+|domain            = {{Q|40218}}
+ |allowed values    = types of {{Q|697175}}
+ |example           = 
+ }}
+
+{{ExternalUse|
+* [[:it:Template:Infobox missione spaziale]]
+* [[:ru:Шаблон:Космическая экспедиция]]
+* [[:n:fr:Modèle:Topic cat]]
+* [[:hu:Sablon:Műhold infobox]], [[:hu:Sablon:Űrrepülés infobox]], [[:hu:Sablon:Űrszonda infobox]]
+* [[:ro:Format:Infocaseta Misiune spațială]]
+* [[:el:Πρότυπο:Διαστημική αποστολή]], [[:el:Πρότυπο:Διαστημική αποστολή/αμμοδοχείο]]
+* [[:ca:Plantilla:Infotaula de telescopi espacial]], [[:ca:Plantilla:Infotaula vehicle espacial]], [[:ca:Plantilla:Infotaula vehicle espacial/prova]], [[:ca:Plantilla:Infotaula vol espacial]], [[:ca:Plantilla:Infotaula vol espacial/prova]]
+* [[:hy:Կաղապար:Տիեզերական գիտարշավ]]
+* [[:commons:Template:Wikidata Infobox/core]]
+* [[:es:Plantilla:Wikidata Infobox]], [[:es:Plantilla:Ficha de misión espacial]], [[:es:Plantilla:Ficha de vehículo espacial]]
+* [[:id:Templat:Wikidata infobox]]
+* [[:mw:Template:Wikidata Infobox/core]]
+* [[:mr:साचा:विकिडाटा माहितीचौकट/core]]
+* [[:sa:फलकम्:Wikidata Infobox]]
+* [[:ur:سانچہ:خانہ معلومات ویکی ڈیٹا/کور]]
+* [[:q:fr:Modèle:Wikidata Infobox/core]]
+* [[:de:Vorlage:Wikidata Infobox/core]]
+* [[:gu:ઢાંચો:Wikidata Infobox/core]]
+* [[:ta:வார்ப்புரு:Wikidata Infobox/core]]
+* [[:hi:साँचा:Wikidata Infobox/core]]
+* [[:cs:Šablona:Infobox - kosmické těleso]]
+* [[:sv:Mall:Wikidata Infobox/core]]
+* [[:s:zh:Template:Wikidata Infobox/core]]
+* [[:ckb:داڕێژە:Wikidata Infobox/core]]
+* [[:pt:Predefinição:Wikidata Infobox/core]]
+}}
+
+<!-- {{Constraint:Single value|mandatory=true}} -->
+<!-- {{Constraint:Value type|class=Q697175|relation=subclass|mandatory=true}} -->
+<!-- {{Constraint:Type|class=Q40218|relation=instance}} -->
+
+{{Spacecraft properties}}
+
+It looks like this can include multiple entries so we could have both the rocket and the upper stage. However if we are limited to entities that have wikipedia articles we lose detail. For example: [[Q12144212|Kosmos 2485]] has both Soyuz-2 and Fregat. However as we do not have a separate article for Soyuz-2-1b we'd lose that detail if we replaced the infobox in [[en:Kosmos 2485]] with data from here. [[User:Secretlondon|Secretlondon]] ([[User talk:Secretlondon|talk]]) 14:59, 28 April 2013 (UTC)
+* In Russian this property named "ракета-носитель" ("ракета" is translated as rocket). Upper stage is not rocket. This is completely different type of space technique. I create [[Wikidata:Property proposal/Space#uppder stage (en) / разгонный блок (ru)|new request]] on property proposal for upper stages. Please do not use P375 for upper stages. — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 22:22, 9 June 2013 (UTC)
+
+== The property import ==
+
+Hi, I created bot that imports this property values from [http://planet4589.org/space/log/launchlog.txt launchlog]. But it needs table for values conversation: [[User:Ivan A. Krestinin/Launches]]. It will be great if somebody helps me to fill missed values in the table. — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 17:41, 18 August 2013 (UTC)
+
+== Allowd values ==
+
+Should we extend the range of this property and also allow values of type {{Q|Q1414565}}, e.g. {{Q|1064394}}? --[[User:Pasleim|Pasleim]] ([[User talk:Pasleim|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:17, 3 March 2015 (UTC)
+: I think [[Wikidata:Property proposal/Space#orbiter]] is better way. P375 currently specifies rocket type, not rocket instance. E. g. "Soyuz-2.1b", not "Soyuz-2.1b s/n L15000-011". But users want specify orbiter instance, not its type. E. g. "Discovery", not "Space Shuttle". — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 21:52, 5 March 2015 (UTC)

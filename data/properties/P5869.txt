@@ -1,0 +1,19 @@
+{{Property documentation}}
+== Allowed entity types ==
+Please see [[Wikidata:Project_chat#Model_item_(Property:P5869)]]. --- [[User talk:Jura1|Jura]] 14:15, 13 December 2018 (UTC)
+
+
+Thanks {{ping|Jura1}}, I think its probably sensible to have the discussion here as the project chat will get archived, I've copied your message on project chat as a quote above and left a message there to come discuss here. I have one comment and two questions: 
+
+Comment: {{ping|NavinoEvans}} has kindly pointed to [[Property_talk:P463#Only_persons?]] which shows that properties have previously expanded in scope so it seems as though there is no restriction to expanding the use of a property beyond people's agreement (e.g you don't have to do the property proposal again). 
+
+Two questions
+
+# I don't understand why you say that the proposed invese property would not be usable on properties, can you explain further? 
+
+# when you say ''if selection is mainly done by the number of statements on an item, the query links on the property talk page are better than a static link to one item'' Im not sure I understand, could you use an example?
+
+Thanks again
+
+--[[User:John Cummings|John Cummings]] ([[User talk:John Cummings|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:08, 18 December 2018 (UTC)
+:I'd rather comment there. Please don't repost my comment. --- [[User talk:Jura1|Jura]] 12:16, 18 December 2018 (UTC)

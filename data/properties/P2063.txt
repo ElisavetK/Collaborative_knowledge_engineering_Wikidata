@@ -1,0 +1,16 @@
+{{Property documentation
+|domain			= chemical compound
+|source			= KEGG
+}}
+<!-- {{Constraint:Format|pattern=<nowiki>LM[A-Z][A-Z]\d+([A-Z][A-Z]?\d+)?</nowiki>}} -->
+<!-- {{Constraint:Unique value}} -->
+<!-- {{Constraint:Single value}} -->
+
+== links no longer valid ==
+
+Beware, not only have external links changed but they also have now two different ones, depending on if it's a compound or a class:
+* compound: http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMGP04010000
+* class: http://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMGP04
+Generally searching for class ids does NOT work.
+
+So we need two properties. I'm changing this one to work at least with compounds. --[[User:SCIdude|SCIdude]] ([[User talk:SCIdude|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:44, 18 October 2019 (UTC)

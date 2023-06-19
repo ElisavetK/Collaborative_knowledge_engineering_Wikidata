@@ -1,0 +1,44 @@
+{{Property documentation}}
+
+== "List of qualifier"-query in property documentation template (see <sup>top right corner of property talk pages</sup>) ==
+The query used to time-out on some of the frequently used properties. For properties with many uses it now offers a query that checks only the first 0.5 - 1 million statements. --- [[User talk:Jura1|Jura]] 12:22, 27 June 2020 (UTC)
+
+== use of "novalue" ==
+For {{P|19}} and {{P|20}}, some qualifiers are used, but many aren't that frequent and some frequent ones aren't currently recommended AFAIK (e.g. {{P|17}} or {{P|131}} which should be on the item used as value, not as a qualifier -- some old bot story). 
+
+Accordingly, I set P8379 to novalue. --- [[User talk:Jura1|Jura]] 12:22, 27 June 2020 (UTC)
+
+== value for {{P|569}} ==
+{{P|31}} seems to be the most frequently used, due to a bot tagging them with it. 
+*{{P|31}} is not a property that should be used as a qualifier.
+*Even if the bot hadn't used P31 I don't think the "most frequent" one would be useful for manual editing. 
+
+Accordingly, I set this property to {{P|P1480}} which is occasionally useful. --- [[User talk:Jura1|Jura]] 12:22, 27 June 2020 (UTC)
+
+== How many values? sample: {{P|26}} ==
+Current situation: 
+{| class="wikitable"
+|-
+! Uses of P26 || 236,968
+|-
+| {{P|P580}}	||	34717
+|-
+| {{P|P582}}	||	21332
+|-
+| {{P|P2842}}	||	2736
+|-
+| {{P|P1534}}	||	1902
+|-
+| {{P|P1545}}	||	727
+|}
+
+I hestitated between adding {{P|P580}} or the first three of the above. --- [[User talk:Jura1|Jura]] 12:43, 27 June 2020 (UTC)
+
+== Duplicate {{Q|Q21510856}}? ==
+Should these be copied or not? I skipped them for now --- [[User talk:Jura1|Jura]] 12:43, 27 June 2020 (UTC)
+
+
+== Update qualifier suggestor to use this? ==
+Currently, the [[Help:Suggesters_and_selectors#Property_suggester|suggester]] works with the property constraints (see [[Help:Property constraints portal/Entity suggestions from constraint definitions]]. 
+
+Should this be updated to this property? --- [[User talk:Jura1|Jura]] 12:43, 27 June 2020 (UTC)

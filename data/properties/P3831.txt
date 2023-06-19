@@ -1,0 +1,21 @@
+{{Property documentation
+|domain			= statements (proposed property is a qualifier only)
+|example		= <br /> {{statement|Q8058|P3342|Q3170866|P3831|21500210}}<br /> {{statement|Q26211786|P2067|72.5 kg|P3831|Q10578722}}
+|see also               = {{P|794}}: A poorly defined property sometimes used for this purpose, which we are attempting to deprecate<br/> {{P|2868}}: Often used for this purpose, but more properly specifies a role of the ''subject'' item
+}}
+{{Autofix|pattern=Q215972|replacement=Q215972|move_to=P5800}}
+{{ExternalUse}}
+= {{Capitalize | {{Int discussion}} }} =
+
+== Difference between {{P|2868}}? ==
+
+I don't understand the difference between this property and {{P|P2868}}? Is one meant to be used on the entity and another as a qualifier? [[User:U+1F360|U+1F360]] ([[User talk:U+1F360|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:43, 13 August 2018 (UTC)
+*Have a look at the sample above which uses {{Q|21500210}} as value for one of these two qualifiers. It can't work with the other. <br/>--- [[User talk:Jura1|Jura]] 14:00, 13 August 2018 (UTC)
+* To answer my own question. Yes. In a triplestore (like Wikibase) items are stored in <subject/predicate/object> format, so this property is indeed intended to be used a qualifier and {{P|P2868}} ought to be used on the entity itself. [[User:U+1F360|U+1F360]] ([[User talk:U+1F360|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:22, 6 February 2019 (UTC)
+**No. Both are qualifiers for statements. It's just that they refer to different parts of the triple. --- [[User talk:Jura1|Jura]] 09:24, 10 February 2019 (UTC)
+
+:{{ping|Deryck Chan}} Only you can answer this properly. --[[User:Liuxinyu970226|Liuxinyu970226]] ([[User talk:Liuxinyu970226|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:51, 29 November 2019 (UTC)
+::{{ping|U+1F360|Jura1|Liuxinyu970226}} Easy. {{P|2868}} describes the main item (so it is usually a qualifier, but occasionally a main statement). {{P|3831}} describes the value of a statement (so it can only be used as a qualifier). For example:
+::*{{statement|Q8058|P3342|Q3170866|P3831|Q21500210}} - Jean Bouchard is the confessor (not Louis).
+::*{{statement|Q392|P1344|Q54370683|P2868|Q639669}} - Bob Dylan is the musician (the festival is not a musician).
+::: [[User:Deryck Chan|Deryck Chan]] ([[User talk:Deryck Chan|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:52, 29 November 2019 (UTC)

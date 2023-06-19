@@ -1,0 +1,36 @@
+{{Property documentation
+|description = UIC identifiers are used by railway operators to refer to railway stations in Europe, CIS countries, China, Mongolia, North Africa and the Middle East.
+|filter = UIC station reference always consists of 7 digits, beginning with a 2-digit UIC country code. If the station code consists of less than 5 digits, fill with 0, for example Trondheim S’s code is 76'''0'''1126.
+}}
+{{ExternalUse|
+* [[:ru:Шаблон:Железнодорожная станция]]
+* [[:be:Шаблон:Чыгуначная станцыя]]
+* [[:ce:Кеп:ЦӀерпоштнекъан станци]]
+* [[:hu:Sablon:Állomás infobox]], [[:hu:Sablon:VPE szolgálati hely]]
+* [[:tt:Калып:Тимер юл станциясе]]
+* [[:udm:Шаблон:Чугун сюрес станция]]
+* [[:uk:Шаблон:Станція]], [[:uk:Шаблон:Залізнична станція]]
+* [[:ba:Ҡалып:Железнодорожная станция]]
+* [[:eo:Ŝablono:Informkesto Fervoja stacidomo]], [[:eo:Ŝablono:Informkesto Pariza metrostacio]], [[:eo:Ŝablono:Oficiala retejo Transilien]]
+* [[:es:Plantilla:Página web Transilien]]
+* [[:fr:Modèle:Site Transilien]]
+}}
+
+== Control/Key digit? ==
+
+Hello, is it possible to add the 8th digit used by some companies (like French company SNCF)? According to UIC the 8th digit is used as a control key, calculated with the 5 digits of station code (without the country digits). I don't know if a bot controls the length of "7 digits", then it would be appreciated (I think) that we could include this 8th digit? Thanks for your answers. [[User:Jeriby|Jeriby]] ([[User talk:Jeriby|{{int:Talkpagelinktext}}]]) 16:49, 24 September 2013 (UTC)
+
+== What is this? ==
+Which code should be met with P722? An UIC code has 8 digits (control key included), but [https://de.wikipedia.org/wiki/Internationale_Bahnhofsnummer IBNR] has only 7 digits. Is there any resource to lookup UIC codes? --[[User:A.Bernhard|A.Bernhard]] ([[User talk:A.Bernhard|{{int:Talkpagelinktext}}]]) 06:38, 1 October 2013 (UTC)
+* Looks like we mix different systems in one property. Russian label of P722 is "код Экспресс-3" ("Express-3 code"). — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 19:11, 1 October 2013 (UTC)
+** Hm... can't find any description of "Express-3 code" - will do some research. We have to solve these issues with station codes. See also [[Wikidata:Properties_for_deletion#Bahnhofscode_.28P296.29]] --[[User:A.Bernhard|A.Bernhard]] ([[User talk:A.Bernhard|{{int:Talkpagelinktext}}]]) 20:42, 1 October 2013 (UTC)
+*** I do not find any non-Russian sources about this system, in Russian: [[:ru:АСУ «Экспресс»]]. This is system that serves ticket and another operations in Russia and ex-USSR countries. Sample code: [http://osm.sbin.ru/esr/express:2000030 2000030] (for {{Q|4123858}}). — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 21:24, 1 October 2013 (UTC)
+**** Translated ru @ wikipedia and got this: "The system of "Express-3" is a full member of the international community system of reserved seats, actively cooperates with other European electronic reservation systems within computer networks OSJD / UIC ." The question is how close is the cooperation? I tried your [http://osm.sbin.ru/esr/express:2000030 tool] for IBNR and UIC codes and it doesn't give any response for these codes (tried also eastern europe cities like Praha or Budapest). List of a dozen UIC-station codes is available [http://aurelienb.pagesperso-orange.fr/HTML/transports/obli_UIC.htm here] and here's a [http://www.michaeldittrich.de/ibnr/online.php IBNR lookup] --[[User:A.Bernhard|A.Bernhard]] ([[User talk:A.Bernhard|{{int:Talkpagelinktext}}]]) 21:36, 1 October 2013 (UTC)
+I asked some days ago about it already, and on the French wikipedia an IP contributor explained me (for some of you who speak French you can see the subject [https://fr.wikipedia.org/wiki/Discussion_Projet:Chemin_de_fer#Codes_UIC_pour_Wikidata here]), that's why I asked about the 7 or 8 digits {{smile}}. It seems that France uses 8 digits of UIC, whereas Belgium and Switzerland use 7 digits code (same number as the 8 digits but without the control key. [[User:Jeriby|Jeriby]] ([[User talk:Jeriby|{{int:Talkpagelinktext}}]]) 02:26, 2 October 2013 (UTC)
+: I'm really not sure about this. Look here, in this [http://aurelienb.pagesperso-orange.fr/HTML/transports/obli_UIC.htm UIC list] Zurich HB has the code 8585200. If you check this code on the [http://fahrplan.sbb.ch/bin/stboard.exe/fn?input=8585200 SBB here] it doesn't find anything. But if you search for an [http://www.michaeldittrich.de/ibnr/online.php IBNR here] for Zürich HB, the answer is 8503000. And this isn't a UIC code but the SBB find the correct station [http://fahrplan.sbb.ch/bin/stboard.exe/fn?input=8503000 here]. I think the SBB uses the IBNR, because there system is based on the HAFAS system and they created the IBNR.--[[User:A.Bernhard|A.Bernhard]] ([[User talk:A.Bernhard|{{int:Talkpagelinktext}}]]) 07:19, 2 October 2013 (UTC)
+: I think the SBB combine both systems and uses UIC for France / Belgium etc. stations and IBNR for Germany / Austria / Switzerland etc. stations. And when they use UIC, they ignore the control digit.--[[User:A.Bernhard|A.Bernhard]] ([[User talk:A.Bernhard|{{int:Talkpagelinktext}}]]) 07:21, 2 October 2013 (UTC)
+:: Ok thanks, then it would be better indeed to have UIC property and IBNR property separated and both available (and maybe including the control digit for UIC?) [[User:Jeriby|Jeriby]] ([[User talk:Jeriby|{{int:Talkpagelinktext}}]]) 17:13, 2 October 2013 (UTC)
+
+== Control/Key digit? (again) ==
+I really don't understand why the bot [[User:Escabot|Escabot]] is adding UIC code with 7 digits with « Document de référence du réseau; annexe 7.3 - Liste des gares de voyageurs ([[Q14915744]]) » as a source WHEREAS this official PDF source shows UIC code with the control/key digit (without the country code, but with this "famous" 8th digit). It's not very rigorous to add a code with a source but a different data compared to the source we refer. Then I'm asking again (I didn't get an answer last time): is it possible to add the 8th digit? (According to UIC the 8th digit is used as a control key, calculated with the 5 digits of station code (without the country digits)). Thank you. [[User:Jeriby|Jeriby]] ([[User talk:Jeriby|{{int:Talkpagelinktext}}]]) 18:26, 14 November 2013 (UTC)
+:In France, SNCF Open Data ([https://ressources.data.sncf.com/explore/dataset/liste-des-gares/table/ SNCF Open Data]) lists railway stations with 8 digits UIC codes. I had to do a small template using Luhn algorithm to convert the 7 digits from Wikidata P722 to full 8 digits codes (Uic8). --[[User:Dominik|Dominik]] ([[User talk:Dominik|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:31, 31 October 2020 (UTC)

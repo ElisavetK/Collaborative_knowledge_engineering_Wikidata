@@ -1,0 +1,12 @@
+{{Property documentation
+|domain			= mainly countries
+|source			= Wikipedia article
+}}
+== Datatype change ==
+There was some discussion to change it [[Wikidata:Identifier migration/2|here]]. I don't see any reason not to change this to external id. <br/>--- [[User talk:Jura1|Jura]] 08:14, 16 May 2018 (UTC)
+:Since the discussions are quite old, I'm pinging people who were involved in the project, just to be sure that there's a consensus. {{ping|ArthurPSmith|Multichill|Pigsonthewing|Nikki}} Are you fine with converting P2258 into an external ID? [[User:Lea Lacroix (WMDE)|Lea Lacroix (WMDE)]] ([[User talk:Lea Lacroix (WMDE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:33, 30 May 2018 (UTC)
+::Fine by me. <span class="vcard"><span class="fn">[[User:Pigsonthewing|Andy Mabbett]]</span> (<span class="nickname">Pigsonthewing</span>); [[User talk:Pigsonthewing|Talk to Andy]]; [[Special:Contributions/Pigsonthewing|Andy's edits]]</span> 12:58, 30 May 2018 (UTC)
+: {{Ping|Pigsonthewing|Multichill|Nikki|Lea Lacroix (WMDE)|Jura1}} More than half the uses of this property are as a qualifier, for example for {{Q|809824}} - "mobile country code" is used as a qualifier for "mobile network code". I'm not sure what impact this would have on our conception of it as an identifier - if it's intended as an identifier for countries (which it does mostly work at) then why wouldn't the qualifier here be the country rather than the code? It seems it's really more than just an identifier? Plus there's no formatter URL so there's no particular advantage to having it listed as an external id... [[User:ArthurPSmith|ArthurPSmith]] ([[User talk:ArthurPSmith|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:26, 30 May 2018 (UTC)
+*{{ping|Lea Lacroix (WMDE)}} do you want to add something to sum this up from a dev perspective? <br/>--- [[User talk:Jura1|Jura]] 09:50, 1 June 2018 (UTC)
+::We don't have any particular technical opinion to add. Just a question: why do you want to change it to an external id? What would be the advantage in your workflow? [[User:Lea Lacroix (WMDE)|Lea Lacroix (WMDE)]] ([[User talk:Lea Lacroix (WMDE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:23, 1 June 2018 (UTC)
+:::Good to hear that there are no technical obstacles. From a Wikidata contributor perspective, it would be consistent with the other country codes. <br/>--- [[User talk:Jura1|Jura]] 11:32, 1 June 2018 (UTC)

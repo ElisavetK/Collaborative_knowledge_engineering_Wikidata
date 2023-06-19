@@ -1,0 +1,17 @@
+{{Property documentation
+|infobox parameter	= {{Para|id}} in [[:en:Template:College Football HoF]]
+|domain			= college football people
+|robot and gadget jobs	= import from en.Wikipedia
+}}
+{{ExternalUse|
+* [[:it:Template:Collegamenti esterni]]
+}}
+<!-- {{Constraint:Unique value}} -->
+<!-- {{Constraint:Single value}} -->
+{{American football properties}}
+{{Sports halls of fame properties}}
+{{Sports in the United States properties}}
+
+== Updated ==
+
+Today I have updated the formatter URL, I have removed 659 old IDs and I have imported 1119 new IDs from en.wiki. --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 17:27, 12 May 2019 (UTC)

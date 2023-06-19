@@ -1,0 +1,20 @@
+{{Property documentation}}
+{{United States of America properties}}
+
+== Progress ==
+
+I've started trying to match entries to items using OpenRefine.  So far I've gone through the machine-suggested matches; I'm now working through the rest, to see what I can match manually.  (I'm currently working through 'music').
+
+See
+* [[Property talk:P4953/entries]]
+for a hierarchical listing of all of the entries in the thesaurus, with matched entries linked to corresponding items.
+
+As a caution, be aware that some of the matches I've made so far may be quite loose -- ie the nearest item that seemed to me relevant, so in some cases {{P|4390}} = rather than {{Q|39894604}} rather than {{Q|39893449}} or even {{Q|Q39893184}}.  
+
+I intend to mark these up as such once I've completed the initial matching pass; and along the way also add qualifiers like {{P|1810}} and {{P|4390}}, and {{P|4900}} to reflect the structure of the external thesaurus.  [[User:Jheald|Jheald]] ([[User talk:Jheald|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:50, 21 March 2018 (UTC)
+
+== Distinct Value? ==
+
+I don't think this should be a distinct value. Isn't it meant to be used to identify Rock operas, not just as an identifier under Rock opera? For instance, Tommy would get the code showing it to be a rock opera. [[User:Dbigwood|Dbigwood]] ([[User talk:Dbigwood|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:40, 26 June 2020 (UTC)
+
+OK now I understand better. There needs to be a new Property Library of Congress Genre/Form Terms ID (works and editions). Just as there is Library of Congress Classification and Library of Congress Classification (works and editions)

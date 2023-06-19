@@ -1,0 +1,17 @@
+{{Property documentation
+|domain			= people
+}}
+{{France properties}}
+{{ExternalUse|
+* [[:it:Template:Collegamenti esterni]]
+}}
+
+== Broken database? ==
+{{ping|Ayack|Nono314|Simon Villeneuve|Louperivois|Hsarrazin}}
+
+Hi, it seems that the database isn't accessible anymore (for at least a week). Is is broken? closed? is there a new URL?
+
+Cdlt, [[User:VIGNERON|VIGNERON]] ([[User talk:VIGNERON|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:11, 10 August 2019 (UTC)
+:{{ping|VIGNERON||Ayack|Nono314|Simon Villeneuve|Louperivois}}
+:ouch : CESAR qui disparaît ?... heureusement, j'ai trouvé [https://www.fabula.org/actualites-web_litteraire.php cette nouvelle sur Fabula] et donc apparemment CESAR a déménagé... https://cesar.huma-num.fr/cesar2/
+:maintenant, reste à vérifier que les ID sont toujours les mêmes ^^ apparemment... {{Q|3275311}} a pour nouvelle adressse https://cesar.huma-num.fr/cesar2/people/people.php?fct=edit&person_UOID=307207 (donc il faudrait changer l'adresse)... (et vérifier que les liens fonctionnent à nouveau) --[[User:Hsarrazin|Hsarrazin]] ([[User talk:Hsarrazin|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:16, 12 August 2019 (UTC)

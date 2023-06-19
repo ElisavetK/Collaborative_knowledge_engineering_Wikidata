@@ -1,0 +1,73 @@
+{{Property documentation}}
+{{ExternalUse|
+* [[:eu:Txantiloi:Biografia infotaula automatikoa]], [[:eu:Txantiloi:Biografia infotaula automatikoa/en]], [[:eu:Txantiloi:Mitologia infotaula]]
+* [[:fr:Modèle:Ascendants]], [[:fr:Modèle:Infobox Personnalité des sciences humaines et sociales]]
+* [[:hy:Կաղապար:Տեղեկաքարտ Գրող]], [[:hy:Կաղապար:Տեղեկաքարտ Նկարիչ]], [[:hy:Կաղապար:Տեղեկաքարտ Սիմպսոններ մուլտսերիալի կերպար]]
+* [[:kab:Talɣa:Infobox biography]]
+* [[:ka:თარგი:ინფოდაფა არქიტექტორი]], [[:ka:თარგი:ინფოდაფა მეცნიერი]], [[:ka:თარგი:ინფოდაფა მწერალი]], [[:ka:თარგი:ინფოდაფა სამხედრო მოღვაწე]], [[:ka:თარგი:ინფოდაფა წმიდანი]]
+* [[:uk:Шаблон:Особа]], [[:uk:Шаблон:Філософ]], [[:uk:Шаблон:Картка:Персонаж]], [[:uk:Шаблон:Картка:Модель]], [[:uk:Шаблон:Письменник]], [[:uk:Шаблон:Картка:Міфічний персонаж]], [[:uk:Шаблон:YouTube особа]], [[:uk:Шаблон:Художник]], [[:uk:Шаблон:Науковець]]
+* [[:el:Πρότυπο:Πληροφορίες προσώπου]], [[:el:Πρότυπο:Πληροφορίες καλλιτέχνη]], [[:el:Πρότυπο:ΑμμοδοχείοΠροτύπου]], [[:el:Πρότnowυπο:Πληροφορίες πολιτικού]]
+* [[:eo:Ŝablono:Informkesto homo]], [[:eo:Ŝablono:Informkesto reganto]], [[:eo:Ŝablono:Informkesto regantino]], [[:eo:Ŝablono:Informkesto verkisto]], [[:eo:Ŝablono:Informkesto homo/provejo]]
+* [[:se:Málle:Biografia infotaula automatikoa/en]]
+* [[:mt:Mudell:Infobox biography]]
+* [[:cs:Šablona:Příbuzní z WD]]
+* [[:ha:Template:Infobox biography]]
+* [[:ca:Plantilla:Infotaula personatge]]
+* [[:ast:Plantía:Persona]]
+* [[:din:Macuëc:Bio]]
+* [[:ga:Teimpléad:WD Bosca Sonraí Duine]]
+* [[:gd:Teamplaid:Bogsa eachdraidh-bheatha]]
+* [[:ss:Template:Umuntfu]]
+* [[:ts:Template:Bio]]
+* [[:az:Şablon:Ədəbi personaj]]
+* [[:hyw:Կաղապար:Տեղեկաքարտ Գեղանկարիչ]], [[:hyw:Կաղապար:Տեղեկաքարտ Նկարիչ]]
+}}
+{{Complex constraint
+ | label = {{LangSwitch|en=Items with {{P|1038}} and a more specific property which both link to the same person}}
+ | description = {{LangSwitch|en=If the {{P|1038}} statement describes the same information as another statement which uses a more specific property, the {{P|1038}} statement should be removed}}
+ | sparql = select ?item where { ?item wdt:P1038 ?relative filter exists { values ?prop { wdt:P22 wdt:P25 wdt:P40 wdt:P43 wdt:P44 wdt:P3373 } ?item ?prop ?relative } }
+}}
+{{Complex constraint
+ | label = Use more specific properties
+ | description = Use {{P|22}}, {{P|25}}, {{P|26}}, {{P|40}}, etc. instead of {{P|1038}} with {{P|1039}}
+ | sparql = SELECT ?item # ?itemLabel ?property ?propertyLabel ?value ?valueLabel
+WHERE
+{
+	{
+		SELECT DISTINCT ?item ?property ?value {
+			?item wdt:P1038 [] .
+			VALUES ?value { wd:Q7565 wd:Q7560 wd:Q7569 wd:Q177232 wd:Q308194 wd:Q1196129 wd:Q212878 wd:Q188830 wd:Q19822352 wd:Q1282201 wd:Q15384699 wd:Q223973 wd:Q41795928 wd:Q41795941 wd:Q31184 wd:Q10861465 wd:Q595094 } .
+			?item p:P1038/pq:P1039 ?value .
+			BIND( wd:P1038 AS ?property ) .
+		} LIMIT 1000
+	} .
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" } .
+}
+}}
+{{Complex constraint
+ | label = grandfather very old
+ | description = grandfather at 120 years old
+ | sparql = SELECT ?item ?value ?bornItem ?bornValue ?diff {
+  ?item p:P1038 ?statement.
+  ?statement ps:P1038 ?value.
+  ?statement pq:P1039 wd:Q9238344.
+  ?item wdt:P569 ?bornItem.
+  ?value wdt:P569 ?bornValue.  
+  BIND( (?bornItem - ?bornValue)/365 AS ?diff ).
+  FILTER (?diff > 120)
+}
+ORDER BY DESC(?diff)
+}}
+{{Person properties}}
+{{Tree properties}}
+
+== Proposal for simplification: consistency, gender-neutrality and age-neutrality ==
+[[Property_talk:P1039#Proposal_for_simplification:_consistency.2C_gender-neutrality_and_age-neutrality|''Moved discussion to more appropriate location.'']]
+
+== libellé en français ==
+
+{{Ping|Pyb}} vient de me dire que la propriété a été renommé de « parenté » en « parentèle ». Je pense que c'est moins approprié pour plusieurs raisons. D'abord, parce que parentèle signifie « Ensemble des personnes qui ont un lien de parenté entre elles. » (cf. le Wiktionnaire), or la propriété n'a pas vocation à avoir l'ensemble de ces personnes mais seulements celles pour lesquelles il n'existe pas de propriété spécifique. Ensuite, parce que, toujours d'après le Wiktionnaire, ce terme est vieilli. {{Ping|Zolo}} qui a fait la modif. -[[User:Ash Crow|Ash Crow]] ([[User talk:Ash Crow|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:46, 4 March 2017 (UTC)
+:Le mot juste serait sans doute "parent" mais il y a un risque évident de confusion avec père/mère. "Apparenté à" parait également recevable mais trop ambigu. "Parenté" désigne normalement non pas un individu, mais la relation entre deux individus. Il conviendrait beaucoup plus à {{p|1039}}, dont il est d'ailleurs un alias, qu'à {{p|1038}}, de même que "kinship" est un alias de P1039 et pas de P1038. "Parentèle" n'est pas top, mais c'est encore ce que je vois de moins mauvais. --[[User:Zolo|Zolo]] ([[User talk:Zolo|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:38, 5 March 2017 (UTC)
+
+== Symmetric ?==
+Not sure if this needs to be symmetric, e.g. it might be worth indicating that QE2 is a relative, but I don't think the item for QE2 needs to list all of them. Thus I disabled the constraint. <br/>--- [[User talk:Jura1|Jura]] 13:36, 30 April 2017 (UTC)

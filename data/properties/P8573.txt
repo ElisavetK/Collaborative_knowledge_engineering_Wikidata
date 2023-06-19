@@ -1,0 +1,9 @@
+{{Property documentation}}
+
+{{India properties}}
+
+== Your changes since 29 October 2020 ==
+
+{{Hello|Gnoeee}}<br />I don't understand what is the problem with my addition. I put it back. In addition, your modification is already controlled by {{Q|21503250}}. Your addition being incomplete, I added the missing Items. Could you tell me what is the need for your constraint ({{Q|21503247}})?<br />Cordially. —[[User:Eihel|Eihel]] ([[User talk:Eihel|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:08, 2 November 2020 (UTC)
+:{{Replyto|Eihel}} The item this property is added must only have {{P|31}}:{{Q|2732840}}/{{Q|6936225}}/{{Q|15284}}/{{Q|4927168}}/ {{Q|2758248}}/{{Q|6958514}}. Then for items with {{P|31}}:{{Q|2732840}} the {{P|361}} will be any of the {{Q|4927168}} of {{Q|1186}} (152nos) and for items with {{P|31}}:{{Q|4927168}} the {{P|361}} will be any of the {{Q|2758248}} of Kerala (14nos).[[User:Gnoeee|<span style="color:#990000">❙❚❚</span><span style="color:#339966">❙❙</span><span style="font-variant:small-caps;color:#000"> GnOeee </span><span style="color:#006699">❚❙❚</span><span style="color:#339966">❙❙</span>]] [[User talk:Gnoeee|✉]] 17:36, 2 November 2020 (UTC)
+::{{re|Gnoeee}} You write {{tq|The item this property is added must only have (…) Nagar Palika (Q6958514)}}. So I did well to add it, as well as 2 others {{smiley|5}}. For {{P|361}}, the site is under the name "Government of Kerala". If Kerala cannot be added, I remove it. A complex constraint should exist as a replacement (with subclasses and/or OR operators for example) {{smiley|10}}. —[[User:Eihel|Eihel]] ([[User talk:Eihel|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:27, 2 November 2020 (UTC)

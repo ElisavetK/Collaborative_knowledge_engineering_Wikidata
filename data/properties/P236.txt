@@ -1,0 +1,99 @@
+{{Property documentation
+|description       = {{TranslateThis
+ | en = International Standard Serial Number, under the responsibility of ISO subcommittee {{Q|7669804}}
+}}
+|infobox parameter = "ISSN" in [[:en:template:infobox journal]]  ({{Q|13256340}})
+|domain            = periodicals: {{Q|1002697}}
+|filter            = 84
+}}
+
+<!-- {{Constraint:Format|pattern=<nowiki>\d{4}\-\d{3}(\d|X)</nowiki>}} -->
+<!-- {{Constraint:Unique value}} -->
+<!-- {{Constraint:Single value}} -->
+<!-- {{Constraint:Type|class=Q1002697|relation=instance}} -->
+<!-- {{Constraint:Qualifiers|list={{P|518}}, {{P|580}}, {{P|582}}, {{P|2439}}|mandatory=true}} -->
+{{Complex constraint
+| label = Invalid ISSN
+| description = ISSN that have wrong checksum
+| sparql = SELECT ?item ?value { { ?item wdt:P236 ?value } UNION { ?statement pq:P236 ?value . ?item ?p ?statement . ?prop wikibase:claim ?p } UNION { ?ref pr:P236 ?value . ?statement prov:wasDerivedFrom ?ref . ?item ?p ?statement . ?prop wikibase:claim ?p } . BIND(REPLACE(STR(?value), "-", "") AS ?nohyphen) . FILTER(STRLEN(?nohyphen) = 8) . BIND(xsd:integer(REPLACE(SUBSTR(?nohyphen, 8, 1), "X", "10")) AS ?last) . BIND(xsd:integer(SUBSTR(?nohyphen, 1, 1)) * 8 + xsd:integer(SUBSTR(?nohyphen, 2, 1)) * 7 + xsd:integer(SUBSTR(?nohyphen, 3, 1)) * 6 + xsd:integer(SUBSTR(?nohyphen, 4, 1)) * 5 + xsd:integer(SUBSTR(?nohyphen, 5, 1)) * 4 + xsd:integer(SUBSTR(?nohyphen, 6, 1)) * 3 + xsd:integer(SUBSTR(?nohyphen, 7, 1)) * 2 AS ?checksum) . BIND(?checksum - FLOOR(?checksum / 11) * 11 AS ?remainder) . FILTER(?remainder + ?last != 11) . FILTER(?remainder + ?last != 0) }
+}}
+{{ExternalUse|
+* [[:he:תבנית:עיתון]]
+* [[:it:Template:Testata giornalistica]], [[:it:Template:Periodico]]
+* [[:ru:Шаблон:Журнал]]
+* [[:ast:Plantía:Ficha de revista]]
+* [[:es:Plantilla:Ficha de revista]], [[:es:Plantilla:DOAJ]], [[:es:Plantilla:MIAR]], [[:es:Plantilla:Ficha de periódico]]
+* [[:hu:Sablon:Újság infobox]]
+* [[:hy:Կաղապար:Տեղեկաքարտ Պարբերական]]
+* [[:ku:Şablon:Infobox Kovar]], [[:ku:Şablon:Qutiya agahiya kovar]]
+* [[:ro:Format:Infocaseta Ziar]]
+* [[:ca:Plantilla:Infotaula de publicacions periòdiques]], [[:ca:Plantilla:Infotaula de publicacions periòdiques/nova]], [[:ca:Plantilla:Infotaula lloc web]]
+* [[:el:Πρότυπο:Κουτί πληροφοριών περιοδικού]], [[:el:Πρότυπο:Πληροφορίες εφημερίδας]]
+* [[:uk:Шаблон:Картка сайту]], [[:uk:Шаблон:Газета]], [[:uk:Шаблон:Журнал]], [[:uk:Шаблон:Твір]]
+* [[:be:Шаблон:Часопіс]]
+* [[:ba:Ҡалып:Журнал]]
+* [[:gl:Modelo:Revista]], [[:gl:Modelo:Periódico]]
+* [[:no:Mal:Infoboks avis]]
+* [[:pt:Predefinição:Info/Jornal/Wikidata]]
+* [[:tg:Шаблон:Маҷалла]]
+* [[:fi:Malline:Lehti]]
+* [[:eu:Txantiloi:Aldizkari infotaula]]
+* [[:cs:Šablona:Infobox - časopis]], [[:cs:Šablona:Infobox - noviny]]
+* [[:kab:Talɣa:Infobox website]]
+* [[:hyw:Կաղապար:Տեղեկաքարտ Պարբերական]]
+* [[:sv:Mall:Publikation]], [[:sv:Mall:Testmall/mange01/Publikation]]
+* [[:be-x-old:Шаблён:Часопіс]]
+* [[:nn:Mal:Infoboks avis]]
+}}
+{{Book properties}}
+{{Bibliographical properties}}
+
+== Unique constraint ==
+
+The unique constraint seems to be inappropriate here.  It is unlikely that we will (typically) have distinct items for print vs online versions of a periodical, as the majority of the facts about both editions is the same - the main difference is that articles have two issued dates: first online and then in print.  That difference is an attribute of the article, rather than of the periodical. [[User:John Vandenberg|John Vandenberg]] ([[User talk:John Vandenberg|{{int:Talkpagelinktext}}]]) 00:27, 25 February 2014 (UTC)
+:11000 "single value" violations out of 28000 periodicals - all having two IDs: electronic + paper IDs.  We need to suppress that constraint for now.  Could be reinstated if there eventually exist a "one or two" constraint...'' [[User:Laddo|LaddΩ]]''  [[User_talk:Laddo|''<small>chat </small>'';)]] 23:26, 15 March 2014 (UTC)
+:: You can see how it is done in [[Q343132#P236|Acta Arithmetica]]. The restriction says it has to be a unique value '''except''' if there is one of the following qualificators: {{P|518}}, {{P|580}}, {{P|582}}, {{P|407}}, {{P|437}} or {{P|123}}. For printed and online versions, you can use {{P|437}} with {{Q|1261026}} and {{Q|1714118}}. [[User:Paucabot|Paucabot]] ([[User talk:Paucabot|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:21, 17 October 2020 (UTC)
+
+== E-ISSN (electronic ISSN) ==
+: Looks like we need divide this property to two properties: electronic ISSN and paper ISSN. — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 08:09, 16 March 2014 (UTC)
+:: I think the next step is to add a property for '[http://www.issn.org/understanding-the-issn/assignment-rules/the-issn-l-for-publications-on-multiple-media/ ISSN-L]', which is constrained per the new (2007) ISO standard as having a single value for each journal.  It will be very rare that we have two items with the same ISSN-L - so rare that the constraint exceptions list is sufficient to deal with them.
+:: I have been thinking that perhaps the ISSNs should have a qualifier, instead of multiple properties, as it allows more flexibility.
+:: I personally dont see the benefit in having distinct properties for electronic ISSN vs paper ISSN.  Most of the time when people look up an ISSN, they dont care whether it is the ISSN or eISSN.  The electronic version of the article (eISSN) and the digitised print version of the article (ISSN) are usually almost identical.  However if someone puts together a well designed solution using multiple propertyies, I will support and help implement it.
+:: Two issues to consider:
+::# Periodicals can also have [[google:%22CDROM+issn%22|CDROM ISSNs]], which should probably be recorded on the main item for the journal.  These are mostly given to conferences rather than journals, but {{Q|Q2018386}} does have a CDROM ISSN.
+::# Periodicals can also have additional ISSNs (paper & electronic) for special editions, supplement, etc.  These vary so much it is hard to say whether a rule can be written to say whether the special edition should a separate item or be part of the main item for the journal.  Some supplements are very distinct works; others are only published once in place of a normal issue by the same team and most readers consider it to have been an odder-then-usual issue but not a separate work.  However if they are a separate item, how do we link it to the main item, and should the special issue item have an ISSN-L property?
+::[[User:John Vandenberg|John Vandenberg]] ([[User talk:John Vandenberg|{{int:Talkpagelinktext}}]]) 00:33, 18 March 2014 (UTC)
+
+I think we should divide to ISSN, eISSN, and ISSN-L. Many bibliographic systems have that distinction, eg PubMed XML has:
+*Journal/ISSN with attribute @IssnType (Electronic | Print)
+*MedlineJournalInfo/ISSNLinking
+--[[User:Vladimir Alexiev|Vladimir Alexiev]] ([[User talk:Vladimir Alexiev|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:50, 20 February 2019 (UTC)
+
+== too many resolvers ==
+
+This prop has 4 formatter URL and 7 third-party formatter URL. 
+I understand these different databases include different journal lists, but I need some guidance on "which is better" (what is their respective coverage).
+
+{{ping|John Vandenberg| Ivan A. Krestinin}} maybe you can help?
+Also asked at https://en.wikipedia.org/wiki/Wikipedia_talk:WikiProject_Academic_Journals#ISSN_Resolvers
+--[[User:Vladimir Alexiev|Vladimir Alexiev]] ([[User talk:Vladimir Alexiev|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:56, 20 February 2019 (UTC)
+
+
+The "official one" is https://issn.org/resource/ISSN/$1, the official documentation for URL/URI can be found at http://www.issn.org/understanding-the-issn/assignment-rules/issn-linked-data-application-profile/ (to be added as a reference for this resolver, but I can't do it - can someone do ?)
+http://www.issn.cc seems to be dead.
+
+== Online ISSN and Print ISSN ==
+
+The most popular choice to distinguish between online and print ISSN is to use
+* {{Statement||P437|Q1261026}} for print
+* {{Statement||P437|Q1714118}} for online
+as qualifiers:
+{{SPARQL|query=
+select ?format ?formatLabel (count(?i) as ?count) (sample(?i) as ?sample) {
+  ?i p:P236 [pq:P437 ?format].
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+group by ?format ?formatLabel
+order by desc(?count)
+}}
+--[[User:Haansn08|Haansn08]] ([[User talk:Haansn08|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:17, 1 June 2020 (UTC)

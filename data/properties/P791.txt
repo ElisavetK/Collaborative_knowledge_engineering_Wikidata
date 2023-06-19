@@ -1,0 +1,123 @@
+{{Property documentation
+|infobox parameter=
+*"ISIL" in [[:de:Template:Infobox Bibliothek]]
+*"ISIL" in [[:fr:Template:Infobox Bibliothèque]]
+}}
+{{Complex constraint
+ | label = Check ISIL DE-MUS-*
+ | description = Item with an ISIL identifier with ''DE-MUS-'' prefix but not a museum
+ | sparql = SELECT DISTINCT ?item WHERE {
+  ?item wdt:P791 ?value; wdt:P31 ?instance
+  MINUS {
+    VALUES ?classes { wd:Q33506 } .
+    ?item wdt:P31/wdt:P279* ?classes .
+  } .
+  FILTER( REGEX( STR( ?value ), "^(DE-MUS-.+)$" ) ) .
+  FILTER( ?item NOT IN ( wd:Q4115189, wd:Q13406268, wd:Q15397819 ) ) .
+}
+ORDER BY ?item
+}}
+{{ExternalUse|
+* [[:de:Vorlage:Infobox Bibliothek]], [[:de:Vorlage:Infobox Archiv]], [[:de:Vorlage:Infobox Museum]], [[:de:Vorlage:Infobox Museum in der Schweiz]]
+* [[:it:Template:Collegamenti esterni]], [[:it:Template:Biblioteca]], [[:it:Template:Anagrafe delle biblioteche]]
+* [[:als:Vorlage:Infobox Archiv]], [[:als:Vorlage:Infobox Bibliothek]]
+* [[:ja:Template:図書館]], [[:ja:Template:Infobox 図書館]]
+* [[:vec:Modèl:Infobox de Biblioteca]]
+}}
+{{Authority control properties}}
+
+== Formatter URL doesn't work well ==
+
+Hi, I noticed that the URL chosen for this property works only with ISIL codes associated with Germany, but it doesn't work with, say, Italy or Switzerland. I think it would be better to remove the URL, since there is a search engine for every country that adhere to ISIL standard. --[[User:Sannita|Sannita]] - <small>''[[User talk:Sannita|not just another it.wiki sysop]]''</small> 18:19, 5 April 2015 (UTC)
+: I agree, otherwise the "International" in ISIL seems overly limited. --[[User:Steko|Steko]] ([[User talk:Steko|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:56, 24 August 2015 (UTC)
+::You might want to add custom code to [[MediaWiki:Gadget-AuthorityControl.js]]. --- [[User talk:Jura1|Jura]] 09:22, 24 August 2015 (UTC)
+:Just encountering the same issue for Danish Libraries. The alternative to remove the Formatter URL, would be to have several Formatter URL and then qualify them with Country? --[[User:VicVal|VicVal]] ([[User talk:VicVal|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:22, 19 November 2015 (UTC)
+::Yes, changing AuthorityControl.js shouldn't be too complicated. I hope to get this included in the new formatter url version as well. --- [[User talk:Jura1|Jura]] 19:41, 19 November 2015 (UTC)
+:Please see [[Wikidata:Property_proposal/Authority_control#DE-ISIL]]. --- [[User talk:Jura1|Jura]] 09:34, 2 April 2016 (UTC)
+:Not all registration authorities maintain web registries. Some are simple lists in PDF or other formats. Some have no public lists at all. See the "List" and "n/a" entries here: http://biblstandard.dk/isil/ Note that this doesn't make it any less of an identifier or any less important. [[User:Tfmorris1|Tfmorris1]] ([[User talk:Tfmorris1|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:56, 8 June 2016 (UTC)
+
+== New Formatter URL ==
+
+Dear administrators!
+
+Please consider to change the Formatter URL from http://dispatch.opac.d-nb.de/DB=1.2/CMD?ACT=SRCHA&IKT=8529&TRM=$1 to https://w3id.org/isil/$1 with a value (?:DE|ZDB|US|IT|JP)-.* for the "format as a regular expression" property. Since I'm not allowed to change this.
+
+This way not only German but also US, Italian and Japan ISILs will be linked.
+
+See also https://github.com/perma-id/w3id.org/tree/master/isil
+
+Cheers! {{Unsigned|CKlee}} <small>on Nov 3, 2016</small>
+: +1 [[User:Acka47|Acka47]] ([[User talk:Acka47|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:44, 7 July 2017 (UTC)
+
+{{Done}} This is what we were expecting, thank you very much! --[[User:Sannita|Sannita]] - <small>''[[User talk:Sannita|not just another it.wiki sysop]]''</small> 11:14, 28 November 2017 (UTC)
+*That seems problematic as it's a third party redirect service. We can add more in the gadget instead. BTW, even if it's added, former information shouldn't be overwritten. <br/>--- [[User talk:Jura1|Jura]] 12:14, 28 November 2017 (UTC)
+::Up until now, only DE-* codes were allowed to function, because for some reason a Germany-only URL was provided for a service that's supposed to be international. It's a redirect, I know, but at least it works.
+::Moreover, {{P|1630}} only allows for ''one'' value. Keeping the others as "deprecated" or using the gadget doesn't seem to me a good idea. Happy to revert my edits, as long as I see there's consensus on your concerns, not mine. --[[User:Sannita|Sannita]] - <small>''[[User talk:Sannita|not just another it.wiki sysop]]''</small> 14:05, 28 November 2017 (UTC)
+::*You can add as many as you want. It just depends how. For P791, it needs to go in [[MediaWiki:Gadget-AuthorityControl.js]] with country codes. <br/>--- [[User talk:Jura1|Jura]] 17:24, 28 November 2017 (UTC)
+:As the regex aren't supported yet for external-ids, I deprecated the formatter urls. The gadget will  continue to provide the links .. {{ping|Pyrog}} for info. 
+:There is a ticket in phabricator to change this. --- [[User talk:Jura1|Jura]] 20:07, 25 April 2020 (UTC)
+
+== Change of datatype ==
+=== Data type "external identifier"? ===
+Hi,
+I was wondering why this property isn't defined to expect the data type "external identifier" (https://www.wikidata.org/wiki/Help:Data_type#External_identifier). Wouldn't that fit?
+Best, [[User:Jana Hentschke|Jana Hentschke]] ([[User talk:Jana Hentschke|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:50, 20 April 2018 (UTC)
+:I agree, it should be changed. --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 11:19, 2 August 2018 (UTC)
+*Please see [[Wikidata:Project_chat/Archive/2017/05#Changing_the_data_type_of_properties]]. --- [[User talk:Jura1|Jura]] 12:27, 15 October 2019 (UTC)
+
+=== Proposal - Change [[Help:Data_type|Data type]] of {{P|791}} from {{Datatype|string}} to {{Datatype|external-id}} ===
+I think {{Datatype|string}} is the wrong type for {{P|791}}. Can we please change it to be {{Datatype|external-id}}.
+
+As per [[Help:Data_type#Changing_datatype]] please indicate support/opposition below. [[User:Iwan.Aucamp|Iwan.Aucamp]] ([[User talk:Iwan.Aucamp|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:51, 15 October 2019 (UTC)
+
+===={{int:Talk}}====
+* {{comment}} for your attention {{ping|Epìdosis}} {{ping|Jana_Hentschke}} [[User:Iwan.Aucamp|Iwan.Aucamp]] ([[User talk:Iwan.Aucamp|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:10, 15 October 2019 (UTC)
+* {{s}} but constraint violations should be looked at... [[User:ArthurPSmith|ArthurPSmith]] ([[User talk:ArthurPSmith|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:28, 15 October 2019 (UTC)
+*Please see the problem mentioned above [[Wikidata:Project_chat/Archive/2017/05#Changing_the_data_type_of_properties]]. --- [[User talk:Jura1|Jura]] 17:38, 15 October 2019 (UTC)
+* {{S}} - again! <span class="vcard"><span class="fn">[[User:Pigsonthewing|Andy Mabbett]]</span> (<span class="nickname">Pigsonthewing</span>); [[User talk:Pigsonthewing|Talk to Andy]]; [[Special:Contributions/Pigsonthewing|Andy's edits]]</span> 18:26, 15 October 2019 (UTC)
+* {{S}} --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 18:37, 15 October 2019 (UTC)
+
+=== Proposal - Change from "Statements" to "Identifiers" ===
+This property is sorted in "Statements" but it is in identifiers. Thus, it should be sorted in the section "Identifier".
+
+See for example {{Q|131454}}: The property {{P|791}} belongs to the chapter "Statement". --[[User:Eulenspiegel1|Eulenspiegel1]] ([[User talk:Eulenspiegel1|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:12, 4 March 2020 (UTC)
+:It has been {{done}}. --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 15:01, 29 April 2020 (UTC)
+
+== Removal of single value constraint ==
+
+Currently {{St|P791|P2302|Q19474404}}. The problem is that ISIL does not make this guarantee: {{Quote box|quote  = 
+Since this document allows the use of existing codes to be incorporated into the ISIL, it is possible that a given organization can have more than one ISIL. However, it is the intention of this document to minimize the number of codes.
+|source=[https://www.iso.org/standard/77849.html ISO 15511:2019]
+}}
+
+I guess the right solution is to remove the constraint. Please discuss below. [[User:Iwan.Aucamp|Iwan.Aucamp]] ([[User talk:Iwan.Aucamp|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:44, 30 April 2020 (UTC)
+
+{{Ping project|Books}}
+
+{{Ping project|Authority control}}
+
+
+===={{int:Talk}}====
+
+* {{neutral}} can't vote ... but if I could I would vote support here [[User:Iwan.Aucamp|Iwan.Aucamp]] ([[User talk:Iwan.Aucamp|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:44, 30 April 2020 (UTC)
+* Removed. <span class="vcard"><span class="fn">[[User:Pigsonthewing|Andy Mabbett]]</span> (<span class="nickname">Pigsonthewing</span>); [[User talk:Pigsonthewing|Talk to Andy]]; [[Special:Contributions/Pigsonthewing|Andy's edits]]</span> 09:33, 2 May 2020 (UTC)
+
+{{section resolved|1=<span class="vcard"><span class="fn">[[User:Pigsonthewing|Andy Mabbett]]</span> (<span class="nickname">Pigsonthewing</span>); [[User talk:Pigsonthewing|Talk to Andy]]; [[Special:Contributions/Pigsonthewing|Andy's edits]]</span> 09:33, 2 May 2020 (UTC)}}
+
+== Again on {{P|1630}} ==
+It so happens that we have found a way to give access to all national sub-catalogues for libraries with the address https://w3id.org/isil/$1, that automatically redirects users to the particular national website.
+
+My proposal is to remove all other formatter URLs, since they cannot work with current datatype and, given the solution provided by a {{Q|37033}} group, they might induce people to add a potentially infinite list of links that are to be considered deprecated on Wikidata. --[[User:Sannita|Sannita]] - <small>''[[User talk:Sannita|not just another it.wiki sysop]]''</small> 10:28, 6 May 2020 (UTC)
+
+{{Ping project|Authority control}}--[[User:Sannita|Sannita]] - <small>''[[User talk:Sannita|not just another it.wiki sysop]]''</small> 10:31, 6 May 2020 (UTC)
+:Thanks for the ping. So, I think that https://w3id.org/isil/$1 works for most, but not all the IDs: e.g. https://w3id.org/isil/RU-10017011 (one of the examples) seems not working. I've already set some days ago the {{P|1630}} https://w3id.org/isil/$1 as preferred value, but strangely the property displays no link (maybe a bug?). While I agree about removing formatter URLs starting with https://w3id.org/isil/$1, I'm not so sure about totally removing the other ones, which I think are correct and worth mentioning; probably they should be moved to {{P|3303}}, although I'm not sure an URL like http://anagrafe.iccu.sbn.it/isil/$1 can be considered "third party". Anyway, I'm convinced that in the present situation, with https://w3id.org/isil/$1 setted as preferred value for {{P|1630}}, the link should already appear. --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 10:39, 6 May 2020 (UTC)
+:: {{ping|Epìdosis}} It may not have shown a link because it was a string-type property, not external id. [[User:ArthurPSmith|ArthurPSmith]] ([[User talk:ArthurPSmith|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:25, 6 May 2020 (UTC)
+:::{{ping|ArthurPSmith}} OK, but now it is an external-id and the link still isn't shown. --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 17:31, 6 May 2020 (UTC)
+:::: Where are you not seeing it? The examples on the property page show as links (at least for me). [[User:ArthurPSmith|ArthurPSmith]] ([[User talk:ArthurPSmith|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:43, 6 May 2020 (UTC)
+::::: {{ping|ArthurPSmith}} No, the examples don't show as links (at least for me). --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 19:12, 7 May 2020 (UTC)
+:::::: {{ping|Epìdosis}} that's weird. Maybe you have a javascript gadget enabled that's interfering somehow? [[User:ArthurPSmith|ArthurPSmith]] ([[User talk:ArthurPSmith|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:49, 7 May 2020 (UTC)
+:::::::{{ping|ArthurPSmith}} I would exclude it, since it also happens on browsers where I'm not logged-in. --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 20:02, 7 May 2020 (UTC) P.S. [https://phabricator.wikimedia.org/T252167 T252167] 
+*What would be the benefits of the proposal? Is there some storage issue? 
+:Why not store the formatter to the original source? 
+:As it's feature that is somewhere planned in phabricator, it's better to keep the data.
+:BTW, if redirects are possible, rather than using a third party redirector, I'd use the one on toolserver. --- [[User talk:Jura1|Jura]] 11:08, 6 May 2020 (UTC)

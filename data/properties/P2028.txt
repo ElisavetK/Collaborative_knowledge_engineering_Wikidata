@@ -1,0 +1,36 @@
+{{Property documentation
+|domain			= {{Q|5}}
+|source			= Service number (United States Armed Forces) 
+|robot and gadget jobs	= We may be able to crawl the NARA database of military service histories and match them to wikidata entries. 
+}}
+<!-- {{Constraint:Unique value|mandatory=true}} -->
+<!-- {{Constraint:Single value|mandatory=true}} -->
+<!-- {{Constraint:Format|pattern=\d+}} -->
+{{United States of America properties}}
+
+== Repurposing for wider coverage ==
+
+It is being proposed at [[Wikidata:Property proposal/Service number]] to broaden the scope of this property, so that it applies to other units. Please join the discussion there. − [[User:Pintoch|Pintoch]] ([[User talk:Pintoch|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:58, 13 December 2017 (UTC)
+: Is there still an idea to broaden this to other nation's military identifiers? [[User:Samwilson|Sam]] [[User talk:Samwilson|Wilson]] 10:32, 19 September 2018 (UTC)
+----
+Reviving the discussion; [[User:Andrew Gray]] proposed a property for "Service number" of armed/security forces personnel. The proposal may be seen at: [[Wikidata:Property proposal/Service number]]. Many opined that would be better to re-purpose this property instead of creating a new one. I am reviving the discussion to arrive at a consensus. We have the sources to retrieve the service number, but there is no appropriate property on Wikidata. Pinging users who participated in the property proposal, {{ping|Richard Arthur Norton (1958- )|ديفيد_عادل_وهبة_خليل_2|Pigsonthewing|ChristianKl|Jura1|Pintoch}} {{ping|Samwilson}} [[User:KCVelaga|KCVelaga]] ([[User_talk:KCVelaga|talk]]) 09:11, 30 January 2019 (UTC)
+* I have no problem either way. --[[User:Richard Arthur Norton (1958- )|RAN]] ([[User talk:Richard Arthur Norton (1958- )|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:53, 30 January 2019 (UTC)
+
+* Wow, I'd forgotten about this - it got a bit stuck last time around. Reading over the old notes, I think the past discussion at project chat and the property proposal showed three things:
+:# this property, as currently scoped, is very narrow, unlikely to be used much, and there is interest in a more general one that would cover all countries/services (''with'' qualifiers!);
+:# to get there, most people preferred the idea of repurposing/extending this one over creating a new property;
+:# it wasn't clear if we ''could'' actually repurpose this one (in part because it would involve switching datatypes from external-id to string; I don't really know how that works).
+: I think a generic service-number property with a qualifier to say what it refers to is still the best option but I don't know what would be the most appropriate method to get there and I have no preference as to how we do it (repurpose this or delete/create new). [[User:Andrew Gray|Andrew Gray]] ([[User talk:Andrew Gray|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:31, 30 January 2019 (UTC)
+::{{re|Andrew Gray}} Thanks for the comment. Pinging {{ping|Mahir256}} to help us with this. [[User:KCVelaga|KCVelaga]] ([[User_talk:KCVelaga|talk]]) 06:30, 2 February 2019 (UTC)
+:::Since this property is used only on nineteen items--far from being complete and without any clear indication that this property is still being added to items or is being used in other projects--it would not be difficult to add qualifiers ({{P|1001}} perhaps?) to make this property refer to a more general armed services number. Were it present on more items, or were there some technical issue to be resolved in widening this property's scope, I'd agree that a new property would be necessary. Let's wait for more people that are still around who voted on the initial proposal, and perhaps some who are still around who added some existing values of this property, to hear their thoughts. [[User:Mahir256|Mahir256]] ([[User talk:Mahir256|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:39, 8 February 2019 (UTC)
+
+*What would be the use case? BTW We don't "repurpose" entities at Wikidata. --- [[User talk:Jura1|Jura]] 13:47, 3 February 2019 (UTC)
+::{{re|Jura1}} You mean "use case" as where will the proposed property be used. I think then we should have a new property. [[User:KCVelaga|KCVelaga]] ([[User_talk:KCVelaga|talk]]) 07:10, 5 February 2019 (UTC)
+:::Which items should have what values? Items seems to have dozens if not hundreds in mind you want to add. Can you detail them?  --- [[User talk:Jura1|Jura]] 09:18, 10 February 2019 (UTC)
+::::{{ping|Jura1}} Sorry for missing this. Here are a few examples;
+::::*{{Q|Q1895936}} -> IC-16078
+::::*{{Q|Q3595115}} -> IC-521
+::::*{{Q|Q6282971}} -> 1000
+::::*{{Q|Q2579087}} -> 8247
+
+::::The pattern of these number greatly vary from country to country, and also within different forces of the same country. [[User:KCVelaga|KCVelaga]] ([[User_talk:KCVelaga|talk]]) 06:19, 1 May 2019 (UTC)

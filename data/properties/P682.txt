@@ -1,0 +1,19 @@
+{{Property documentation
+|description            = Used to represent gene ontology process annotations
+|infobox parameter      = [[:en:Template:GNF_Protein_box]] = Function
+|domain                 = term
+}}
+
+{{ExternalUse|
+* [[:eu:Txantiloi:Gene infotaula automatikoa]]
+}}
+
+<!-- {{Constraint:Type|class=Q8054|relation=subclass}} -->
+<!-- {{Constraint:Target required claim|property=P686}} -->
+{{Genetics properties}}
+
+== Mapping to RO ==
+
+I believe the intent is that this intended to be used where the GO Consortium would use [http://purl.obolibrary.org/obo/RO_0002331 involved in]. Note that the GOC is refining the set of relationships that can connect a gene product to a term (to track, follow this: https://github.com/orgs/geneontology/projects/13). Crucially, it will distinguish when a gene product is truly [http://wiki.geneontology.org/index.php/Involved_in involved in] a process such as apoptosis vs when it is [http://wiki.geneontology.org/index.php/Acts_upstream_of acting upstream of it]. This will allow extraction of more precise gene sets. I can act as coordinator for Wikidata here. I suggest WD adopts the distinction too. I'm not sure whether this property should be mapped to the super-property or the more precise and useful involved-in. As an aside, I find the use of a noun phrase "biological process" for a property a bit odd.
+ 
+For now I am wondering how best to map the current property to RO. I am thinking of making an RO ID property to RO:0002331 plus an equivalent property http://purl.obolibrary.org/obo/RO_0002331. Note that these are not strictly equivalent since the RO relation is more general and can apply, for example, to a traffic light that is involved-in the regulation of traffic. I have a related question here: https://www.wikidata.org/wiki/Property_talk:P1628#Semantics_-_when_should_this_be_used? [[User:Cmungall|Cmungall]] ([[User talk:Cmungall|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:32, 31 March 2018 (UTC)

@@ -1,0 +1,47 @@
+{{Property documentation
+|infobox parameter	= 
+* {{para|1}} or {{para|id}} in [[:en:Template:FIDE]] and [[:it:Template:Fide]]
+* {{para|id}} in [[:ru:Шаблон:ФИДЕ]] ({{Q|6309645}})
+* {{para|FideID}} in [[:en:Template:Infobox chess biography]] and  [[:de:Vorlage:Infobox Schachspieler]] ({{Q|5619879}})
+* {{para|fideId}} in [[:ru:Шаблон:Шахматные ссылки]] ({{Q|14339495}})
+* [[:de:Vorlage:FIDE]]
+|domain			= {{Q|Q5}}
+}}
+<!-- {{Constraint:Format|pattern=<nowiki>\d{6,8}</nowiki>|mandatory=true}} -->
+<!-- {{Constraint:Unique value|mandatory=true}} -->
+<!-- {{Constraint:Single value|mandatory=true}} -->
+<!-- {{Constraint:Type|class=Q5|relation=instance|mandatory=true}} -->
+<!-- {{Constraint:Item|property=P106|item=Q10873124}} -->
+
+{{ExternalUse|
+* [[:az:Şablon:Şahmatçı]]
+* [[:ba:Ҡалып:Шахматист]], [[:ba:Ҡалып:Профиль ChessDB]], [[:ba:Ҡалып:ФИДЕ]]
+* [[:be-x-old:Шаблён:ФІДЭ]]
+* [[:bg:Шаблон:Шахматист]]
+* [[:bn:টেমপ্লেট:Fide]], [[:bn:টেমপ্লেট:ফিদে]]
+* [[:de:Vorlage:Infobox Schachspieler]], [[:de:Vorlage:FIDE]]
+* [[:en:Template:FIDE]], [[:en:Template:Infobox chess biography]]
+* [[:fa:الگو:FIDE]]
+* [[:he:תבנית:כרטיס פיד"ה]]
+* [[:hy:Կաղապար:Տեղեկաքարտ Շախմատիստ]], [[:hy:Կաղապար:Շախմատային հղումներ]]
+* [[:id:Templat:FIDE]]
+* [[:it:Template:Fide]], [[:it:Template:Collegamenti esterni]]
+* [[:ja:Template:FIDE]]
+* [[:ml:ഫലകം:Fide]]
+* [[:no:Mal:Infoboks sjakkspiller]]
+* [[:pl:Szablon:Fide]]
+* [[:ru:Шаблон:Шахматист]], [[:ru:Шаблон:ФИДЕ]], [[:ru:Шаблон:Профиль ChessDB]], [[:ru:Шаблон:Шахматные ссылки]]
+* [[:ta:வார்ப்புரு:FIDE]]
+* [[:uk:Шаблон:Шахові посилання]]
+* [[:vi:Bản mẫu:FIDE]]
+* [[:zh:Template:FIDE]]
+* [[:cs:Šablona:Infobox - šachista]]
+* [[:eo:Ŝablono:FIDE]], [[:eo:Ŝablono:FIDE/dokumentado]]
+}}
+
+{{Chess properties}}
+{{International sport governing body properties}}
+
+= {{Capitalize | {{Int discussion}} }} =
+== Change URL formatter ==
+FIDE hast changed the profile URLs from <nowiki>https://ratings.fide.com/card.phtml?event={{}}</nowiki> to <nowiki>https://ratings.fide.com/profile/{{}}</nowiki>, and we have to change it here therefore also. Currently there is a redirect, but this may not last for long. For example, https://ratings.fide.com/card.phtml?event=1503014 redirects to https://ratings.fide.com/profile/1503014. [[User:Steak|Steak]] ([[User talk:Steak|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:59, 5 August 2020 (UTC)

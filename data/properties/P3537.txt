@@ -1,0 +1,51 @@
+{{Property documentation
+|infobox parameter	= {{para|id}} or {{para|1}} in [[:en:Template:FootballDatabase.eu]]
+|domain			= {{Q|5}}
+}}
+{{ExternalUse|
+* [[:en:Template:FootballDatabase.eu]]
+* [[:it:Template:Footballdatabase]], [[:it:Template:Collegamenti esterni]]
+* [[:fr:Modèle:Bases footballeur]]
+* [[:he:תבנית:פרופילי כדורגלנים]]
+* [[:fa:الگو:FootballDatabase.eu]]
+* [[:ca:Plantilla:FootballDatabase.eu]]
+* [[:ja:Template:FootballDatabase.eu]]
+* [[:hu:Sablon:Focis linkek]]
+* [[:bn:টেমপ্লেট:ফুটবলডেটাবেস.ইইউ]]
+* [[:mk:Шаблон:FootballDatabase.eu]], [[:mk:Предлошка:FootballDatabase.eu]]
+* [[:ru:Шаблон:FootballDatabase]]
+* [[:vi:Bản mẫu:FootballDatabase.eu]]
+* [[:hy:Կաղապար:FootballDatabase]]
+* [[:ka:თარგი:FootballDatabase.eu]]
+* [[:sr:Шаблон:Footballdatabase]]
+* [[:uk:Шаблон:Footballdatabase]]
+* [[:th:แม่แบบ:Fiche Footballdatabase]]
+}}
+{{Association football properties}}
+
+= {{Capitalize | {{Int constraints}} }} =
+<!-- {{Constraint:Single value}} -->
+<!-- {{Constraint:Unique value}} -->
+<!-- {{Constraint:Format |pattern=<nowiki>([A-Za-z\-]+)?\.[A-Za-z\-]+\.\d+</nowiki>| mandatory=true}} --> <!-- no spaces; no slashes-->
+<!-- {{Constraint:Item |property=P31 |item=Q5 |mandatory=true}} --> <!--must be human-->
+
+= {{Capitalize | {{Int discussion}} }} =
+
+== new structure of the internetsite http://www.footballdatabase.eu ==
+
+Please investigate on how this property will have to be adapted in order to comply with the footballdatabase.eu V3 which is live by now.[[User:Robby|Robby]] ([[User talk:Robby|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:25, 12 June 2018 (UTC)
+: Indeed I noticed that the url's chnaged like this for Deennis Renie the previous Url on the website of footballdatabase.eu was http://www.footballdatabase.eu/football.joueurs.dennis.rennie.9539.en.html  while under the new structure of their internetsite this corresponds to http://www.footballdatabase.eu/en/player/details/9539-dennis-rennie . so it will be quite tricky to guess from the new type of url that the parameter in the corresponding template should be dennis.rennie.9539. Who knows how to change the corresponding template so it would as well work for a parameter like 9539-dennis-rennie ? Many thanks to all that can help with this issue. [[User:Robby|Robby]] ([[User talk:Robby|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:27, 12 June 2018 (UTC)
+::{{ping|Robby}} the current Url still works (using redirection). This property is used on several hundreds of items. So if we changed the URL format, we would need to convert all the "old" link by new one. Do we have a bot for that? For now I think it is better to stay with the current URL format. [[User:Pamputt|Pamputt]] ([[User talk:Pamputt|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:40, 12 June 2018 (UTC)
+:::{{ping|Pumputt}} Indeed for now everything is working fine. We will have to monitor this, in order not to be surprised once the redirect will no longer work. [[User:Robby|Robby]] ([[User talk:Robby|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:09, 12 June 2018 (UTC)
+::::from your example it looks like very easy to convert old to new ones ("name.id" to "id-name"). Ping me if the redirects doesn't work. --[[User:Edgars2007|Edgars2007]] ([[User talk:Edgars2007|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:15, 13 June 2018 (UTC)
+:::::<small>{{ping|Pumputt|Robby}} forgot to ping --[[User:Edgars2007|Edgars2007]] ([[User talk:Edgars2007|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:16, 13 June 2018 (UTC)</small>
+:It seems like a substantial change. Maybe it's better to add the new format to a new property. <br/>--- [[User talk:Jura1|Jura]] 06:39, 13 June 2018 (UTC)
+::Dunno. We have always converted the old property. --[[User:Edgars2007|Edgars2007]] ([[User talk:Edgars2007|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:32, 15 June 2018 (UTC)
+
+: I noticed that the new URL format also works when only using the numeric portion of the player ID:
+:* new URL (number only): http://www.footballdatabase.eu/en/player/details/9539
+:* new URL (full ID):     http://www.footballdatabase.eu/en/player/details/9539-dennis-rennie
+:* old URL (redirects):   http://www.footballdatabase.eu/football.joueurs.dennis.rennie.9539.en.html
+: -- [[User:Zyxw|Zyxw]] ([[User talk:Zyxw|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:06, 20 June 2018 (UTC)
+::{{Ping|Robby|Pamputt|Edgars2007|Jura1|Zyxw}} I have shortened all the IDs to their numerical part during the past couple of days. Our {{P|1630}} has been changed accordingly and the different Wikipedias supposed to use the property have been warned through the talkpage of all the different versions of {{Q|15654952}}. [[User:Thierry Caro|Thierry Caro]] ([[User talk:Thierry Caro|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:44, 21 July 2018 (UTC)
+:::Note that we now have 57 constraint violations due to multiple items using the same ID. Can someone check this? [[User:Thierry Caro|Thierry Caro]] ([[User talk:Thierry Caro|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:52, 21 July 2018 (UTC)

@@ -1,0 +1,29 @@
+{{Property documentation
+ }}
+
+{{ExternalUse|
+* [[:fr:Modèle:Gares en mouvement]]
+* [[:hu:Sablon:Állomás infobox]]
+* [[:eo:Ŝablono:Oficiala retejo Gares]]
+* [[:es:Plantilla:Página web Gares]]
+}}
+
+<!-- {{Constraint:Type|class=Q719456|relation=instance}} -->
+<!-- {{Constraint:Unique value}} -->
+<!-- {{Constraint:Single value}} -->
+<!-- {{Constraint:Item|property=P17|item=Q142}} -->
+
+
+== Relation to station identifiers used in SNCF tickets? ==
+SNCF ticket barcodes contain station codes in this format too, however they seem to have a slightly broader scope (or rather, this property seems to be a strict subset of what can be found in SNCF tickets):
+* There are codes for stations beyond what the formatter URL for this property can handle, see e.g. https://ressources.data.sncf.com/explore/dataset/referentiel-gares-voyageurs/table/?sort=gare_alias_libelle_noncontraint (which has the codes without the FR country prefix).
+* There are international codes in those tickets as well, e.g. "CHGVA" for Geneva or "ESBST" for Barcelona, see also https://github.com/trainline-eu/stations/blob/master/stations.csv (sncf_id column).
+* These codes are typically written in upper case (but that's really a minor difference).
+
+How should this be handled, by relaxing the constraints on this property, or by adding a new property?
+[[User:Volker.krause|Volker.krause]] ([[User talk:Volker.krause|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:47, 13 February 2020 (UTC)
+
+:Hi, this property are only to be used with the formater url https://www.garesetconnexions.sncf/fr/gare/$1 , on https://ressources.data.sncf.com/ they don't have this id and CHGVA and ESBST don't work, upper or lower.
+:So to use it we would have to create another property (but with which url ?) — [[User:Eru|eru]] <sup>&#91;[[User_talk:Eru|Talk]]&#93; &#91;[[:fr:Utilisateur:Eru|french wiki]]&#93;</sup> 18:19, 13 February 2020 (UTC)
+
+:: Thanks, makes sense. I am not aware of a formatter URL for the SNCF IDs (nor the very similar Benerail ones) unfortunately, I mainly need this to map from ticket data containing those ids to the station items. I'll look into proposing new properties then. [[User:Volker.krause|Volker.krause]] ([[User talk:Volker.krause|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:53, 13 February 2020 (UTC)

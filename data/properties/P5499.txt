@@ -1,0 +1,41 @@
+{{Property documentation}}
+{{Complex constraint
+ | label = Artworks with creator not linked to Boijmans artists
+ | description = Items that have {{P|170}}, but that item doesn't have {{P|3888}}. Missing link can probably be added
+ | sparql = SELECT DISTINCT ?item ?creator {
+    ?item wdt:P5499 ?value .
+    ?item wdt:P170 ?creator .
+    MINUS { ?creator wdt:P3888 [] } .
+} ORDER BY DESC(?count) LIMIT 500
+}}
+{{Complex constraint
+ | label = Artworks in the Boijmans collection without a link
+ | description = Items that have {{P|195}} set to {{Q|Q679527}} (without the ones with an {{P|582}}), but that item doesn't have {{P|5499}}. Missing link can probably be added
+ | sparql = SELECT ?item WHERE {
+  ?item p:P195 ?collectionstatement .
+  ?collectionstatement ps:P195 wd:Q679527 .
+  MINUS { ?collectionstatement pq:P582 [] } 
+  FILTER NOT EXISTS {?item wdt:P5499 ?value . }
+}
+LIMIT 1000
+}}
+{{Complex constraint
+ | label = Artworks in the Boijmans collection using a {{P|973}} to the Boijmans website
+ | description = Items that have {{P|195}} set to {{Q|Q679527}} which have a link to the Boijmans website. Some formats can easily be moved, others need checking before moving
+ | sparql = SELECT ?item ?url ?value WHERE {
+  ?item wdt:P195 wd:Q679527 .
+  ?item wdt:P973 ?url .
+  FILTER REGEX(STR(?url), "^http://collectie.boijmans.nl/.*$")
+  OPTIONAL { ?item wdt:P5499 ?value } . 
+}
+LIMIT 1000
+}}
+
+== Broken ==
+{{Ping|Multichill|Hannolans|99of9|ديفيد عادل وهبة خليل 2}} Hello. This is broken. How can we have this work again using only the language-independent numeric ID only? Do you have any idea? [[User:Thierry Caro|Thierry Caro]] ([[User talk:Thierry Caro|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:11, 20 December 2018 (UTC)
+:I sent an email to the person who is working on the collection system. She is now in contact with the web builders as they also prefer to have a direct link with the objectID. Hope to hear more soon --[[User:Hannolans|Hannolans]] ([[User talk:Hannolans|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:12, 20 December 2018 (UTC)
+::{{Ping|Hannolans}} Hi. Can you put some kind of friendly pressure on them? [[User:Thierry Caro|Thierry Caro]] ([[User talk:Thierry Caro|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:26, 19 January 2019 (UTC)
+:::Yes, I some hours ago I sent them a reminder. Some of their own website pages are broken as well. Hope they reply if and how they will fix it. --[[User:Hannolans|Hannolans]] ([[User talk:Hannolans|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:52, 19 January 2019 (UTC)
+::::Talked with Laura Morison - data manager TMS Museum Boijmans - this week. The change to the old links is approved in the backlog for the webbuilders and it will be altered. We don't have to change the links she assured. It will take a while as there are more issues to implement. The change also broke their own links in articles. --[[User:Hannolans|Hannolans]] ([[User talk:Hannolans|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:49, 2 February 2019 (UTC)
+:::::Just got an email. It is working again! Not the case for artists yet --[[User:Hannolans|Hannolans]] ([[User talk:Hannolans|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:50, 8 February 2019 (UTC)
+::::::The artist links are also working again --[[User:Hannolans|Hannolans]] ([[User talk:Hannolans|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:13, 21 October 2019 (UTC)

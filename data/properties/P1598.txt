@@ -1,0 +1,37 @@
+{{Property documentation
+|description            = {{TranslateThis
+  | en = bishop who presided as consecrator or co-consecrator of this bishop
+  }}
+|infobox parameter      = "consecrated_by" in [[:en:Infobox Christian leader]] (and "consecrated" for the date)
+|domain                 = <s>{{P|31}}</s> {{P|39}}: {{Q|29182}}, {{Q|75178}}, {{Q|948657}}, {{Q|49476}}, {{Q|189854}}, {{Q|19546}} or subclass
+|allowed values         = <s>{{P|31}}</s> {{P|39}}: {{Q|29182}} or subclass
+}}
+
+{{ExternalUse|
+* [[:hu:Sablon:Személy infobox/Püspök]]
+* [[:be-x-old:Шаблён:Папа рымскі]]
+}}
+
+==Qualifier suggestions==
+* {{P|794}}: {{Q|18442817}}, {{Q|18442822}}, {{Q|18442828}}
+
+== Not all bishops are male ==
+
+In using {{p|21}} there are some exeptions like {{Q|121753}} {{Q|69074}} {{Q|2522776}} {{Q|91157}}
+== Statement vs qualifier ==
+In my opinion, it should be used as qualifier of the {{q|Q29182}} when appears as {{p|P39}} or {{p|P106}} of a person (see {{q|Q989}} as exemple). It make no sense as statement, because it is not a personal characteristic, it's a characteristic of its {{q|Q29182}} condition, it means a characteristic of the relationship person-status. Any opinion ?. --[[User:Amadalvarez|Amadalvarez]] ([[User talk:Amadalvarez|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:23, 27 July 2017 (UTC)
+
+== Change (English) label to "consecrated by" ? ==
+
+It might be easier to figure out who consecrated whom with a label "consecrated by" or "has consecrator" instead of the current "consecrator". It shouldn't change the way the property is used. --- [[User talk:Jura1|Jura]] 15:23, 28 June 2019 (UTC)
+
+== Widening the property? ==
+
+{{ping|Jura1|Giftzwerg 88}} (and {{u'|Hsarrazin}} / {{u'|Thierry Caro}}) hello. I suggest the property to be widened to diaconal and priestly ordinations. Consecration is indeed the logical following of these two sacraments, that also deal with the notion of apostolic succession. What do you think? 
+
+Thanks! [[User:Nomen ad hoc|Nomen ad hoc]] ([[User talk:Nomen ad hoc|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:07, 14 December 2020 (UTC).
+:I think in these case of a priest or diacon it is not appropriate. Maybe it has some siginificance in the life of the priest, but I don´t think it has the same gravitas in the life of the bishop. After all the thousands of priests and diacons are not notable, so these persons must have some more criteria other than ordination to make them notable.--[[User:Giftzwerg 88|Giftzwerg 88]] ([[User talk:Giftzwerg 88|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:19, 14 December 2020 (UTC)
+:: Well, sure... I never said that being ordained ''de facto'' makes a priest WD-notable. I only would like to deal with the mention of the ordination of the notable ones (including bishops that are ''first'' priests...). [[User:Nomen ad hoc|Nomen ad hoc]] ([[User talk:Nomen ad hoc|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:28, 14 December 2020 (UTC).
+:::I agree that this property existing already, we should probably deal with all similar things through dedicated properties rather than {{P|3342}}. Now… should this property see its scope widened or should we get a new property for cases that are not covered yet? For the sake of avoiding multiple qualifiers on bishops, I guess I would rather have a brand new property for priestly ordinations. But then I wouldn't be shocked if we ended up having everything stored under one roof. [[User:Thierry Caro|Thierry Caro]] ([[User talk:Thierry Caro|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:42, 14 December 2020 (UTC)
+:::: OK. Could you please discuss [[Q4014917#P793|this example]]? [[User:Nomen ad hoc|Nomen ad hoc]] ([[User talk:Nomen ad hoc|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:38, 14 December 2020 (UTC).
+:::::OK. If this is already used that way regardless of whether or not this is for bishops, then I guess we can just rename this property here right away! You have my support. [[User:Thierry Caro|Thierry Caro]] ([[User talk:Thierry Caro|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:47, 14 December 2020 (UTC)

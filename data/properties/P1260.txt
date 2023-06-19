@@ -1,0 +1,258 @@
+{{Property documentation
+|description            = {{TranslateThis
+  | en = {{Q|631844}} has set up a webservice for the cultural monuments, protected buildings and items that are connected to a number of museums in Sweden.
+  }}
+|infobox parameter      = ex: [[:sv:Mall:RAÄ-nummer]] and [[commons:Template:Fornminne]]
+|domain                 = cultural heritages in Sweden
+}}
+{{ExternalUse|
+* [[:sv:Mall:BBR-länk]]
+* [[:sv:Mall:RAÄ-nummer]]
+* [[:sv:Mall:LSH-länk]]
+* [[:sv:Mall:Arme-länk]]
+* [[:sv:Mall:NOMU-länk]]
+* [[:sv:Mall:UPMU-länk]]
+* [[:sv:Mall:Kulturen-länk]]
+* [[:sv:Mall:TEKM-länk]]
+* [[:sv:Mall:Vasa-länk]]
+* [[:sv:Mall:VGM-länk]]
+* [[:sv:Mall:SMVK-VKM-länk]]
+* [[:sv:Mall:SMHA-länk]]
+* [[:sv:Mall:Fornvännen-länk]]
+* [[:sv:Mall:DFH-länk]]
+* [[:sv:Mall:BHM-länk]]
+* [[:sv:Mall:GNM-länk]]
+* [[:sv:Mall:SMVK-MM-länk]]
+* [[:sv:Mall:KLVM-länk]]
+* [[:sv:Mall:SMVK-OM-länk]]
+* [[:sv:Mall:SMVK-EM-länk]]
+* [[:sv:Mall:SHM-länk]]
+* [[:sv:Mall:KMB-länk]]
+* [[:sv:Mall:Flygvapenmuseum-länk]]
+}}
+''Format constraint for detecting syntax errors; allows both machine-readable and human-readable URLs (with suffix '/html').  Format constraint for machine-readable URLs is preferred, see [[Property talk:P1260#.2Fhtml.2F_ending|this discussion]], further down.''
+<!-- {{Constraint:Format|pattern=<nowiki>(raa/(bbr(|a|b)|fmi)(/html)?/\d{14}|raa/bbrp(/jsonld)?/\d{14}|shm/art(/html)?/9\d{5}F(1\d|[1-9])|shm/inventory(/html)?/[1-9]\d{0,4}|shm/object(/html)?/[1-9]\d{0,6}|GSM/objekt(/html)?/[1-9]\d{0,4}|LSH/agents(/html)?/[1-9]\d{0,4}|nomu/object(/html)?/NM\d{7})</nowiki>}} -->
+
+''Format constraint to explicitly track items using the human-readable URL key:''
+<!-- {{Constraint:Format|pattern=<nowiki>^(?!.*\/html\/).*$</nowiki>}} -->
+
+<!-- {{Constraint:Item|property=P1435}} -->
+<!-- {{Constraint:Item|property=P17|item=Q34}} -->
+<!-- {{Constraint:Unique value}} -->
+<!-- {{Constraint:Item|property=P131}} -->
+<!-- {{Constraint:Item|property=P625}} -->
+{{Complex constraint
+| label = Missing qualifier for  "raa/fmi/" values
+| description = Values starting with "raa/fmi/" should always have {{P|1262}} as a qualifier.
+| sparql = SELECT ?item WHERE { ?item p:P1260 ?statement . ?statement ps:P1260 ?val . FILTER (STRSTARTS(?val, 'raa/fmi/')) . FILTER NOT EXISTS { ?statement pq:P1262 ?x } }
+}}
+
+{{Sweden_properties}}
+{{Cultural heritage properties}}
+
+
+==Institutions using Kulturarvsdata==
+This is list of institutions using Kulturarvsdata with their identifiers and an incomplete list of identifiers used for sub-collections.
+*<code>AERO</code> - {{Q|10401895}}
+**<code>object</code>
+*<code>arkm</code> - {{Q|4356728}}
+**<code>object</code>
+**<code>photo</code>
+*<code>DRMWEB</code> - Dramawebben
+**<code>node</code>q
+*<code>GSM</code> - {{Q|3107846}}
+**<code>objekt</code>
+*<code>Kulturen</code> - {{Q|1363442}}
+**<code>objekt</code>
+*<code>LSH</code> - {{Q|10568223}}
+**<code>objects</code>
+*<code>raa</code> - {{Q|631844}}
+**<code>bbr</code> - Bebyggelseregistret
+**<code>bbra</code> - Bebyggelseregistret
+**<code>bbrb</code> - Bebyggelseregistret
+**<code>bbrp</code> - Bebyggelseregistret
+**<code>fmi</code> - Fornsök
+**<code>fornvannen</code> - {{Q|4162197}}
+**<code>kmb</code> - Kulturmiljöbild
+**<code>samla</code>
+*<code>shm</code> - {{Q|1726607}}
+**<code>inventory</code> - Inventory-ID
+**<code>object</code> - Object-ID
+*<code>TUM</code> - The Unstraight Museum
+**<code>object</code>
+
+More, in alphabetical order:
+*ablm
+*ajtte
+*arme
+*bhm
+*dfh
+*enk
+*fmb
+*gfm
+*gnm
+*hem
+*heo
+*jfl
+*jm
+*kbg
+*klvm
+*lsh
+*mili
+*mm
+*nomu
+*pm
+*rsms
+*shfa
+*sk
+*sm
+*smha
+*smm-mm
+*smm-sm
+*smm-vm
+*smvk-em
+*smvk-mm
+*smvk-om
+*smvk-vkm
+*socken
+*tekm
+*tes
+*upmu
+*vax
+*vbg
+*vm
+*wws
+
+Many of these are mapped at [[commons:Category:External link templates using Kulturarvsdata]] and [[w:sv:Kategori:Externa länkmallar via K-samsök]]. /[[User:André Costa (WMSE)|André Costa (WMSE)]] ([[User talk:André Costa (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:40, 4 May 2015 (UTC)
+:{{ping|André Costa (WMSE)}} Could we for <code>raa</code> also add <code>bbrp</code>? That would make it possible to match the architects that {{Q|631844}} covers. [http://kulturarvsdata.se/raa/bbrp/jsonld/21600000001914 Example (json-ld)]. [[User:Ainali|Ainali]] ([[User talk:Ainali|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:35, 20 December 2016 (UTC)
+::OK by me. /[[User:Lokal Profil|Lokal Profil]] ([[User talk:Lokal Profil|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:16, 20 December 2016 (UTC)
+:::Ok, I'll try to add it. [[User:Ainali|Ainali]] ([[User talk:Ainali|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:09, 4 January 2017 (UTC)
+=== Add catalog / type of mapping ===
+I suggest that an aggregator like this should in Wikidata use a qualifier state the original source, using pattern matching is not a good design pattern...
+* I added {{P|972}}
+* as we get more mature in mapping domains its also best practise to specify {{P|4390}} 
+– [[User:Salgo60|Salgo60]] ([[User talk:Salgo60|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:46, 20 June 2019 (UTC)
+:[https://github.com/riksantikvarieambetet/soch-dcat-ap/blob/gh-pages/soch.rdf Here is a list of catalogs in SOCH.] These are however "services" and they are not stable nor do the always represent the catalog of origin. I removed the ones you made up and added to a bunch of items please do not add false information to Wikidata in the future. [[User:Abbe98|Abbe98]] ([[User talk:Abbe98|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:02, 28 June 2019 (UTC)
+
+== /html/ ending ==
+
+There are two main ways of giving these identifiers.
+* 'institution/database/html/<ID>', e.g. '[http://kulturarvsdata.se/raa/bbr/html/21310000000827 raa/bbr/html/21310000000827]' or 
+* 'institution/database/<ID>' e.g. '[http://kulturarvsdata.se/raa/bbr/21310000000827 raa/bbr/21310000000827]'
+
+The first is a redirect to the human readable webbpage ([http://www.bebyggelseregistret.raa.se/bbr2/anlaggning/visaHistorik.raa?page=historik&visaHistorik=true&anlaggningId=21310000000827] for the first example). The second gets you to the official entity in the database (rdf). I would definitely recommend using the latter for wikidata where the linked data interface makes more sense. If so the description (in Swedish) should probably also be changed and we should go through existing identifiers and change these. /[[User:André Costa (WMSE)|André Costa (WMSE)]] ([[User talk:André Costa (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:55, 4 May 2015 (UTC)
+:I had a similair discussion about {{P|1214}} some days ago. This one is more difficult to change, since the difference is in the middle of the code. -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:13, 4 May 2015 (UTC)
+::I changed the description to remove the /html/ ending. Do we know if there are any plans to add support for additional $ parameters in URL-like strings? Some properties, like {{P|1413}}, will not work without it. [[User:Väsk|Väsk]] ([[User talk:Väsk|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:16, 4 May 2015 (UTC)
+::Could we format a [[Template:Constraint:Format]] to discover statements that include /html/? I don't know how to make a RegExp for this, but something like <code>3-7 letters, forward slash, 3-10 letters, forward slash, 1-14 numerals</code> should discover both unnecessary htmls and numbers without prefixes. [[User:Väsk|Väsk]] ([[User talk:Väsk|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:41, 4 May 2015 (UTC)
+:::A second thought: It's easier for a bot or a template to ''remove'' a few letters like "/html" than ''adding'' them in the correct position. In C# I just have to add a line like <tt>t = t.Replace("/html", "")</tt>. Adding "/html" to get a human-readable version is more tricky! -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:51, 5 May 2015 (UTC)
+::::{{Ping|Innocent bystander}} While it is indeed easier to make human readable links using the /html/ style it should be noted that this is in fact not part of the actual id.included in the actual id. So the choice would be weather to use something which is easier for allowing Wikipedia to make links or something which is correct (and therefore more usable everywhere else)
+::::{{Ping|Väsk}} I'm not sure the regex is that simple. If I remember correctly from the templates (linked above) there is no guarantee that the id is purely numeric or that there aren't more subparts of the prefix. /[[User:André Costa (WMSE)|André Costa (WMSE)]] ([[User talk:André Costa (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:49, 5 May 2015 (UTC)
+:::::I did not talk about how easy it is to write the id here at Wikidata. I guess that mainly will be done by bot anyway. I talked about how easy it would be to design templates to change from machine-readable to man-readable compared with the other direction.
+:::::I think it could be worth to try to add such a sulution. The regex for {{P|1261}} looks awful, but it looks like it works. 
+:::::I guess there are jokers who allow both digits and a-z-letters. That there is a violation of a constraints, does not make it automaticly wrong. -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:19, 6 May 2015 (UTC)
+::::::Sorry. I didn't mean easier for Wikidata but (like you) easier for (human-readable) links, through templates. But the cost of making that easier would be that we have identifiers that are not actually correct (since <tt>/html/</tt> is not part of the id. /[[User:André Costa (WMSE)|André Costa (WMSE)]] ([[User talk:André Costa (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:25, 11 May 2015 (UTC)
+::::::: A temporary solution could be to use Kringla.nu in the URL formatter instead ([http://www.kringla.nu/kringla/objekt?referens=GSM/objekt/20269][http://www.kringla.nu/kringla/objekt?referens=raa/bbr/21300000014686]). A link to the original database would be preferable, as the data in Kulturarvsdata is incomplete and some of the context gets lost, but Kringla.nu does present the data in human-readable form with some additional features and a (tiny) link to the originating database. [[User:Väsk|Väsk]] ([[User talk:Väsk|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:27, 11 May 2015 (UTC)
+
+''Commented-out version of the format constraint comprising "/html" suffix to produce human-readable URLs''
+ Constraint:Format|pattern=<nowiki>(raa/(bbr(|a|b)|fmi)/html/\d{14}|shm/art/html/9\d{5}F(1\d|[1-9])|shm/inventory/html/[1-9]\d{0,4}|shm/object/html/[1-9]\d{0,6}|GSM/objekt/html/[1-9]\d{0,4}|LSH/agents/html/[1-9]\d{0,4}|nomu/object/html/NM\d{7})</nowiki>
+-- '' [[User:Laddo|LaddΩ]]''  [[User_talk:Laddo|''<small>chat </small>'';)]] 14:07, 19 January 2016 (UTC)
+
+{{ping|Tore_Danielsson|Väsk|André Costa (WMSE)|Innocent bystander|Ainali}} any news/update/change in status/thoughts on using '''kulurarvsdata''' and formatter URL that is human readable? 
+
+I feel kulturarvsdata is the "''only''" property in Wikidata that not goes to a human readable page which feels odd 
+
+Feels like a mess that if you should check the data in Wikidata then you need to understand how to change the URL to a human readable form?
+
+Another example that I found that feels not user friendly and wrong because lack of human readable form is to have this URL in {{P|854}} Example....
+* {{Q|10438659}}
+* {{P|1435}} 
+* [https://www.wikidata.org/wiki/Q10438659#P1435 Q10438659#P1435] ==> you have data ''enskild byggnadsminnesanläggning'' and as qualifier 
+** {{P|248}} '''Bebyggelseregistret''' with a 
+** {{P|854}} '''referens-url''' a non human readable URL [http://kulturarvsdata.se/raa/bbr/21300000010178 http://kulturarvsdata.se/raa/bbr/21300000010178] 
+* My suggested solution
+** a formatter URL that makes it human readable always if possible
+** use properties ==> in the last example better to use {{P|P1260}} and have a human readable property
+
+If linked data and museums and registers should be connected and used we need to make it easy to use/access step 1 is make it human readable..... 
+- [[User:Salgo60|Salgo60]] ([[User talk:Salgo60|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:00, 12 November 2017 (UTC)
+:{{replyto|Salgo60}} There is now more than one property for this and, to be honest, I have no ------- clues what these other properties are designed for. -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:30, 13 November 2017 (UTC)
+=== common.js ===
+ importScript('User:Salgo60/kulturarvsdata.js'); // see script from Abbe98 https://github.com/Abbe98/human-readable-kulturarvsdata
+{{ping|Yger}} add the above line in your [[Special:MyPage/common.js|common.js]] It is a small script by {{u|Abbe98}} that change the URL for {{P|1260}} to the human readable version compare my [[User:Salgo60/common.js]] - [[User:Salgo60|Salgo60]] ([[User talk:Salgo60|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:00, 11 November 2018 (UTC)
+
+== Dublicate URIs in examples? ==
+
+I see that some of the examples have duplicated claims, where both the raw URI and the HTML one is used. Is that relay a good solution? Shouldn't Wikidata always prefer the raw RDF one? When does it make sense to have both the raw URI and the HTML one? --[[User:Abbe98|Abbe98]] ([[User talk:Abbe98|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:47, 13 September 2016 (UTC)
+:{{Ping|Abbe98|Innocent bystander}} This come back to the section on <code>/html/</code> ending above. That said I would still say both duplicates and the html version should be avoided. Programmatically it should be fairly easy to do a right handed partition on "/" and inject the "/html/" string (something like the following in python <code>parts = value.rpartition('/'); html_version = parts[1] + '/html/' + parts[2]</code>). That solves the problem of handling these id's in Wikipedia infoboxes etc., what we loose is the ability to click on the id in the Wikidata UI and end up in the html page since the UI doesn't allow that type of string manipulation and kulturarvsdata doesn't apply [[:w:en:Content_negotiation|content negotiation]] to the "main" url {{Ping|Ainali|p=}}.
+:Since there [https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3Fkulturarvsdata%0AWHERE%20%0A%7B%0A%20%20%3Fitem%20wdt%3AP1260%20%3Fkulturarvsdata%20.%0A%20%20FILTER%20regex%20%28%3Fkulturarvsdata%2C%20%22%28html%29%22%29.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22sv%22%20%7D%0A%7D currently doesn't seem to be any values containing <code>html</code> though] now would be a good time to disallow the html version if that is what we want to do. /[[User:André Costa (WMSE)|André Costa (WMSE)]] ([[User talk:André Costa (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:28, 27 January 2017 (UTC)
+::I got a [https://github.com/Abbe98/human-readable-kulturarvsdata user-script for the Wikidata UI issue] and the fact that there is no instances of URIs pointing to the HTML version [https://github.com/Kyrkosok/wikidata-bots is my fault too]... <code>pip install ksamsok</code> is a thing too(whenever you need to deal with SOCH URIs). So I definitively thinks that <code>html</code>(jsonld/xml etc.) should be disallowed. --[[User:Abbe98|Abbe98]] ([[User talk:Abbe98|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:58, 27 January 2017 (UTC)
+FYI: An RAÄ internal CR has been created for supporting [[en:content negotiation]] by {{u|Abbe98}} is my understanding - [[User:Salgo60|Salgo60]] ([[User talk:Salgo60|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:14, 18 January 2019 (UTC)
+: [[en:content negotiation]] is now available since 8 dec [https://www.raa.se/driftinfo/andringar-i-k-samsok-8e-december-2020/ link] - [[User:Salgo60|Salgo60]] ([[User talk:Salgo60|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:27, 8 December 2020 (UTC)
+
+== mixing subjects ==
+
+{{ping|André Costa (WMSE)|Ainali|Abbe98}} et al!
+It looks like you intend to start a project where you will massimport data from fmis? That is fair with me, I love to work with that! But you have to consider one thing! The article [[:sv:Björkå]] is about a "småort" and two "gravfält". Multiple-subject WP-articles is one thing, but multiple-subject items is a "ursäkta franskan: en finne i arslet". Is it the "småort" or "Holms gravfält" who has a population of 67 persons. Is it the småort or gravfält who "has part:burial mound quantity:27". Is it the graves or the settlement who has "shape:oval with a pit at the top". -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:20, 29 January 2017 (UTC)
+:After reading [[Help:Handling sitelinks overlapping multiple items]] I think that Wikidata item should be rebuilt to have {{P|527}} with three new items, one for the "småort" and one for each "gravfält". The same could be done for all other "bundled" articles on svwiki. Some check for items with {{Statement||P31|Q14839548}} and also {{P|1260}} should be done before any import to help reveal such items. [[User:Ainali|Ainali]] ([[User talk:Ainali|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:11, 29 January 2017 (UTC)
+::{{ping|Innocent bystander|Alicia Fagerving (WMSE)|Ainali|Abbe98}} The plan is to import the data in the WLM database to Wikidata. FMIS is probably not the first one, but likely one of the first. I agree with Ainali that these should definitely be three separate items with the item connecting to the Wikipedia article containing a {{P|P527}} (only?). For importing the WLM data I think the main issue will be to detect any false positives. E.g {{Q|Q2368410}} contains {{P|P776}} so it cannot be a FMIS object (even if it contains a {{P|P1262}}). Another warning signal could be that [[:w:sv:Lista över fornlämningar i Sollefteå kommun#Överlännäs]] links to [[:w:sv:Björkå]] via the redirect [[:w:sv:Björkå gravfält]]. I think a good first start would be to ensure {{P|P1262}} has some sensible constraints for {{P|P31}}. /[[User:André Costa (WMSE)|André Costa (WMSE)]] ([[User talk:André Costa (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:11, 30 January 2017 (UTC)
+:::{{ping|Innocent bystander|André Costa (WMSE)|Ainali|Abbe98}} Examples like this make me more and more in favor of just mass-removing all claims that use {{P|P1262}} right before starting the import. That way, new items for "Holms gravfält" and "Björkå gravfält" will be created from scratch, without overlapping with {{Q|Q2368410}}. Not sure about the {{P|P527}} -- in this case, it's about an object located in a village/town, and I haven't really seen this property used like that. And if an item in the Wikipedia list links to a redirect or to an article section (indicating that an article about this particular thing does not exist), the link could be ignored. --[[User:Alicia Fagerving (WMSE)|Alicia Fagerving (WMSE)]] ([[User talk:Alicia Fagerving (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:13, 30 January 2017 (UTC)
+:::::[[:sv:Hemsjö, Alingsås kommun]] is an example of an article on svwiki with multiple subjects, and with a template with WD-support to extract data from three different items. (1. The item about the pair, 2. The item abut the "tätort", 3. The item about the "småort".) 
+:::::No template is today adapted to the situation in [[:sv:Björkå]]. One problem here is that this template-solution (based on the Geobox) is very expensive in terms of how much resources the templates and modules needs to render the page. -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:52, 30 January 2017 (UTC)
+::::::{{ping|Alicia Fagerving (WMSE)}} Of the [https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3FtypeLabel%20WHERE%20%7B%0A%20%20%3Fitem%20wdt%3AP1262%20%3Fraa%20.%0A%20%20OPTIONAL%20%7B%20%3Fitem%20wdt%3AP31%20%3Ftype%20.%20%7D%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22sv%22.%20%7D%0A%7D%0A around 1100 items] with {{P|P1262}} only around 100-200 seem to be wrong. I can clean that up manually this week so no need for mass removal. [[User:Ainali|Ainali]] ([[User talk:Ainali|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:38, 30 January 2017 (UTC)
+:::::::{{ping|Ainali}} True, I was thinking in the context of [[Property_talk:P1262#Qualifier_to_Cultural_heritage_database_in_Sweden_.28P1260.29.3F]] -- that is, removing the RAÄ number as a standalone statement and moving it to qualifier. --[[User:Alicia Fagerving (WMSE)|Alicia Fagerving (WMSE)]] ([[User talk:Alicia Fagerving (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:54, 30 January 2017 (UTC)
+::::::::{{ping|Alicia Fagerving (WMSE)}} Ah, I had missed the recent development in that discussion, but it makes perfect sense. And then your proposal about botfixing standalone statements is something I support. [[User:Ainali|Ainali]] ([[User talk:Ainali|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:12, 31 January 2017 (UTC)
+:::::::::{{ping|Alicia Fagerving (WMSE)|Ainali|Innocent bystander}} For the Wikidata items corresponding to Wikipedia articles on multiple subjects the needed action would be threefold: Break out the FMIS item into a separate item, break out the småort info into a separate item, replace the contents of the Wikipedia-article-item with two {{P|P527}} claims and some suitable {{P|P31}} (something more specific than {{Q|Q17519152}} ideally). A fixing of these 100-200 objects would be needed whether or not we then change to P1260 as a qualifier only.
+:::::::::I'm not sure the Infobox issue is a blocker here. [[:sv:Björkå]] already uses three infoboxes to deal with the fact that it is actually supposed to be multiple articles. We shouldn't expect templates, or the associated Lua to be the solution for that. A potential work-around for this case would be if the templates could accept a parameter which was "show me as if I was <this> wikidata id". /[[User:André Costa (WMSE)|André Costa (WMSE)]] ([[User talk:André Costa (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:14, 6 February 2017 (UTC)
+::::::::::RE: "show me as if I was <this> wikidata id" is fully possible to implement! I do not have the time to change the Ortsfakta WD-template now, but it is rather straightforward to fix. -- [[User:Innocent bystander|Innocent bystander]] ([[User talk:Innocent bystander|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:04, 7 February 2017 (UTC)
+:::::::::::I made a stab at Björkå. {{Q|2368410}} is now split up and {{P|527}}: {{Q|28731191}}, {{Q|28731194}} and {{Q|28731198}}. Is that a way to go? [[User:Ainali|Ainali]] ([[User talk:Ainali|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:27, 8 February 2017 (UTC)
+::::::::::::In my book the above separation of {{Q|2368410}} looks to be right. =) /[[User:André Costa (WMSE)|André Costa (WMSE)]] ([[User talk:André Costa (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:18, 8 February 2017 (UTC)
+=== "Good patterns" ===
+I think it would be good when we map {{P|1260}} to RAÄ that we also use {{P|4390}} together with
+* {{Q|39893184}}
+* {{Q|39893449}}
+* {{Q|39894604}}
+* {{Q|39894595}}
+* {{Q|39893967}}
+so the WD reader understands if we use the same concept that RAÄ use or if its ''nearly the same'' - [[User:Salgo60|Salgo60]] ([[User talk:Salgo60|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:33, 27 August 2018 (UTC)
+
+== Suggested changes to property ==
+
+The Kulturarvsdata property has primarily been used for buildings and heritage sites, however outside of Wikidata-land its used for a lot of different types of records, mainly ones representing an item found in archives. This is currently not reflected in the constraints of this property.
+
+Suggested changes to constrains:
+* Removal of <code>item requires statement constraint</code> <code>heritage designation</code>
+* Removal of <code>item requires statement constraint</code> <code>country</code> <code>Sweden</code>
+* Removal of <code>item requires statement constraint</code> <code>coordinate location</code>
+* Removal of <code>item requires statement constraint</code> <code>located in the administrative territorial entity</code>
+* Removal of <code>distinct values constraint</code>
+
+
+The second subject is the format of the id, the examples and Regex suggest that this property supports values like <inst>/<serv>/<id> as well as <inst>/<serv>/html/<id>. Although the later is supported and many simliar formats as well, there is not a '''unified commitment''' at the SNHB to provide longterm support for these URLs. URLs of this type has been changed to the URI by bots for at least two years. The format Regex also defined the allowed service and institution values, however most of the used values are missing from the Regex and there are over 60 values for institutions and over 120 for services.
+
+Suggested changes to format Regex:
+* Simplified format Regex <code>.+\/.+\/.+</code>
+* Removal of all HTML URL examples.
+
+
+[[User:Abbe98|Abbe98]] ([[User talk:Abbe98|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:28, 10 December 2018 (UTC)
+: Notifying {{Ping|Lokal Profil|Alicia Fagerving (WMSE)||||}} who have been heavy users of this property.
+
+== Bebyggelseregistret ==
+
+Should buildings in Bebyggelseregistret use this property or should I propose a new property for that database? They are not visible in Kringla. Is Bebyggelseregistret part of K-samsöm/SOCH?
+
+Example: https://www.wikidata.org/wiki/Q96035332 / http://kulturarvsdata.se/raa/bbr/html/21420000009479 / http://www.kringla.nu/kringla/ingatraffar?text=kvarteret+havssvalget
+
+[[User:Ambrosiani|Ambrosiani]] ([[User talk:Ambrosiani|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:43, 4 June 2020 (UTC)
+
+:{{Ping|Ambrosiani}} Everything in BBR is available in SOCH/Kringla as proven by the kulturarvsdata.se link above. The building in question can be found [http://www.kringla.nu/kringla/objekt?referens=raa/bbr/21420000009479 here on Kringla.nu]. I have added {{Property|P3303}} to this property to make the relation to Kringla.nu clearer. [[User:Abbe98|Abbe98]] ([[User talk:Abbe98|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:49, 4 June 2020 (UTC)
+::{{Ping|Abbe98}} 🤦‍♂️ oops. Shouldn’t have used ”kvarteret” in my search. [[User:Ambrosiani|Ambrosiani]] ([[User talk:Ambrosiani|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:18, 5 June 2020 (UTC)
+== Link rot ==
+FYI we did a test 2020 jun 30 of abt. 160 000 links to kulturnav used in Swedish Wikipedia and about 4% had problems --> Ok: 156539 Not ok 7604
+* [https://gist.github.com/salgo60/f33116056e2698186b9ee424626246fd checkkulturarv Wikipedia links.py]
+No action and no official error reporting has been done and no official feedback from RAÄ 
+- [[User:Salgo60|Salgo60]] ([[User talk:Salgo60|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:45, 20 September 2020 (UTC)
+
+== Update to link resolution ==
+
+From 2020-12-08 kulturarv.se links will take [[:en:content negotiation]] into account. I.e. if you follow the link using a standard web browser your visit will be handled like if you visited the <code>/html/</code> version of the link. Applications expecting rdf should still get the same result as before. /[[User:André Costa (WMSE)|André Costa (WMSE)]] ([[User talk:André Costa (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:43, 1 December 2020 (UTC)

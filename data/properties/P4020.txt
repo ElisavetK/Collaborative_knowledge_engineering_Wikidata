@@ -1,0 +1,32 @@
+{{Property documentation
+|domain			= {{Q|107715}}
+|allowed values		= L^aM^bT^cI^dΘ^eN^fJ^g
+}}
+
+{{ExternalUse|
+* [[:en:Template:Infobox physical quantity]]
+* [[:sl:Predloga:Infopolje Fizikalna količina]]
+* [[:bh:टेम्पलेट:Infobox physical quantity]]
+* [[:ml:ഫലകം:Infobox physical quantity]]
+* [[:eu:Txantiloi:Magnitude infotaula]]
+}}
+<!-- {{Constraint:Type|class=Q107715|relation=subclass}} -->
+
+== Font style: should be Roman (upright), not italics ==
+The font style should be Roman (upright), not italics. That is the seven symbols: LMTIΘNJ. 
+For example {{Q|Q48103}},
+:not <math>{\displaystyle L^{2}MT^{-2}}</math>
+:but <math>{{\mathsf L}^2{\mathsf M}{\mathsf T}^{-2}}</math>
+
+The seven symbols are not those of a {{Q|Q107715}} (which generally ''are'' in italics), but of a {{Q|Q19110}}. See also [[Wikidata:Property proposal/dimension]]. -[[User:DePiep|DePiep]] ([[User talk:DePiep|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:56, 11 January 2018 (UTC)
+: [https://www.bipm.org/en/publications/si-brochure/section1-3.html This a reference] that supports [[User:DePiep|DePiep]]'s comment - in particular the dimension symbols specifically should be "symbolically represented by a single sans serif roman capital letter". Since this property has a "mathematical expression" value the default representation is in the italic form. I believe the underlying "mathematical expression" display just uses LaTeX (or the mediawiki version of it) to handle things, so do we want to replace these values with something that presents them consistently according to the BIPM recommendation in upright sans serif? I'm not even sure how you do that in LaTeX. [[User:ArthurPSmith|ArthurPSmith]] ([[User talk:ArthurPSmith|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:13, 18 January 2018 (UTC)
+: Ah - I fixed DePiep's example - the letters could be coded as {\mathsf X}. Do we want to apply this generally? [[User:ArthurPSmith|ArthurPSmith]] ([[User talk:ArthurPSmith|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:18, 18 January 2018 (UTC)
+:::Why at all do you question my request while you yourself provided an extra source for it? What at all is wrong with this WD attitude? Really. I still have to meet a normal discussion here. -[[User:DePiep|DePiep]] ([[User talk:DePiep|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:09, 19 January 2018 (UTC)
+The choice of LaTeX vs string data type seems to be inconsistent in general. With the same argument all {{P|416}} should use italic font. Apart from italic font I also do not know how to make subscripts for things like <math>\varepsilon_\mathrm r</math> {{Q|4027242}}. I have seen some photometric quantities using [https://www.compart.com/en/unicode/U+1D65] <s>but can things like <math>\varepsilon_\mathrm r</math> also be done with unicode letters?</s> apparently yes: 𝜀ᵣ but depending on the font settings the result looks wrong. <s>Also: Why apply mathsf to each letter seperately? I would simply write <math>\mathsf{L^2MT^{-2}}</math>.</s>Ok, I forgot that it also affects the exponents.--[[User:Debenben|Debenben]] ([[User talk:Debenben|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:18, 22 January 2018 (UTC)
+
+* Why has this not been fixed? - [[User:DePiep|DePiep]] ([[User talk:DePiep|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:29, 1 April 2018 (UTC)
+** {{re|DePiep}} and what is the proposed solution for that problem? Is it some changes in MediaWiki LaTeX extension, use \mathsf in this property in every case or switching this property datatype from mathematical expression to string? ''[[User:Wostr|Wostr]]'' <small>([[User talk:Wostr|talk]])</small> 00:43, 2 April 2018 (UTC)
+:::{{re|Wostr}} Someone change the LaTeX code. In the OP here I did a demo, but I am not familiar enough with editing this in the property. - [[User:DePiep|DePiep]] ([[User talk:DePiep|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:56, 2 April 2018 (UTC)
+:::: Hmm, but the Artur's proposition to use \mathsf is that someone should manually change this property in every item and add \mathsf, am I right [[User:ArthurPSmith|ArthurPSmith]]? Maybe it is possible to do it using a regexp and file a [[Wikidata:Bot requests|bot request]] for this? And of course use {{P|2559}} in this property to indicate that \mathsf should be used in every case. ''[[User:Wostr|Wostr]]'' <small>([[User talk:Wostr|talk]])</small> 13:59, 2 April 2018 (UTC)
+
+I fixed all values by using <code>\mathsf</code>. [[User:Toni 001|Toni 001]] ([[User talk:Toni 001|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:08, 19 December 2019 (UTC)

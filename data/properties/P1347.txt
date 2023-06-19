@@ -1,0 +1,26 @@
+{{Property documentation
+|description		= {{TranslateThis
+  | en = classification of military casualty, e.g. killed in action, missing in action, died of wounds, prisoner of war
+  }}
+|infobox parameter	= See e.g. [[:en:Template:KIA]], [[:en:Template:MIA]], [[:en:Template:DOW]], [[:en:Template:POW]], [[:en:Template:WIA]]
+|domain			= {{Q|5}}
+|allowed values		= {{Q|Q210392}}, {{Q|Q2344557}}, {{Q|16861372}}, {{Q|Q179637}}, {{Q|Q16861407}}, others used in military casualty classification
+|source			= [http://nsa.nato.int/nsa/zPublic/ap/aap6/AAP-6.pdf#page=123 AAP-06(2013), NATO Standardization Agency]; [http://webcache.googleusercontent.com/search?q=cache:AlBSTEJyQcsJ:www.hrc.army.mil/default.aspx%3Fid%3D5805+#1 United States Army Human Resource Center]
+|example		= {{Q|4334896}} military casualty classification {{Q|16861372}}
+}}
+
+{{ExternalUse|
+* [[:d:Template:TR missing P]]
+}}
+
+<!-- {{Constraint:Item|property=P31|item=Q5}} -->
+<!-- {{constraint:One of|values={{Q|210392}}, {{Q|2344557}}, {{Q|16861372}}, {{Q|179637}}, {{Q|16861407}}}} -->
+<!-- {{Constraint:Item|property=P570}} -->
+<!-- {{Constraint:Item|property=P20}} -->
+<!-- {{Constraint:Item|property=P27}} -->
+<!-- {{Constraint:Item|property=P21|item=Q6581097|exceptions={{Q|4334896}}}} -->
+<!-- {{Constraint:Item|property=P607}} -->
+
+== Death constraints ==
+
+Given that {{Q|179637}} is an accepted value for this property, it doesn't make much sense to require {{P|570}} and {{P|20}}, so I've removed these constraints. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:38, 21 April 2020 (UTC)

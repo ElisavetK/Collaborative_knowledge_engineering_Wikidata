@@ -1,0 +1,26 @@
+{{Property documentation
+|example		= fire@English noun → fire@English verb (see: [[wikt:en:fire]])
+|lists = 
+*[[Wikidata:Lexicographical_data/Statistics/homograph_lexemes]]
+}}
+{{Complex constraint
+ | label = Not the same language
+ | description = Lexemes using this property should both use the same language item.
+ | sparql =
+select ?item (group_concat(distinct ?lemma; separator="/") as ?lemmas) ?lang ?lexcat {
+  ?item wdt:P5402 ?item2; wikibase:lexicalCategory ?lexcat; dct:language ?lang; wikibase:lemma ?lemma.
+  ?item2 dct:language ?lang2.
+  filter (?lang != ?lang2).
+} group by ?item ?lang ?lexcat order by ?lemmas
+}}
+{{Lexicographical properties}}
+
+== Language ==
+
+may be to limit to the same language? Otherwise we end up with hundreds of cross-links in each of hundreds interlanguage homographs (see e.g. [[wikt:ru:Peru]]). --[[User:Infovarius|Infovarius]] ([[User talk:Infovarius|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:30, 19 October 2018 (UTC)
+: I agree it should be limited to the same language. The [https://www.wikidata.org/w/index.php?title=Wikidata:Property_proposal/homograph_lexeme&diff=next&oldid=684841939 only support] in property proposal was also in the same language. [[User:KaMan|KaMan]] ([[User talk:KaMan|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:36, 19 October 2018 (UTC)
+: Agree: when editing lexemes, it's fairly important to bear in mind homograph ones in the same language. We could add [[template:complex constraint|complex constraint]] to monitor this.  --- [[User talk:Jura1|Jura]] 09:24, 19 October 2018 (UTC)
+: I also think it should be limited to the same language. -[[User:Theklan|Theklan]] ([[User talk:Theklan|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:36, 12 November 2019 (UTC)
+::This seems like a good idea. Who can implement? [[User:Ainali|Ainali]] ([[User talk:Ainali|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:24, 3 January 2021 (UTC)
+::: I've edited all the descriptions except Finnish and created [[phab:T271079]] asking for a "same language" constraint. In the meantime I've added a complex constraint ([[Database reports/Complex constraint violations/P5402]]) although I won't know if it's worked until the report has been generated. I don't know when that will be so I also made a Listeria list ([[User:Nikki/P5402]]). - [[User:Nikki|Nikki]] ([[User talk:Nikki|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:35, 3 January 2021 (UTC)
+::::Thanks. If you click on the "violations query", you get what the constraint report should output. Ideally {{Q|Q1321}} and {{Q|Q736236}} would probably also be considered the same language by the constraint. --- [[User talk:Jura1|Jura]] 23:40, 3 January 2021 (UTC)

@@ -1,0 +1,55 @@
+{{Property documentation}}
+
+{{Complex constraint
+|label=Globes to check
+|description=Globe should be Q405
+|sparql=SELECT ?item ?itemLabel ?globe ?globeLabel ?lat ?lon
+WITH
+{
+  SELECT ?st ?stv ?globe
+  {
+    ?st psv:P8981 ?stv .
+    FILTER NOT EXISTS { ?stv wikibase:geoGlobe wd:Q405 }
+    ?stv wikibase:geoGlobe ?globe
+  }
+} as %coor
+WHERE
+{
+  INCLUDE %coor
+  ?stv wikibase:geoLatitude ?lat .
+  ?stv wikibase:geoLongitude ?lon .
+  ?item p:P8981 ?st     
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }        
+}
+}}
+
+== Wrong 'globe' in data ==
+
+Coordinates created with this property has wrong 'globe' component. It points to {{Q|2}} instead of {{Q|405}}. Here is dump for mainsnak retrieved from {{Q|320936}}:
+<pre>table#1 {
+  ["datatype"] = "globe-coordinate",
+  ["datavalue"] = table#2 {
+    ["type"] = "globecoordinate",
+    ["value"] = table#3 {
+      ["globe"] = "http://www.wikidata.org/entity/Q2",
+      ["latitude"] = 8.5,
+      ["longitude"] = 31.4,
+      ["precision"] = 0.016666666666667,
+    },
+  },
+  ["property"] = "P8981",
+  ["snaktype"] = "value",
+}</pre>
+This is incorrectly rendered in plwiki if the value is retrieved from Wikidata. It is ridiculous to provide dedicated module or method to properly render any new property which has type 'globe-coordinate'. Current data model is flexible enough to manage coordinates on any globe. [[User:Paweł Ziemian|Paweł Ziemian]] ([[User talk:Paweł Ziemian|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:19, 29 December 2020 (UTC)
+:Fixed the globe and added a complex constraint. BTW the same happens with P625. --- [[User talk:Jura1|Jura]] 20:28, 31 December 2020 (UTC)
+* There are items with coordinates that use {{P|625}} and {{P|376}} with {{Q|405}}:
+{{SPARQL|query=
+SELECT ?item ?itemLabel ?stv
+{
+  ?item wdt:P625 ?stv .
+  ?item wdt:P376 wd:Q405
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+}} They can be migrated to {{P|P8981}}. [[User:Paweł Ziemian|Paweł Ziemian]] ([[User talk:Paweł Ziemian|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:16, 2 January 2021 (UTC)
+
+I started checking which templates need updating. cawiki now supports {{P|8981}}: [[:ca:Mare_Tranquillitatis]] with [[:ca:Plantilla:Accident geogràfic extraterrestre]] and [[:ca:Mòdul:Mapa cos celeste]]. It seems that many templates for the Moon don't use Wikidata coordinates at all. --- [[User talk:Jura1|Jura]] 09:10, 6 January 2021 (UTC)

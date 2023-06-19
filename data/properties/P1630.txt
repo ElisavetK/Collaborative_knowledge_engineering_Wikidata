@@ -1,0 +1,186 @@
+{{Property documentation
+| description= {{TranslateThis
+ | en = a URL-like string, such as "http://viaf.org/viaf/$1/", from which "$1" can be automatically replaced with the effective property value on items. For errors in proposals, see [[:Category:Invalid formatter URL]].
+}}
+| domain= {{Q|18616576}} - one of [[:Category:Properties with string-datatype]]
+| filter= 73
+| robot and gadget jobs= {{ll|Wikidata:Tools/Gadgets#AuthorityControl.js|AuthorityControl.js}} could use this property, instead of internal settings, to format a property value on items' pages
+}}
+{{Used in code|type=setting|1=https://noc.wikimedia.org/conf/highlight.php?file=Wikibase-production.php}}
+<!-- {{Constraint:Type|classes=Q19847637,Q18614948,Q6545185|relation=instance|exceptions={{P|625}}}} -->
+<!-- {{Constraint:Format|pattern=<nowiki>(https?:\/\/|steam:\/\/|info|urn|skype|tel)[\wè\d\-\.,\/\?=&:_%+#~;!А-яåЁё()@|\[\]\*{}]*\$1[\w\d\-\.,\/\?=&:_%+#~;!А-яåЁё()@|\[\](){}]*</nowiki>|exceptions={{P|679}},{{P|981}},{{P|1670}} }} -->
+<!-- {{Constraint:Unique value|exceptions={{P|1284}}, {{P|1285}}, {{P|1286}}, {{P|1287}}, {{P|1288}}, {{P|1289}} }} -->
+<!-- {{Constraint:Single value}} -->
+<!-- {{Constraint:Item|property=P1793}} -->
+<!-- {{Constraint:Conflicts with|list={{P|31}}: {{Q|21099935}}}} -->
+{{Wikidata property documentation properties}}
+{{ExternalUse|
+* [[MediaWiki:Gadget-AuthorityControl.js]]
+* [[Wikidata:Database reports/Constraint violations]] <small>(by [[User:KrBot|KrBot]])</small>
+* [[:ar:قالب:Taxonbar/Link]]
+* [[:bh:टेम्पलेट:Taxonbar/Link]]
+* [[:cy:Nodyn:Taxonbar/Link]]
+* [[:en:Template:Taxonbar/Link]]
+* [[:fa:الگو:Taxonbar/Link]]
+* [[:id:Templat:Taxonbar/Link]]
+* [[:ja:Template:Taxonbar/Link]]
+* [[:jv:Cithakan:Taxonbar/Link]]
+* [[:ko:틀:Taxonbar/Link]]
+* [[:mk:Шаблон:Таксонска лента/врска]]
+* [[:or:ଛାଞ୍ଚ:Taxonbar/Link]]
+* [[:sr:Шаблон:Taxonbar-lat/Link]], [[:sr:Шаблон:Taxonbar/Link]], [[:sr:Шаблон:Taxonbar/Link-lat]]
+* [[:sv:Mall:Taxonbar/Link]]
+* [[:zh:Template:Taxonbar/Link]]
+* [[:sco:Template:Taxonbar/Link]]
+}}
+
+== // protocol ==
+{{tracked|T54253}}
+Please do not use URLs like "//www.freebase.com". Use "https://www.freebase.com" instead. "//" is Wikimedia`s invention as I know. But this property will be used by external users too. This strange construction will confuse these users. Wikidata usage must not be thorny path. — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 21:09, 25 December 2014 (UTC)
+: Protocol relative URLs (<code>//</code>) are not a Wikimedia invention. They are defined in [//tools.ietf.org/html/rfc3986 RFC 3986]. --[[User:Fomafix|Fomafix]] ([[User talk:Fomafix|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:54, 25 December 2014 (UTC)
+:: {{ping|Fomafix}} Interesting standard, but a bit cryptic: it states "''If a URI contains an authority component, then the path component must either be empty or begin with a slash ("/") character.  If a URI does not contain an authority component, then the path cannot begin with two slash characters ("//").  In addition, a URI reference (Section 4.1) may be a relative-path reference, in which case the first path segment cannot contain a colon (":") character.''"   This does not suggests that relative paths may begin with two slashes; other sections about relative references ([https://tools.ietf.org/html/rfc3986#section-5.1 section 5.1]) also do not show a path starting with two slashes either.  Can you quote a piece of that text clarifying such syntax?  -- '' [[User:Laddo|LaddΩ]]''  [[User_talk:Laddo|''<small>chat </small>'';)]] 22:50, 25 December 2014 (UTC)
+::: [//tools.ietf.org/html/rfc3986#section-4.2 Section 4.2]:
+<pre>relative-ref  = relative-part [ "?" query ] [ "#" fragment ]
+relative-part = "//" authority path-abempty</pre>
+::: --[[User:Fomafix|Fomafix]] ([[User talk:Fomafix|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:40, 26 December 2014 (UTC)
+: @[[User:Ivan A. Krestinin|Ivan A. Krestinin]]: Why should protocol relative URLs not used? They are well standardized and supported. --[[User:Fomafix|Fomafix]] ([[User talk:Fomafix|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:42, 29 December 2014 (UTC)
+:: You are right, this syntax is standardized. Some difficult cases: for example I have pages:
+ file://my_server/my_page.html
+ ftp://my_server/my_page.html
+Links like '//www.freebase.com' will resolved to 'file://www.freebase.com' and 'ftp://www.freebase.com'. — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 06:45, 2 January 2015 (UTC)
+: Wikidata is only accessible via HTTP and HTTPs. Protocol relative links only reference these two protocols. Where do you see this problem? --[[User:Fomafix|Fomafix]] ([[User talk:Fomafix|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:28, 2 January 2015 (UTC)
+:: Wikidata is open project. Data can be accessible using any protocol via third-party data clients. — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 10:35, 2 January 2015 (UTC)
+::: Is this a real problem or a theoretical problem? The values from [[Property:P1630|P1630]] are not usable directly. They have to converted with the value of the wanted property. This convertation can also add the wanted protocol HTTP or HTTPS. --[[User:Fomafix|Fomafix]] ([[User talk:Fomafix|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:34, 2 January 2015 (UTC)
+:::: I meet this issue for locally saved reports of my bot. Conversation can be included to processing algorithms. But it must be included to the most algorithms. E. g. increasing data model complexity causes growing processing algorithms complexity. I think data model must be as simple as it possible. This makes data usage more simple. More simple usage — more clients count. — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 16:38, 2 January 2015 (UTC)
+::::: Protocol relative links are simpler than handling two separate links for HTTP and HTTPS. --[[User:Fomafix|Fomafix]] ([[User talk:Fomafix|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:20, 2 January 2015 (UTC)
+:::::: Is there some applications that needs HTTP link? — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 17:24, 2 January 2015 (UTC)
+::::::: If somebody cannot use HTTPS because of firewalls then keeping the current protocol improves the accessibility. --[[User:Fomafix|Fomafix]] ([[User talk:Fomafix|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:28, 2 January 2015 (UTC)
+:::::::: HTTPS is used by too many Internet resources. HTTPS blocking was possible some years ago. But not now as I think. — [[User:Ivan A. Krestinin|Ivan A. Krestinin]] ([[User talk:Ivan A. Krestinin|talk]]) 17:42, 2 January 2015 (UTC)
+
+== Handling of qualifiers ==
+
+I noticed that the properties examples given for [https://www.wikidata.org/w/index.php?title=Property:P1900&oldid=221790198 P1900] do not show proper URL formatting and thus played around with it [https://www.wikidata.org/w/index.php?title=Q4115189&type=revision&diff=230549222&oldid=230535268 in the sandbox], which suggests that the formatting works fine for statements but not qualifiers. Don't know how to fix that. --[[User:Daniel Mietchen|Daniel Mietchen]] ([[User talk:Daniel Mietchen|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:00, 14 July 2015 (UTC)
+
+== $ ==
+
+The current format pattern doesn't allow to have $ besides $1. Is there a reason for this? And what should we do with the formatter URL's on {{P|679}} and {{P|2062}} which have $ in the URL. --[[User:Pasleim|Pasleim]] ([[User talk:Pasleim|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:54, 28 September 2015 (UTC)
+:I added them to the exceptions for now. --- [[User talk:Jura1|Jura]] 12:06, 3 October 2015 (UTC)
+:: (Hijacking an old thread) Eventually one probably have to reimplement the functionality in the lines of [https://tools.ietf.org/html/rfc6570#section-1.5 RFC 6570 - URI Template]]. -- [[User:Gymel|Gymel]] ([[User talk:Gymel|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:54, 2 April 2016 (UTC)
+
+== https or http ==
+There is some discussion at [[Property talk:P214]] about whether to use http (suggested by some users) or https (preferred by WMF). --- [[User talk:Jura1|Jura]] 09:52, 13 December 2015 (UTC)
+
+
+== Qualifier {{P|1535}} = {{Q|22348290}} ==
+
+For formatter URL that have special code in [[MediaWiki:Gadget-AuthorityControl.js]], I added the above to the statements. <br/>--- [[User talk:Jura1|Jura]] 10:56, 1 February 2016 (UTC)
+
+== Dofollow links to proprietary and for-profit targets ==
+
+{{tracked|T175230}}
+I discovered today that [[phabricator:T175230|Wikidata identifier links don't respect nofollow configuration]]. I wonder if users knew this when they set certain IDs to link for-profit, proprietary websites. --[[User:Nemo_bis|Nemo]] 06:01, 7 September 2017 (UTC)
+
+== Distinct values constraint ==
+
+This property has correctly the constraint "Distinct values". Recently two properties has been created with the same URL formatter: {{P|P4767}} and {{P|P4768}}. This doesn't make sense for me and I think they should be merged. Indeed for the website www.cinematografo.it there is no way for representing a company and a person with the same ID, instead we can, allowing P4767 and P4768 in the same item, that it's wrong. --[[User:Rotpunkt|Rotpunkt]] ([[User talk:Rotpunkt|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:02, 23 January 2018 (UTC)
+: It's a nonmandatory constraint. We use nonmandatory constrains when most of the values are expected to not violate the constraint. We use mandatory constraints when we don't want any value to be entered that violates the constraint. [[User:ChristianKl|<font color="#0000EE">'''ChristianKl'''</font>]] ❪[[User talk:ChristianKl|✉]]❫ 13:23, 23 January 2018 (UTC)
+*It's possible to have the same formatter, but it might be a sign that we should have the same property. If the identifier are in the same numbers range, I think we should have just one. {{ping|ديفيد عادل وهبة خليل 2|ValterVB|Mahir256}} who participated in its creation. <br/>--- [[User talk:Jura1|Jura]] 13:39, 23 January 2018 (UTC)
+*Sure, I’ve no objections to merging the two. Guess we shouldn’t have overlooked the common formatter URL, but I leave to {{ping|ValterVB}} if different ‘categoria’ values in itwiki’s ‘Cinematografo’ template cause the other fields within the template to be sufficiently different to warrant two Wikidata properties. [[User:Mahir256|Mahir256]] ([[User talk:Mahir256|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:50, 23 January 2018 (UTC)
+: I based my request of creation of property on the content of the template page in Italian wiki that don't reflect the site, when {{ping|Rotpunkt}} warned me, I thought I still had some time, but property was created this morning so it's too late. Now if none has problem we can deprecate P4767 and use only P4768 for name and company. ({{ping|ديفيد عادل وهبة خليل 2|Jura1|Mahir256}}) --[[User:ValterVB|ValterVB]] ([[User talk:ValterVB|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:03, 23 January 2018 (UTC)
+
+== Using from within WDQS ==
+
+A rather nice code fragment from [[User:Multichill]] for using this within a WDQS query:
+
+{{SPARQL|query=
+  ?item wdt:Pnnn ?value .
+  wd:Pnnn wdt:P1630 ?fmt .
+  BIND(IRI(REPLACE(?value,  CONCAT('(',?value,')'), ?fmt)) AS ?url) .
+}}
+
+[[User:Jheald|Jheald]] ([[User talk:Jheald|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:10, 19 February 2018 (UTC)
+
+:Or, alternatively, a slightly more straightforward approach:
+
+:{{SPARQL|query=
+  ?item wdt:Pnnn ?value .
+  wd:Pnnn wdt:P1630 ?fmt .
+  BIND(IRI(REPLACE(?fmt, '\\$1'  , ?value)) AS ?url) .
+}}
+:[[User:Jheald|Jheald]] ([[User talk:Jheald|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:14, 19 February 2018 (UTC)
+
+::Or, alternatively again:
+::{{SPARQL|query=
+  ?item wdt:Pnnn ?id .
+  wd:Pnnn wdt:P1630 ?fmt .
+  BIND(IRI(REPLACE(?id, '(^.*)', ?fmt)) AS ?url) .
+}}
+:: [[User:Jheald|Jheald]] ([[User talk:Jheald|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:23, 29 October 2019 (UTC)
+
+==Removing advice on use of wd in URLs==
+After a [https://www.wikidata.org/w/index.php?title=Wikidata:Project_chat&oldid=597260313#Random_URL_parts short discussion], [[User:Thierry Caro]] added the following advice to this property: "You may use 'wd' whenever some part of the URL is needed but can be randomly set without breaking the link.". 
+
+[https://www.wikidata.org/wiki/Property_talk:P4931#Formatter Elsewhere] it's been pointed out that this is possibly harmful from a privacy POV; it in effect stamps URLs as 'from wikidata', for no obviously good reason, and frustrates the intentions of users whose user agents do not send an HTTP referer ID.
+
+I'd like us to change the advice such that we use a more neutral string. I appreciate the whole issue is somewhat marginal, but still... --[[User:Tagishsimon|Tagishsimon]] ([[User talk:Tagishsimon|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:35, 29 April 2018 (UTC)
+
+: Does Wikidata have a policy for [[w:Wikipedia:External links#referral|affiliate, tracking, or referral]] links?  Would it be useful for companies and organizations to know users are coming from Wikidata?  Should we add <code>?utm_source=wikidata</code> so Google Analytics and Piwik can attribute us as the referral source?  This might make organizations more willing to [[meta:Wikimedian in residence|partner with us]]. —[[User:Dispenser|Dispenser]] ([[User talk:Dispenser|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:48, 2 May 2018 (UTC)
+
+::I'm sure it would be useful for companies. Would it be useful for users? I hear facebook is hiring, Dispenser. --[[User:Tagishsimon|Tagishsimon]] ([[User talk:Tagishsimon|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:16, 2 May 2018 (UTC)
+
+*No idea where this came from. I don't think that should be in there either. Removed it for now. <br/>--- [[User talk:Jura1|Jura]] 16:45, 11 July 2018 (UTC)
+
+== Varying URL ==
+
+The National Academy of Sciences helpfully changes the URLs for deceased members, without leaving a redirect. E.g., {{Q|310067}} is at http://www.nasonline.org/member-directory/deceased-members/8899.html, but the formatter on {{P|5380}} goes to http://www.nasonline.org/member-directory/members/8899.html. I assume there's no way to fix it, short of changing all the identifiers to something like "deceased-members/8899"? [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:18, 14 August 2018 (UTC)
+: This property was only recently added, so there aren't actually many values to change, but it wouldn't look right. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 05:23, 14 August 2018 (UTC)
+:: I changed the formatter URL into a search on their website instead. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:39, 18 August 2018 (UTC)
+
+== Alternative URL's based on regex match ==
+
+I noticed that in cases where a property has multiple formatter URL's based on a regex match, the selection doesn't actually work.
+
+E.g. in {{P|P791}}, the first alternative in the list is for DE-.*, and it works correctly ({{Q|Q27901}}). But as far I can see, the other alternatives don't actually format the URL if there's a match, e.g. US-.* in {{Q|Q131454}}, JP-.* in {{Q|Q61901152}} or IT-.* in {{Q|Q3639588}}. How is it supposed to work? --[[User:Alicia Fagerving (WMSE)|Alicia Fagerving (WMSE)]] ([[User talk:Alicia Fagerving (WMSE)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:18, 27 June 2019 (UTC)
+*Those aren't defined in [[MediaWiki:Gadget-AuthorityControl.js]] yet. --- [[User talk:Jura1|Jura]] 17:49, 27 June 2019 (UTC)
+
+== Escaping special characters ==
+
+{{q|Q16001236}} has a {{p|P373}} of "99% Invisible", which produces this broken URL: https://commons.wikimedia.org/wiki/Category:99%%20Invisible. The correct URL is https://commons.wikimedia.org/wiki/Category:99%25%20Invisible, i.e. with % escaped to %25.
+
+This URL would work, however: https://commons.wikimedia.org/w/index.php?action=view&title=Category:99%%20Invisible — with the exact same string as a query parameter instead of a path segment.
+
+Should the formatter URL of commons category be changed (since it works in this ''particular'' case)? Or does formatter URL need to learn how to provide url-safe variants of $1? --[[user:jleedev|jleedev]] ([[user talk:jleedev|talk]]) 20:54, 18 September 2019 (UTC)
+: I'd say the % character should be escaped when converting to a URL, and this would affect other properties besides P373. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:46, 19 September 2019 (UTC)
+::Some characters are now escaped; as a result the formatter for {{P|P8169}} doesn't work. [[User:Peter James|Peter James]] ([[User talk:Peter James|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:45, 2 July 2020 (UTC)
+
+== How to add the formatter URL if two different language versions have different url? ==
+
+How to add the formatter URL If two languages have different URLs and both are the main sources. Should only one must been added to the property {{P-|1630}}. Can anyone check on this property {{P|P7997}}-[[User:Gnoeee|<span style="color:#990000">❙❚❚</span><span style="color:#339966">❙❙</span><span style="font-family:Noto Sans;color:#000"> JinOy </span><span style="color:#006699">❚❙❚</span><span style="color:#339966">❙❙</span>]] [[User talk:Gnoeee|✉]] 07:09, 20 March 2020 (UTC)
+
+== Escaping spaces to _ instead of + ==
+
+[[Property:P2000]] was originally defined as data type '''String''', and was recently changed to data type '''External identifier'''. With that change, the formatter URL is no longer working, because now it converts any space in the parameter $1 into a + sign instead of an underscore (or a space, %20). How can I fix this? —[[User:Capmo|''capmo'']] ''([[User talk:Capmo|<span class="signature-talk">talk</span>]])'' 15:25, 23 March 2020 (UTC)
+: Yes, I think the '+' escape can be used in forms, but not always in URLs, where %20 is correct. I suppose it's under the control of software and needs to be raised on Phabricator. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:19, 23 March 2020 (UTC)
+: It's mentioned in [[:phabricator:T160281]]. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:27, 23 March 2020 (UTC)
+::Hi, thanks for the phabricator link, and for reporting this issue there! Until we have a definitive solution, I'll resort to using the wmflabs tool <code>wikidata-externalid-url</code>, as suggested in that thread. —[[User:Capmo|''capmo'']] ''([[User talk:Capmo|<span class="signature-talk">talk</span>]])'' 14:02, 25 March 2020 (UTC)
+
+== Phab: Replace https://tools.wmflabs.org/wikidata-externalid-url by providing improved handling for external id formatter urls (November 2016) == 
+{{phab|T150939}}
+See [[phab:T150939]] --- [[User talk:Jura1|Jura]] 07:49, 1 October 2020 (UTC)
+
+== Phab: URL-encoding of external-id values in Wikidata frontend breaks (some) links (March 2017) ==
+{{phab|T160281}}
+See [[phab:T160281]] --- [[User talk:Jura1|Jura]] 07:49, 1 October 2020 (UTC)
+
+== Phab: Allow own Wikidata ID to be used inside the Formatter URL (March 2019) ==
+{{phab|T218749}}
+See [[phab:T218749]] --- [[User talk:Jura1|Jura]] 07:49, 1 October 2020 (UTC)
+
+== Phab: Support multilingual formatter url on Wikidata (August 2020) == 
+{{phab|T259801}}
+See [[phab:T259801]] --- [[User talk:Jura1|Jura]] 07:49, 1 October 2020 (UTC)
+
+== External identifier with two parameters ==
+
+Hi, could i create external identifier which has two parameters? We are created {{P|P8752}}, but only for one digital library. In the Czech Republic we have more digital libraries with same identifier style. Some in same url of https://www.digitalniknihovna.cz/$2, where $2 is digital library code. Some on different URLs. And result with one external identifier (with UUID of scan and code of library) will be helpfull, but i don't know how to do. [[User:Skim|Skim]] ([[User talk:Skim|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:50, 29 October 2020 (UTC)
+: I don't think that this is possible directly, since the link is created by passing a single statement value to the formatter, substituting $1. The Usual alternative would be to create a separate property for each digital library. There's another method which could be used in theory, which is to use a property value which combines all of the information (library id and item id), and with a url formatter which goes to a custom service on Toolforge which would redirect to the right location. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:03, 29 October 2020 (UTC)

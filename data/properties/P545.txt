@@ -1,0 +1,22 @@
+{{Property documentation
+ |description       = person that lit the torch at an event, like the Olympic Games
+ |domain            = {{Q|1656682}}, more commonly {{Q|Q5389}}
+ |allowed values    = persons
+ }}
+
+{{ExternalUse|
+* [[:hy:Կաղապար:Տեղեկաքարտ Օլիմպիական խաղեր]]
+}}
+
+
+<!-- {{Constraint:Type|class=Q1656682|relation=instance}} -->
+<!-- {{Constraint:Value type|class=Q5|relation=instance}} -->
+<!-- {{Constraint:Target required claim|property=P21}} -->
+
+{{Olympism properties}}
+
+= {{Capitalize | {{Int discussion}} }} =
+== Question about the property restriction ==
+
+Regarding the property restriction, I would have a question about this property. The "value type" property restriction exists twice here and this leads to errors. You can just look at the three examples and you will notice that there are mistakes. The reason for this is simply that while the [[Q159821|Summer Olympic Games]] and [[Q82414|Winter Olympic Games]] are a subclass of [[Q1656682|event]], they are not a subclass of [[Q841654|competition]]. If both entries of the "value type" property restriction are needed, then I would recommend simply combining them. This means that an “and” becomes “or” and the error messages in the examples are omitted. --[[User:Gymnicus|Gymnicus]] ([[User talk:Gymnicus|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:28, 27 December 2020 (UTC)
+:Because no one has spoken out against this change so far, I will make this change now. After that, you can still discuss. --[[User:Gymnicus|Gymnicus]] ([[User talk:Gymnicus|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:50, 30 December 2020 (UTC)

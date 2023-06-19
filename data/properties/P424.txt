@@ -1,0 +1,164 @@
+{{Property documentation
+|domain={{Q|34770}}, {{Q|14827288}}
+|allowed values=typically a 2 or 3-lowercase letter group
+|source=* https://doc.wikimedia.org/mediawiki-core/master/php/Names_8php_source.html
+* [[m:List of Wikipedias]]
+|robot and gadget jobs=Format validation should allow:
+* {{Q|30239}}  : zh
+* {{Q|1378484}} : zh-classical
+* {{Q|3568069}} : bat-smg
+* {{Q|3239456}} : zh-min-nan
+* {{Q|8937989}} : be-x-old
+* {{Q|200183}} : simple
+|lists=[[Help:Wikimedia language codes/lists/all]]
+}}
+<!-- {{Constraint:Single value|exceptions={{Q|200386}}, {{Q|8937989}}, {{Q|9186}}, {{Q|131339}}, {{Q|2087886}}, {{Q|21169454}}, {{Q|21451014}}, {{Q|21451095}}, {{Q|21474052}} }} -->
+<!-- {{Constraint:Format|pattern=<nowiki>(|[a-z]{2,3}(-[a-z]+){0,2}|simple)</nowiki>|mandatory=true}} -->
+<!-- {{Constraint:Type|classes=Q17376908, Q14827288, Q21450877, Q21469493|relation=instance|exceptions={{Q|2087886}} < !-- need to be moved to classes -- >}} --> 
+{{ExternalUse|
+* [[:ru:Шаблон:Раздел Википедии]]
+* [[:ru:Шаблон:Раздел Википедии/Викиданные]]
+* [[:ar:قالب:إنترويكي]], [[:ar:قالب:Infobox language]]
+* [[:bg:Шаблон:Раздел на Уикипедия]]
+* [[:ce:Кеп:Википедин дакъа/Викихаамаш]], [[:ce:Кеп:Википедин дакъа]]
+* [[:cv:Шаблон:Википеди уйрăмĕ]], [[:cv:Шаблон:Википеди уйрăмĕ/Викихыпарсем]]
+* [[:cy:Nodyn:InterWiki]], [[:cy:Nodyn:Interwiki]]
+* [[:en:Template:InterWiki]], [[:en:Template:Interwiki 2]]
+* [[:eu:Txantiloi:Webgune infotaula]]
+* [[:fa:الگو:میان‌ویکی]]
+* [[:hy:Կաղապար:Interwiki 2]]
+* [[:ia:Patrono:Infobox/typo/languoid]], [[:ia:Patrono:Infobox/articulo/lingua]]
+* [[:ilo:Plantilia:InterWiki]], [[:ilo:Plantilia:InterWiki/pagipadasan]]
+* [[:incubator:Template:Wp/bgn/میان ویکی]], [[:incubator:Template:Wp/luz/مینجآڤ ڤیکی]]
+* [[:kn:ಟೆಂಪ್ಲೇಟು:InterWiki]]
+* [[:krc:Шаблон:Википедияны бёлюмю]]
+* [[:lrc:چوٙأ:مینجا ڤیکی]], [[:lrc:چوٙأ:مینجاڤیکی]]
+* [[:m:Template:New wiki request/WD]]
+* [[:mhr:Кышкар:Википедийын ужашыже-влак]]
+* [[:ps:کينډۍ:Interwiki]], [[:ps:کينډۍ:InterWiki]]
+* [[:ro:Format:InterWiki]], [[:ro:Format:Infocaseta Limbă]]
+* [[:sco:Template:InterWiki]]
+* [[:sl:Predloga:InterWiki]], [[:sl:Predloga:InterWiki/peskovnik]]
+* [[:tg:Шаблон:Фасли Википедиа]], [[:tg:Шаблон:Фасли Википедиа/Викимаълумот]], [[:tg:Шаблон:Фасли Википедия]]
+* [[:fy:Berjocht:Wikipedy]]
+* [[:wuu:Template:InterWiki]]
+* [[:jv:Cithakan:InterWiki]]
+* [[:tcy:ಟೆಂಪ್ಲೇಟ್:Interwiki]]
+* [[:he:תבנית:ויקיפדיה בשפה]]
+* [[:mai:आकृति:InterWiki]]
+* [[:ba:Ҡалып:Википедия бүлеге]]
+* [[:simple:Template:InterWiki]]
+* [[:ky:Калып:Уикипедия бөлүгү]]
+* [[:si:සැකිල්ල:InterWiki]]
+* [[:bcl:Plantilya:InterWiki]]
+* [[:gor:Templat:InterWiki]]
+* [[:ru:Шаблон:Статистика языкового раздела]]
+* [[:el:Πρότυπο:Γλωσσική έκδοση της Βικιπαίδειας]]
+* [[:hu:Sablon:Wikipédia infobox]]
+* [[:myv:ЛопаПарцун:Википедиянь пелькс]], [[:myv:ЛопаПарцун:Кель]]
+* [[:ast:Plantía:Ficha de Wikipedia]]
+* [[:ru:Шаблон:Язык]]
+* [[:vi:Bản mẫu:Wikipedia ngoại ngữ]]
+* [[:yi:מוסטער:שפראך-וויקיפעדיע]]
+* [[:diq:Şablon:Website]]
+* [[:ha:Template:Databox language]]
+* [[:kab:Talɣa:Databox language]]
+* [[:azb:شابلون:InterWiki]]
+* [[:be:Шаблон:Картка:Мова]]
+* [[:av:Шаблон:InterWiki]]
+* [[:sat:ᱪᱷᱟᱸᱪ:InterWiki]]
+}}
+{{Language properties}}
+[[Category:Properties about languages]]
+See [[Property talk:P424/list]]
+== Should this link somewhere ? ==
+
+With [[MediaWiki:Gadget-AuthorityControl.js]], it's possible to have the string link somewhere.
+
+Shall we use this to link to Wikipedia? Sample: on [[Q5287|Japanese]] "ja" would link as [//ja.wikipedia.org ja]. -- [[User talk:Docu|<span style="font-size:90%;border:#000 solid 1px;padding:0;margin:0">&nbsp;<font color="#990000">D</font><font color="#339966">o</font><font color="#006699">c</font><font color="#339966">u</font>&nbsp;</span>]] <small>at</small> 15:49, 14 April 2013 (UTC)
+
+== format pattern ==
+i changed the pattern from <nowiki>([a-z-][a-z][a-z]?(-x)?(-[a-z][a-z]+)?|simple)</nowiki> to <nowiki>([a-z-][a-z][a-z]?(-x|-min)?(-[a-z][a-z]+)?|simple)</nowiki> for zh-min-nan --<span class="akkakksig">[[User:Akkakk|Akkakk]]</span> 00:28, 4 June 2013 (UTC)
+: I generalized it, from: <code><nowiki>([a-z-][a-z][a-z]?(-x|-min)?(-[a-z][a-z]+)?|simple)</nowiki></code>
+:::::: to:<code><nowiki>([a-z]{2,3}(-[a-z][a-z-]*)?|simple)</nowiki></code>
+::: '' [[User:Laddo|LaddΩ]]''  [[User_talk:Laddo|''<small>chat </small>'';)]] 13:04, 4 March 2014 (UTC)
+
+== Qualifier for definition == 
+Currently this property has two functions:
+*1. link to the item that describes what language, languoid, writing system, etc. a specific code refers to. Sample: [[Q2087886]]
+*2. determine the WMF language code of an item. Sample: [[Q8937989]]
+As there is no easy way to select (1.), I'd add a qualifier to these statements, e.g. {{P|794}}: {{Q|101072}}.  <br/>--- [[User talk:Jura1|Jura]] 05:43, 21 January 2016 (UTC)
+*{{done}} → [[Help:Wikimedia language codes/lists/all]]. <br/>--- [[User talk:Jura1|Jura]] 18:23, 28 January 2016 (UTC)
+== Use of "ru" on {{Q|35228}} and "fr" {{Q|1473289}} == 
+{{Q|7737}} seems to describe more closely "ru" and {{Q|150}} "fr", so I removed it from the above. <br/>--- [[User talk:Jura1|Jura]] 06:03, 21 January 2016 (UTC)
+
+== Use of "el" for {{Q|36387}} and {{Q|9129}} ==
+"el" seems to be just for {{Q|36510}}. Is this correct? I replaced the others with "mis". <br/>--- [[User talk:Jura1|Jura]] 17:55, 28 January 2016 (UTC)
+
+== New WMF language codes available: "und", "mis", "zxx", "mul" ==
+See [[Property_talk:P1684#New WMF language codes available: "und", "mis", "zxx", "mul"]]. <br/>--- [[User talk:Jura1|Jura]] 17:55, 28 January 2016 (UTC)
+
+== Inclusion in new language/projects template of Language committee at Meta ==
+At [[meta:Template talk:New wiki request]], I suggest to include the item of the language into the template used there. It would display information about the language (and the WMF code) when new projects or languages are discussed. <br/>--- [[User talk:Jura1|Jura]] 11:31, 31 January 2016 (UTC)
+
+== English description ==
+
+{{ping|Jura1}}
+In the description of how to use this, you added two things:
+
+"The single item that describes the language best should use it with the qualifier P794 ("as") with value Q22283033 ("primary definition").". Why? We have the preferred rank for marking the preferred value, we shouldn't be using qualifiers to emulate that feature.
+
+"Languages without a code can use "mis".". Why? We have the special value "no value" to say that there is no code for it, we shouldn't be using an actual string to emulate that feature either.
+
+- [[User:Nikki|Nikki]] ([[User talk:Nikki|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:48, 15 February 2016 (UTC)
+
+:Did you have a look at the two previous threads about these? To help us stay focused, it might be better to comment there. <br/>--- [[User talk:Jura1|Jura]] 06:45, 16 February 2016 (UTC)
+
+== Clarifying the scope of this property ==
+
+First: the description says "''Wikimedia'' language code", but {{P|1630}} "https://$1.wikipedia.org" seems to indicate it's limited to Wikipedias. Is this right? Next, for sites like {{Q|191769}}, where the content language code ("nb") differs from the site prefix ("no.wikipedia.org") for historical reasons, should "nb" or "no" be used? If this property only is intended for creating links to Wikipedia, "no" is okay, but if it's also intended for e.g. determining the language for getting labels from Wikidata, it's not. [[User:Danmichaelo|Danmichaelo]] ([[User talk:Danmichaelo|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:24, 22 May 2016 (UTC)
+*If you find the formatter url problematic, you might want to change or remove it. <br/>--- [[User talk:Jura1|Jura]] 06:45, 22 May 2016 (UTC)
+* Actually the Wikimedia code for "Norwegian" is effectively "no", even if it's deprecated in BCP47 in favor of "nb" or "nn". So the format is valid, as long as it is used to refer to Wikipedia, not for Wiktionary or other other projects that would use another URL. The same applies to the Wikimedia codes "simple", "zh-classical", "fiu-vro". They are not all valid according to BCP47, but they are "supported" by MediaWiki. As well "nrm" is still the Wikimedia code for Norman (to link to wikis), even if in BCP47 it should be "nrf".
+: Don't confuse Wiki language codes (which are unparsable) with standard BCP 47 codes (that are parsable) used to classify translations in Wiktionary, i.e. in the content (that should all be BCP47), or to be used in the "lang=" attribute of HTML elements, or the "lang()" selector in CSS, or the "xml:lang=" pseudo-attribute in XML, or in all standards of the web, or in localisation codes in standard C/C++ or in ICU and other BCP47-conforming libraries.
+: Wikimedia codes should be used only in WMF domain names for wikis, or in interwikis prefixes used from WMF wikis (they are still used also for "?uselang" to select a MediaWiki UI translation, but this should change independantly of the domain names/interwikis codes/internal wiki database names. Everywhere else we should replace them (e.g. "simple" would become "en-x-simple", "nrm" would become "nrf", "zh-classical" would become "lzh", "zh-min-nan" is still valid in BCP47 but it is deprecated and should be replaced now by "nan").
+: Note that "sh" (Serbo-Croatian) is still valid in BCP47 even if it's now just a macrolanguage and if it has been dropped from ISO 639, and other ISO 639/BCP47 language codes are now prefered. [[User:Verdy p|Verdy p]] ([[User talk:Verdy p|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:18, 14 June 2017 (UTC)
+::{{ping|Verdy_p}}「"sh" (Serbo-Croatian) is still valid in BCP47」 ''please allow me to laugh for 3 days...''
+::In this claim, the sh.wikipedia.org should originally be hs.wikipedia.org isn't it? --[[User:Liuxinyu970226|Liuxinyu970226]] ([[User talk:Liuxinyu970226|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:28, 16 July 2017 (UTC)
+::: This is perfectly TRUE. '''Not a laugh.''' Even if the code was withdrawn from ISO 639, it is standard in BCP 47 and has NOT been removed from the '''normative IANA registry of language subtags in BCP 47.'''
+::: This [https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry IANA registry] effectively contains:
+<pre>%%
+Type: language
+Subtag: sh
+Description: Serbo-Croatian
+Added: 2005-10-16
+Scope: macrolanguage
+Comments: sr, hr, bs are preferred for most modern uses</pre>
+::: So you were confused between ISO 639 (which we actually don't use as it is unstable), and BCP 47 (which is THE standard actually used on the web and in all localization data; ISO 639 is now only used for bibliographic purposes by librarians for their archiving purpose (but with much more limited goals, with simplified classification), which change their mind and were unable to design a stable standard and unable to properly and precisely tag languages of the world) Serbo-Croatian remains a perfectly valid "macro-language" for BCP47, exactly like Chinese that was not withdrawn of course. ISO 639 should have been withdrawn completely: many librarians (including official national libraries) have stopped using or supporting it, in favor of BCP 47 which is much more precise.
+::: So sorry {{ping|Liuxinyu970226}}, but I had to correct your evident ignorance and confusion. [[User:Verdy p|Verdy p]] ([[User talk:Verdy p|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:12, 16 July 2017 (UTC)
+::: Oh I see, there was an unwanted typo, with an inversion of letters. I did not want to say that "sh.wikipedia" would have to be renamed hs.wikipedia, but wanted to say that it was perfectly valid, and that localized data in Serbo-Croatian does not have to be removed (especially for non-current "modern" uses where sr, hr, bs were not separated some years ago for political reasons).
+::: [[User:Verdy p|Verdy p]] ([[User talk:Verdy p|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:27, 16 July 2017 (UTC)
+
+== Why {{statement||794|22283033}} ? ==
+
+Note that there's an on-going discussion on deletion of P794: [[Wikidata:Properties_for_deletion#P794]]. --[[User:Liuxinyu970226|Liuxinyu970226]] ([[User talk:Liuxinyu970226|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:30, 16 July 2017 (UTC)
+
+<del>{{ping|Nikki|Jura1}} ^^ --[[User:Liuxinyu970226|Liuxinyu970226]] ([[User talk:Liuxinyu970226|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:12, 19 August 2017 (UTC)</del>
+
+:This is now deleted, so no more questions here. --[[User:Liuxinyu970226|Liuxinyu970226]] ([[User talk:Liuxinyu970226|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:44, 25 November 2017 (UTC)
+
+== Wiktionary et al. ==
+
+This property is used in Wikitionary items, for example {{Q|Q22001373}}, and the language code is parsed into a link pointing to French Wikipedia. Is this a desired behaviour? [[User:Emijrp|Emijrp]] ([[User talk:Emijrp|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:41, 18 July 2017 (UTC)
+
+== zh-hk, zh-mo, zh-sg, zh-tw, zh-cn ==
+We currently use the above for label languages, but these haven't been added to any items with P424 [https://query.wikidata.org/#SELECT%20%3Fitem%20%3FitemLabel%20%3Fvalue%0A%7B%0A%20%20%20%20%3Fitem%20wdt%3AP424%20%3Fvalue%20.%20%0A%20%20%20%20FILTER%20%28CONTAINS%28%3Fvalue%2C%20%22zh%22%29%29%20%20%0A%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%7D%0ALIMIT%20100]. For completeness sake, it would be good if items would be created or these added to existing items. <br/>--- [[User talk:Jura1|Jura]] 11:06, 7 September 2017 (UTC)
+
+== target link ==
+
+I think, linking to Wikipedia is a bad idea, as not all of languages that uses this property are having their Wikipedias, e.g. {{Q|718269}} doesn't have, so is there any possible replacements available? --[[User:Liuxinyu970226|Liuxinyu970226]] ([[User talk:Liuxinyu970226|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:04, 28 January 2018 (UTC)
+
+:I agree, I would support replacing the formatter URL with something else. − [[User:Pintoch|Pintoch]] ([[User talk:Pintoch|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:52, 4 June 2019 (UTC)
+::One suggestion: Can {{ping|SPQRobin}}'s [https://tools.wmflabs.org/robin/?tool=codelookup codelookup] be used? (<code><nowiki>https://tools.wmflabs.org/robin/?tool=codelookup&code=$1</nowiki></code>) --[[User:Liuxinyu970226|Liuxinyu970226]] ([[User talk:Liuxinyu970226|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 02:02, 28 January 2020 (UTC)
+
+* {{s}} it is a WMF code, not only WP code. Thank you, [[User:Liuxinyu970226|Liuxinyu970226]] and  [[User:Pintoch|Pintoch]]. [[User:MrProperLawAndOrder|MrProperLawAndOrder]] ([[User talk:MrProperLawAndOrder|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:12, 6 June 2020 (UTC)
+*:{{ping|Emijrp}} you mentioned this already in 2017. [[User:MrProperLawAndOrder|MrProperLawAndOrder]] ([[User talk:MrProperLawAndOrder|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:14, 6 June 2020 (UTC)

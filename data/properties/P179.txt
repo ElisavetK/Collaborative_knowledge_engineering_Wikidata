@@ -1,0 +1,143 @@
+{{Property documentation
+|infobox parameter = <code>{{!}}series=</code> in [[w:en:Template:Infobox book]]
+}}
+{{Complex constraint
+|label=Items for TV series episodes should have this
+|description=Add P179 or correct P31. Limited to 500
+|sparql=SELECT ?item { ?item wdt:P31 wd:Q21191270 . MINUS { ?item wdt:P179 [] }  } LIMIT 500
+}}
+{{Complex constraint
+|label=Use follows and followed by consistently
+|description=Use of P155 or P156 pointing to an item that does not use the opposite qualifier pointing back
+|sparql=SELECT ?item WHERE {
+  ?item p:P179 ?statement .
+  {
+    ?statement ps:P179 ?a; pq:P155 ?y .
+    FILTER NOT EXISTS {
+      ?y p:P179 [ ps:P179 ?a; pq:P156 ?item ].
+    }
+  } UNION {
+    ?statement ps:P179 ?a; pq:P156 ?y .
+    FILTER NOT EXISTS {
+      ?y p:P179 [ ps:P179 ?a; pq:P155 ?item ].
+    }
+  }
+}
+
+}}
+{{ExternalUse|
+* [[:ba:Ҡалып:Издание]]
+* [[:be:Шаблон:Картка АС]], [[:be:Шаблон:Літаратурны твор]]
+* [[:bg:Шаблон:Операционна система]]
+* [[:ca:Plantilla:Infotaula pel·lícula]], [[:ca:Plantilla:Infotaula automòbil]], [[:ca:Plantilla:Infotaula composició]], [[:ca:Plantilla:Infotaula d'obra artística]], [[:ca:Plantilla:Infotaula de llibre]], [[:ca:Plantilla:Infotaula videojoc]], [[:ca:Plantilla:Infotaula aeronau]], [[:ca:Plantilla:Infotaula telèfon mòbil]], [[:ca:Plantilla:Competició esportiva]], [[:ca:Plantilla:Infotaula càmera]], [[:ca:Plantilla:Infotaula de programari]], [[:ca:Plantilla:Infotaula document]], [[:ca:Plantilla:Infotaula personatge]], [[:ca:Plantilla:Infotaula de programari/prova]], [[:ca:Plantilla:Infotaula de publicacions periòdiques]]
+* [[:cs:Šablona:Infobox - videohra]], [[:cs:Šablona:Infobox - televizní díl]]
+* [[:de:Vorlage:Medienbox/Chronologie]], [[:de:Vorlage:Medienbox/Film und Fernsehen]], [[:de:Vorlage:Infobox Episode]], [[:de:Vorlage:Wikidata Infobox/core]]
+* [[:en:Template:Infobox video game]], [[:en:Template:Infobox video game/Wikidata]], [[:en:Template:Infobox book/wikidata]], [[:en:Template:Cite Q]]
+* [[:eo:Ŝablono:Informkesto komputila kaj videoludo]], [[:eo:Ŝablono:Informkesto komputila kaj videoludo/dokumentado]]
+* [[:es:Plantilla:Ficha de episodio de televisión]], [[:es:Plantilla:Ficha de organización ficticia]], [[:es:Plantilla:Ficha de videojuego/zona de pruebas]], [[:es:Plantilla:Ficha de película]], [[:es:Plantilla:Ficha de película/zona de pruebas]], [[:es:Plantilla:Ficha de episodio de televisión2]], [[:es:Plantilla:Ficha de videojuego]], [[:es:Plantilla:Ficha de videojuego/zona de pruebas2]], [[:es:Plantilla:Wikidata Infobox]]
+* [[:fa:الگو:Infobox book/wikidata]]
+* [[:fr:Modèle:Infobox V3/Navigateur Wikidata]]
+* [[:he:תבנית:פרק טלוויזיה]]
+* [[:hi:साँचा:सन्दर्भ विकिडाटा]], [[:hi:साँचा:Wikidata Infobox/core]]
+* [[:hu:Sablon:Könyv infobox]], [[:hu:Sablon:Sorozatepizód infobox]], [[:hu:Sablon:Videojáték infobox]], [[:hu:Sablon:Videójáték infobox]]
+* [[:hy:Կաղապար:Տեղեկաքարտ Ավտոմոբիլ]], [[:hy:Կաղապար:Տեղեկաքարտ Գիրք]], [[:hy:Կաղապար:Տեղեկաքարտ Գրական ստեղծագործություն]], [[:hy:Կաղապար:Տեղեկաքարտ Համակարգչային խաղ]], [[:hy:Կաղապար:Տեղեկաքարտ ՕՀ]], [[:hy:Կաղապար:Տեղեկաքարտ Օպերա]], [[:hy:Կաղապար:Տեղեկաքարտ Մուլտսերիալ]], [[:hy:Կաղապար:Տեղեկաքարտ Մուլտֆիլմ]], [[:hy:Կաղապար:Տեղեկաքարտ Հեռուստասերիալի եթերաշրջան]], [[:hy:Կաղապար:Տեղեկաքարտ Հեռուստասերիալի սերիա]], [[:hy:Կաղապար:Տեղեկաքարտ Երաժշտական ստեղծագործություն]]
+* [[:ilo:Plantilia:Cite Q]]
+* [[:it:Template:Stagioni televisive/IDwikidata]]
+* [[:ja:Template:Cite Q]]
+* [[:ku:Şablon:Infobox Jînenîgarî2]], [[:ku:Şablon:Qutiya agahiya jînenîgarî2]]
+* [[:ky:Калып:Уюлдук телефон]]
+* [[:ms:Templat:Infobox permainan video]]
+* [[:ne:ढाँचा:Infobox video game]]
+* [[:no:Mal:Infoboks videospill]]
+* [[:ro:Format:Infocaseta Joc video]]
+* [[:ru:Шаблон:Издание]], [[:ru:Шаблон:Литературное произведение]], [[:ru:Шаблон:Сотовый телефон]], [[:ru:Шаблон:Карточка ОС]], [[:ru:Шаблон:Мобильное устройство]], [[:ru:Шаблон:Компьютерная игра]], [[:ru:Шаблон:Серия]], [[:ru:Шаблон:Онлайн-игра]]
+* [[:si:සැකිල්ල:තොරතුරුකොටුව විදෘශ්‍ය ක්‍රීඩාව]]
+* [[:simple:Template:Infobox video game]]
+* [[:sl:Predloga:Navedi Q]]
+* [[:tg:Шаблон:Infobox book/wikidata]], [[:tg:Шаблон:Телефони ҳамроҳ]], [[:tg:Шаблон:Ҷаъбаи СО]], [[:tg:Шаблон:Интишор]], [[:tg:Шаблон:Асар/wikidata]]
+* [[:tl:Padron:Infobox book/Wikidata]]
+* [[:tt:Калып:Басма]], [[:tt:Калып:Әдәби әсәр]]
+* [[:uk:Шаблон:Відеогра]], [[:uk:Шаблон:Картка ОС]], [[:uk:Шаблон:Відеогра/пісочниця]], [[:uk:Шаблон:Видання]], [[:uk:Шаблон:Видання Наш Формат]], [[:uk:Шаблон:Перекладена книга]], [[:uk:Шаблон:Літературний твір]], [[:uk:Шаблон:Ядерне випробування]], [[:uk:Шаблон:Картка книги]], [[:uk:Шаблон:Озеро]], [[:uk:Шаблон:Острів]], [[:uk:Шаблон:Газове родовище]], [[:uk:Шаблон:Родовище]], [[:uk:Шаблон:Твір]], [[:uk:Шаблон:Водосховище]], [[:uk:Шаблон:Картка компанії]], [[:uk:Шаблон:Сонячне затемнення]]
+* [[:zh:Template:Infobox VG]]
+* [[:ce:Кеп:Арахецар]]
+* [[:nn:Mal:Kjelde på Wikidata]]
+* [[:cy:Nodyn:Cite Q]], [[:cy:Nodyn:Wikidata Infobox]]
+* [[:mn:Загвар:Medienbox/Film und Fernsehen]]
+* [[:d:Template:Cite Q]]
+* [[:az:Şablon:Video oyun]]
+* [[:be-x-old:Шаблён:Аўтамабіль]], [[:be-x-old:Шаблён:Мабільны тэлефон]]
+* [[:da:Skabelon:Cite Q]]
+* [[:el:Πρότυπο:Πληροφορίες βιβλίου]]
+* [[:v:en:Template:Cite Q]]
+* [[:gu:ઢાંચો:Wikidata Infobox]], [[:gu:ઢાંચો:Wikidata Infobox/core]]
+* [[:pt:Predefinição:Info/Console/Wikidata]], [[:pt:Predefinição:Info/Jogo eletrônico/Wikidata]], [[:pt:Predefinição:Info/Telemóvel/Wikidata]], [[:pt:Predefinição:Info/Livro/Wikidata]], [[:pt:Predefinição:Wikidata Infobox/core]]
+* [[:th:แม่แบบ:กล่องข้อมูล ระบบปฏิบัติการ]]
+* [[:id:Templat:Infobox book/wikidata]], [[:id:Templat:Wikidata infobox]]
+* [[:ast:Plantía:Ficha de competición deportiva]], [[:ast:Plantía:Ficha de documentu]]
+* [[:eu:Txantiloi:Automobil infotaula]]
+* [[:ga:Teimpléad:WD Bosca Sonraí Leabhar]]
+* [[:commons:Template:Wikidata Infobox/core]]
+* [[:mw:Template:Wikidata Infobox/core]]
+* [[:mr:साचा:विकिडाटा माहितीचौकट/core]]
+* [[:sa:फलकम्:Wikidata Infobox]]
+* [[:ur:سانچہ:خانہ معلومات ویکی ڈیٹا/کور]]
+* [[:q:fr:Modèle:Wikidata Infobox/core]]
+* [[:ta:வார்ப்புரு:Wikidata Infobox/core]]
+* [[:sv:Mall:Wikidata Infobox/core]]
+* [[:vec:Modèl:Smartphone]], [[:vec:Modèl:Infobox de Dispoxidivo mobiłe]]
+* [[:s:zh:Template:Wikidata Infobox/core]]
+* [[:ckb:داڕێژە:Wikidata Infobox/core]]
+* [[:hyw:Կաղապար:Տեղեկաքարտ Գրական ստեղծագործութիւն]]
+}}
+{{Bibliographic properties}}
+
+= {{Capitalize | {{Int discussion}} }} =
+== Use for characters ==
+
+Query: Should 'series' only be used for works, or does it have a use for any fictional element, such as [[Q851814|a character]], an [[Q787311|item]], or a [[Q1399781|place]]? --[[User:Izno|Izno]] ([[User talk:Izno|talk]]) 01:35, 26 March 2013 (UTC)
+:I think it can have a wide range of uses, but what do you mean by a series of places ? --[[User:Zolo|Zolo]] ([[User talk:Zolo|talk]]) 08:16, 26 March 2013 (UTC)
+::For example, with [[Q1399781|universe of The Legend of Zelda]], I would do <[[Q1399781|universe of The Legend of Zelda]]> [[Property:P179|series]] <[[Q12393|The Legend of Zelda]]>. --[[User:Izno|Izno]] ([[User talk:Izno|talk]]) 12:16, 26 March 2013 (UTC)
+:::Ah ok, I dont think it is a good idea, as the logic is different. The meaning of this property is: the item is in the series X. However it can certainly be used for "The Legend of Zelda: Ocarina of Time", series "The Legend of Zelda". --[[User:Zolo|Zolo]] ([[User talk:Zolo|talk]]) 12:24, 26 March 2013 (UTC)
+::::The universe is undeniably in the series of LotZ, no? --[[User:Izno|Izno]] ([[User talk:Izno|talk]]) 12:32, 26 March 2013 (UTC)
+::::More than anything, I'm looking for a way to associate series elements (characters, etc.) to the series. I would prefer not to introduce a new property to do so, and this one seems good enough. --[[User:Izno|Izno]] ([[User talk:Izno|talk]]) 12:41, 26 March 2013 (UTC)
+:::::I really don't think so. Saying that the characters of Zelda appear in Zelda has nothing to do with the fact that Zelda is a series. It would be the same if there was only one Zelda game. We probably need a special series for that, but it should be the same for series and non-series (for example characters in movies). --[[User:Zolo|Zolo]] ([[User talk:Zolo|talk]]) 12:52, 26 March 2013 (UTC)
+::::::encountered this problem here: [[Talk:Q223131]] --[[User:Shisma|Shisma]] ([[User talk:Shisma|talk]]) 14:52, 3 May 2013 (UTC)
+::::::what do you think? should I add ''Sherlock Holmes'' also as a novel series, even though, there is no article in any wikipedia about it? --[[User:Shisma|Shisma]] ([[User talk:Shisma|talk]]) 14:53, 3 May 2013 (UTC)
+:::::::That's a separate issue than the one I was having. Your problem is that, at least in English, the character and the series are the same. That makes the job of relations difficult and I'm not sure how to resolve that (feel free to comment at [[WD:PC]]). --[[User:Izno|Izno]] ([[User talk:Izno|talk]]) 17:01, 3 May 2013 (UTC)
+::::::I think an appropriate relation to use would be [[Property:P361|part of]]. Would you agree, Zolo? --[[User:Izno|Izno]] ([[User talk:Izno|talk]]) 17:01, 3 May 2013 (UTC)
+:::::::That sounds better than "series", but I do not think it is correct either. Theoretically, an item is made up of its parts, but you cannot build a novel from its characters. I think "Sherlock Holmes (work) [[P:P180|depicts]] Sherlock Holmes (character)" would make sense, but I do not think we have correct ways to express things the other way around (I doubt a "depicted in" property would be a good idea). Perhaps just more specific property like "first mentioned in" ? --[[User:Zolo|Zolo]] ([[User talk:Zolo|talk]]) 06:20, 4 May 2013 (UTC)
+::::::::Well, the character infoboxes on en.Wikipedia at least use "series" as the parameter. First mentioned in isn't good enough in that case (though that is ''also'' a parameter used in the en infoboxes). If not this property, I'll be using part of to show the relation, but I'd rather use this one ''because'' of that usage on Wikipedia. --[[User:Izno|Izno]] ([[User talk:Izno|talk]]) 02:27, 7 May 2013 (UTC)
+:::::::::Which infobox are you referring to ? I see a "first appearance" and a "in universe" parameter in [[:en:Template:Infobox video game character]]. "In universe" sounds interesting, but it is different from "series". I think it would make sense to say that [[:en:Troll (Dungeons & Dragons)|trolls]] are "in universe: Dungeons and Dragons". --[[User:Zolo|Zolo]] ([[User talk:Zolo|talk]]) 07:22, 7 May 2013 (UTC)
+:<p>Undent: Both ibox character and ibox VG character. In both, series is used in the caption of the image.</p>Inuniverse in the VG box is used specifically for the elements of the character which are not important in the real world; in other words, it is used exclusively to add the parameters contained in a certain set of sub infobox templates. (Please see the documentation.)<p>Even if inuniverse were used in the sense that you think is interesting, a character could appear nearly exclusively in a series set in that universe, but which does not encompass all of that universe (in other words, multiple series can be set in the same universe). E.g. [[Q305387|Captain Janeway]] almost exclusively appears in the series [[Q156329|Star Trek: Voyager]], yet the universe they reside in is the "Star Trek universe" (which also has the series [[Q16290|Star Trek: The Next Generation]] set in it, among others). (Said Star Trek universe article would never be written, at least on en.Wikipedia, because it would be likely to contain fictional information exclusively, which does not show its [[:en:WP:N|notability]].) --[[User:Izno|Izno]] ([[User talk:Izno|talk]]) 16:11, 7 May 2013 (UTC)</p>
+::Oops, yes, I should have read it more carefully. Still, the series and part of properties mean something really different from the series parameter of those infoboxes, and I do not think it is a good idea to overload properties this way. --[[User:Zolo|Zolo]] ([[User talk:Zolo|talk]]) 19:03, 7 May 2013 (UTC)
+:::Do they? Do they really? Series in en here is defined as "the subject is part of a series, whose sum constitutes the object". It's plainly wrong to speak of the episodes of a series as constituting the sum. So, what actually does constitute the sum? Why does our description of what constitutes the sum differ from what you see as being the intent? Part of's description is "this item is a part of that item", which again, I can undeniably say that a character or a game item or a map is part of a series using that definition. --[[User:Izno|Izno]] ([[User talk:Izno|talk]]) 21:36, 7 May 2013 (UTC)
+::::Admittedly "the subject is part of a series, whose sum constitutes the object" is a bit odd, I think it should be something like "the sum of all items with this claim form the object". Ok, that sounds a bit cryptic too... What I mean is that the sum of all Star Trek episodes makes the Star Trek series, but the sum of all characters in Zelda does not make the Zelda series. I guess, a series should be ordered though, that is it should always be possible to add either a "preceded by" or a "followed by" qualifier. --[[User:Zolo|Zolo]] ([[User talk:Zolo|talk]]) 15:20, 8 May 2013 (UTC)
+
+== Use of this property ==
+{{ping|Izno|Zolo|Shisma|Snipre|TomT0m|Bthfan}} Recently there was this discussion [[Wikidata:Project_chat#Proposed_conventions]] about how to indicate that some items form part of a sorted list and it was suggested to use this property, but with the name "in series" and the description "this element forms part of a sorted set". Any opposition? 
+
+Just for the record: regarding elements that appear in a fictional universe (original question above), there is the property {{p|1080}}.--[[User:Micru|Micru]] ([[User talk:Micru|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:12, 9 July 2014 (UTC)
+
+:sounds reasonable--[[User:Shisma|Shisma]] ([[User talk:Shisma|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:28, 9 July 2014 (UTC)
+
+== "has part" inverse uses ==
+
+There are [https://query.wikidata.org/#PREFIX%20wdt%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0APREFIX%20wikibase%3A%20%3Chttp%3A%2F%2Fwikiba.se%2Fontology%23%3E%0A%0ASELECT%20%3Fp%20%3FpLabel%20%3Fw%20%3FwLabel%20WHERE%20%7B%0A%20%20%20%3Fp%20wdt%3AP179%20%3Fw%20.%0A%20%20%20%3Fw%20wdt%3AP527%20%3Fp%20.%0A%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%0A%20%20%20%7D%0A%20%7D 2054 items] that have {{P|179}} targets that have {{P|527}} pointing back at the item. [https://query.wikidata.org/#PREFIX%20wdt%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0APREFIX%20wikibase%3A%20%3Chttp%3A%2F%2Fwikiba.se%2Fontology%23%3E%0A%0ASELECT%20%3Fp%20%3FpLabel%20%3Fw%20%3FwLabel%20WHERE%20%7B%0A%20%20%20%3Fp%20wdt%3AP179%20%3Fw%20.%0A%20%20%20%3Fw%20wdt%3AP527%20%3Fp%20.%0A%20%20%20%3Fp%20wdt%3AP361%20%3Fw%20.%0A%20%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22%20.%0A%20%20%20%7D%0A%20%7D 95 of these] also have redundant {{P|361}} statements. Should these {{P|527}} and/or {{P|361}} statements be removed? --[[User:Yair rand|Yair rand]] ([[User talk:Yair rand|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:30, 2 November 2015 (UTC)
+: I would be interested in the response to this. I have built some connections between series and their constituents, particularly at {{Q|Q57084025}} and am not sure I did it correctly. The series are part of Duke U Press, but the books are in the series. -[[User:Trilotat|Trilotat]] ([[User talk:Trilotat|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 04:07, 9 October 2018 (UTC)
+
+== Delete and replace ? ==
+
+Actually, I think this property could be replaced by {{p|361}}, that can be used in more contexts, and as the same time is just as precise semantically. --[[User:Zolo|Zolo]] ([[User talk:Zolo|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:01, 7 May 2017 (UTC)
+:{{ping|Zolo}} Right now I stumbled only upon problems with the coexistence of the two properties like [[Wikidata talk:WikiProject sum of all paintings#Altarpieces|here]] and extra work through switching like [https://www.wikidata.org/w/index.php?title=Q21948547&type=revision&diff=353833405&oldid=353833236 here] ({{ping|Multichill|p=}}), also see the [[#"has part" inverse uses]] above ({{ping|Yair rand|p=}}). Without deeper consideration this might indeed be a candidate for [[Wikidata:Properties for deletion]]. --[[User:Marsupium|Marsupium]] ([[User talk:Marsupium|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:35, 6 November 2017 (UTC)
+::We use this property a lot in the context of TV episodes and artwork series that should be a subclass of {{Q|7725310}}. Switching to {{p|361}} would break that and mess things up. [[User:Multichill|Multichill]] ([[User talk:Multichill|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:42, 7 November 2017 (UTC)
+
+== New qualifier ==
+
+I think the qualifier [[Property:P1680|subtitle]] could be added to the property, as many items are related to a single series but may have a subtitle. [[User:Esteban16|Esteban16]] ([[User talk:Esteban16|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:38, 2 October 2018 (UTC)
+
+== Mandatory qualifers ==
+
+Should this property require using either {{P|1545}} or {{P|155}}/{{P|156}} (or both) as qualifiers? Most uses already do, I think, and a "series" pretty much by definition requires a distinct order, allowing such qualifiers. --[[User:Yair rand|Yair rand]] ([[User talk:Yair rand|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:30, 5 March 2019 (UTC)
+
+*Not sure: P155/P156 are not necessarily very reliable and in some fields items with series use P155/P156 as statements. --- [[User talk:Jura1|Jura]] 13:57, 10 March 2019 (UTC)
+*:Aren't those uses simply errors? P155/P156 are supposed to be used as qualifiers when indicating position in a series, if I understand correctly. --[[User:Yair rand|Yair rand]] ([[User talk:Yair rand|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 19:55, 10 March 2019 (UTC)

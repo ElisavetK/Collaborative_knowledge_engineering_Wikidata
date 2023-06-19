@@ -1,0 +1,21 @@
+{{Property documentation
+|description            = the [[:en:PORT.hu|PORT-network]] identifier of film or television program
+|infobox parameter      = "PORT.hu" and "porthu id" in [[:hu:sablon:film infobox]] and [[:hu:sablon:televíziós műsor infobox]]<br>
+"PORT.ro" in [[:ro:Format:Infocaseta Film]]
+|domain                 = creative work
+|robot and gadget jobs  = Could be imported from infoboxes (see above), [[:hu:Sablon:PORT.hu-film]], and [[:en:Template:PORT.hu film]]
+}}
+{{ExternalUse|
+* [[:hu:Sablon:PORT.hu-film]], [[:hu:Sablon:Film infobox]], [[:hu:Sablon:Filmlinkek]], [[:hu:Sablon:Televíziós műsor infobox]], [[:hu:Sablon:Gyerekmesék.com]], [[:hu:Sablon:X-Faktor infobox]], [[:hu:Sablon:Észbontók infobox]], [[:hu:Sablon:Valóvilág infobox]]
+* [[:en:Template:PORT.hu film]]
+}}
+
+{{Movie properties}}
+
+= {{Capitalize|{{Int discussion}}}} =
+
+== Data type ==
+
+The data type of this property is incorrectly item (instead of string). – [[User:Matthew Beta|Matthew Beta]] ([[User talk:Matthew Beta|{{int:Talkpagelinktext}}]]) 22:02, 11 September 2013 (UTC)
+:OK, now it's Commons file, still no good. What's happening? :) – [[User:Matthew Beta|Matthew Beta]] ([[User talk:Matthew Beta|{{int:Talkpagelinktext}}]]) 16:50, 12 September 2013 (UTC)
+:Thanks! – [[User:Matthew Beta|Matthew Beta]] ([[User talk:Matthew Beta|{{int:Talkpagelinktext}}]]) 05:34, 14 September 2013 (UTC)

@@ -1,0 +1,38 @@
+{{Property documentation
+|description            = military equipment name assigned by NATO/ASCC
+|domain                 = aircraft, missiles, submarines, other military equipment assigned NATO code names
+|source                 = [[:en:NATO reporting name]]
+}}
+
+{{ExternalUse|
+* [[:ru:Шаблон:Подводная лодка]]
+* [[:hy:Կաղապար:Տեղեկաքարտ Օդանավ]]
+* [[:az:Şablon:Sualtı qayıq]]
+* [[:pt:Predefinição:Info/Aeronave/Testes]], [[:pt:Predefinição:Info/Aeronave/Wikidata]]
+* [[:eu:Txantiloi:Aireontzi infotaula automatikoa]]
+}}
+
+
+<!-- {{Constraint:Format|pattern=<nowiki>[A-Za-z]+</nowiki>}} -->
+<!-- {{Constraint:Unique value}} -->
+<!-- {{Constraint:Single value}} -->
+
+
+== Task force ==
+
+Items which should receive this property are relatively finite:
+
+* Aircraft:
+** Bombers {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 04:50, 30 May 2013 (UTC)
+** Fighters {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 17:09, 27 May 2013 (UTC)
+** Helicopters {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 06:55, 1 June 2013 (UTC)
+** Transports {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 04:54, 1 June 2013 (UTC)
+** Miscellaneous {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 09:32, 1 June 2013 (UTC)
+* Missiles:
+** Air-to-air missiles {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 00:26, 27 May 2013 (UTC)
+** Air-to-surface missiles {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 00:26, 27 May 2013 (UTC)
+** Anti-tank missiles {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 00:26, 27 May 2013 (UTC)
+** Surface-to-air missiles {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 04:59, 27 May 2013 (UTC)
+** Surface-to-surface missiles {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 04:59, 27 May 2013 (UTC)
+* Submarines {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 08:08, 2 June 2013 (UTC)
+* Equipment {{done}} [[User:Joshbaumgartner|Joshbaumgartner]] ([[User talk:Joshbaumgartner|talk]]) 10:19, 2 June 2013 (UTC)

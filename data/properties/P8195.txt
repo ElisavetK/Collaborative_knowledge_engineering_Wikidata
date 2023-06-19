@@ -1,0 +1,27 @@
+{{Property documentation}}
+
+{{ExternalUse|
+* [[:bar:Vorlog:Wikidata Infobox/core]]
+* [[:commons:Template:Wikidata Infobox/core]]
+* [[:mr:साचा:विकिडाटा माहितीचौकट/core]]
+}}
+
+== Name ==
+
+This is a really nice idea! Looking forward to seeing these start appearing on articles.
+
+However, I think the name could be a little confusing in English - there "ex libris" is usually used to describe the book itself, so a book is "''ex libris'' Joe Smith's collection", and this is used regardless of whether it has a bookplate, or an inscription, or a stamp (or even no markings at all). It seems English is unusual here as most languages use some variant of "ex libris". I'd suggest switching the en label to something like "bookplate image". Thoughts? [[User:Andrew Gray|Andrew Gray]] ([[User talk:Andrew Gray|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:27, 5 May 2020 (UTC)
+
+*It's somewhat hard to input anything but an image? Commons uses "ex libris" without the "-". --- [[User talk:Jura1|Jura]] 23:44, 5 May 2020 (UTC)
+
+::Oh, agreed that it has to be an image, so it's not that people will try and use it for recording provenance - it's just a bit confusingly labelled! It seems English is the outlier here which is probably why Commons prefers "ex libris" to "bookplate". [[User:Andrew Gray|Andrew Gray]] ([[User talk:Andrew Gray|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:47, 5 May 2020 (UTC)
+
+== Use of qualifier {{P|805}} ==
+We seem to a have a couple of items for those of {{Q|Q93394292}}. I linked them with the above qualifier (images are missing AFAIK). --- [[User talk:Jura1|Jura]] 23:44, 5 May 2020 (UTC)
+
+== Commons sources ==
+A few links for Commons:
+*[[c:Special:Search/ex-libris]]
+*[[c:Category:Ex libris by owner]]
+*[[c:Category:Ex libris by artist]]
+*[[c:Category:Ex libris by country]] --- [[User talk:Jura1|Jura]] 23:44, 5 May 2020 (UTC)

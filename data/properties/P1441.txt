@@ -1,0 +1,143 @@
+{{Property documentation
+|description		= {{TranslateThis
+  | en = creative work in which this fictional entity is present
+  }}
+|domain			= any type of {{Q|14897293}} : {{Q|95074}}, {{Q|3895768}}, {{Q|15706911}}…
+|allowed values		= {{Q|386724}}
+|source			= infoboxes
+}}
+{{Autofix|pattern=Q769936|replacement=Q769936|move_to=P1080}}
+{{Autofix|pattern=Q3567870|replacement=Q3567870|move_to=P1080}}
+{{Autofix|pattern=Q1152150|replacement=Q1152150|move_to=P1080}}
+{{Autofix|pattern=Q1032900|replacement=Q1032900|move_to=P1080}}
+{{Autofix|pattern=Q931597|replacement=Q931597|move_to=P1080}}
+{{ExternalUse|
+* [[:ru:Шаблон:Литературный персонаж]]
+* [[:da:Skabelon:Infoboks person]], [[:da:Skabelon:Infoboks skuespiller]], [[:da:Skabelon:Infoboks Wikidata person]]
+* [[:hy:Կաղապար:Տեղեկաքարտ Գիրք]], [[:hy:Կաղապար:Տեղեկաքարտ Աստղային պատերազմների կերպար]], [[:hy:Կաղապար:Տեղեկաքարտ Կոմիքսների կերպար]], [[:hy:Կաղապար:Տեղեկաքարտ Հնագիտական մշակույթ]]
+* [[:ro:Format:Infocaseta Personaj]]
+* [[:ba:Ҡалып:Литературный персонаж]]
+* [[:hu:Sablon:Híres állat infobox]]
+* [[:es:Plantilla:Ficha de lugar ficticio]], [[:es:Plantilla:Wikidata Infobox]]
+* [[:uk:Шаблон:Картка:Персонаж]], [[:uk:Шаблон:Картка:Міфічний персонаж]], [[:uk:Шаблон:Літературний персонаж]]
+* [[:eo:Ŝablono:Informkesto rolulo]], [[:eo:Ŝablono:Informkestero aktoro]]
+* [[:gu:ઢાંચો:Infobox character/Wikidata]], [[:gu:ઢાંચો:Wikidata Infobox/core]]
+* [[:ur:سانچہ:خانہ معلومات کردار/ویکی ڈیٹا]], [[:ur:سانچہ:خانہ معلومات ویکی ڈیٹا/کور]]
+* [[:ca:Plantilla:Infotaula personatge]]
+* [[:commons:Template:Wikidata Infobox/core]]
+* [[:cy:Nodyn:Wikidata Infobox]]
+* [[:id:Templat:Wikidata infobox]]
+* [[:mw:Template:Wikidata Infobox/core]]
+* [[:mr:साचा:विकिडाटा माहितीचौकट/core]]
+* [[:sa:फलकम्:Wikidata Infobox]]
+* [[:q:fr:Modèle:Wikidata Infobox/core]]
+* [[:de:Vorlage:Wikidata Infobox/core]]
+* [[:eu:Txantiloi:Pertsonaia infotaula]]
+* [[:ta:வார்ப்புரு:Wikidata Infobox/core]]
+* [[:hi:साँचा:Wikidata Infobox/core]]
+* [[:ast:Plantía:Personaxe]]
+* [[:nn:Mal:Infoboks sogefigur]]
+* [[:si:සැකිල්ල:Infobox character/Wikidata]]
+* [[:sv:Mall:Wikidata Infobox/core]]
+* [[:s:zh:Template:Wikidata Infobox/core]]
+* [[:ckb:داڕێژە:Wikidata Infobox/core]]
+* [[:pt:Predefinição:Wikidata Infobox/core]]
+}}
+
+
+
+== Why the restriction to fictional entities? ==
+
+Is it really intended to be restricted to fictional entities only? What about biblical characters (e.g. {{Q|37085}}), historical (or even living) people being characters of a work of fiction? What about characters where it's not clear, if they really exist(ed) or the author fabricated them?--[[User:Shlomo|Shlomo]] ([[User talk:Shlomo|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 07:46, 9 November 2014 (UTC)
+:We could include them all. --- [[User talk:Jura1|Jura]] 05:19, 12 November 2014 (UTC)
+::Actually, I already used P1441 for biblical character, so I agree with this. But I don't know how we can include that in constraints (the property concerns not only characters but also fictional locations, objects, etc.) I don't see a single item which covers that all. I don't know how to integrate that in a constraint but if you do, I wholeheartedly approve.
+::I don't like that real persons/locations/objects would use this property. I think if Victor Hugo is used as a character in a fictional work, we should create a new item with {{P|144}} Victor Hugo and {{P|31}} {{Q|95074}}; but for biblical, mythological, legendary entities, I think P1441 is perfect. --[[User:Harmonia Amanda|Harmonia Amanda]] ([[User talk:Harmonia Amanda|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:13, 12 November 2014 (UTC)
+:::And if there are many works (not necessarily fiction - what about documents, biographies...) where Victor Hugo (or Julius Ceasar, Adolf Hitler, whoever...) is used as a character, should we create an item for every one of them? Surely Julius Ceasar in Shakespeare's plays is a different characters than Julius Ceasar in Asterix & Obelix (and both of them quite different from the historical Ceasar...). On the other hand, Hitler in {{Q|462031}} is not so different from Hitler in {{Q|93539}}. And to create fictive Hitler character item(s) for [[w:en:Category:Documentary films about Adolf Hitler|documentary films about the real Hitler]] sounds a bit crazy to me...--[[User:Shlomo|Shlomo]] ([[User talk:Shlomo|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:29, 12 November 2014 (UTC)
+::::Well, this property was conceived for ''fictional'' works, so I didn't think about documentaries and other non-fiction works. Actually I don't think we should use P1441 in Hitler's item for documentaries: there would be too many values, that would be difficultly readable… We should use on the item of the documentary : {{P|921}} Hitler. Yes, I would create an item for Julius Caesar in Shakespeare play's and another for Asterix. I can understand the use of this property for item known mostly through a work (biblical character, etc.) but I think using it with real entities (Hitler, Julius Caesar, or even London or Paris!) would create more problems. If they are used in a work of fiction, we should create another item with {{P|144}} which would use P1441; if they are used in a non-fiction work the we should use {{P|921}} on the non-fiction work item. I would kept P1441 for fictional entities and widen to biblical, mythological, legendary items (but not "real" ones). --[[User:Harmonia Amanda|Harmonia Amanda]] ([[User talk:Harmonia Amanda|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:00, 12 November 2014 (UTC)
+:::::Other than the number of occurrences for some of the human items (which can be the same or higher for biblical or purely fictional ones), is there another argument? --- [[User talk:Jura1|Jura]] 06:35, 13 November 2014 (UTC)
+::::::I can understand [[User:Harmonia Amanda|Harmonia's Amanda's]] concern about the number of statements. Every historical document deals with hundreds or thousands of entities (esp. if "event" includes places, organizations, events...), most of which have already an item on Wikidata. Though, if the property is intended to be for "works of fiction" only, it should be mentioned somewhere in the description (and constraints, if possible...). The question about the extent of "fictionality" (...is {{Q|462031}} a fiction, or a document?) will remain to solve, but at least we'd have some idea to start with.--[[User:Shlomo|Shlomo]] ([[User talk:Shlomo|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:58, 16 November 2014 (UTC)
+:::::I don't think that the Julius Cesar character from Asterix series would meet notability criteria of Wikidata - and I'm afraid of the same problem with most of the artistic renditions of historical/existing entities or other in works of fiction. If we insist to preserve the property this way, we would probably have to manage without them for the most cases. There would be also problem with connecting items like this to other projects (esp. WPs) I suppose, the most fictional renditions of historical persons will be dealt in the WP article about the historical person him/herself. I can imagine an article like "Julius Ceasar in fiction" (cf. {{Q|3769592}}), but not for every single book/movie/a.s.o.--[[User:Shlomo|Shlomo]] ([[User talk:Shlomo|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:58, 16 November 2014 (UTC)
+:If we remove the fictional entity-limit here, this property could also be used to say that a song is being used in a television series/episode, game or a movie. [[User:Sjoerddebruin|<font face="Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif" color="#325186">'''Sjoerd de Bruin'''</font>]] [[User talk:Sjoerddebruin|<font face="Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif" color="#325186"><small>(talk)</small></font>]]  20:49, 11 December 2014 (UTC)
+:: Agree. If not, a new property for that usecase would be very useful to link items in a meaningful way. [[User:Ainali|Ainali]] ([[User talk:Ainali|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:37, 11 December 2014 (UTC)
+
+:Another use case for this property without the restriction to fictional characters: noting appearances of real people in radio and television documentaries. We can say that a real person is a cast member in a television programme, or we can say that they are the presenter of said programme, but not that they appeared in it as an interviewee, as far as I can tell. —[[User:Tom Morris|Tom Morris]] ([[User talk:Tom Morris|talk]]) 10:47, 7 August 2016 (UTC)
+::The fictional entity constraint currently has 707 violations, mostly {{Q|5}}, {{Q|13406463}} and {{Q|15966903}}, but there are around two dozen others suggesting that many people are using this for non-fictional entities already. [[User:Thryduulf|Thryduulf]] ([[User talk:Thryduulf|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:13, 7 August 2016 (UTC)
+:::So, can we remove the constraint since it isn't adhered to in reality and there's some compelling and documented use cases for it above? Can any user do this or do we need someone suitably blessed (admin etc.) to do it? —[[User:Tom Morris|Tom Morris]] ([[User talk:Tom Morris|talk]]) 10:20, 8 August 2016 (UTC)
+::::All that is needed is consensus, which is looking likely. {{ping|Ainali|Shlomo|Jura1|Harmonia Amanda}} do you have any additional comments? If not, I think this constraint can be removed in a couple of days. [[User:Thryduulf|Thryduulf]] ([[User talk:Thryduulf|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:48, 8 August 2016 (UTC) {{ping|Sjoerd de Bruin}} [[User:Thryduulf|Thryduulf]] ([[User talk:Thryduulf|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:48, 8 August 2016 (UTC)
+:::::{{ping|Thryduulf}} No, no additional comments from me, removal of this constraint would be appreciated. [[User:Ainali|Ainali]] ([[User talk:Ainali|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:21, 30 September 2016 (UTC)
+:Can we restrict the ''work'' to being fictional? Others have pointed out that pages like Adolph Hitler would be overwhelmed if they included every documentary, history book, and academic article about the person. --[[User:Arctic.gnome|Arctic.gnome]] ([[User talk:Arctic.gnome|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:45, 30 September 2016 (UTC)
+::{{replyto|Arctic.gnome}} that would for many usecases, but not for works where it is not clear whether they are fictional or not (religious works, myths, legends, Plato's writings about Socrates, etc, etc) as [[user:Shlomo|Shlomo]] pointed out years ago. I understand the issue with overloading entries for popular biography subjects but I'm not convinced that it should that a property being used too much on a few entries should be a reason to stop it being used at all on hundreds of others. Maybe the answer is to have a separate entry for listing works for those few people whose main item would be overwhelmed, linked to the main entry with a single meta-property? [[User:Thryduulf|Thryduulf]] ([[User talk:Thryduulf|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:59, 6 October 2016 (UTC)
+
+== Work as subject ==
+
+Maybe I was misled by the English name and the Italian description, but is there any reason not to generalise this property to state in what works, collections etc. a work is? I see the restrictions above claim the subject should be an imaginary person... See [https://www.wikidata.org/w/index.php?title=Wikidata%3AWikiProject_Music&type=revision&diff=287500857&oldid=287498475]. [[User:Federico Leva (BEIC)|Federico Leva (BEIC)]] ([[User talk:Federico Leva (BEIC)|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:02, 31 December 2015 (UTC)
+: The question is a bit older, but to clarify: (Now) there exist a lot of other properties to express relationships between works and works they are contained or mentioned in:
+* {{P|P2860}}
+* {{P|P1433}}
+* {{P|P942}}
+* {{P|P1625}}
+* {{P|P658}}
+* {{P|P179}}
+* and the generic {{P|P361}}
+: This property was intended to indicate elements present in the ''story'' of a work (fictional characters and entities) to be able to generate a list of story elements. If this property is applied for all kinds of relationships an object or person can have to a work (being cited by this work, appearing on screen as an actor) it will be impossible to meet the original goal, especially as we now allow the direct use of items for real persons/real objects to state that they appear in a work as a character. - [[User:Valentina.Anitnelav|Valentina.Anitnelav]] ([[User talk:Valentina.Anitnelav|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:45, 20 July 2018 (UTC)
+
+== Related discussion regarding this property and non-fictional entities ==
+
+At [[Wikidata:Project chat#Panama papers]] it has been suggested that this property could be used to identify non-fictional entities mentioned in the Panama Papers release. People with views on this property may wish to contribute to that discussion (comments here may or may not be seen). [[user:Thryduulf|Thryduulf]] (talk: [[user talk:Thryduulf|local]] | [[w:user talk:Thryduulf|en.wp]] | [[wikt:user talk:Thryduulf|en.wikt]]) 00:20, 12 April 2016 (UTC)
+:I approve this. --[[User:Ogoorcs|Ogoorcs]] ([[User talk:Ogoorcs|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:11, 16 July 2018 (UTC)
+
+== Religious texts ==
+
+I see that the Bible is already mentioned above.  Seeing that religious texts such as the Bible cannot be neutrally assessed for their fictionality or not, should this template be used for those?  It seems to be the present convention at any rate.  But if so, do we need to clarify "fictional" to "fictional or religious"?  Any thoughts? -- [[User:HarJIT|HarJIT]] ([[User talk:HarJIT|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 14:36, 15 May 2016 (UTC)
+
+== Inverse of P674? ==
+
+The property {{P|P674}} is currently set as the inverse of {{P|1441}}, but P1441 is not set as the inverse of P674. As a result, every P674 statement must have a corresponding P1441 statement, but not vice versa. Should the inverse constraint go both ways, with the properties having the same rules? There's a lot of discussion on the talk pages of both properties about similar issues, such as whether nonfictional characters should be included, what kind of criteria should be used, and if one of these properties is specifically going to be used differently, we should establish that clearly. Otherwise, the discussions and constraints should probably be unified. Also, we might want to just get rid of one of the two properties. Thoughts? --[[User:Yair rand|Yair rand]] ([[User talk:Yair rand|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 06:36, 11 January 2017 (UTC)
+:I don't think this property can be the inverse of {{P|P674}} because of how it is formulated; in general I think it would be way more useful to remove restraints on this property. --[[User:Ogoorcs|Ogoorcs]] ([[User talk:Ogoorcs|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:12, 16 July 2018 (UTC)
+
+== Use as qualifier? ==
+
+Can we allow this property to also be used as a qualifier? Example: {{Q|831685}} <child> {{Q|43376180}} <present in work> {{Q|Q2569730}}? - [[User:PKM|PKM]] ([[User talk:PKM|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:25, 21 November 2017 (UTC)
+: In order to say that something is a fact within the storyworld of a work I think it's okay. - [[User:Valentina.Anitnelav|Valentina.Anitnelav]] ([[User talk:Valentina.Anitnelav|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:16, 22 November 2017 (UTC)
+
+== More discussion about opening up subject constraint ==
+
+It looks like there was consensus as far back as 2014 to loosen the subject constraint for this property.  There is more discussion on that topic for "human" and "fictionalized human" at [[Wikidata:Project_chat#Historical_humans_who_also_appear_in_fiction]]. - [[User:PKM|PKM]] ([[User talk:PKM|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:30, 21 November 2017 (UTC)
+
+== Changed subject constraint ==
+
+Based on consensus back to 2014, and parallel with {{P|674}}, I have added {{Q|5}} as a subject type for this property. - [[User:PKM|PKM]] ([[User talk:PKM|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:37, 27 November 2017 (UTC)
+:There are 263 cases where {{Q|5}} is used as the subject of this property.
+:I have added "or historical person" to the EN description.  Please help make this change in more languages. - [[User:PKM|PKM]] ([[User talk:PKM|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:52, 27 November 2017 (UTC)
+
+== Value type: not fictional universe ==
+As there is another property for fictional universes, I added a few autofixes above to move these from this property there. <br/>--- [[User talk:Jura1|Jura]] 16:16, 5 April 2018 (UTC)
+
+
+== Value type: not fictional character ==
+
+Going through an import from an frwiki infobox, I noticed some additions are items about fictional characters [https://www.wikidata.org/w/index.php?title=Q2418665&diff=prev&oldid=661454595]. There might be cases where this fits, but in general, I don't think it would. None of the current constraints stop this though. Anyways, I will cleanup the additions. It would be good if we could add a constraint that avoids/detects these. <br/>--- [[User talk:Jura1|Jura]] 16:16, 5 April 2018 (UTC)
+
+== inanimate subjects ==
+
+Speaking of relaxing the constraint, are there any opinions about this property's use on {{Q|25173}}?  [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:28, 26 June 2018 (UTC)
+:I think it's okay --[[User:Ogoorcs|Ogoorcs]] ([[User talk:Ogoorcs|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 23:12, 16 July 2018 (UTC)
+:It appears as part of the story of these works, so it is ok. - [[User:Valentina.Anitnelav|Valentina.Anitnelav]] ([[User talk:Valentina.Anitnelav|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:49, 20 July 2018 (UTC)
+
+== Features/Featured In ==
+
+Hi everyone - I'm interested in describing relationship where one creative work features another. I was think of mostly real-world examples as exemplified here.
+
+*{{Q|155577}} → {{Q|44578}}
+*{{Q|60527247}} → {{Q|498906}}
+*{{Q|1164190}} → {{Q|12418}}
+
+Would you suggest using this property? Do you know of one that's a better fit or would this be better captured by a new one? Thanks! [[User:Wskent|Wskent]] ([[User talk:Wskent|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:14, 25 October 2019 (UTC)
+:I’d prefer a separate property, but I wouldn’t object to broadening this one if that’s the consensus. - [[User:PKM|PKM]] ([[User talk:PKM|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:38, 2 November 2019 (UTC)
+
+:Hello [[User:Wskent|Wskent]], I oppose the use of this property in these cases: This property is used to indicate entities appearing in the story line of a fictional work. If broadening this property to cover all cases where an entity is somehow "present" in a work (as part of the cast, soundtrack, film set, etc.) it will be difficult to distinguish between persons present in a work as a character or as part of the cast (to have one example of problems that may occur).
+:As for the examples: I think {{Q|155577}} → {{Q|44578}} can be expressed using {{P|P942}}: {{Statement|Q44578|P942|Q155577}}, {{Q|60527247}} → {{Q|498906}} probably best via {{P|P406}} (one would need to create an own item for the Soundtrack-album): {{Statement|Q498906|P406|Ferris Bueller's Day Off (new item for the soundtrack album)}}, {{Statement|Ferris Bueller's Day Off (soundtrack album)|P658|Q60527247}}.  Maybe one could use {{P|P1625}}/{{P|P5707}} but this would be a non-standard use - I'm not completely sure if everybody would approve. As to {{Q|1164190}} → {{Q|12418}} I think {{P|P6962}} would be appropriate: {{Statement|Q1164190|P6962|Q12418}}. Regards, -[[User:Valentina.Anitnelav|Valentina.Anitnelav]] ([[User talk:Valentina.Anitnelav|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:23, 5 November 2019 (UTC)
+
+== Does drinking cans count as 'creative works' ==
+{{Q|Q101002748}} are giving me some constraint trouble. What do you think, {{Ping|Valentina.Anitnelav}}?--[[User:Trade|Trade]] ([[User talk:Trade|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:57, 30 October 2020 (UTC)
+:{{ping|Trade}} It is certainly not a narrative/fictional work, so {{P|P1441}} does not seem appropriate to me in this case. {{P|P6291}} (or maybe also {{P|P1299}}/{{P|P180}}) would be better properties in my opinion. {{P|P1441}} could be used for commercials in which the character appears. - [[User:Valentina.Anitnelav|Valentina.Anitnelav]] ([[User talk:Valentina.Anitnelav|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:27, 30 October 2020 (UTC)

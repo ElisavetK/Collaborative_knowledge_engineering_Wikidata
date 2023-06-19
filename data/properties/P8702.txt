@@ -1,0 +1,17 @@
+{{Property documentation
+|infobox parameter	= possibly "east"/"west"/"south"/"north" in [[:en:Template:Infobox street]]
+}}
+
+== Constraints ==
+
+Hi
+
+{{ping|Jura1|NMaia|Paperoastro}}
+
+FYI, I removed the class {{Q|79007}} as it's already a subclass of {{Q|83620}} (see [[Special:Diff/1291368641]]).
+
+Also, since 2 thoroughfares are parallel when they have (at least) 2 other thoroughfares in common via {{P|47}} (per basic geometry) I wonder if we can built a complexe constraint and/or should automatically populate this property since we already have the information with {{P|47}} (or {{P|2789}}, the model is not consistent on that point).
+
+WDYT?
+
+Cheers, [[User:VIGNERON|VIGNERON]] ([[User talk:VIGNERON|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:57, 14 October 2020 (UTC)

@@ -1,0 +1,54 @@
+{{Property documentation
+|description       = {{TranslateThis
+ | en = item that is the opposite of this item. See also: {{P|1889}}
+}}
+|domain            = abstract terms
+|allowed values    = similar (probably bidirectional)
+|robot and gadget jobs = the property is supposedly bidirectional
+}}
+
+{{ExternalUse|
+* [[:hy:Կաղապար:Տեղեկաքարտ Տարրական մասնիկ]], [[:hy:Կաղապար:Տեղեկաքարտ Գրույթ]], [[:hy:Կաղապար:Տեղեկաքարտ Զարկերակ]]
+* [[:ru:Шаблон:Универсальная карточка]]
+* [[:pcd:Modèle:Début Infoboéte V2]]
+* [[:hu:Sablon:Diplomáciai misszió infobox]]
+* [[:av:Шаблон:Универсалияб карточка]]
+* [[:inh:Ло:Универсальная карточка]]
+}}
+<!-- {{Constraint:Symmetric}} -->
+<!-- {{Constraint:Single value}} -->
+== Test ==
+<!-- {{Constraint:Qualifiers|list={{P|1013}}|required=true}} --> 
+
+Which qualifier to use? → [[Wikidata:Property_proposal/Archive/35#frame_of_reference_for_opposition]]
+
+== Films shot in vs Films set in ==
+
+Are they really opposite? --[[User:AVRS|AVRS]] ([[User talk:AVRS|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:21, 6 September 2015 (UTC)
+:One is the location, the other the location that is being represented. If it's a problem, it we could use {{P|1889}} instead. --- [[User talk:Jura1|Jura]] 06:28, 9 September 2015 (UTC)
+
+== Inverse function ==
+
+This property is also used to indicate the inverse function ({{Query|CLAIM[461] AND CLAIM[31:(TREE[130901][][279])]|list of such usages}}). Creating a dedicated property for this purpose should be considered. <span style="font-family:Segoe Script">[[User:Petr Matas|Petr Matas]]</span> 14:47, 22 December 2015 (UTC)
+:The query was wrong, but it's fixed now. <span style="font-family:Segoe Script">[[User:Petr Matas|Petr Matas]]</span> 14:53, 22 December 2015 (UTC)
+:I think the qualifier should be {{P|1013}}: {{Q|191884}}. <span style="font-family:Segoe Script">[[User:Petr Matas|Petr Matas]]</span> 16:31, 22 December 2015 (UTC)
+
+== Q7521081 ==
+
+{{ping|Jura1}} If this property is also applied to identical names? See for example [[Q7521081]]. --[[User:Harry Canyon|Harry Canyon]] ([[User talk:Harry Canyon|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:03, 3 April 2016 (UTC)
+: {{ping|Harry Canyon}} There is {{P|1560}}. --[[User:AVRS|AVRS]] ([[User talk:AVRS|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:53, 3 April 2016 (UTC)
+{{ping|AVRS}} OK, then I will remove it from [[Q7521081]]. --[[User:Harry Canyon|Harry Canyon]] ([[User talk:Harry Canyon|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 09:58, 3 April 2016 (UTC)
+::{{ping|Harry Canyon}} P1560 is for given names in the same language. P461 is used when merely the spelling is identical. <br/>--- [[User talk:Jura1|Jura]] 05:45, 11 June 2016 (UTC)
+
+== Should setup a pywikibot script ==
+
+To change usage of this property '''on Property:''' namespace, when possible, to {{P|1696}} with same value(s). --[[User:Liuxinyu970226|Liuxinyu970226]] ([[User talk:Liuxinyu970226|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:05, 29 December 2017 (UTC)
+: This property has wikibase-item datatype, it cannot link to properties. [[User:Matěj Suchánek|Matěj Suchánek]] ([[User talk:Matěj Suchánek|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 10:25, 7 January 2018 (UTC)
+
+== just added {{p|805}} to allowed qualifiers ==
+
+this should help us link dichotomies to items discussing them. [[User:Arlo Barnes|Arlo Barnes]] ([[User talk:Arlo Barnes|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:29, 7 June 2020 (UTC)
+
+== is this property suitable for embassies? ==
+
+embassy country A in country B {{P|P461}} ==> embassy country B in country A ? <span style="border-radius:9em;padding:0 8px;background:#303030">[[User:Bouzinac|<span style="color:#FFF">'''Bouzinac'''</span>]]</span> <sup>[[User talk:Bouzinac|💬]]●[[Special:Contributions/Bouzinac|✒️]]●[[User:Bouzinac/UB|💛]]</sup> 15:18, 17 September 2020 (UTC)

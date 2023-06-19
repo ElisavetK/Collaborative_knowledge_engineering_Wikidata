@@ -1,0 +1,47 @@
+{{Property documentation
+|description            = Gross domestic product (GDP) is the market value of all officially recognized final goods and services produced within a country in a given period of time.
+|infobox parameter      = "Nominal gross domestic product"
+|domain                 = Country, region and city articles for the Global Economic Map
+|allowed values         = number with dimension 'currency'
+}}
+
+{{ExternalUse|
+* [[:tt:Калып:Дәүләт]], [[:tt:Калып:Дәүләт-3]], [[:tt:Калып:Төбәк]]
+* [[:zh:Template:中国乡级行政区]]
+* [[:ka:თარგი:ინფოდაფა ადმინისტრაციული ერთეული]]
+* [[:lmo:Mudel:Stat]], [[:lmo:Mudel:Livell aministrativ]], [[:lmo:Mudel:Stat contes]]
+* [[:en:Template:PRCTownships]]
+* [[:nds:Vörlaag:Infobox Land WD]]
+* [[:et:Mall:Riik]], [[:et:Mall:Infokast majandus]]
+* [[:fr:Modèle:Infobox Ville de Chine]]
+* [[:ca:Plantilla:Infotaula economia país/presenta]]
+* [[:commons:Template:Wikidata Infobox/core]]
+* [[:mr:साचा:विकिडाटा माहितीचौकट/core]]
+* [[:crh:Şablon:Memleket]]
+* [[:q:fr:Modèle:Wikidata Infobox/core]]
+* [[:diq:Şablon:Ca]], [[:diq:Şablon:Eyalet]], [[:diq:Şablon:Galaksi]], [[:diq:Şablon:Infobox Qeza]], [[:diq:Şablon:Infobox komunê Fransa]], [[:diq:Şablon:Sûke]], [[:diq:Şablon:Infobox komun]], [[:diq:Şablon:Infobox sûke]]
+* [[:de:Vorlage:Wikidata Infobox/core]]
+* [[:pnb:سانچہ:خانۃ معلومات دیس]], [[:pnb:سانچہ:خانہ معلومات ملک/عربی]]
+* [[:gu:ઢાંચો:Wikidata Infobox/core]]
+* [[:ta:வார்ப்புரு:Wikidata Infobox/core]]
+* [[:az:Şablon:Ölkə iqtisadiyyatı]]
+* [[:hi:साँचा:Wikidata Infobox/core]]
+* [[:hy:Կաղապար:Տեղեկաքարտ տնտեսություն]]
+* [[:sv:Mall:Wikidata Infobox/core]]
+* [[:s:zh:Template:Wikidata Infobox/core]]
+* [[:ckb:داڕێژە:Wikidata Infobox/core]]
+* [[:pt:Predefinição:Wikidata Infobox/core]]
+* [[:vec:Modèl:Stato]]
+}}
+== Add to economy of topic items ==
+This property is currently stored in country items. As country items tend to get overly large and uneditable, I'd move this this property to economy of topic items.
+
+All countries have such items, see [[Wikidata:WikiProject Economics/lists/economics_by_country|lists/economics_by_country]]. Thanks to the constraints on P8744 economy of topic items are also in fairly good shape.
+
+For the sample on the property (USA), that would be {{Q|Q188540}}. 
+*Infoboxes on country items could still read the values with the recently created {{P|8744}}. 
+*In SPARQL query, using <code>wdt:P8744/wdt:P2131</code> instead of <code>wdt:P2131</code> would give users the same result. 
+
+The change was recently tested with {{P|1279}} and went fairly smoothly. Sizes of countries items were substantially reduced. Similarly we might want to change {{P|P2132}}, {{P|P2299}}, {{P|P4010}}.
+
+{{ping|813gan}} who added some of the data. --- [[User talk:Jura1|Jura]] 10:50, 13 December 2020 (UTC)

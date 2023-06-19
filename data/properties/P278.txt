@@ -1,0 +1,44 @@
+{{Property documentation
+ |description       = language identification code according to GOST 7.75-97 - {{Q|1349015}}
+|domain            = languages - {{q|34770}}
+ |example           = 
+ }}
+
+<!-- {{Constraint:Type|class=Q34770|relation=instance}} -->
+<!-- {{Constraint:Format|pattern=<nowiki>[а-я]{3} \d{3}</nowiki>|mandatory=true}} -->
+<!-- {{Constraint:Unique value}} -->
+<!-- {{Constraint:Single value|mandatory=true}} -->
+
+{{Autofix|pattern=<nowiki>([а-я]{3})(\d{3})</nowiki>|replacement=\1 \2}}
+
+{{ExternalUse|
+* [[:ru:Шаблон:Язык]]
+* [[:ru:Шаблон:Искусственный язык]]
+* [[:ru:Шаблон:Языковая группа]]
+* [[:av:Шаблон:МацІ]]
+* [[:ba:Ҡалып:Яз-группа]], [[:ba:Ҡалып:Язык]]
+* [[:ce:Кеп:Меттанийн тоба]], [[:ce:Кеп:Мотт]]
+* [[:hy:Կաղապար:Տեղեկաքարտ Լեզու]], [[:hy:Կաղապար:Տեղեկաքարտ Լեզու արւմտ.]]
+* [[:incubator:Template:Wp/sjn/Lam nause]]
+* [[:kk:Үлгі:Тілдер]]
+* [[:lez:Шаблон:ЧӀал2]], [[:lez:Шаблон:ЧӀалан группа]]
+* [[:tt:Калып:Тел]]
+* [[:inh:Ло:Язык]]
+* [[:tg:Шаблон:Забон]]
+* [[:az:Şablon:Dil məlumat qutusu]]
+* [[:ang:Bysen:Cyþþubox sprǣc]]
+* [[:be:Шаблон:Моўная група]], [[:be:Шаблон:Картка:Мова]]
+* [[:myv:ЛопаПарцун:Кель]]
+}}
+{{Language properties}}
+[[Category:Properties about languages]]
+
+__TOC__
+== format constraint ==
+the pattern [!][<>]+ just prevents the usage of html or wikisyntax that uses <> or [] --<span class="akkakksig">[[User:Akkakk|Akkakk]]</span> 00:13, 25 July 2013 (UTC)
+:that didn't seem to work. added a qualified constraint [абгеиклмнопрстуфхэ]+( [0-9]+)? now. --<span class="akkakksig">[[User:Akkakk|Akkakk]]</span> 10:46, 25 July 2013 (UTC)
+
+== constraint report relating to {{Q|4167410}} ==
+
+If {{P|31}} is a {{Q|4167410}} <!-- Wikimedia disambiguation page -->the presence of {{P|278}} is prohibited.
+: see: [http://tools.wmflabs.org/wikidata-todo/autolist.html?q=claim%5B31%3A%224167410%22%5D%20AND%20claim%5B 278%5D Wikimedia disambiguation page (Q4167410) with GOST 7.75-97 code (P 278)] gangLeri [[User:לערי ריינהארט|לערי ריינהארט]] ([[User talk:לערי ריינהארט|{{int:Talkpagelinktext}}]]) 15:09, 19 May 2014 (UTC)

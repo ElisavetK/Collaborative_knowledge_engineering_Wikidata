@@ -1,0 +1,15 @@
+{{Property documentation}}
+
+== Autofix ==
+
+{{Autofix|pattern=<nowiki>.*id=(\d+).*</nowiki>|replacement=\1}}
+
+{{ping project|Authority control}}
+{{ping project|Cultural heritage}}
+
+Does anyone know what I should write in the Autofix template on this page?
+I looked at an example and kind of wrote it that way, 
+but when I paste at {{Q|98297065}} a full URL like https://www.nomenclature.info/parcourir-browse.app?id=2703&lang=en&wo=I&ws=INT
+it doesn't get replaced with just the ID.
+
+Please help! --[[User:Vladimir Alexiev|Vladimir Alexiev]] ([[User talk:Vladimir Alexiev|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:44, 12 August 2020 (UTC)

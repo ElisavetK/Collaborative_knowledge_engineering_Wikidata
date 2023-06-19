@@ -1,0 +1,19 @@
+{{Property documentation
+|description		= {{TranslateThis
+ | en = Wikimedia route diagram template
+ }}
+|infobox parameter	= "map" in {{Q|6289216}} ([[:w:en:Infobox rail line|on English Wikipedia]])
+|domain			= Wikimedia route diagram templates, which should be templates or list articles using icons from the {{Q|21152830}} project through {{Q|14609945}} or {{Q|6708710}}
+|allowed values		= items with {{P|31}} → {{Q|11266439}} or {{Q|13406463}}, as well as {{P|31}} → {{Q|17146139}}
+}}
+{{Location properties}}
+= {{Capitalize | {{Int constraints}} }} =
+<!-- {{Constraint:Value type|classes=Q17146139|relation=instance}} -->
+
+= {{Capitalize | {{Int discussion}} }} =
+
+== There should be an inverse property to this ==
+
+I've now added this property to most railways in Norway, but I find it a bit odd to only have a one-way connection, so we need an inverse property. I see that it was mentioned in the property proposal back then, but nothing seems to have happened since then. But I'm not sure if we actually need to have a new property only for that purpose. Since {{P|3858}} is set as a subproperty of {{P|1424}}, then can't we just use {{P|1423}}? I tried this at one item, and it now has a inverse constraints issue, but wouldn't just fixing the constraints fix this? Or could there be some logical problem related to use P1423 for this purpose?
+
+Also, I could probably go through the same RDTs and add this property if it is okay to use P1423, but could this be done by a bot? It seems to me like a relatively small botjob that can't go very much wrong. (But I could be wrong too!) Anyhow, I have no knowledge of bots (and don't intend to learn it either), so if this should be done by a bot, someone else has to do it. [[User:Bergenga|Bergenga]] ([[User talk:Bergenga|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:58, 3 October 2018 (UTC)

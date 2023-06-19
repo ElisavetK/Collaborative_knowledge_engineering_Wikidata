@@ -1,0 +1,57 @@
+{{Property documentation}}
+{{Complex constraint
+|label=candidates
+|description=
+|sparql=
+SELECT ?item ?itemLabel ?itemDescription
+{
+	?item wdt:P31 wd:Q1631107 . 
+	FILTER NOT EXISTS { [] wdt:P8625 ?item }
+	FILTER NOT EXISTS { [] wdt:P1455 ?item }
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+}
+LIMIT 100
+}}
+
+{{Complex constraint
+|label=value label (1: should match regex)
+|description=fix label or adjust regex for language at [[Property:P8625#P1552]]: {{Q|Q100884525}}
+|sparql=
+SELECT ?item ?lang ?l ?value ?v ?t
+WHERE
+{
+	hint:Query hint:optimizer "None".
+	wd:P8625 p:P1552 [ ps:P1552 wd:Q100884525 ; pq:P8770 ?t ]
+	BIND( lang(?t) as ?lang)
+	?item wdt:P8625 ?value.
+	?item rdfs:label ?l . FILTER(lang(?l) = ?lang)
+	?value rdfs:label ?v . FILTER(lang(?v) = ?lang)
+	FILTER ( !REGEX(str(?v), str(?t) )  )
+}
+# ORDER BY ?lang ?v
+}}
+{{Complex constraint
+|label=value label (1: languages lacking a regex)
+|description=determine a regex and add it at [[Property:P8625#P1552]]: {{Q|Q100884525}}
+|sparql=
+SELECT ?item ?lang (COUNT(*) as ?count) (SAMPLE(?l) as ?sample_l) (SAMPLE(?s) as ?sample_s) (SAMPLE(?value) as ?sample_value)
+WHERE
+{
+	hint:Query hint:optimizer "None".
+	?s wdt:P8625 ?value .
+	?value rdfs:label ?l .
+	BIND(lang(?l) as ?lang)
+	OPTIONAL { wd:P8625 p:P1552 [ ps:P1552 wd:Q100884525 ; pq:P8770 ?t ] FILTER( lang(?t) = ?lang) }
+	FILTER( !BOUND(?t) )
+	?item wdt:P424 ?lang ; wdt:P305 [] .
+}
+GROUP BY ?item ?lang 
+HAVING ( ?count > 9)
+ORDER BY DESC ( ?count)
+}}
+
+== This property and {{P|P1455}} ==
+
+How is this different from {{P|P1455}}? --[[User:Shinnin|Shinnin]] ([[User talk:Shinnin|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:10, 21 September 2020 (UTC)
+:From my understanding, this property is more generic because it applies to all topic, not only to human. {{ping|Thierry Caro}} may give his opinion about that. [[User:Pamputt|Pamputt]] ([[User talk:Pamputt|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:43, 21 September 2020 (UTC)
+::{{Ping|Shinnin|Pamputt}} {{P|P1455}} is for people's works. The new property is supposedly the list of works about someone or something. Sometimes Wikipedia articles about persons cover both works by that person an works about that person and then one might use both properties here. [[User:Thierry Caro|Thierry Caro]] ([[User talk:Thierry Caro|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 15:48, 21 September 2020 (UTC)

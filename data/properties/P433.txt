@@ -1,0 +1,37 @@
+{{Property documentation
+|description       = Issue of a publication like scientific journal, edition of a magazine.  See also {{P|747}}.
+|infobox parameter = [[:de:Vorlage:BVK]], [[:en:Template:Cite_journal]]
+|domain            = {{Q|234460}}
+|allowed values    = format <edition>/<year> or <edition> of {{q|1092563}}, mainly {{Q|41298}}
+|source            = External magazines; '''''See also: [[Wikidata:Periodicals task force]]'''''.
+}}
+
+{{ExternalUse|
+* [[:en:Template:Cite Q]], [[:en:Template:Academic-written review/testcases]]
+* [[:ilo:Plantilia:Cite Q]]
+* [[:ja:Template:Cite Q]]
+* [[:hi:साँचा:सन्दर्भ विकिडाटा]]
+* [[:sl:Predloga:Navedi Q]]
+* [[:nn:Mal:Kjelde på Wikidata]]
+* [[:cy:Nodyn:Cite Q]]
+* [[:d:Template:Cite Q]]
+* [[:da:Skabelon:Cite Q]]
+* [[:v:en:Template:Cite Q]]
+* [[:s:he:תבנית:מאמר]]
+}}
+{{Reference properties}}
+{{Bibliographic properties}}
+
+<!-- {{Constraint:Type|class=Q234460|relation=instance}} -->
+
+== Disambiguation ==
+
+Not to be confused with {{P|747}} (same label in German). --[[User:Kolja21|Kolja21]] ([[User talk:Kolja21|talk]]) 01:23, 2 September 2013 (UTC)
+
+== Book ==
+
+Is it possible to use this for number of publishment of a book? --[[User:Juandev|Juandev]] ([[User talk:Juandev|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 03:06, 1 October 2019 (UTC)
+
+== Nerozumím poznámce ==
+
+Proč by entita s číslem, měla mít i "publikováno v"? Pokud udáváme číslo časopisu, ten přeci není nikde publikován. --[[User:Juandev|Juandev]] ([[User talk:Juandev|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:09, 12 November 2020 (UTC)

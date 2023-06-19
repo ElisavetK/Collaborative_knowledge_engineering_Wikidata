@@ -1,0 +1,22 @@
+{{Property documentation
+}}
+<!-- {{Constraint:Unique value|mandatory=true}} -->
+<!-- {{Constraint:Single value|mandatory=true}} -->
+{{United States of America properties}}
+{{ExternalUse|
+* [[:he:תבנית:טייס חלל]], [[:he:תבנית:ביו-נאס"א]]
+}}
+== Problem in the url ==
+Look like the web change the url so now http://www.jsc.nasa.gov/Bios/htmlbios is not working any more. I try to change to https://www.nasa.gov/offices/nesc/team/ like i see in https://www.nasa.gov/offices/nesc/team/Pat_Forrester_bio.html but is not working. can any one update this URL? - [[user:יונה בנדלאק|yona b]] ([[user talk:יונה בנדלאק|talk]]) 06:15, 5 December 2016 (UTC)
+
+{{ping|יונה בנדלאק|Pigsonthewing|Adert}} The existing formatter URL doesn't work anymore and there seems to be no easy way to restore the link: in https://www.nasa.gov/astronauts there are five categories of astronauts:
+* [https://www.nasa.gov/astronauts/biographies/active Active Astronauts]: e.g. https://www.nasa.gov/astronauts/biographies/joseph-m-acaba
+* [https://www.nasa.gov/astronauts/biographies/management Management Astronauts]: e.g. https://www.nasa.gov/sites/default/files/atoms/files/cagle_yvonne.pdf
+* [https://www.nasa.gov/astronauts/biographies/former Former Astronauts]: e.g. https://www.nasa.gov/sites/default/files/atoms/files/acton-lw.pdf
+* [https://www.nasa.gov/astronauts/biographies/candidates Astronaut Candidates]: e.g. https://www.nasa.gov/content/astronaut-candidate-kayla-barron
+* [https://www.nasa.gov/astronauts/biographies/international Partner Astronauts]: no IDs
+We can probably exclude Astronaut Candidates; considering Active, Management and Former, surely the existing 397 IDs (mostly regarding Former Astronauts) need to be changed, but the formatter URLs required are different in the three cases ... so, probably we need other two properties. Do you agree? --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 22:09, 4 May 2019 (UTC)
+:I don't like the idea of having to create more nearly identical identifies just because the owner of the website screwed up. Aren't there some kind of internal ID we can use like we do with {{P|P6760}}? --[[User:Trade|Trade]] ([[User talk:Trade|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:08, 27 July 2019 (UTC)
+::{{ping|Trade}} Unfortunately there aren't, as far as I can understand. We would need at least two new IDs, one for Active Austronauts (with formatter URL <nowiki>https://www.nasa.gov/astronauts/biographies/$1</nowiki>) and one for Management and Former Astronauts (with formatter URL <nowiki>https://www.nasa.gov/sites/default/files/atoms/files/$1.pdf</nowiki>). What's your opinion? --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 11:34, 27 July 2019 (UTC)
+:::{{ping|Epìdosis}}, Sounds like a good idea --[[User:Trade|Trade]] ([[User talk:Trade|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:21, 2 August 2019 (UTC)
+::::{{ping|Trade|יונה בנדלאק|Pigsonthewing|Adert}} Just created [[Wikidata:Property proposal/NASA active astronaut ID]]. --[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 12:39, 20 January 2020 (UTC)

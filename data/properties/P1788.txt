@@ -1,0 +1,20 @@
+{{Property documentation
+|description		= {{TranslateThis
+  | en = Identifier in the Dutch ''Digitaal Vrouwenlexicon van Nederland'' (''Online Dictionary of Dutch Women''), a biography portal of prominent women in Dutch history.
+  }}
+|domain			= person
+|allowed values		= a string of text characters, often the person's (last) name
+}}
+<!-- {{Constraint:Single value|exceptions=Q3505637,Q19680811}} -->
+<!-- {{Constraint:Unique value|mandatory=true}} -->
+<!-- {{Constraint:Item|property=P31|item=Q5|exceptions=[[Q271964]], [[Q2196605]], [[Q2286576]]}} -->
+<!-- {{Constraint:Format|pattern=<nowiki>[A-Za-z].*</nowiki>|mandatory=true}} -->
+<!-- {{Constraint:Item|property=P21|item=Q6581072|exceptions=Q1052281,Q19754741,Q19756254,Q2500795}} -->
+<!-- {{Constraint:Item|property=P569}} -->
+<!-- {{Disable Constraint:Item|property=P27}} too many -->
+
+== Formatter problems with spaces ==
+
+Take for example {{Q|Q19368981}}, it has "Johanna van Abcoude". This should resolve to http://resources.huygens.knaw.nl/vrouwenlexicon/lemmata/data/Johanna%20van%20Abcoude, but the link is http://resources.huygens.knaw.nl/vrouwenlexicon/lemmata/data/Johanna+van+Abcoude . Anyone a clue how to fix this? [[User:Multichill|Multichill]] ([[User talk:Multichill|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:37, 17 November 2017 (UTC)
+
+:Maybe with https://tools.wmflabs.org/wikidata-externalid-url/ ? <br/>--- [[User talk:Jura1|Jura]] 22:52, 17 November 2017 (UTC)

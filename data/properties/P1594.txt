@@ -1,0 +1,21 @@
+{{Property documentation
+|description		= {{TranslateThis
+  | en = Judge, magistrate or equivalent, presiding at a trial
+  }}
+|domain			= Trials, courts martial
+|allowed values		= person
+|source			= various
+}}
+
+{{ExternalUse|
+* [[:ca:Plantilla:Infotaula esdeveniment]]
+* [[:he:תבנית:החלטה שיפוטית]]
+}}
+
+== Use as qualifier ==
+
+This property seems to be useful as a qualifier on {{P|1399}}, as on {{Q|30875}}, so I removed the {{Q|54828448}} constraint. [[User:Ghouston|Ghouston]] ([[User talk:Ghouston|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 01:58, 10 July 2019 (UTC)
+
+== Use for subclasses ==
+I have edited the constraints so that {{Q|P279}} {{Q|Q16533}} (like {{Q|Q76830426}}) can use the property.
+[[User:Ogoorcs|Ogoorcs]] ([[User talk:Ogoorcs|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 18:02, 29 November 2019 (UTC)

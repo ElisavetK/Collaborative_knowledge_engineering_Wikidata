@@ -1,0 +1,20 @@
+{{Property documentation
+|description		= 
+|infobox parameter	= FR-STRECKENNR in [[:de:template:BS-daten]]<br />DE-KBS in [[:de:Template:BS-daten]]
+|domain			= {{Q|728937}}
+|source			= the field numéro in the french infobox [[:fr:template:Infobox Ligne ferroviaire]] is filled for all lines. [[de:Kursbuch#Nummerierung]], [[cs:Seznam_železničních_tratí_v_Česku]], [[sk:Zoznam železničných tratí na Slovensku]]
+|robot and gadget jobs	= That property can be filled by a bot using the data of french wikipedia that has been filled and checked for all the french railway lines that have an article on fr.wiki
+}}
+
+{{ExternalUse|
+* [[:hu:Sablon:BS-daten]]
+}}
+
+<!-- {{Constraint:Type|class=Q728937|relation=instance}} -->
+
+== Usage for non-railways ==
+
+Hey everyone,
+there was a question in the Wikidata telegram group about a property for bus lines. Given that this property is already in use for rail lines, i think it would make much sense to use it for any kind of public transport line, including bus, metro and tram transport. I've updated the labels and descriptions in English and Dutch. The constraint for subclasses of {{Q|Q1067164}} was already available, so that needs no updating. [[User:Husky|Husky]] ([[User talk:Husky|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 12:19, 25 February 2020 (UTC)
+
+This is a good suggestion. --[[User:Akbarali|Akbarali]] ([[User talk:Akbarali|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:03, 2 March 2020 (UTC)

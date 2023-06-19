@@ -1,0 +1,20 @@
+{{Property documentation
+|allowed values         = instances of {{Q|132364}}, such as {{Q|54871}}, {{Q|2430433}}
+}}
+<!-- {{Constraint:Qualifier}} -->
+<!-- {{Constraint:Value type|class=Q132364|relation=instance}} -->
+
+== Git Protocol ==
+
+Please see the discussion at {{talkq|Q186055|Git_Protocol}} and [[User talk:Konstin#Git Wire Protocol]], which depend on our understanding of the meaning of this property. [[User:Daask|Daask]] ([[User talk:Daask|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 22:04, 9 April 2019 (UTC)
+
+== Use for application items? ==
+
+Examples:
+* {{Statement|Q68453830|P2700|Q8777}}
+* {{Statement|Q300662|P2700|Q42283}}
+* {{Statement|Q61754440|P2700|Q22906785}}
+To state a application can "speak" this protocol.
+Currently {{P|P4428}} is sometimes used for this purpose, but it does not feel quite right.
+--[[User:Haansn08|Haansn08]] ([[User talk:Haansn08|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 20:47, 30 July 2020 (UTC)
+* {{s}} Much better than {{Statement|Q17122691|2283|188951}} and {{statement|Q19718090|527|Q27031176}}. There is nothing wrong with {{P|P4428}} but {{P|2700}} is more specific and natural. —[[User:Dexxor|Dexxor]] ([[User talk:Dexxor|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 13:08, 31 July 2020 (UTC)

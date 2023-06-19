@@ -1,0 +1,54 @@
+{{Property documentation
+|description=former standard identifier for places in the United States per FIPS 55-3, see: {{Q|917824}}.
+|infobox parameter={{para|blank_info}} in [[:en:template:geobox/type/settlement]]
+|domain=places: location in the United States
+}}
+
+{{ExternalUse|
+* [[:de:Vorlage:Infobox Ort in den Vereinigten Staaten]]
+* [[:eu:Txantiloi:Hiri infotaula]], [[:eu:Txantiloi:Hiri infotaula/probak]]
+* [[:ru:Шаблон:Данные бюро переписи США]]
+* [[:bar:Vorlog:Infobox Ort in den Vereinigten Staaten]]
+}}
+
+<!-- {{Constraint:Single value|exceptions=Q973477}} -->
+<!-- {{Constraint:Unique value|mandatory=true}} -->
+<!-- {{Constraint:Format|pattern=<nowiki>\d\d-?\d{5}</nowiki>|mandatory=true}} -->
+<!-- {{Constraint:Item|property=P17|item=Q30|mandatory=true}} -->
+{{United States of America properties}}
+
+==Which ones to include ==
+<s>Which codes should this include? FIPS 55-3? See [[w:Federal_Information_Processing_Standards#Withdrawal_of_geographic_codes]]
+
+Maybe just  FIPS 10-4 for country codes or region codes and FIPS 5-2 for state codes?  -- [[User talk:Docu|<span style="font-size:90%;border:#000 solid 1px;padding:0;margin:0">&nbsp;<font color="#990000">D</font><font color="#339966">o</font><font color="#006699">c</font><font color="#339966">u</font>&nbsp;</span>]] <small>at</small> 20:49, 7 August 2013 (UTC)
+:I added a format pattern that allows for most and updated the description accordingly. -- [[User talk:Docu|<span style="font-size:90%;border:#000 solid 1px;padding:0;margin:0">&nbsp;<font color="#990000">D</font><font color="#339966">o</font><font color="#006699">c</font><font color="#339966">u</font>&nbsp;</span>]] <small>at</small> 08:01, 13 August 2013 (UTC)
+:I listed three properties at [[Wikidata:Property_proposal/Place]]. This would limit the use of this property to FIPS 55-3, -- [[User talk:Docu|<span style="font-size:90%;border:#000 solid 1px;padding:0;margin:0">&nbsp;<font color="#990000">D</font><font color="#339966">o</font><font color="#006699">c</font><font color="#339966">u</font>&nbsp;</span>]] <small>at</small> 08:29, 13 August 2013 (UTC)</s> resolved. -- [[User talk:Docu|<span style="font-size:90%;border:#000 solid 1px;padding:0;margin:0">&nbsp;<font color="#990000">D</font><font color="#339966">o</font><font color="#006699">c</font><font color="#339966">u</font>&nbsp;</span>]] <small>at</small> 18:31, 12 September 2013 (UTC)
+
+== Format ==
+
+The format we currently say to use here is the state code, a dash and then the place code but most of the current values don't have the dash. The format we say to use for {{P|882}} is the state code then the county code without any dash.
+
+I tried to find out what a FIPS 55-3 code actually is, but all I can find are 2-digit state codes, 3-digit county codes [http://web.archive.org/web/20090727105915/http://www.itl.nist.gov/fipspubs/fip6-4.htm] and 5-digit place codes:
+
+* The original files [http://web.archive.org/web/20050313062534/http://geonames.usgs.gov/fips55/fips55down.html] consist of fixed width fields with no separators. [http://web.archive.org/web/20050405064748/http://geonames.usgs.gov/layout.html] and [http://web.archive.org/web/20041010075717/http://www.itl.nist.gov/fipspubs/fip55-3.htm] say the first two characters are the state code, the next five are the place code and the two characters after that are the state abbreviation.
+* The census data [http://www.census.gov/geo/maps-data/data/gazetteer2010.html] has a "GEOID" column which consists of the state code and either place code or county code concatenated together with no dash.
+* [http://geonames.usgs.gov/domestic/download_data.htm] has mappings for county and place codes, the state, county and place codes are separate fields.
+
+I can't find anything using dashes - is that just a Wikipedia invention? If we want unique codes (rather than storing state, county and place codes separately), I think we should use the same format as an external source (e.g. without a dash, like the census data "GEOID" field). Either way, I think we should be consistent and not have one property using dashes and another not.
+
+If there's no objections, I'll remove the dash from the format.
+
+- [[User:Nikki|Nikki]] ([[User talk:Nikki|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:22, 16 April 2016 (UTC)
+:It seems to come from [[w:Template:FIPS]]. Are the codes unique for the US or for a state? In the first case we could remove them and attempt to build the URL differently. <br/>--- [[User talk:Jura1|Jura]] 10:31, 16 April 2016 (UTC)
+:: They're unique to a state. - [[User:Nikki|Nikki]] ([[User talk:Nikki|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:43, 11 October 2016 (UTC)
+: Unfortunately I forgot about this and since then a large number have been imported from Wikipedia with dashes. I don't want to go ahead and change thousands of them unless other people agree with changing it, so I've just made the dash optional in the format for now.
+: Some more examples of the state and place codes being used without dashes are in the URLs of http://censtats.census.gov/data/AR/1600548560.pdf and http://factfinder.census.gov/bkmk/table/1.0/en/DEC/10_DP/DPDP1/1600000US0548560
+: {{ping|Thierry Caro|Pasleim}} You two seem to have imported a lot of the IDs, what do you think?
+: - [[User:Nikki|Nikki]] ([[User talk:Nikki|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:43, 11 October 2016 (UTC)
+::I have no opinion about this. Just do what's best. [[User:Thierry Caro|Thierry Caro]] ([[User talk:Thierry Caro|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 11:47, 11 October 2016 (UTC)
+
+== Labels ==
+
+{{Ping|Rariod}} зачем уточнение "места в США" (где здесь ударение?)? Разве есть другие FIPS 55-3? Выглядит не по-русски. --[[User:Infovarius|Infovarius]] ([[User talk:Infovarius|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:24, 23 December 2019 (UTC)
+
+{{Ping|Infovarius}} Честно говоря не уверен, есть ли другие базы данных FIPS 55-3. Не хватает знаний о FIPS, а полные тексты документов не удаётся найти так сразу. Предполагаю, что не спроста в английском написании в скобках добавили уточнение о местах. Я решил привести русское написание к похожему виду. Вероятно, что в FIPS 55-3 есть и другие типы идентификаторов, по аналогии с FIPS 10-4. По поводу того, что звучит немного не по русски - возможно, но более подходящего слова найти не удалось. --[[User:Rariod|Rariod]] ([[User talk:Rariod|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 00:06, 24 December 2019 (UTC)

@@ -1,0 +1,42 @@
+{{Property documentation
+|description=Tropical cyclone identified in the NOAA AOML HRD's HURDAT database
+|domain=tropical cyclone [ {{Q|8092}}] items within the Atlantic, eastern Pacific, and central Pacific tropical cyclone basins
+}}
+{{Complex constraint
+|label=Check correspondence between the year in the identifier and the year of the event
+|description=Check when the ID contain the year
+|mandatory = true
+|sparql=SELECT ?item {
+  ?item wdt:P502 ?value.
+  ?item wdt:P580 ?begin.
+  BIND (YEAR(?begin) AS ?beginYear).
+  BIND (SUBSTR(?value, 5, 4) AS ?substr).
+  FILTER (STR(?beginYear) != ?substr)
+}
+}}
+
+<!-- {{Constraint:Unique value}} -->
+<!-- {{Constraint:Single value}} -->
+<!-- {{Constraint:Format|pattern=<nowiki>(AL|EP|CP)\d{2}(1[89]|20)\d{2}</nowiki>}} -->
+<!-- {{Constraint:Type|class=Q8092|relation=instance}} -->
+
+
+{{Authority control properties}}
+
+== Data type External identifier? ==
+
+The property HURDAT {{P|P502}} is described as an ''identifier per HURDAT (North Atlantic hurricane database)'' The property has datatype String. But is is described With {{Q|Q18614948}}. Should the Property therefore have datatype External identifier? [[User:Pmt|Pmt]] ([[User talk:Pmt|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 21:46, 25 September 2018 (UTC)
+
+*I think the main reason this was initially skipped is that the link varies based on its value. In the meantime, the redirector service takes care of that so this could easily be converted. As you already advertised it on project chat, you might want to [[Wikidata:Contact the development team]] and ask for conversion. --- [[User talk:Jura1|Jura]] 08:46, 6 October 2018 (UTC)
+
+== Proposal - Change [[Help:Data_type|Data type]] of {{P|502}} from {{Datatype|string}} to {{Datatype|external-id}} ==
+
+I think {{Datatype|string}} is the wrong type for {{P|502}}. Can we please change it to be {{Datatype|external-id}}.
+
+As per [[Help:Data_type#Changing_datatype]] please indicate support/opposition below. [[User:Iwan.Aucamp|Iwan.Aucamp]] ([[User talk:Iwan.Aucamp|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 16:52, 15 October 2019 (UTC)
+
+===={{int:Talk}}====
+
+* {{comment}} for your attention {{ping|Pmt}} [[User:Iwan.Aucamp|Iwan.Aucamp]] ([[User talk:Iwan.Aucamp|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:08, 15 October 2019 (UTC)
+* {{s}} This one makes sense. [[User:ArthurPSmith|ArthurPSmith]] ([[User talk:ArthurPSmith|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 17:24, 15 October 2019 (UTC)
+* {{S}}. <span class="vcard"><span class="fn">[[User:Pigsonthewing|Andy Mabbett]]</span> (<span class="nickname">Pigsonthewing</span>); [[User talk:Pigsonthewing|Talk to Andy]]; [[Special:Contributions/Pigsonthewing|Andy's edits]]</span> 18:34, 15 October 2019 (UTC)

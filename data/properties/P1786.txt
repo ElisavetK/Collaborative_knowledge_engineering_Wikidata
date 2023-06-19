@@ -1,0 +1,19 @@
+{{Property documentation
+|domain={{Q|215627}}
+|example = see {{Q|9701}}
+}}
+
+{{ExternalUse|
+* [[:cs:Šablona:Infobox - panovník]]
+}}
+
+<!-- {{Constraint:Type|class=Q215627|relation=instance}} -->
+<!-- {{Constraint:Item|property=P21}} -->
+<!-- {{Constraint:Item|property=P569}} -->
+<!-- {{Constraint:Item|property=P19}} -->
+<!-- {{Constraint:Item|property=P570}} -->
+<!-- {{Constraint:Qualifiers|list={{P|282}}|required=1}} -->
+{{Name properties}}
+
+== Datatype ==
+As using monolingual text datatype for this property raised issues, the datatype was changed to string, with a required {{p|282}} qualifier.--[[User:Zolo|Zolo]] ([[User talk:Zolo|<span class="signature-talk">{{int:Talkpagelinktext}}</span>]]) 08:22, 21 March 2015 (UTC)

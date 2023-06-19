@@ -1,0 +1,13 @@
+{{Property documentation
+|domain			= item
+}}
+
+{{ExternalUse|
+* [[:ca:Plantilla:Infotaula grafema]]
+* [[:ast:Plantía:Grafema]]
+}}
+= {{Capitalize | {{Int constraints}} }} =
+
+= {{Capitalize | {{Int discussion}} }} =
+== code (image) ==
+This is generally used together with {{P|3295}} that requires a string value. If the value isn't available as string, see [[Wikidata:Property proposal/code (image)]]. --- [[User talk:Jura1|Jura]] 08:50, 5 October 2019 (UTC)

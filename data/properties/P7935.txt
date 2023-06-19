@@ -1,0 +1,22 @@
+{{Property documentation}}
+
+== Comparative query ==
+
+{{SPARQL|query=
+SELECT ?item ?itemLabel 
+  (GROUP_CONCAT(DISTINCT ?cc1; separator=", ") as ?CorpusCorporum)
+  (GROUP_CONCAT(DISTINCT ?gnd1; separator=", ") as ?GND)
+  (GROUP_CONCAT(DISTINCT ?viaf1; separator=", ") as ?VIAF)
+  (GROUP_CONCAT(DISTINCT ?mw1; separator=", ") as ?Mirabile)
+WHERE
+{
+  ?item wdt:P7935 ?cc1 .
+  OPTIONAL { ?item wdt:P227 ?gnd1 . }
+  OPTIONAL { ?item wdt:P214 ?viaf1 . }
+  OPTIONAL { ?item wdt:P7986 ?mw1 . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "de,en,la" . }
+}
+GROUP BY ?item ?itemLabel
+ORDER BY ?cc
+}}
+--[[User:Epìdosis|'''Epì''']][[User talk:Epìdosis|<span style="color:green">'''dosis'''</span>]] 15:33, 31 March 2020 (UTC)
