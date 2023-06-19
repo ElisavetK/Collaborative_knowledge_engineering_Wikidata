@@ -1,0 +1,53 @@
+﻿,Mean of the percentage for the two annottators,,,,,Number of codes and percentage ff the two annotators,,,,,,,,,,,
+,,,,,,annotator 1,,annotator 2,,annotaotr 1,,annotator 2,,annotator 1,,annotator 2,
+,,,,,,# codes,Percentage,# codes,Percentage,# codes,Percentage,# codes,Percentage,# codes,Percentage,# codes,Percentage
+Code Description,Themes,Label,Items,Properties,Project chat,Items,,,,Properties,,,,Project chat,,,
+Question about KE process/action,KB curation,Q1,82.15,15.46,10.74,32,6.85,43,9.58,125,14.29,118,16.62,33,9.27,40,12.2
+Explanation of a KE process/action,,I1,11.28,31.09,27.12,45,9.64,58,12.92,289,33.03,207,29.15,90,25.28,95,28.96
+Suggest KE changes,,AS1,3.84,11.93,5.28,13,2.78,22,4.9,83,9.49,102,14.37,18,5.06,18,5.49
+Suggest to merge items,,AS2,1.20,0.00,1.76,6,1.28,5,1.11,0,0,0,0,6,1.69,6,1.83
+Suggest to add an item to the KG,,AS3,1.32,0.42,0.29,5,1.07,7,1.56,6,0.69,1,0.14,1,0.28,1,0.3
+Suggest to delete an item from the KG,,AS4,0.66,0.00,0.43,3,0.64,3,0.67,0,0,0,0,2,0.56,1,0.3
+Suggest the deprecation of an item,,AS5,0.00,0.00,0.00,0,0,0,0,0,0,0,0,0,0,0,0
+Suggest to merge properties,,AS6,0.00,0.31,0.00,0,0,0,0,3,0.34,2,0.28,0,0,0,0
+Suggest to add a property to the KG,,AS7,0.00,2.50,0.88,0,0,0,0,19,2.17,20,2.82,3,0.84,3,0.91
+Suggest to delete a property from the KG,,AS8,0.00,0.13,0.00,0,0,0,0,1,0.11,1,0.14,0,0,0,0
+Suggest the deprecation of a property,,AS9,0.11,0.20,0.00,1,0.21,0,0,1,0.11,2,0.28,0,0,0,0
+Report KE changes,,AR1,3.97,8.96,0.60,11,2.36,25,5.57,68,7.77,72,10.14,1,0.28,3,0.91
+Report the merge of items,,AR2,0.77,0.00,0.59,3,0.64,4,0.89,0,0,0,0,2,0.56,2,0.61
+Report the addition of an item to the KG,,AR3,0.55,0.00,0.29,2,0.43,3,0.67,0,0,0,0,1,0.28,1,0.3
+Report the deletion of an item from the KG,,AR4,0.22,0.00,0.00,1,0.21,1,0.22,0,0,0,0,0,0,0,0
+Report the deprecation of an item,,AR5,0.00,0.00,0.00,0,0,0,0,0,0,0,0,0,0,0,0
+Report the merge of properties,,AR6,0.00,0.00,0.00,0,0,0,0,0,0,0,0,0,0,0,0
+Report the addition of a property to the KG,,AR7,0.00,0.20,0.29,0,0,0,0,1,0.11,2,0.28,1,0.28,1,0.3
+Report the deletion of a property from the KG,,AR8,0.00,0.06,0.00,0,0,0,0,1,0.11,0,0,0,0,0,0
+Report the deprecation of a property,,AR9,0.00,0.00,0.00,0,0,0,0,0,0,0,0,0,0,0,0
+,total,,32.10,71.22,48.25,122,26.11,171,38.09,597,68.22,527,74.22,158,44.38,171,52.11
+Question about taxonomy,Taxonomic actions,Q2,3.26,0.12,1.91,18,3.85,12,2.67,2,0.23,0,0,6,1.69,7,2.13
+Sharing information about taxonomy,,I2,6.01,0.66,3.57,27,5.78,28,6.24,9,1.03,2,0.28,8,2.25,16,4.88
+Suggest taxonomical changes,,AS10,1.64,0.00,1.02,8,1.71,7,1.56,0,0,0,0,4,1.12,3,0.91
+Report taxonomical changes,,AR10,2.19,0.30,0.00,10,2.14,10,2.23,4,0.46,1,0.14,0,0,0,0
+,total,,13.09,1.07,6.49,63,13.48,57,12.7,15,1.72,3,0.42,18,5.06,26,7.92
+Domain-based question,Domain-based content,Q3,3.04,1.17,0.29,18,3.85,10,2.23,13,1.49,6,0.85,1,0.28,1,0.3
+Sharing domain-based information,,I3,14.97,7.50,5.95,66,14.13,71,15.81,56,6.4,61,8.59,25,7.02,16,4.88
+Suggest domain-based changes,,AS11,0.43,0.06,0.00,4,0.86,0,0,1,0.11,0,0,0,0,0,0
+Report domain-based changes,,AR11,0.64,0.00,0.00,6,1.28,0,0,0,0,0,0,0,0,0,0
+,total,,19.08,8.72,6.24,94,20.12,81,18.04,70,8,67,9.44,26,7.3,17,5.18
+Question about Wikidata rules,Wikidata rules,Q4,0.33,0.54,2.16,2,0.43,1,0.22,7,0.8,2,0.28,11,3.09,4,1.22
+Sharing information about Wikidata rules,,I4,3.27,2.56,7.20,17,3.64,13,2.9,30,3.43,12,1.69,35,9.83,15,4.57
+Suggest changes in Wikidata rules,,AS12,0.11,0.29,1.31,1,0.21,0,0,5,0.57,0,0,5,1.4,4,1.22
+Report changes in Wikidata rules,,AR12,0.00,0.00,0.00,0,0,0,0,0,0,0,0,0,0,0,0
+,total,,3.70,3.39,10.67,20,4.28,14,3.12,42,4.8,14,1.97,51,14.32,23,7.01
+Question about a connection with Wikimedia sites (sitelinks),Connection with Wikimedia projects,Q5,1.95,0.34,2.07,13,2.78,5,1.11,1,0.11,4,0.56,6,1.69,8,2.44
+Sharing information about a connection with Wikimedia sites (sitelinks),,I5,4.60,0.76,2.96,19,4.07,23,5.12,1,0.11,10,1.41,8,2.25,12,3.66
+Suggest a change in conection with Wikimedia sites (sitelinks),,AS13,5.78,0.00,0.29,29,6.21,24,5.35,0,0,0,0,1,0.28,1,0.3
+Report a change in conection with Wikimedia sites (sitelinks),,AR13,4.37,0.07,0.29,20,4.28,20,4.45,0,0,1,0.14,1,0.28,1,0.3
+,total,,16.69,1.17,5.60,81,17.34,72,16.03,2,0.22,15,2.11,16,4.5,22,6.7
+Disagreement,Controversies,C1,6.92,5.96,8.79,48,10.28,16,3.56,82,9.37,18,2.54,43,12.08,18,5.49
+Intensified conflict,,C2,0.33,0.13,0.88,1,0.21,2,0.45,1,0.11,1,0.14,3,0.84,3,0.91
+,total,,7.25,6.08,9.66,49,10.49,18,4.01,83,9.48,19,2.68,46,12.92,21,6.4
+Connection with a discussion in another channel,Wikidata as a project,I6,4.58,7.33,7.95,22,4.71,20,4.45,58,6.63,57,8.03,24,6.74,30,9.15
+Not in English discussions,,I7,3.50,1.02,0.00,16,3.43,16,3.56,8,0.91,8,1.13,0,0,0,0
+Wikidata general,,I8,-,-,3.67,-,-,-,-,-,-,-,-,12,3.37,13,3.96
+Weekly summary,,I9,-,-,1.46,-,-,-,-,-,-,-,-,5,1.4,5,1.52
+,,,,,,,,,,,,,,,,,
