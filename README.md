@@ -1,5 +1,5 @@
 # Collaborative_knowledge_engineering_Wikidata
-This repository includes scripts and data used to analyse Wikidata discussions for my paper "An analysis of discussions in collaborative knowledge engineering through the lens of Wikidata", currently under revision.
+This repository includes scripts and data used to analyse Wikidata discussions for my paper "An analysis of discussions in collaborative knowledge engineering through the lens of Wikidata" (https://www.sciencedirect.com/science/article/pii/S1570826823000288).
 
 ## File description
 Here is the description of the files.
